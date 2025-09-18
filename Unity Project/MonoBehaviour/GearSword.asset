@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2556c9f8ed3eb2ed8ba627891dabcd1c, type: 3}
+  m_Name: GearSword
+  m_EditorClassIdentifier:
+  Id: 92
+  Type: 1
+  SubType: 1
+  Icon: {fileID: 0}
+  _localizationKey:
+  Rarity: {fileID: 0}
+  <UnlockedByDefault>k__BackingField: 0
+  <ShowInPackDisplay>k__BackingField: 1
+  <ID>k__BackingField: ce30d06503efedd4f90f0358b84a6d4c
+  <ThisUnlockType>k__BackingField: 1
+  upgradeProfile:
+    baseTier: 2
+    attachedGear: {fileID: 11400000}
+    allUnlockRestrictions: 0
+    minLevelGettingGears: 0
+    lockedDescriptionLocalizationString:
+  miniGearPrefab: {fileID: 1778670638409200, guid: 18742cd76af58074c8feb0fc77606d60, type: 2}
+  gearController: {fileID: 114092719503574512, guid: f7897893440d15048b7cb0d4c15c1b55, type: 2}
+  gearInfo:
+    _displayNameLocKey: sword
+    _displayDescriptionLocKey: spawndaagenao
+    allGearTags: 2
+  goalEntityType: Any

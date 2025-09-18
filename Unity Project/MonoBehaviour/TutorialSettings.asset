@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07491bcf9643fa3afeb90a0afb14790f, type: 3}
+  m_Name: TutorialSettings
+  m_EditorClassIdentifier:
+  <AllButtonTutorials>k__BackingField:
+  - {fileID: 114839206251692960, guid: dbda9f29cf7987e47a067bf37a029bd9, type: 2}
+  - {fileID: 114204176362533080, guid: d9e5e51325a0d0b408f6ebd18b3b2d39, type: 2}
+  - {fileID: 114968587715817118, guid: bf96da6320ce8044ea1c79820da29e06, type: 2}
+  - {fileID: 114054125388273996, guid: 2d3ccf92fbd41f647a5e87619d9dcd6e, type: 2}
+  - {fileID: 114357909615015891, guid: 4946d837125148e408de57342bdbf53e, type: 2}
+  - {fileID: 114085476486411390, guid: 92d79427996afe64b8a015a83f916405, type: 2}
+  - {fileID: 114151159928817719, guid: 1dc9668f724c3ef4fa3d6df78fd5b699, type: 2}
+  - {fileID: 114422767567304302, guid: 575c2be061f38374ca00b48bdfb88d5a, type: 2}

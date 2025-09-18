@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a394122121c9e1af27cd8fa610773c60, type: 3}
+  m_Name: Brain Boost
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: 261fcd6bf4d56e14b875ef967c025f51
+  buffPrefab: {fileID: 114509000556742619, guid: 98a878f32342d1945a992660247cbf89, type: 2}

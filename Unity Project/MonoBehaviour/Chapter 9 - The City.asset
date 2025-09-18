@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: Chapter 9 - The City
+  m_EditorClassIdentifier:
+  ID: 9e05409c6c2354543a160b0febadcb52
+  DisplayNameLocalizationKey: City_new
+  ShowWorldUnlock: 1
+  EnvironmentTheme: {fileID: 114929948773062388, guid: f567904da7a1f5745bc238b0694c069c, type: 2}
+  MainMusic: {fileID: 8300000, guid: 1777bc2d4c1544f4eabfc57a8efb63f6, type: 3}
+  SlopeSprite: {fileID: 21300000, guid: ad1d456a494636d459d07fa2fe4f4b05, type: 2}
+  LocalizationStrings:
+  - Chronopolis_lore1
+  - Chronopolis_lore2
+  - Chronopolis_lore3
+  - Chronopolis_lore4
+  ShowPopupEveryLevelStart: {fileID: 0}
+  Levels:
+  - {fileID: 11400000, guid: 6c6fc0d5f7256e740a61c85b673d0756, type: 2}
+  - {fileID: 11400000, guid: 39d140dab414e7946870524abfc5d998, type: 2}
+  - {fileID: 11400000, guid: 4817b6d29f010134696ee9b4a039bade, type: 2}
+  - {fileID: 11400000, guid: ede6f8b06deee2846adf566bd4f3c29e, type: 2}
+  - {fileID: 11400000, guid: 3f9a68cd8151af24fb1386b477b858aa, type: 2}
+  - {fileID: 11400000, guid: b8ac0dc9aeeab0540b8041df012c1f83, type: 2}
+  - {fileID: 11400000, guid: 09d0b4150eba41c4d968718bf3acf31a, type: 2}
+  - {fileID: 11400000, guid: e375eb7deaa5eff4f80fa9a33b4fe885, type: 2}
+  - {fileID: 11400000, guid: 7a77811c2e8b96d4489e0cd096041cf8, type: 2}
+  - {fileID: 11400000, guid: 9f9ddd94187da774095f1049e0894fac, type: 2}
+  - {fileID: 11400000, guid: 23ec3c931193ca245a5728c31cc71af2, type: 2}
+  - {fileID: 11400000, guid: 46470e47b3769ed489759ee59f09edcd, type: 2}
+  - {fileID: 11400000, guid: ce93e9984353727479ea4851d7a741e5, type: 2}
+  - {fileID: 11400000, guid: ba3adc2d5fba11746a654a2c829eedb7, type: 2}
+  - {fileID: 11400000, guid: 4dba391901a2f6c4d883cc72b132893f, type: 2}
+  - {fileID: 11400000, guid: 1adbdeaca7e60a847be09af12f8106db, type: 2}
+  - {fileID: 11400000, guid: a7c6bb5143a68674c96c169c414626fe, type: 2}
+  - {fileID: 11400000, guid: dc2245bab4dfa234c813771898e4ea0a, type: 2}
+  - {fileID: 11400000, guid: 9ce41de7d653b0f47b2c3a32ca4d7104, type: 2}
+  - {fileID: 11400000, guid: 46ba2481095cfc4429d40bd26ead8c0a, type: 2}
+  AllMiniBosses:
+  - {fileID: 11400000, guid: 2fb4237ea93407a499a2ca7565fcad24, type: 2}
+  - {fileID: 11400000, guid: d17208b7ed500324cb29343416057e4e, type: 2}
+  ChapterSpecificUnlocks: []

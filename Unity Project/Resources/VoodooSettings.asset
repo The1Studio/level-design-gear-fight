@@ -1,0 +1,290 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fcd2a8f3ce82b746e57204f4994f9c, type: 3}
+  m_Name: VoodooSettings
+  m_EditorClassIdentifier:
+  Store: worldwide
+  AccessTokenID: de8ece1f-35f9-4fcc-ab6e-893cab70aec1
+  LastUpdateDate: 22/07/2025 09:43:06
+  AndroidBuildTargetEnum: 0
+  IosBuildInXcworkspace: 0
+  RunXcode16BitcodeRemoval: 1
+  UseLegacyManifestMergeTools: 0
+  UseAttributesMerging: 0
+  NewManifestMergeDebug: 0
+  AndroidTemplateJsonCustomPath:
+  EnableInEditorUnityAds: 1
+  EnableInEditorRVAds: 1
+  EnableInEditorFSAds: 1
+  EnableInEditorAOAds: 1
+  EnableSuperPremiumMode: 0
+  VoodooFunnels:
+    funnels: []
+  AndroidIAPEnabled: 1
+  iOSIAPEnabled: 1
+  AndroidNoAdsProductId:
+  iOSNoAdsProductId:
+  SubscriptionGroups:
+  - None
+  - SubGroup 1
+  Products:
+  - _productId: com.gearfight.double.speed
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.diamonds.small
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.diamonds.large
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.unlimitedblessings
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.diamonds.massive
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.tickets.small
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.tickets.large
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.double.speed.discount
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.double.speed.discount
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.pack.standard
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.pack.premium
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.pack.troop
+    _type: 1
+    _subscriptionGroup:
+  SubscriptionSharedKey:
+  StudioLogoForSplashScreen: {fileID: 0}
+  DisableVSManagedSplashScreen: 1
+  AppleStoreId: 6738430824
+  iOSAppRaterEnabled: 1
+  AndroidAppRaterEnabled: 1
+  AppRaterDelayAfterLaunchInSeconds: 900
+  AppRaterPostponeCooldownInSeconds: 86400
+  AppRaterMinimumNumberOfGamesPlayed: 1
+  GdprPrimaryColor: {r: 0.254, g: 0.509, b: 0.894, a: 1}
+  CrossPromo: {}
+  iOSCrossPromotionEnabled: 1
+  AndroidCrossPromotionEnabled: 1
+  iOSBannerCloseButtonEnabled: 0
+  AndroidBannerCloseButtonEnabled: 0
+  BannerBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+  BannerCloseButtonSprite: {fileID: 0}
+  BannerCloseButtonPosition: 0
+  EnableAutomaticBannerHeightAdjustment: 1
+  cumulativeDelayInSecondsBeforeFirstInterstitialAd: -1
+  delayInSecondsBeforeFirstInterstitialAd: 30
+  delayInSecondsBeforeSessionFirstInterstitialAd: -1
+  delayInSecondsBetweenInterstitialAds: 30
+  maxGamesBetweenInterstitialAds: 3
+  delayInSecondsBetweenRewardedVideoAndInterstitial: 5
+  enableReplaceRewardedIfInterstitialCpmHigher: 0
+  enableReplaceRewardedIfNotLoaded: 0
+  RemoveEmbrancePercentageProtection: 0
+  EmbraceMaxPercentage: 20
+  RefreshKitchenSettingsBeforeBuildInBatchMode: 1
+  voodooLogAddTimestamp: 0
+  EnableVoodooAnalyticsLocalTimestamp: 0
+  IgnoreTheGoogleKeyError: 0
+  IOSBundleID: com.EternalStudio.GearFight
+  AndroidBundleID: com.EternalStudio.GearFight
+  UseAndroidRemoteConfig: 1
+  UseIosRemoteConfig: 1
+  EnableIosReplaceRewardedOnCpm: 0
+  EnableAndroidReplaceRewardedOnCpm: 0
+  EnableIosReplaceRewardedIfNotLoaded: 0
+  EnableAndroidReplaceRewardedIfNotLoaded: 0
+  UseIosVoodooAnalytics: 1
+  UseAndroidVoodooAnalytics: 1
+  UseIosFirebaseAnalytics: 1
+  UseAndroidFirebaseAnalytics: 1
+  embraceIosUserPercentage: 0
+  embraceIosAppId:
+  embraceIosApiToken:
+  embraceAndroidUserPercentage: 0
+  embraceAndroidAppId:
+  embraceAndroidApiToken:
+  GameAnalyticsIosGameKey: e675c955f61975deba7521bd49cd81c3
+  GameAnalyticsIosSecretKey: bf61c4f4b0c394792a53c77dd8c130397838c375
+  ExcludeGameAnalyticsIosSDK: 0
+  GameAnalyticsAndroidGameKey: ddef56bb78ee7e1c0c4b7af2664cbc45
+  GameAnalyticsAndroidSecretKey: c019469a17b19acd5157d45d39ce6e0c16ca3dd4
+  ExcludeGameAnalyticsAndroidSDK: 0
+  MaxAdsIosAdsKeys:
+    maxAdsAdUnits:
+      bannerAdUnit: 38f18bcf1fff2a7c
+      interstitialAdUnit: cc52f84299ed7359
+      rewardedVideoAdUnit: 795ca76e60eef413
+      mrecAdUnit: 9c1e1c9e37ba153c
+      nativeAdsAdUnit:
+      appOpenAdUnit:
+    maxAdsSecondaryAdUnits:
+      bannerAdUnit:
+      interstitialAdUnit:
+      rewardedVideoAdUnit:
+      mrecAdUnit:
+      nativeAdsAdUnit:
+      appOpenAdUnit:
+    sessionCountThreshold: 0
+    maxSdkKey:
+    ironSourceMediationAppKey:
+    enableFakeAds: 1
+    enableFakeInterstitialAds: 1
+    enableFakeRewardedVideoAds: 1
+    enableFakeAppOpenAds: 1
+    enableAppOpenAdSoftLaunch: 0
+  MaxAdsAndroidAdsKeys:
+    maxAdsAdUnits:
+      bannerAdUnit: 1978668dd7d45078
+      interstitialAdUnit: d1957df950529a25
+      rewardedVideoAdUnit: 3b79fb88ab676923
+      mrecAdUnit: 00c1be53b6fcb6a7
+      nativeAdsAdUnit:
+      appOpenAdUnit:
+    maxAdsSecondaryAdUnits:
+      bannerAdUnit:
+      interstitialAdUnit:
+      rewardedVideoAdUnit:
+      mrecAdUnit:
+      nativeAdsAdUnit:
+      appOpenAdUnit:
+    sessionCountThreshold: 0
+    maxSdkKey: E1M7r57HoT7PoxvgxbXnJLA55TKI1GOGHmO6rVNdzV1mQwQMWz7rJIxOrGgtW48prWwf1II-oKkDF9Zn7gbQzX
+    ironSourceMediationAppKey:
+    enableFakeAds: 1
+    enableFakeInterstitialAds: 1
+    enableFakeRewardedVideoAds: 1
+    enableFakeAppOpenAds: 1
+    enableAppOpenAdSoftLaunch: 0
+  MaxIosSdkKey: E1M7r57HoT7PoxvgxbXnJLA55TKI1GOGHmO6rVNdzV1mQwQMWz7rJIxOrGgtW48prWwf1II-oKkDF9Zn7gbQzX
+  MaxAndroidSdkKey: E1M7r57HoT7PoxvgxbXnJLA55TKI1GOGHmO6rVNdzV1mQwQMWz7rJIxOrGgtW48prWwf1II-oKkDF9Zn7gbQzX
+  DisableMaxAdsQualityServiceSDK: 0
+  IronSourceMediationIosAppKey:
+  IronSourceMediationAndroidAppKey:
+  AdMobAndroidAppId: ca-app-pub-6354112556091525~5532764409
+  AdMobIosAppId: ca-app-pub-6354112556091525~7421481017
+  amazonIosKey:
+    sdkKey: 0bbdead4-e935-40dc-82da-34499aa1d89b
+    bannerAdUnit:
+    interstitialAdUnit:
+    rewardedVideoAdUnit: 2b6734e5-cea6-4116-ae56-b3dc7b977b9e
+  amazonAndroidKey:
+    sdkKey: 9d21f179-7e64-4b53-b138-0c5182f8a894
+    bannerAdUnit:
+    interstitialAdUnit:
+    rewardedVideoAdUnit: 5b203621-94cb-4659-9807-6b20e25a55d3
+  AdjustIosAppToken: 7wwwprydmsn4
+  AdjustAndroidAppToken: 18enslbzgpds
+  ConversionIosEvents:
+    UseConversionEvents: 1
+    DaysUntilExpiration: 1
+    AdEvents: []
+    UnknownEvents: []
+  ConversionAndroidEvents:
+    UseConversionEvents: 1
+    DaysUntilExpiration: 1
+    AdEvents: []
+    UnknownEvents: []
+  EnableIosAppOpenAdSoftLaunch: 0
+  EnableAndroidAppOpenAdSoftLaunch: 0
+  iOSAppOpenAdConfig:
+    minimumBackgroundTime: 60
+    aoToAoCooldown: 60
+    fsToAoCooldown: 0
+    rvToAoCooldown: 5
+    aoToFsCooldown: 0
+  AndroidAppOpenAdConfig:
+    minimumBackgroundTime: 0
+    aoToAoCooldown: 0
+    fsToAoCooldown: 0
+    rvToAoCooldown: 0
+    aoToFsCooldown: 0
+  iOSAudioAdConfig:
+    adNetwork:
+    gameStartTriggerFrequency: 0
+    coolDownBetweenAudioAds: 0
+    killWhenFsOrRvStarts: 0
+    killWhenGameFinishes: 0
+    closePopupCappingPerSession: 0
+    closePopupFrequencyPerImpression: 0
+    firstAudioAdGracePeriod: 0
+    nextAudioAdGracePeriod: 0
+  AndroidAudioAdConfig:
+    adNetwork:
+    gameStartTriggerFrequency: 0
+    coolDownBetweenAudioAds: 0
+    killWhenFsOrRvStarts: 0
+    killWhenGameFinishes: 0
+    closePopupCappingPerSession: 0
+    closePopupFrequencyPerImpression: 0
+    firstAudioAdGracePeriod: 0
+    nextAudioAdGracePeriod: 0
+  iOSOdeeoConfig:
+    appKey:
+    buttonType: close
+  AndroidOdeeoConfig:
+    appKey:
+    buttonType:
+  iOSAudioMobConfig:
+    apiKey: 2M4nqcOGZwX6UQkqxWJs
+  AndroidAudioMobConfig:
+    apiKey:
+  ComscorePublisherId: 37974205
+  ComscoreDisabled: 0
+  ComscoreAllowedCountries: US
+  sourcepointIosConfiguration:
+    accountId: 1909
+    propertyId: 31817
+    privacyManagerId: 885975
+    propertyName: voodoo.unity
+    messageTimeoutInSeconds: 30
+    authId:
+    ageKey: 64d21ce06677b805594a66ca
+    storeAndAccessInformationOnDeviceKey: 64d21ce06677b805594a6562
+    selectBasicAdsKey: 64d21ce06677b805594a659e
+    createPersonalisedAdsProfileKey: 64d21ce06677b805594a65cf
+    selectPersonalisedAdsKey: 64d21ce06677b805594a65fb
+    createPersonalisedContentProfileKey: 64d21ce06677b805594a665f
+    selectPersonalisedContentKey: 64d21ce06677b805594a665c
+    measureAdsPerformanceKey: 64d21ce06677b805594a6628
+    measureContentPerformanceKey: 64d21ce06677b805594a66c6
+    applyMarketResearchToGenerateAudienceInsightsKey: 64d21ce06677b805594a6696
+    developAndImproveProductsKey: 64d21ce06677b805594a6664
+  sourcepointAndroidConfiguration:
+    accountId: 1909
+    propertyId: 31817
+    privacyManagerId: 885975
+    propertyName: voodoo.unity
+    messageTimeoutInSeconds: 30
+    authId:
+    ageKey: 64d21ce06677b805594a66ca
+    storeAndAccessInformationOnDeviceKey: 64d21ce06677b805594a6562
+    selectBasicAdsKey: 64d21ce06677b805594a659e
+    createPersonalisedAdsProfileKey: 64d21ce06677b805594a65cf
+    selectPersonalisedAdsKey: 64d21ce06677b805594a65fb
+    createPersonalisedContentProfileKey: 64d21ce06677b805594a665f
+    selectPersonalisedContentKey: 64d21ce06677b805594a665c
+    measureAdsPerformanceKey: 64d21ce06677b805594a6628
+    measureContentPerformanceKey: 64d21ce06677b805594a66c6
+    applyMarketResearchToGenerateAudienceInsightsKey: 64d21ce06677b805594a6696
+    developAndImproveProductsKey: 64d21ce06677b805594a6664

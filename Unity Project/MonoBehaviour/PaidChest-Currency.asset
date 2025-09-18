@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4ec0d0be99e118aa6ef2215947cbf7, type: 3}
+  m_Name: PaidChest-Currency
+  m_EditorClassIdentifier:
+  Id: 4
+  Type: 0
+  SubType: 2
+  Icon: {fileID: 0}
+  _localizationKey: paidChests
+  Rarity: {fileID: 11400000, guid: ca8e0578da3d51e49931a61427185355, type: 2}
+  <Particle>k__BackingField: {fileID: 0}
+  <QuestTrackingValue>k__BackingField: -1
+  <SpriteIndex>k__BackingField: 0
+  <ID>k__BackingField: dc760be213a61d54db324da1d95eab5a

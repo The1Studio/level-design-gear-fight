@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopRobotBossTwo
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: a7d6811f74e3bb24fb3fa69554474dd2
+  <UnlockedByDefault>k__BackingField: 0
+  <EvolveLevel>k__BackingField: 5
+  <StartingLevel>k__BackingField: 0
+  <EvolvesInto>k__BackingField: {fileID: 0}
+  _nameLocKey:
+  <ThisTroopCategory>k__BackingField: 3
+  <IncludedInLevelGeneration>k__BackingField: 0
+  acceptableLevelRangeForGeneration: {x: 0, y: 0}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 0}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: 36bc8a8881757384fb79b129c33eafb2, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 0}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 0}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 0}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114279127982299347, guid: b0aa903b62ac9a94e93177edd78eb16f, type: 2}
+  troopController: {fileID: 114992325813873740, guid: 2bf95f13bf6993243971d01eb8ff24be, type: 2}

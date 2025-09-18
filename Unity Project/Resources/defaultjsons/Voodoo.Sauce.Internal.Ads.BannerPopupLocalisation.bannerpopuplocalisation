@@ -1,0 +1,38 @@
+[
+  {
+    "language": "English",
+    "body": "Purchase the no ads version to remove the banner.",
+    "purchaseButtonText": "Purchase",
+    "cancelButtonText": "Cancel"
+  },
+  {
+    "language": "French",
+    "body": "Acheter la version sans pub pour retirer la bannière.",
+    "purchaseButtonText": "Acheter",
+    "cancelButtonText": "Annuler"
+  },
+  {
+    "language": "German",
+    "body": "Kaufen Sie die werbefreie Version, um das Banner zu entfernen.",
+    "purchaseButtonText": "Kaufen",
+    "cancelButtonText": "Stornieren"
+  },
+  {
+    "language": "Italian",
+    "body": "Acquista la versione senza pubblicità per rimuovere il banner.",
+    "purchaseButtonText": "Acquistare",
+    "cancelButtonText": "Annulla"
+  },
+  {
+    "language": "Spanish",
+    "body": "Compre la versión sin anuncios para eliminar el banner.",
+    "purchaseButtonText": "Compra",
+    "cancelButtonText": "Cancelar"
+  },
+  {
+    "language": "Portuguese",
+    "body": "Compre a versão sem anúncios para remover o banner.",
+    "purchaseButtonText": "Comprar",
+    "cancelButtonText": "Cancelar"
+  }
+]

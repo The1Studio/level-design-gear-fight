@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1127402676635706
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4484829971287838}
+  - component: {fileID: 114960549166888071}
+  m_Layer: 0
+  m_Name: LaserStaticPurple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4484829971287838
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127402676635706}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -5.2, y: 4.93, z: -21.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -0, y: -90, z: 0}
+--- !u!114 &114960549166888071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127402676635706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848590ce0169587c9660a4e9532a71bf, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  beamLineRendererPrefab: {fileID: 1704794097208994, guid: efd7b9a5b82a5bd4f80eec6ab9b93753, type: 2}
+  beamStartPrefab: {fileID: 1355441974528518, guid: 88b0ff8498c62f6459805fbaeb0c4aae, type: 2}
+  beamEndPrefab: {fileID: 1653144325102389, guid: 90f0b003cd87e5148a11ae6f6881db0d, type: 2}
+  alwaysOn: 1
+  beamCollides: 0
+  beamLength: 10
+  beamEndOffset: 0
+  textureScrollSpeed: 15
+  textureLengthScale: 5

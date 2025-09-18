@@ -1,0 +1,79 @@
+[
+  {
+    "language": "English",
+    "title": "«{0}» would like permission to track you across apps and websites owned by other companies.",
+    "body": "Your data may be used by Voodoo and its partners for personalized advertising and analytics purposes.",
+    "allowButtonText": "Allow",
+    "denyButtonText": "Ask App Not to Track"
+  },
+  {
+    "language": "French",
+    "title": "«{0}» souhaite avoir la permission de vous tracer sur des applications et sites internet détenus par d'autres sociétés.",
+    "body": "Vos données pourront être utilisées par Voodoo et ses partenaires à des fins de publicités ciblées et d'analyses statistiques.",
+    "allowButtonText": "Autoriser",
+    "denyButtonText": "Demander à l'app de ne pas suivre mes activités"
+  },
+  {
+    "language": "German",
+    "title": "\"{0}\" bittet um die Erlaubnis, Ihnen über Apps und Websites anderer Unternehmen zu folgen.",
+    "body": "Ihre Daten können von Voodoo und seinen Partnern für personalisierte Werbung und Analysezwecke verwendet werden.",
+    "allowButtonText": "Erlauben",
+    "denyButtonText": "App-Tracking ablehnen"
+  },
+  {
+    "language": "Italian",
+    "title": "\"{0}\" vorrebbe l'autorizzazione a tracciarti su app e siti web di proprietà di terzi.",
+    "body": "I tuoi dati potrebbero essere utilizzati da Voodoo e dai suoi partner a fini di fornitura di pubblicità personalizzata e di analisi.",
+    "allowButtonText": "Consenti",
+    "denyButtonText": "Chiedi all'app di non eseguire il tracciamento"
+  },
+  {
+    "language": "Spanish",
+    "title": "«{0}» desea contar con permiso para rastrearte en aplicaciones y sitios web de otras empresas.",
+    "body": "Voodoo y sus socios podrían utilizar tus datos con fines de publicidad dirigida y análisis estadísticos.",
+    "allowButtonText": "Permitir",
+    "denyButtonText": "Pedir a la app que no rastree"
+  },
+  {
+    "language": "Arabic",
+    "title": "يحتاج «{0}» إلى الحصول على الإذن لتعقب نشاطك عبر التطبيقات ومواقع الويب التابعة للشركات الأخرى",
+    "body": "قد يتم استخدام بياناتك من جانب شركة Voodoo وشركائها لأغراض تقديم الإعلانات المخصّصة وتحليل البيانات.",
+    "allowButtonText": "السماح",
+    "denyButtonText": "مطالبة التطبيق بعدم التتبع"
+  },
+  {
+    "language": "Japanese",
+    "title": "«{0}» が他社が所有するアプリや ウェブサイトにてデータトラッキング することを許可しますか。",
+    "body": "ご利用者のデータをターゲティング広告 およびデータ分析のために Voodoo と パートナー企業が使う場合があります。",
+    "allowButtonText": "許可",
+    "denyButtonText": "Appにトラッキングしないように要求"
+  },
+  {
+    "language": "Portuguese",
+    "title": "«{0}» deseja obter sua permissão para rastrear você em todos os aplicativos e sites de propriedade de outras empresas.",
+    "body": "Seus dados podem ser usados por Voodoo e seus parceiros para fins personalizados de análise e publicidade.",
+    "allowButtonText": "Permitir",
+    "denyButtonText": "Pedir ao App para Não Rastrear"
+  },
+  {
+    "language": "Russian",
+    "title": "«{0}» просит получить у вас разрешение отслеживать вас в приложениях и веб-сайтах, принадлежащих другим компаниям.",
+    "body": "Ваши данные могут быть использованы Voodoo и его партнерами для предоставления персонализированной рекламы и аналитики.",
+    "allowButtonText": "Разрешить",
+    "denyButtonText": "Попросить приложение не отслеживать"
+  },
+  {
+    "language": "ChineseSimplified",
+    "title": "«{0}» 希望获得许可， 以追踪您在 应用及其他公司所属网站上的足迹",
+    "body": "Voodoo 或第三方合作伙伴或将收集相关数据用 于 广告优化及分析目的",
+    "allowButtonText": "允许",
+    "denyButtonText": "要求 App 不跟踪"
+  },
+  {
+    "language": "ChineseTraditional",
+    "title": "«{0}» 希望获得许可， 以追踪您在 应用及其他公司所属网站上的足迹",
+    "body": "Voodoo 或第三方合作伙伴或将收集相关数据用 于 广告优化及分析目的",
+    "allowButtonText": "允许",
+    "denyButtonText": "要求 App 不跟踪"
+  }
+]

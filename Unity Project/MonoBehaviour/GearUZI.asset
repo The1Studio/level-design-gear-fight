@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2556c9f8ed3eb2ed8ba627891dabcd1c, type: 3}
+  m_Name: GearUZI
+  m_EditorClassIdentifier:
+  Id: 102
+  Type: 1
+  SubType: 1
+  Icon: {fileID: 21300000, guid: 899c0078ca33a4b4c97f1c0a21eea8e0, type: 2}
+  _localizationKey:
+  Rarity: {fileID: 0}
+  <UnlockedByDefault>k__BackingField: 0
+  <ShowInPackDisplay>k__BackingField: 1
+  <ID>k__BackingField: 550eceee7d2e58846ba95a0907ebbbb9
+  <ThisUnlockType>k__BackingField: 1
+  upgradeProfile:
+    baseTier: 2
+    attachedGear: {fileID: 11400000}
+    allUnlockRestrictions: 0
+    minLevelGettingGears: 0
+    lockedDescriptionLocalizationString:
+  miniGearPrefab: {fileID: 1556694276654279, guid: 852a697b48c3b234f9e952e1b4e130ba, type: 2}
+  gearController: {fileID: 114168074313565541, guid: 0faafd75aeadca64f8ef70f52077acc6, type: 2}
+  gearInfo:
+    _displayNameLocKey: uzi
+    _displayDescriptionLocKey: sprasweetsyei
+    allGearTags: 1026
+  goalEntityType: Any

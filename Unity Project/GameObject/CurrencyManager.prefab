@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1854623969195833
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4695196534635936}
+  - component: {fileID: 114053498056549355}
+  m_Layer: 0
+  m_Name: CurrencyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4695196534635936
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854623969195833}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &114053498056549355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854623969195833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330219e965636aa25c29bf53bf5656c6, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  <AllSkills>k__BackingField:
+  - {fileID: 11400000, guid: 85120f55a9c45bb48b07687009787485, type: 2}
+  - {fileID: 11400000, guid: cb1d3e4865f740c49a88ee0be587dfee, type: 2}
+  - {fileID: 11400000, guid: 6c02f3be84726a048ada1a9fb2e89f82, type: 2}
+  - {fileID: 11400000, guid: 031e81ede92abb84c84e0481015ef290, type: 2}
+  - {fileID: 11400000, guid: 1e875e15c79c21f4d87b4f343f8f0260, type: 2}
+  - {fileID: 11400000, guid: f1ccf06e2b745444e9f8a02a78c7acd8, type: 2}
+  - {fileID: 11400000, guid: ada694caaaed2694ebdc30e6156ece61, type: 2}
+  - {fileID: 11400000, guid: 7045dce0c7fc8ad4a8b93544234ca6d5, type: 2}
+  - {fileID: 11400000, guid: 4594e3e0bc83de64aa36f2ba0d39e80a, type: 2}

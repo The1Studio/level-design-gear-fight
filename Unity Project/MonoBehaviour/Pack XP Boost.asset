@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d8dab14a155816e7cbf8fcc74bba68, type: 3}
+  m_Name: Pack XP Boost
+  m_EditorClassIdentifier:
+  <DurationInSeconds>k__BackingField: 3600
+  <ID>k__BackingField: 0ed863ac808272d4cbc086e334478895
+  <DescriptionLocalizationKey>k__BackingField: l_timesTwoBoost
+  <DescriptionLocalizationShortKey>k__BackingField: l_timesTwoBoost
+  <DisplaySprite>k__BackingField: {fileID: 21300000, guid: e0cc238ac65e51747b13fbbf188377b9, type: 2}

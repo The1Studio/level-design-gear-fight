@@ -1,0 +1,25 @@
+public enum AnimationType
+{
+	Scale,
+	Position = 1,
+	Fade = 2,
+	LocalRotate = 3,
+	WorldRotate = 21,
+	PunchScale = 4,
+	PunchRotation = 5,
+	PunchPosition = 6,
+	PositionX = 7,
+	PositionY = 8,
+	PositionZ = 9,
+	RotationX = 10,
+	RotationY = 11,
+	RotationZ = 12,
+	ScaleX = 13,
+	ScaleY = 14,
+	ScaleZ = 15,
+	SetScale = 16,
+	SetPosition = 17,
+	SetRotation = 18,
+	Delay = 19,
+	Jump = 20
+}

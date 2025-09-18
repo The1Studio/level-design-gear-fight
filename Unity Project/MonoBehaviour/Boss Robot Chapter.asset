@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: Boss Robot Chapter
+  m_EditorClassIdentifier:
+  ID: 0cc70464695dd4546a2aa7ff8ccdc1fa
+  DisplayNameLocalizationKey: l_Chapter1Name
+  ShowWorldUnlock: 0
+  EnvironmentTheme: {fileID: 114555370863235569, guid: 934ee0d3eb5ee064684e1ed6a00db4bd, type: 2}
+  MainMusic: {fileID: 8300000, guid: fc02c89e8b76a5941b29d5b4f0f65af1, type: 3}
+  SlopeSprite: {fileID: 21300000, guid: dafd0b3e1ffef5144a1f5b9ca7d90da8, type: 2}
+  LocalizationStrings: []
+  ShowPopupEveryLevelStart: {fileID: 114563822590310221, guid: 7df54bae75308904cb258fdc490795a7, type: 2}
+  Levels:
+  - {fileID: 11400000, guid: fa384f16b32d299428766d4b399548d8, type: 2}
+  AllMiniBosses: []
+  ChapterSpecificUnlocks:
+  - {fileID: 11400000, guid: 26ba0bae95153db4280ab7094f16b339, type: 2}

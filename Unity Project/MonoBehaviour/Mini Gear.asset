@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4312ba7667403edc23feb8a2b75a8c97, type: 3}
+  m_Name: Mini Gear
+  m_EditorClassIdentifier:
+  <RewardPrefab>k__BackingField: {fileID: 1110963249782762, guid: 9b26b85b3c565b54d9c3640a993c53cd, type: 2}
+  <NumberOfGears>k__BackingField: 5
+  <ForcedGears>k__BackingField: []

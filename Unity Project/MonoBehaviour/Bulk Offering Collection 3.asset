@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256cf52de302254688b5d8c3cc932314, type: 3}
+  m_Name: Bulk Offering Collection 3
+  m_EditorClassIdentifier:
+  <ShopItemData>k__BackingField:
+  - {fileID: 11400000, guid: c321404ffe91a0142a325681ec1c9f8b, type: 2}
+  - {fileID: 11400000, guid: 02d89883b9476794fa32014181d0f0b0, type: 2}
+  - {fileID: 11400000, guid: 6fbff0a340c392848a602bfe68502ba2, type: 2}
+  - {fileID: 11400000, guid: e236d26f0260e5a47a544a4d930573aa, type: 2}
+  - {fileID: 11400000, guid: d41f574853272a740a9c3d9675e04904, type: 2}
+  - {fileID: 11400000, guid: 58168ecc9ae8bac47b990abdca73c3b9, type: 2}

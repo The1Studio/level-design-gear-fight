@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2556c9f8ed3eb2ed8ba627891dabcd1c, type: 3}
+  m_Name: GearGrenade
+  m_EditorClassIdentifier:
+  Id: 40
+  Type: 1
+  SubType: 1
+  Icon: {fileID: 0}
+  _localizationKey:
+  Rarity: {fileID: 0}
+  <UnlockedByDefault>k__BackingField: 0
+  <ShowInPackDisplay>k__BackingField: 1
+  <ID>k__BackingField: 7b85bc714213d6647b0d12e8990e7945
+  <ThisUnlockType>k__BackingField: 1
+  upgradeProfile:
+    baseTier: 2
+    attachedGear: {fileID: 11400000}
+    allUnlockRestrictions: 0
+    minLevelGettingGears: 0
+    lockedDescriptionLocalizationString:
+  miniGearPrefab: {fileID: 1278163975377234, guid: 53957b5d0cc471a4d973a266c8eb5ff4, type: 2}
+  gearController: {fileID: 114154814388186574, guid: 259dec5a44e118d45998d60e1d1cb7ad, type: 2}
+  gearInfo:
+    _displayNameLocKey: grenade
+    _displayDescriptionLocKey: launearioncht
+    allGearTags: 1156
+  goalEntityType: Any

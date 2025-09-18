@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "953513162593",
+    "firebase_url": "https://gear-fight-default-rtdb.firebaseio.com",
+    "project_id": "gear-fight",
+    "storage_bucket": "gear-fight.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953513162593:android:7bd9f3c9c1ff8541157720",
+        "android_client_info": {
+          "package_name": "com.EternalStudio.GearFight"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAboqLj2rruN5DniMG5H_MkXwk4AMrhAcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

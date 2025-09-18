@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a141d3bfccb41699642183829b2bed8, type: 3}
+  m_Name: CombatSimulationLevel
+  m_EditorClassIdentifier:
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes:
+    ReferencedUnityObjects: []
+    SerializedBytesString:
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  <DoUseCustomFights>k__BackingField: 0
+  <DoUseCustomGears>k__BackingField: 0
+  <ID>k__BackingField: e460b64b4f04dda46b3ee34753586b70
+  <PuzzleConfiguration>k__BackingField: 0
+  <CustomLevelGrid>k__BackingField: {fileID: 11400000, guid: 0ce566b8b7db0804280949466753ce83, type: 2}
+  allFights: []
+  allStructures:
+  - {fileID: 11400000, guid: d215b56b06f67704e965b915f58cac38, type: 2}
+  <StartingCoins>k__BackingField: 999
+  numLevels: 99
+  <NumberOfSpinners>k__BackingField: 1
+  <TutorialSkipString>k__BackingField:
+  useLevelValueForNIV: 0
+  useCustomLevelForPayouts: 0
+  customLevelForPayouts: 0
+  allGearStoreCollections: []
+  allPremiumGearStoreCollections: []
+  overrideTargetLevelForMax: 0
+  targetLevelMaxForNIV: 0
+  levelNIVMax: 0
+  levelNIVMin: 0
+  targetLevelForNIV: 0
+  difficultyProfile: {fileID: 11400000, guid: 917c88483410f6d45b9ee6173002b75b, type: 2}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopMinotaur
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: a784732ec0c6230479263d1b6177aa0c
+  <UnlockedByDefault>k__BackingField: 0
+  <EvolveLevel>k__BackingField: 5
+  <StartingLevel>k__BackingField: 12
+  <EvolvesInto>k__BackingField: {fileID: 11400000, guid: 74e24ac4502a188409bc6472e2408679, type: 2}
+  _nameLocKey: minotaur
+  <ThisTroopCategory>k__BackingField: 0
+  <IncludedInLevelGeneration>k__BackingField: 0
+  acceptableLevelRangeForGeneration: {x: 0, y: 0}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: e876fd7934122c440941150b1cac90f4, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: e876fd7934122c440941150b1cac90f4, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: 002224375c52685409dc141bd75ecdc0, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: e876fd7934122c440941150b1cac90f4, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 11400000, guid: f450ea198670002459c8a513da8f5ecc, type: 2}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114145313693114021, guid: 0d6c5b49168945049a07b3286bfceb0c, type: 2}
+  troopController: {fileID: 114993829411581907, guid: f0c485ef59c9d0a4db1558ef063e037b, type: 2}

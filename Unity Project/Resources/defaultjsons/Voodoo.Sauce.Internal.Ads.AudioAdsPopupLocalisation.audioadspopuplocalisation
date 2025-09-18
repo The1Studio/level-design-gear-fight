@@ -1,0 +1,38 @@
+[
+  {
+    "language": "English",
+    "body": "Purchase the no ads version to remove audio ads.",
+    "purchaseButtonText": "Purchase",
+    "cancelButtonText": "Cancel"
+  },
+  {
+    "language": "French",
+    "body": "Acheter la version sans pub pour retirer les publicités audio.",
+    "purchaseButtonText": "Acheter",
+    "cancelButtonText": "Annuler"
+  },
+  {
+    "language": "German",
+    "body": "Kaufen Sie die werbefreie Version, um die Audiowerbung zu entfernen.",
+    "purchaseButtonText": "Kaufen",
+    "cancelButtonText": "Stornieren"
+  },
+  {
+    "language": "Italian",
+    "body": "Acquista la versione senza pubblicità per rimuovere gli annunci audio.",
+    "purchaseButtonText": "Acquistare",
+    "cancelButtonText": "Annulla"
+  },
+  {
+    "language": "Spanish",
+    "body": "Compre la versión sin anuncios para eliminar los anuncios de audio.",
+    "purchaseButtonText": "Compra",
+    "cancelButtonText": "Cancelar"
+  },
+  {
+    "language": "Portuguese",
+    "body": "Compre a versão sem anúncios para remover os anúncios áudio.",
+    "purchaseButtonText": "Comprar",
+    "cancelButtonText": "Cancelar"
+  }
+]

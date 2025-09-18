@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopArcher
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: 2e778e497d9b53648ba1c4bfa8f0b400
+  <UnlockedByDefault>k__BackingField: 1
+  <EvolveLevel>k__BackingField: 5
+  <StartingLevel>k__BackingField: 8
+  <EvolvesInto>k__BackingField: {fileID: 11400000, guid: ffaff18cc30798c4f8bf780e68518ab0, type: 2}
+  _nameLocKey: archer
+  <ThisTroopCategory>k__BackingField: 1
+  <IncludedInLevelGeneration>k__BackingField: 1
+  acceptableLevelRangeForGeneration: {x: 5, y: 20}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: 18a489a593621704f98621673db2f289, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: ce67383838ff3794f8fa8922a99cd24e, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: 14213bc5f71c9e7468a720902c50e41e, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: 18a489a593621704f98621673db2f289, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 11400000, guid: e97dba9b6689eb749aca1553b99a6868, type: 2}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114670926409879234, guid: 6752c3cc85d8e7a449ba217f48548f48, type: 2}
+  troopController: {fileID: 114312050942036569, guid: 9da16034b82af9a4993068ebfa2540d3, type: 2}

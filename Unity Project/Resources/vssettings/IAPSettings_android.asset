@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -13238107, guid: 5533087e61cd035854f4828e2e6112dd, type: 3}
+  m_Name: IAPSettings_android
+  m_EditorClassIdentifier:
+  platform: android
+  noAdsProductId:
+  isIAPEnabled: 1
+  subscriptionsGroup:
+  - None
+  - SubGroup 1
+  products:
+  - _productId: com.gearfight.double.speed
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.diamonds.small
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.diamonds.large
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.unlimitedblessings
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.diamonds.massive
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.tickets.small
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.tickets.large
+    _type: 0
+    _subscriptionGroup:
+  - _productId: com.gearfight.double.speed.discount
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.double.speed.discount
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.pack.standard
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.pack.premium
+    _type: 1
+    _subscriptionGroup:
+  - _productId: com.gearfight.pack.troop
+    _type: 1
+    _subscriptionGroup:
+  subscriptionSharedKey:
+  ignoreTheGoogleKeyError: 0

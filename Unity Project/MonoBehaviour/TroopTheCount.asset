@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopTheCount
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: a056e7ee2d9185542be81a3d9b0ccb25
+  <UnlockedByDefault>k__BackingField: 0
+  <EvolveLevel>k__BackingField: 5
+  <StartingLevel>k__BackingField: 5
+  <EvolvesInto>k__BackingField: {fileID: 0}
+  _nameLocKey:
+  <ThisTroopCategory>k__BackingField: 3
+  <IncludedInLevelGeneration>k__BackingField: 0
+  acceptableLevelRangeForGeneration: {x: 0, y: 0}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: e0c6cbb8cb78e3942a702f4cfd6f4698, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: e0c6cbb8cb78e3942a702f4cfd6f4698, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: 0a8afa38616842c4f99202c68a2a68e0, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: e0c6cbb8cb78e3942a702f4cfd6f4698, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 11400000, guid: afa59a1b798e5bd438d0cc19818ecf28, type: 2}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114676254785348371, guid: 36c7b459fe6aefd4cb5931ff65e8964c, type: 2}
+  troopController: {fileID: 114863856141985010, guid: 1c47f6c886fbf694ba869831dd71c2ed, type: 2}

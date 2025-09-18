@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a141d3bfccb41699642183829b2bed8, type: 3}
+  m_Name: World 5 - Level 9
+  m_EditorClassIdentifier:
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes:
+    ReferencedUnityObjects: []
+    SerializedBytesString:
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  <DoUseCustomFights>k__BackingField: 0
+  <DoUseCustomGears>k__BackingField: 0
+  <ID>k__BackingField: be473094413888142966d6e691804abf
+  <PuzzleConfiguration>k__BackingField: 0
+  <CustomLevelGrid>k__BackingField: {fileID: 11400000, guid: 63b764edacd4cfd4686dba6074c477f1, type: 2}
+  allFights:
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 0
+      <Delay>k__BackingField: 0
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 0
+      <Delay>k__BackingField: 0
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 0
+      <Delay>k__BackingField: 0
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 0
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  allStructures:
+  - {fileID: 11400000, guid: 90e427f3ae91d174881f731da8e801bf, type: 2}
+  - {fileID: 11400000, guid: 47bf03f0a8f53514b80c3f6f49364c49, type: 2}
+  <StartingCoins>k__BackingField: 22
+  numLevels: 12
+  <NumberOfSpinners>k__BackingField: 1
+  <TutorialSkipString>k__BackingField:
+  useLevelValueForNIV: 1
+  useCustomLevelForPayouts: 0
+  customLevelForPayouts: 0
+  allGearStoreCollections: []
+  allPremiumGearStoreCollections: []
+  overrideTargetLevelForMax: 0
+  targetLevelMaxForNIV: 0
+  levelNIVMax: 0
+  levelNIVMin: 0
+  targetLevelForNIV: 0
+  difficultyProfile: {fileID: 11400000, guid: 2c632fcdc51b25943a943afe8973c24c, type: 2}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f2a808ae3c2006b282a204846435e09, type: 3}
+  m_Name: QuestDailyGroupD 1
+  m_EditorClassIdentifier:
+  QuestGroupType: 0
+  Quests:
+  - {fileID: 11400000, guid: 31db746efa19a6141b27da09baf9bc35, type: 2}
+  - {fileID: 11400000, guid: a03260b57b6be5d47a67858b813be276, type: 2}
+  - {fileID: 11400000, guid: 22cd62d00371342479f3b105dfdbe019, type: 2}
+  - {fileID: 11400000, guid: f451b3d5abdd7ea46b85de90ad490077, type: 2}
+  - {fileID: 11400000, guid: 3b11811173f1b4847a74b07fd4c9fa22, type: 2}
+  - {fileID: 11400000, guid: a6cc97ef18a3f5b45a6ff23865050f31, type: 2}

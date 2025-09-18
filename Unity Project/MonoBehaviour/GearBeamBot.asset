@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2556c9f8ed3eb2ed8ba627891dabcd1c, type: 3}
+  m_Name: GearBeamBot
+  m_EditorClassIdentifier:
+  Id: 12
+  Type: 1
+  SubType: 1
+  Icon: {fileID: 0}
+  _localizationKey:
+  Rarity: {fileID: 0}
+  <UnlockedByDefault>k__BackingField: 0
+  <ShowInPackDisplay>k__BackingField: 1
+  <ID>k__BackingField: 97048f3eeae59e14bbb7bf28ac97b053
+  <ThisUnlockType>k__BackingField: 1
+  upgradeProfile:
+    baseTier: 0
+    attachedGear: {fileID: 11400000}
+    allUnlockRestrictions: 8
+    minLevelGettingGears: 0
+    lockedDescriptionLocalizationString: l_completeRobotBoss
+  miniGearPrefab: {fileID: 1864138315667732, guid: 95981d2612805d94eafde5c47e7fa02f, type: 2}
+  gearController: {fileID: 114865729761509936, guid: 3acd26470720bf449aa27cc6d133e75a, type: 2}
+  gearInfo:
+    _displayNameLocKey: l_beamBot
+    _displayDescriptionLocKey: l_beamBotDesc
+    allGearTags: 640
+  goalEntityType: Troop

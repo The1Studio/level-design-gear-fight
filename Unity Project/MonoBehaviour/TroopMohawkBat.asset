@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopMohawkBat
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: 32a5f367d1bbe7d42b73ce4a239bf093
+  <UnlockedByDefault>k__BackingField: 0
+  <EvolveLevel>k__BackingField: 5
+  <StartingLevel>k__BackingField: 0
+  <EvolvesInto>k__BackingField: {fileID: 0}
+  _nameLocKey:
+  <ThisTroopCategory>k__BackingField: 0
+  <IncludedInLevelGeneration>k__BackingField: 1
+  acceptableLevelRangeForGeneration: {x: 0, y: 9999999}
+  onlyIncludedInTheseScenes:
+  - {fileID: 11400000, guid: 96a31b545f69d3b4d8e7419e4cc9f549, type: 2}
+  - {fileID: 11400000, guid: 42ba4b421a4aa8f4c97fb68c7e25ba3a, type: 2}
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: f17a1069d05f7374c86aa8f41009a601, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: f17a1069d05f7374c86aa8f41009a601, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: f17a1069d05f7374c86aa8f41009a601, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: f17a1069d05f7374c86aa8f41009a601, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 0}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114947932626930522, guid: 5afd9a8fd53c0fc4aa0c87fbe5ec8463, type: 2}
+  troopController: {fileID: 114656915941917854, guid: 78060fa2b4f0a714787b22729151e225, type: 2}

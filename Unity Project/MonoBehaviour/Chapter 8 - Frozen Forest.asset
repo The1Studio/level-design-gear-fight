@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: Chapter 8 - Frozen Forest
+  m_EditorClassIdentifier:
+  ID: a0861ccf26eae7c4fa37f85706367590
+  DisplayNameLocalizationKey: SnowySlopes_new
+  ShowWorldUnlock: 1
+  EnvironmentTheme: {fileID: 114688754299153704, guid: 8416cbf5970ec7549bcab2f2fdc15e4a, type: 2}
+  MainMusic: {fileID: 8300000, guid: 5299c10ac8c1d4448bdc9989f8feb38d, type: 3}
+  SlopeSprite: {fileID: 21300000, guid: 131aba804a3a35945b9e17aec48dce6f, type: 2}
+  LocalizationStrings:
+  - Nimbus_lore1
+  - Nimbus_lore2
+  - Nimbus_lore3
+  - Nimbus_lore4
+  ShowPopupEveryLevelStart: {fileID: 0}
+  Levels:
+  - {fileID: 11400000, guid: f333d1fb019ae0347961022937f72c9d, type: 2}
+  - {fileID: 11400000, guid: a8541e10641a1534d86a8cb61b82ccd9, type: 2}
+  - {fileID: 11400000, guid: 76edb053da6f58349a6f22a5216ad264, type: 2}
+  - {fileID: 11400000, guid: d844bd5f2b047634fb4b64fcad286a3e, type: 2}
+  - {fileID: 11400000, guid: d680c3ab065917846aa7b0e7442464f2, type: 2}
+  - {fileID: 11400000, guid: 0fe3b373c93efbc4381a291a4ecf5646, type: 2}
+  - {fileID: 11400000, guid: 915e4009060285e46950df309e001c2c, type: 2}
+  - {fileID: 11400000, guid: 6072efc4a5dd7124499c2d5d1f8792eb, type: 2}
+  - {fileID: 11400000, guid: d2f2d74e36770074984da53604fe294a, type: 2}
+  - {fileID: 11400000, guid: 796ad48949d365849af430009fa4144e, type: 2}
+  - {fileID: 11400000, guid: b918877016410a74eb5b33cd21824a16, type: 2}
+  - {fileID: 11400000, guid: 773268a97c146a347b1dffc73876f9ab, type: 2}
+  - {fileID: 11400000, guid: 02c452babe97ea04cb01c10d90789222, type: 2}
+  - {fileID: 11400000, guid: 22fa205d49706d8418445e84afbd407d, type: 2}
+  - {fileID: 11400000, guid: bb0d412e1719ef54a8ecc3fb80665a6a, type: 2}
+  - {fileID: 11400000, guid: 633ce262f011ee74698a7f4b0be12afc, type: 2}
+  - {fileID: 11400000, guid: d1a11dcd10ad69d4883a988305fab899, type: 2}
+  - {fileID: 11400000, guid: 5d25508a2c7b68648a23dc394e3739c3, type: 2}
+  - {fileID: 11400000, guid: 06bd666e9431d5840ab65f0434d3b7a3, type: 2}
+  - {fileID: 11400000, guid: 2b0b72eb9099d1647b724c4d0ae4c0c9, type: 2}
+  AllMiniBosses:
+  - {fileID: 11400000, guid: a07719c919cfd3741b2d39a5a3005ed9, type: 2}
+  - {fileID: 11400000, guid: d17208b7ed500324cb29343416057e4e, type: 2}
+  ChapterSpecificUnlocks: []

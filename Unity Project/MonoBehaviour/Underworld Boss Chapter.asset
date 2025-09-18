@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: Underworld Boss Chapter
+  m_EditorClassIdentifier:
+  ID: e41a5844776c5844bbbac9e831d9b0d6
+  DisplayNameLocalizationKey: l_Chapter1Name
+  ShowWorldUnlock: 0
+  EnvironmentTheme: {fileID: 114194542340965958, guid: a8ee91fbdae74f44cb468467fb49e3c0, type: 2}
+  MainMusic: {fileID: 8300000, guid: fc02c89e8b76a5941b29d5b4f0f65af1, type: 3}
+  SlopeSprite: {fileID: 21300000, guid: 8e3fb8c5cd8d67c4fae1d7aacd9cc375, type: 2}
+  LocalizationStrings: []
+  ShowPopupEveryLevelStart: {fileID: 0}
+  Levels:
+  - {fileID: 11400000, guid: 6758deb8ed939b44f981f89821f598cb, type: 2}
+  AllMiniBosses: []
+  ChapterSpecificUnlocks:
+  - {fileID: 11400000, guid: 26ba0bae95153db4280ab7094f16b339, type: 2}

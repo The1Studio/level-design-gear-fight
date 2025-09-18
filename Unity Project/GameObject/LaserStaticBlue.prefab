@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1589152886997857
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4465769431490483}
+  - component: {fileID: 114001842111063607}
+  m_Layer: 0
+  m_Name: LaserStaticBlue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4465769431490483
+Transform:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589152886997857}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -5.2, y: 4.93, z: -21.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: -0, y: -90, z: 0}
+--- !u!114 &114001842111063607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589152886997857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848590ce0169587c9660a4e9532a71bf, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  beamLineRendererPrefab: {fileID: 1026727809284599, guid: fde65672374ee4d448b7f8dce493bd88, type: 2}
+  beamStartPrefab: {fileID: 1021323131486554, guid: 57c4c3c1ceb1fc44a8096025139241ec, type: 2}
+  beamEndPrefab: {fileID: 1482570091221732, guid: 5e7f35c358c184a4bade4dc6b70706f8, type: 2}
+  alwaysOn: 1
+  beamCollides: 0
+  beamLength: 10
+  beamEndOffset: 0
+  textureScrollSpeed: 15
+  textureLengthScale: 5

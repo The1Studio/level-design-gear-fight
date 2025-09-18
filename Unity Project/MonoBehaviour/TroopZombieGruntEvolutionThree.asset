@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopZombieGruntEvolutionThree
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: bc5dba6c319f7b140a868a2aa078691e
+  <UnlockedByDefault>k__BackingField: 1
+  <EvolveLevel>k__BackingField: 2000
+  <StartingLevel>k__BackingField: 30
+  <EvolvesInto>k__BackingField: {fileID: 0}
+  _nameLocKey: undeadGrunt3
+  <ThisTroopCategory>k__BackingField: 0
+  <IncludedInLevelGeneration>k__BackingField: 0
+  acceptableLevelRangeForGeneration: {x: 0, y: 0}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: 769db0e8578df6244b82bac36c8538e8, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: 276eb4aa2b9966547a68a39b0a703e53, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: 1ad0cf62dc874804f9c5dd5f7df0d663, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: 769db0e8578df6244b82bac36c8538e8, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 11400000, guid: 3cb04a5d53a04cb49af4203eaf1bb56c, type: 2}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114349930521281540, guid: 6b2f362578cf79845be817b5fad027d2, type: 2}
+  troopController: {fileID: 114244918011345625, guid: 1f66f7047e6e7cf48bd15b0955258717, type: 2}

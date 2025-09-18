@@ -1,0 +1,601 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a141d3bfccb41699642183829b2bed8, type: 3}
+  m_Name: UNDERWORLD BOSS
+  m_EditorClassIdentifier:
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes:
+    ReferencedUnityObjects: []
+    SerializedBytesString:
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  <DoUseCustomFights>k__BackingField: 1
+  <DoUseCustomGears>k__BackingField: 0
+  <ID>k__BackingField: a86e4e95c50b5854c9ab73a6373c8096
+  <PuzzleConfiguration>k__BackingField: 0
+  <CustomLevelGrid>k__BackingField: {fileID: 0}
+  allFights:
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 20
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 3
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 96
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 01fdccc20f170944188f879b37f735c7, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 01fdccc20f170944188f879b37f735c7, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 19
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 20
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 2
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 2
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 01fdccc20f170944188f879b37f735c7, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 19
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 20
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 4
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 2
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 01fdccc20f170944188f879b37f735c7, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: baa3683ef2bf96342937d31b9d24f981, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 25
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 6
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField: []
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 25
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 12
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: baa3683ef2bf96342937d31b9d24f981, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 01fdccc20f170944188f879b37f735c7, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 19
+      <IsBeast>k__BackingField: 1
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 20
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 14
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 2
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 96
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 96
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 19
+      <IsBeast>k__BackingField: 1
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 16
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 1
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 18
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 96
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 1
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 24
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField: []
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 26
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 1
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 28
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 96
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: c56c9d71d09c4b149be88a629936c90b, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 1
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 30
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 0}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 1
+    - <Character>k__BackingField: {fileID: 11400000, guid: 048be52bc28961940857c04061f6527f, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 17
+      <IsBeast>k__BackingField: 1
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 36
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 0
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField: []
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 0
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 0
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 0
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 0
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField:
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 5
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 7
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 98
+      <Delay>k__BackingField: 9
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: 8527d57683847bf418b3a3dd9c919335, type: 2}
+      <Level>k__BackingField: 99
+      <Delay>k__BackingField: 11
+      <IsBeast>k__BackingField: 0
+    - <Character>k__BackingField: {fileID: 11400000, guid: b9ffc8631fe2b64418f0182bba3c4727, type: 2}
+      <Level>k__BackingField: 97
+      <Delay>k__BackingField: 13
+      <IsBeast>k__BackingField: 0
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 0
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 0
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  - <Enemies>k__BackingField: []
+    <Structure>k__BackingField: {fileID: 0}
+    <ValueOfFight>k__BackingField: 30
+    <ForceBasicShop>k__BackingField: 0
+    <FightOffset>k__BackingField: 38
+    <HasStructureChest>k__BackingField: 0
+    overrideStructureLevel: 0
+    structureLevelOverride: 0
+  allStructures: []
+  <StartingCoins>k__BackingField: 34
+  numLevels: 0
+  <NumberOfSpinners>k__BackingField: 1
+  <TutorialSkipString>k__BackingField:
+  useLevelValueForNIV: 1
+  useCustomLevelForPayouts: 1
+  customLevelForPayouts: 100
+  allGearStoreCollections: []
+  allPremiumGearStoreCollections: []
+  overrideTargetLevelForMax: 1
+  targetLevelMaxForNIV: 40
+  levelNIVMax: 0
+  levelNIVMin: 0
+  targetLevelForNIV: 100
+  difficultyProfile: {fileID: 11400000, guid: 621b225a282f40e40beff03c12f65d74, type: 2}

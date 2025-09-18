@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1068666334, guid: ff4a0cb69d7ce17b1260d08d03142c2e, type: 3}
+  m_Name: ES3Defaults
+  m_EditorClassIdentifier:
+  settings:
+    _location: 0
+    path: SaveFileV2.es3
+    encryptionType: 0
+    compressionType: 0
+    encryptionPassword: password
+    directory: 0
+    format: 0
+    prettyPrint: 1
+    bufferSize: 2048
+    saveChildren: 1
+    postprocessRawCachedData: 0
+    storeCacheAtEndOfEveryFrame: 1
+    storeCacheOnApplicationQuit: 1
+    storeCacheOnApplicationPause: 1
+    typeChecking: 1
+    safeReflection: 1
+    memberReferenceMode: 0
+    referenceMode: 2
+    serializationDepthLimit: 64
+    assemblyNames:
+    - AllIn1SpriteShaderAssembly
+    - Amazon.Scripts
+    - AppleAuth
+    - Assembly-CSharp
+    - Assembly-CSharp-firstpass
+    - Blackboard
+    - CFXRDemo
+    - CFXRRuntime
+    - Cinemachine
+    - Coffee.UIParticle
+    - EasySave
+    - EmbraceSDKBridge
+    - Febucci.Attributes.Runtime
+    - Febucci.TextAnimator.Runtime
+    - Febucci.TextAnimator.TMP.Runtime
+    - GameAnalyticsBridge
+    - GameAnalyticsSDK
+    - Google.Play.Games
+    - IAPAnalytics
+    - IAPCrashReporter
+    - Lofelt.NiceVibrations
+    - MaxSdk.Scripts
+    - MoreMountains.Tools
+    - NaughtyAttributes.Core
+    - ParticleImage
+    - Purchasing.Common
+    - VInspector
+    - Voodoo.IAP
+    - Voodoo.IAP.Samples
+    - VoodooTuneSDK
+  addMgrToSceneAutomatically: 0
+  autoUpdateReferences: 1
+  addAllPrefabsToManager: 1
+  collectDependenciesDepth: 4
+  collectDependenciesTimeout: 10
+  updateReferencesWhenSceneChanges: 1
+  updateReferencesWhenSceneIsSaved: 1
+  updateReferencesWhenSceneIsOpened: 1
+  referenceFolders: []
+  logDebugInfo: 0
+  logWarnings: 1
+  logErrors: 1

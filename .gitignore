@@ -1,0 +1,69 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Unity
+Unity Project/Library/
+Unity Project/Temp/
+Unity Project/Obj/
+Unity Project/Build/
+Unity Project/Builds/
+Unity Project/Logs/
+Unity Project/MemoryCaptures/
+Unity Project/UserSettings/
+
+# Unity generated
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D generated meta files
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D generated file on crash reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crashlytics generated file
+crashlytics-build.properties
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Project specific
+.serena/
+.claude/

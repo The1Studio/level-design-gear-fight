@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2556c9f8ed3eb2ed8ba627891dabcd1c, type: 3}
+  m_Name: GearShuriken
+  m_EditorClassIdentifier:
+  Id: 80
+  Type: 1
+  SubType: 1
+  Icon: {fileID: 0}
+  _localizationKey:
+  Rarity: {fileID: 0}
+  <UnlockedByDefault>k__BackingField: 0
+  <ShowInPackDisplay>k__BackingField: 1
+  <ID>k__BackingField: 9d274aabba966fd4a98dc4aa1466926a
+  <ThisUnlockType>k__BackingField: 1
+  upgradeProfile:
+    baseTier: 0
+    attachedGear: {fileID: 11400000}
+    allUnlockRestrictions: 0
+    minLevelGettingGears: 0
+    lockedDescriptionLocalizationString:
+  miniGearPrefab: {fileID: 1920442078938504, guid: fdd62698bf2851a4b9e060a11b68bfce, type: 2}
+  gearController: {fileID: 114924346585790816, guid: 5d979efc20c8b9e4b8efa2f4eead7d97, type: 2}
+  gearInfo:
+    _displayNameLocKey: shuriken
+    _displayDescriptionLocKey: thowthsiessha
+    allGearTags: 1152
+  goalEntityType: Any

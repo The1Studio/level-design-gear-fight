@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopCactusEvolutionTwo
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: 36b9693c407286e48bf7601278e3fb3b
+  <UnlockedByDefault>k__BackingField: 1
+  <EvolveLevel>k__BackingField: 2000
+  <StartingLevel>k__BackingField: 0
+  <EvolvesInto>k__BackingField: {fileID: 0}
+  _nameLocKey: l_kingCactus
+  <ThisTroopCategory>k__BackingField: 1
+  <IncludedInLevelGeneration>k__BackingField: 1
+  acceptableLevelRangeForGeneration: {x: 45, y: 9999}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: 4d7244da78730f347b644cb5b4f8142e, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: 4d7244da78730f347b644cb5b4f8142e, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: c0bda23d17983a34fa8bb89637509e90, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: 4d7244da78730f347b644cb5b4f8142e, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 11400000, guid: 8e1bfc47604661c4fa06d8c3fa9aa3a6, type: 2}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114362129499509250, guid: c5bbbee88b20d0841aa16f601752e30d, type: 2}
+  troopController: {fileID: 114427930167311114, guid: 5fb4397ed28a58e42a1dc2dfb9c01984, type: 2}

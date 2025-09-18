@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60c7506f9989b3da024f498de1e48f89, type: 3}
+  m_Name: Q55_reroll_D7
+  m_EditorClassIdentifier:
+  ID: 4d554fbb710c5ba40a26569ba5aefc10
+  GoalTag: 1873174213
+  GoalType: RepeatAction
+  GoalEntityType: Troop
+  GoalCollectableType:
+  GoalActionType: ReRoll
+  GoalAmount: 15
+  Description: Q_RerollTimes
+  RewardCurrency: {fileID: 11400000, guid: 15e42da103a43e24788c2e5f947deec3, type: 2}
+  Reward: 25

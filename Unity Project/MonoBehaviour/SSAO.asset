@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2046858975, guid: c88ab7b37c4f350242674d2efd621c19, type: 3}
+  m_Name: SSAO
+  m_EditorClassIdentifier:
+  m_Active: 1
+  m_Settings:
+    AOMethod: 1
+    Downsample: 0
+    AfterOpaque: 0
+    Source: 1
+    NormalSamples: 1
+    Intensity: 0.5
+    DirectLightingStrength: 0.25
+    Radius: 0.25
+    Samples: 0
+    BlurQuality: 0
+    Falloff: 100
+    SampleCount: -1
+  m_BlueNoise256Textures:
+  - {fileID: 2800000, guid: 05ebaf89279dd42418537cadbb00cb86, type: 3}
+  - {fileID: 2800000, guid: ef63fa3e51a49e9429b87cb3e3244cc7, type: 3}
+  - {fileID: 2800000, guid: cb0fd67bfb1e3eb45ba77c204e69e0c6, type: 3}
+  - {fileID: 2800000, guid: 75934b9bd6e849348a2939e4f993a0e9, type: 3}
+  - {fileID: 2800000, guid: befea010431438e439dc008c5aebd92e, type: 3}
+  - {fileID: 2800000, guid: 141ac3f4ff41aee41b31f1fee2824264, type: 3}
+  - {fileID: 2800000, guid: e6c6e901667ee9d4290222d5316d9d6e, type: 3}
+  m_Shader: {fileID: 4800000, guid: d05350496b1f7be4a882d459ca79f11a, type: 3}

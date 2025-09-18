@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 999031254, guid: 4d4a8f48731294963bdbfa9c85d8224e, type: 3}
+  m_Name: audiomob-settings
+  m_EditorClassIdentifier:
+  forceTestAds: 0
+  useLocation: 0
+  sendConsentStrings: 1
+  sendAdvertisingId: 1
+  sendIdfvOrAndroidIdAsAFallback: 0
+  doNotSendAnyDeviceIdsForNonConsentedUsers: 0
+  onlySendContextualSignals: 0
+  apiKey:
+  consentFramework: 1
+  autoInitializePlugin: 0
+  muteOtherAudioSources: 0
+  productionBuildCheck: 1
+  loggingMode: 0
+  fileLoggingMode: 0
+  developmentSnapshot:
+    allowUnsafeCode: 0
+    scriptingRuntimeVersion:
+    androidScriptingBackend: IL2CPP
+    iosScriptingBackend: IL2CPP
+    androidApiCompatibilityLevel: NET_Standard_2_0
+    iosApiCompatibilityLevel: NET_Standard_2_0
+    minSdkVersion: AndroidApiLevel24
+    targetOSVersionString: 14.0
+    targetArchitectures: ARMv7, ARM64
+    androidScriptingDefineSymbols: VS_ATT;UNITY_VISUAL_SCRIPTING;DOTWEEN;MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;ODIN_VALIDATOR;ODIN_VALIDATOR_3_1;ODIN_VALIDATOR_3_2;ODIN_VALIDATOR_3_3;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;VOODOO_SAUCE;gameanalytics_max_enabled;ES3_TMPRO;ES3_UGUI;REFACTOR
+    iosScriptingDefineSymbols: VS_ATT;UNITY_VISUAL_SCRIPTING;DOTWEEN;MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED;ODIN_VALIDATOR;ODIN_VALIDATOR_3_1;ODIN_VALIDATOR_3_2;ODIN_VALIDATOR_3_3;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;VOODOO_SAUCE;gameanalytics_max_enabled;ES3_TMPRO;ES3_UGUI;REFACTOR;NICE_VIBRATIONS_DISABLE_GAMEPAD_SUPPORT
+    stripEngineCode: 1
+    androidManagedStrippingLevel: Minimal
+    iosManagedStrippingLevel: Low
+    androidTVCompatibility: 0
+    useOnDemandResources: 0
+    locationUsageDescription:
+    requiresPersistentWiFi: 0

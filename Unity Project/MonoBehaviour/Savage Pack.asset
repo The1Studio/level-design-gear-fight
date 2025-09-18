@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 715a7f2de5045eaf49a113d914aa4dab, type: 3}
+  m_Name: Savage Pack
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: db5e40b8dbd88524ebf802494a0fd344
+  <DisplayNameLocalizationKey>k__BackingField: l_savagePack
+  <DisplayNameLocalizationFullKey>k__BackingField: l_savagePackFull
+  <PackDisplaySprite>k__BackingField: {fileID: 21300000, guid: 88d0e157e19d1de4da0045edfa400a87, type: 2}
+  <PackIcon>k__BackingField: {fileID: 0}
+  <GruntTroop>k__BackingField: {fileID: 11400000, guid: 7cdd71bd9cf908041864f52b9522e486, type: 2}
+  <RangedTroop>k__BackingField: {fileID: 11400000, guid: d0017b0b667136e47a009d314ec40615, type: 2}
+  <BruteTroop>k__BackingField: {fileID: 11400000, guid: c4c3ee56cc7587e4b8527f22dcabe689, type: 2}
+  <GruntTroopUIController>k__BackingField: {fileID: 114435841771606005, guid: 9993037599f8ef144a476b1f103a6495, type: 2}
+  <RangedTroopUIController>k__BackingField: {fileID: 114244511594212373, guid: 2a5224bf8355a56409894237ddb38010, type: 2}
+  <BruteTroopUIController>k__BackingField: {fileID: 114310315855133854, guid: f60f8fe92985ca449b7ad2a6097c662c, type: 2}
+  <UnlockedByDefault>k__BackingField: 1
+  <AllPackUnlocks>k__BackingField:
+  - <Gear>k__BackingField: {fileID: 11400000, guid: e00fc05ca0bd7b344a4f104c7803e9b5, type: 2}
+    <UnlockGUID>k__BackingField: 18915537-4330-4c76-bec2-34cc075432da
+  - <Gear>k__BackingField: {fileID: 11400000, guid: 75bd67525c23bc04ba8e700e85cd8e72, type: 2}
+    <UnlockGUID>k__BackingField: 14d7913d-d982-4dd1-a4e7-592fa028070f
+  - <Gear>k__BackingField: {fileID: 11400000, guid: 27e8a33fe08f5fe449d8e12c61777f56, type: 2}
+    <UnlockGUID>k__BackingField: 5ead088a-ac75-44cd-ad64-ec4698fc8f76
+  - <Gear>k__BackingField: {fileID: 11400000, guid: a445490988c02b84486dbe69d2a29f8c, type: 2}
+    <UnlockGUID>k__BackingField: 71b51016-6136-4ab6-900e-eea715bbbda4
+  - <Gear>k__BackingField: {fileID: 11400000, guid: 8423a228f9d074f4a8f6aac0f19ee409, type: 2}
+    <UnlockGUID>k__BackingField: c2692190-ec76-40b3-a89f-33b6cbe6825e
+  <AssociatedPopup>k__BackingField: {fileID: 0}
+  theseUnlockDetails: 0
+  unlockCost: 0
+  unlockLevel: 0
+  allGeneralGears:
+  - {fileID: 11400000, guid: 2cb3a1f140bbc6f4ab43459a7e05f0e4, type: 2}
+  - {fileID: 11400000, guid: 71a4efe986760094d90439229964a3b9, type: 2}
+  - {fileID: 11400000, guid: ca10dfdc80d4fe84fb63bc318ccbfddd, type: 2}
+  - {fileID: 11400000, guid: a5b81865af85c5b46918a68a88945fec, type: 2}
+  - {fileID: 11400000, guid: a184cb71b798931429229b71c8014a43, type: 2}
+  - {fileID: 11400000, guid: 5bcf2c9306321dc45ab49aca5f7c2c6a, type: 2}
+  - {fileID: 11400000, guid: c6a0a08e336fa1e4cb98dc67653d583e, type: 2}
+  - {fileID: 11400000, guid: 488aefa1b9e9c484cb133fae757b4cd5, type: 2}
+  - {fileID: 11400000, guid: 0d092d851f3ec4446b0a1a239229d7e4, type: 2}
+  - {fileID: 11400000, guid: b1c71db0d737b8844904a921d744f57a, type: 2}
+  - {fileID: 11400000, guid: 3161249e93348f946ad58f835cac9ad6, type: 2}
+  - {fileID: 11400000, guid: 9c7fefb9dff07ad459ea1e94d69afbd6, type: 2}
+  - {fileID: 11400000, guid: 49743b62b1d4f1a419d921294731de2e, type: 2}
+  - {fileID: 11400000, guid: 3c60e9469e152fe488bbef8d39c23986, type: 2}
+  - {fileID: 11400000, guid: 5d0e4a625a6ce6947b3b5b35d2b400d0, type: 2}
+  - {fileID: 11400000, guid: 32349eaccd6a97f45ad22d57f1f34ed9, type: 2}
+  - {fileID: 11400000, guid: 7e3de8d686181884fbbb90419485ff2e, type: 2}
+  - {fileID: 11400000, guid: 1807fcf9dd0574e40b046b96d25cd845, type: 2}
+  - {fileID: 11400000, guid: 790b95b3f730dcd4d971ebea20792356, type: 2}
+  - {fileID: 11400000, guid: 677ab1f8f569e3b4dac533a58129a7dc, type: 2}
+  - {fileID: 11400000, guid: c6a1517a06c2959419724d8fb0f43a35, type: 2}
+  - {fileID: 11400000, guid: 420f450a1c6fffe4eab47eb1a993ec7d, type: 2}
+  - {fileID: 11400000, guid: 01080717b3dc4a24296c447c0d0c7e11, type: 2}

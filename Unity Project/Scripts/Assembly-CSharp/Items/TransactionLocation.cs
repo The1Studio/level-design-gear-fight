@@ -1,0 +1,40 @@
+namespace Items
+{
+	public enum TransactionLocation
+	{
+		None = 0,
+		LosingEarnings = 1,
+		WinningEarning = 2,
+		RVMultiplyEarnings = 3,
+		Packs = 4,
+		TroopUpgrade = 5,
+		TroopUnlock = 6,
+		Skills = 7,
+		IAPStore = 8,
+		ChapterReward = 9,
+		Quest = 10,
+		Blessings = 11,
+		MiniGearReward = 12,
+		PackWeak = 13,
+		InLevelIndividualGear = 14,
+		CustomGears = 15,
+		MiniBoss = 16,
+		EnemyKill = 17,
+		AllPacks = 18,
+		Revive = 19,
+		IAPStoreFreebie = 20,
+		IAPStoreHardCurrencyPurchase = 21,
+		PurchaseShopClaimAll = 22,
+		PurchaseShopBuyOne = 23,
+		MultiplyRewards = 24,
+		LiveOffer = 25,
+		BulkOffer = 26,
+		IAPStoreSoftCurrencyPurchase = 27,
+		MiniGearChestFree = 28,
+		MiniGearChestSmall = 29,
+		MiniGearChestLarge = 30,
+		SpeedUpPopup = 31,
+		StarterPackOffer = 32,
+		TroopPackOffer = 33
+	}
+}

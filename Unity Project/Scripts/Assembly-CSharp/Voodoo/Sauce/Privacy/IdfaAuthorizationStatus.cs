@@ -1,0 +1,10 @@
+namespace Voodoo.Sauce.Privacy
+{
+	internal enum IdfaAuthorizationStatus
+	{
+		NotDetermined = 0,
+		Restricted = 1,
+		Denied = 2,
+		Authorized = 3
+	}
+}

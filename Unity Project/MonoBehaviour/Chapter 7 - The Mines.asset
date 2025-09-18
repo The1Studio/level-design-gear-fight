@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: Chapter 7 - The Mines
+  m_EditorClassIdentifier:
+  ID: 6bf1d55fe3fd14d2cbbd28a56165d750
+  DisplayNameLocalizationKey: Mines_new
+  ShowWorldUnlock: 1
+  EnvironmentTheme: {fileID: 114928820357186474, guid: 3866bea4aff8e0a428d267b475a00a8d, type: 2}
+  MainMusic: {fileID: 8300000, guid: f8436a2af1403894192fcbac0dc649c7, type: 3}
+  SlopeSprite: {fileID: 21300000, guid: b9e44219548f18e4b968f2b3dd2e103d, type: 2}
+  LocalizationStrings:
+  - Mines_lore1
+  - Mines_lore2
+  - Mines_lore3
+  - Mines_lore4
+  ShowPopupEveryLevelStart: {fileID: 0}
+  Levels:
+  - {fileID: 11400000, guid: f88f6c5baac6e89459a716921f76200c, type: 2}
+  - {fileID: 11400000, guid: 3ae4177d4174e5d4b81f7c09405bf7fb, type: 2}
+  - {fileID: 11400000, guid: 75b8c291210f04a4aaebd342bc9e8e9c, type: 2}
+  - {fileID: 11400000, guid: 0b73ea25c4097984c9c3a51695f3735d, type: 2}
+  - {fileID: 11400000, guid: d317e9a6ca54676429403a531e6bd359, type: 2}
+  - {fileID: 11400000, guid: 03106acdfb1a1624b8e5975597e5b918, type: 2}
+  - {fileID: 11400000, guid: 2010bd52d66749747b8e0706f7cfa534, type: 2}
+  - {fileID: 11400000, guid: d960b98464001a544b898afacf4ee666, type: 2}
+  - {fileID: 11400000, guid: fb546bb342e6bd8498c435566ee6ee1b, type: 2}
+  - {fileID: 11400000, guid: 82dee431447216541a37a30b36281b2f, type: 2}
+  - {fileID: 11400000, guid: ac4fe137aa2f9e9488dc93567a6a2224, type: 2}
+  - {fileID: 11400000, guid: 590faa4f3f4ab054086270f07e41a88b, type: 2}
+  - {fileID: 11400000, guid: 85ac4b7843ade11458f6924ab1e6fd70, type: 2}
+  - {fileID: 11400000, guid: 9174a85a44b9bac4285da3db66d4f30b, type: 2}
+  - {fileID: 11400000, guid: 4b099758b3e9e3244a9f763d9bb40622, type: 2}
+  - {fileID: 11400000, guid: 986897301de0e3144b0afd52e2366b46, type: 2}
+  - {fileID: 11400000, guid: de127eb3622fc6144a58851070998f69, type: 2}
+  - {fileID: 11400000, guid: 740aa3c4418ad464984b6485b4d62d97, type: 2}
+  - {fileID: 11400000, guid: 09d16e91bf4f84d47b8effc4e8ba7ecc, type: 2}
+  - {fileID: 11400000, guid: d316e2c9ed79ad74b8bdf1d69977919d, type: 2}
+  AllMiniBosses:
+  - {fileID: 11400000, guid: a07719c919cfd3741b2d39a5a3005ed9, type: 2}
+  - {fileID: 11400000, guid: d17208b7ed500324cb29343416057e4e, type: 2}
+  ChapterSpecificUnlocks: []

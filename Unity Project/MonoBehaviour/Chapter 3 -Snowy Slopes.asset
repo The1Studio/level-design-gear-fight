@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: Chapter 3 -Snowy Slopes
+  m_EditorClassIdentifier:
+  ID: 998fc66a851ec4c4e8d1f8af0b105b78
+  DisplayNameLocalizationKey: Snowy_new
+  ShowWorldUnlock: 1
+  EnvironmentTheme: {fileID: 114785291855429111, guid: 0927d697c4377ac4dac0d6007c841e97, type: 2}
+  MainMusic: {fileID: 8300000, guid: 5299c10ac8c1d4448bdc9989f8feb38d, type: 3}
+  SlopeSprite: {fileID: 21300000, guid: 4e57799b0d8b4f3419714ba963790115, type: 2}
+  LocalizationStrings:
+  - Snowy_lore1
+  - Snowy_lore2
+  - Snowy_lore3
+  ShowPopupEveryLevelStart: {fileID: 0}
+  Levels:
+  - {fileID: 11400000, guid: 811ce87c48244bc4a812f28dca0212aa, type: 2}
+  - {fileID: 11400000, guid: 2af5b064a7dafbb45ac0dfe458fcc9a0, type: 2}
+  - {fileID: 11400000, guid: 2321add1e19f813499009e10a3b960d2, type: 2}
+  - {fileID: 11400000, guid: 3ef3d138bebde21479fb31d5718f3101, type: 2}
+  - {fileID: 11400000, guid: 29b93bfd06fde4848a05c8aa01591719, type: 2}
+  - {fileID: 11400000, guid: a07b9c4bfebabe446a234fbf1e8f965f, type: 2}
+  AllMiniBosses:
+  - {fileID: 11400000, guid: a07719c919cfd3741b2d39a5a3005ed9, type: 2}
+  ChapterSpecificUnlocks: []

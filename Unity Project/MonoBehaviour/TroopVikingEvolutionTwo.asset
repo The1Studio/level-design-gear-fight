@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopVikingEvolutionTwo
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: 3695e2b1feb1d6c4b90cabceae488a3f
+  <UnlockedByDefault>k__BackingField: 1
+  <EvolveLevel>k__BackingField: 2000
+  <StartingLevel>k__BackingField: 22
+  <EvolvesInto>k__BackingField: {fileID: 0}
+  _nameLocKey: vikingThug
+  <ThisTroopCategory>k__BackingField: 1
+  <IncludedInLevelGeneration>k__BackingField: 1
+  acceptableLevelRangeForGeneration: {x: 30, y: 99999}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: c00bc87d9596501478ee20ed1a130144, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: fb6968c027f649d49ba382fdf02441b9, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: a52d2fe7afe457f43b4e41544e14bc4b, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: c00bc87d9596501478ee20ed1a130144, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 11400000, guid: 2b4a4835e0aecb347bb5032aac7ce850, type: 2}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114582106193076630, guid: 4710af7571a510e499be9191650402fb, type: 2}
+  troopController: {fileID: 114024836872800890, guid: 1eb637c2d3a87144c98ff2582f589b74, type: 2}

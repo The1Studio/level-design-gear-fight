@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8fa992d21a5ccfa91df53988571db8, type: 3}
+  m_Name: TroopMushroom
+  m_EditorClassIdentifier:
+  <ID>k__BackingField: 0de9bbffff61ef04db28d13468aaaffa
+  <UnlockedByDefault>k__BackingField: 1
+  <EvolveLevel>k__BackingField: 20
+  <StartingLevel>k__BackingField: 0
+  <EvolvesInto>k__BackingField: {fileID: 11400000, guid: 01e14642c74df7540bbba4dc2e73c16b, type: 2}
+  _nameLocKey: l_mushroom
+  <ThisTroopCategory>k__BackingField: 0
+  <IncludedInLevelGeneration>k__BackingField: 1
+  acceptableLevelRangeForGeneration: {x: 20, y: 9999}
+  onlyIncludedInTheseScenes: []
+  <DisplaySpriteAlly>k__BackingField: {fileID: 21300000, guid: 0ea701e1736e8f446af0703f04027d8f, type: 2}
+  <DisplaySpriteEnemy>k__BackingField: {fileID: 21300000, guid: 630e09d0df145aa4f80800ea916f80be, type: 2}
+  <DisplaySpriteGear>k__BackingField: {fileID: 21300000, guid: 68a053e49d3214947a82703375a12e36, type: 2}
+  <DisplaySpriteForUpgradeButton>k__BackingField: {fileID: 21300000, guid: 0ea701e1736e8f446af0703f04027d8f, type: 2}
+  <AnchoredPositionOffsetForPackDisplay>k__BackingField: {x: 0, y: 0}
+  <ScriptableGear>k__BackingField: {fileID: 11400000, guid: b06986d6503b50f4ea174e4a392c5271, type: 2}
+  <ShowFullScreenPopupWhenUnlocked>k__BackingField: 0
+  overrideUnlockCost: 0
+  unlockCostOverride: 15
+  fallingTroop: {fileID: 114228208648970458, guid: c3e4182bf3a79874f85ce1ca5a3f18b5, type: 2}
+  troopController: {fileID: 114741527701189707, guid: b30ed32ce7f696544b8bbb7b2317d16c, type: 2}

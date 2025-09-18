@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e86086b132b8dd787f2f639390994f0, type: 3}
+  m_Name: ConsumableIAPManager
+  m_EditorClassIdentifier:
+  <AllManagedProducts>k__BackingField:
+  - {fileID: 11400000, guid: d0f05d06caa0f7a4fb50482a3eedebb4, type: 2}
+  - {fileID: 11400000, guid: 502f21456538686429c413aac609abe7, type: 2}
+  - {fileID: 11400000, guid: 7d252ad8388ddac45b85c54fc2b65ea8, type: 2}
+  - {fileID: 11400000, guid: 5beeccead4262824cbdb9cb41b3578f3, type: 2}
+  - {fileID: 11400000, guid: 2c0b21356a5822f478ef4a1fef66e45b, type: 2}

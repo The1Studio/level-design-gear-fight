@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d9d350023f63008696a9a556e1a363, type: 3}
+  m_Name: OfferImages
+  m_EditorClassIdentifier:
+  spriteEntries:
+  - sprite: {fileID: 21300000, guid: f66b849903b9e804cb504ed2ca331254, type: 2}
+    id: default
+  - sprite: {fileID: 21300000, guid: 778adf87c76cd60448b58d10e7b6ee4d, type: 2}
+    id: epicOfferImg
+  - sprite: {fileID: 21300000, guid: e83fc6d34beffe64f9c91c13e20cf394, type: 2}
+    id: offer2

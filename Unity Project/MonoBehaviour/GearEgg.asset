@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2556c9f8ed3eb2ed8ba627891dabcd1c, type: 3}
+  m_Name: GearEgg
+  m_EditorClassIdentifier:
+  Id: 32
+  Type: 1
+  SubType: 1
+  Icon: {fileID: 0}
+  _localizationKey:
+  Rarity: {fileID: 0}
+  <UnlockedByDefault>k__BackingField: 0
+  <ShowInPackDisplay>k__BackingField: 1
+  <ID>k__BackingField: b588d1a926b00454fac85f07a49a0cd5
+  <ThisUnlockType>k__BackingField: 2
+  upgradeProfile:
+    baseTier: 0
+    attachedGear: {fileID: 11400000}
+    allUnlockRestrictions: 0
+    minLevelGettingGears: 0
+    lockedDescriptionLocalizationString:
+  miniGearPrefab: {fileID: 0}
+  gearController: {fileID: 114287139835810932, guid: beccaea5f4b3ae749964eed162748072, type: 2}
+  gearInfo:
+    _displayNameLocKey: egg
+    _displayDescriptionLocKey: spawmmullynao
+    allGearTags: 64
+  goalEntityType: Any

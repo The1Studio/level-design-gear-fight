@@ -1,0 +1,1 @@
+This is a pointer file used to find the AudioMob directory if the plugin directory has been moved.

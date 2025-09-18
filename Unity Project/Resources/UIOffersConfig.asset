@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfb33fb22b25b1161d6326a18e0e185, type: 3}
+  m_Name: UIOffersConfig
+  m_EditorClassIdentifier:
+  items: {fileID: 11400000, guid: 665a717dfed5d9746b008c1bf137f1ca, type: 2}
+  popups: {fileID: 11400000, guid: d271ad37f175c84408b4304c090db651, type: 2}
+  badges: {fileID: 11400000, guid: 5ef44f6bfb81d704193e7723eab08974, type: 2}
+  OfferPopups:
+  - {fileID: 114413157634725189, guid: c8a9944cd2f07bc4eb5a349733abd70b, type: 2}
+  - {fileID: 114116030303171576, guid: a40ffea772300f7448622f370be15f6c, type: 2}
+  OfferBadges:
+  - {fileID: 114137315304966456, guid: 8bf2dbd391e8cec4792b8c04f7759ff0, type: 2}
+  OfferBadgesManager: {fileID: 114627251186913317, guid: 78d79b2503bd23b43b5431b459ae20f3, type: 2}
+  VoodooLiveCanvas: {fileID: 223930603851164272, guid: 30deac4ef6a779c4b8b74ec3c5612bcc, type: 2}

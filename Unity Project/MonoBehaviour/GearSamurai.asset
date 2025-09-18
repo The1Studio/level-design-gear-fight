@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2556c9f8ed3eb2ed8ba627891dabcd1c, type: 3}
+  m_Name: GearSamurai
+  m_EditorClassIdentifier:
+  Id: 74
+  Type: 1
+  SubType: 1
+  Icon: {fileID: 0}
+  _localizationKey:
+  Rarity: {fileID: 0}
+  <UnlockedByDefault>k__BackingField: 0
+  <ShowInPackDisplay>k__BackingField: 1
+  <ID>k__BackingField: bb1ebc85aaf424147bdcfd1fa13d976c
+  <ThisUnlockType>k__BackingField: 0
+  upgradeProfile:
+    baseTier: 0
+    attachedGear: {fileID: 11400000}
+    allUnlockRestrictions: 0
+    minLevelGettingGears: 0
+    lockedDescriptionLocalizationString:
+  miniGearPrefab: {fileID: 0}
+  gearController: {fileID: 114542929344409444, guid: d0c93d4e61defe845934f406056f7ae0, type: 2}
+  gearInfo:
+    _displayNameLocKey: l_samurai
+    _displayDescriptionLocKey: l_samuraiDesc
+    allGearTags: 770
+  goalEntityType: Troop

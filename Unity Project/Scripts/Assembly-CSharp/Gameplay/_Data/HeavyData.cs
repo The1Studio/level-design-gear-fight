@@ -1,0 +1,23 @@
+using GearGame.Control;
+using UnityEngine;
+
+namespace Gameplay._Data
+{
+	public class HeavyData : GearData
+	{
+		[field: SerializeField]
+		public override ScriptableGear.SpawningTier RegularSpawnTier { get; }
+
+		[field: SerializeField]
+		public override ScriptableGear.SpawningTier PremiumSpawnTier { get; }
+
+		[field: SerializeField]
+		public override ScriptableGear.SpawningType SpawnType { get; }
+
+		[field: SerializeField]
+		public override int Cost { get; }
+
+		[field: SerializeField]
+		public override float ProductionAddition { get; }
+	}
+}

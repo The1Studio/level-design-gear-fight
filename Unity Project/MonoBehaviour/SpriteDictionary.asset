@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37d9d350023f63008696a9a556e1a363, type: 3}
+  m_Name: SpriteDictionary
+  m_EditorClassIdentifier:
+  spriteEntries:
+  - sprite: {fileID: 21300000, guid: 5be4c51d1017f8e4e8242acec331a8b5, type: 2}
+    id: stars
+  - sprite: {fileID: 21300000, guid: 5e4be666d5581774d84db72ae467678b, type: 2}
+    id: coins
+  - sprite: {fileID: 21300000, guid: 059ce4c347607674f9d7698d3627de4d, type: 2}
+    id: hammer
+  - sprite: {fileID: 21300000, guid: df80cef43b0ab0241b5a2c74599749b3, type: 2}
+    id: bomb
+  - sprite: {fileID: 21300000, guid: 8bcb585b92e74b44daeb76cdce37cec8, type: 2}
+    id: scissors
+  - sprite: {fileID: 21300000, guid: 0384f9359ac77d54d921b9882e764be9, type: 2}
+    id: boombox
+  - sprite: {fileID: 21300000, guid: 22e7a09024c1cd644a9b36ba67c1f64e, type: 2}
+    id: spatula
+  - sprite: {fileID: 21300000, guid: e796d7ede887a1347a721fa7479133ae, type: 2}
+    id: rocket
+  - sprite: {fileID: 21300000, guid: 5e4be666d5581774d84db72ae467678b, type: 2}
+    id: coin
+  - sprite: {fileID: 21300000, guid: ed02438d382c4b84ba5c100f41bc6a0c, type: 2}
+    id: scissor
+  - sprite: {fileID: 21300000, guid: 5be4c51d1017f8e4e8242acec331a8b5, type: 2}
+    id: star
+  - sprite: {fileID: 21300000, guid: b79679686b4e49e4eaab28b5dec36a60, type: 2}
+    id: pouet

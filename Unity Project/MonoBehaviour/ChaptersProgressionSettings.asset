@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947c3063d9618fa67ab0fa30616e662f, type: 3}
+  m_Name: ChaptersProgressionSettings
+  m_EditorClassIdentifier:
+  ProgressionName: Main progression
+  chapters:
+  - {fileID: 11400000, guid: dbae60c19a47dc54793e4a9a0c6f046f, type: 2}
+  - {fileID: 11400000, guid: 55e04726d29f45542a5bb3a865ee2480, type: 2}
+  - {fileID: 11400000, guid: 1e4c83f8c8e64514ca4e97135dfd32af, type: 2}
+  - {fileID: 11400000, guid: 85b421fa0a28fba41a57b78efce49e3f, type: 2}
+  - {fileID: 11400000, guid: 9b03048aba2809747a7e75108a67e101, type: 2}
+  - {fileID: 11400000, guid: d6f63f599cf56c14aa3ea10720382997, type: 2}
+  - {fileID: 11400000, guid: 96a31b545f69d3b4d8e7419e4cc9f549, type: 2}
+  - {fileID: 11400000, guid: 7d89b7d1d6b80954693a5bbc96015f0c, type: 2}
+  - {fileID: 11400000, guid: 6bf823d2dd632944f81f7d775e8da5a3, type: 2}
+  - {fileID: 11400000, guid: 42ba4b421a4aa8f4c97fb68c7e25ba3a, type: 2}

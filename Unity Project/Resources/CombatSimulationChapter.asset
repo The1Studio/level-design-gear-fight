@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: CombatSimulationChapter
+  m_EditorClassIdentifier:
+  ID: 43d25aaabdaee7019b7d96f206e5da12
+  DisplayNameLocalizationKey: l_Chapter1Name
+  ShowWorldUnlock: 0
+  EnvironmentTheme: {fileID: 114382395266134545, guid: cc6f368b1033790419f50f4eb5076377, type: 2}
+  MainMusic: {fileID: 8300000, guid: 1777bc2d4c1544f4eabfc57a8efb63f6, type: 3}
+  SlopeSprite: {fileID: 0}
+  LocalizationStrings: []
+  ShowPopupEveryLevelStart: {fileID: 0}
+  Levels:
+  - {fileID: 11400000, guid: bf3bd122ea382d04ea9ebda18b6c4d4a, type: 2}
+  AllMiniBosses: []
+  ChapterSpecificUnlocks: []

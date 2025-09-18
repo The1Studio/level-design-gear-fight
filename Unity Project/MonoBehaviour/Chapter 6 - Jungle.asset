@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79d444f39f7f13ccdf7cc381667c85c, type: 3}
+  m_Name: Chapter 6 - Jungle
+  m_EditorClassIdentifier:
+  ID: 1df3d1b9ab3b24858aafa857f55425a1
+  DisplayNameLocalizationKey: l_Chapter6Name
+  ShowWorldUnlock: 1
+  EnvironmentTheme: {fileID: 114976091236665653, guid: 741a182febf7f6c4cae059de4f9a1c71, type: 2}
+  MainMusic: {fileID: 8300000, guid: 18b6f0a03183f8d47a932f4b24f7578e, type: 3}
+  SlopeSprite: {fileID: 21300000, guid: 4b3bcc4eb36d47e4b80d63b5b8dc5489, type: 2}
+  LocalizationStrings:
+  - Jungle_lore1
+  - Jungle_lore2
+  - Jungle_lore3
+  ShowPopupEveryLevelStart: {fileID: 0}
+  Levels:
+  - {fileID: 11400000, guid: 08701f4c46b30394cb21b99c9bb9968a, type: 2}
+  - {fileID: 11400000, guid: a7f5f44c0288d2348b89fc5fd3d042fe, type: 2}
+  - {fileID: 11400000, guid: b64e8c24870266b44b82438a86e0134e, type: 2}
+  - {fileID: 11400000, guid: 8346949a486e7214988c46c663264e8b, type: 2}
+  - {fileID: 11400000, guid: 34c519000515345468ceef16de31aa2d, type: 2}
+  - {fileID: 11400000, guid: 44cb5409dcfbe164a9d3cd29cee469f3, type: 2}
+  - {fileID: 11400000, guid: 61ef8dbaa187a7e4f8c88e6db6b866df, type: 2}
+  - {fileID: 11400000, guid: 2b469a9b06804de48b82c4fe6e947624, type: 2}
+  - {fileID: 11400000, guid: 9c83787917b966146a1f7ea229f15b8f, type: 2}
+  - {fileID: 11400000, guid: d9bd5c06a602ad946aa25a0473dcd5a3, type: 2}
+  - {fileID: 11400000, guid: aa1870131f1a15e428e7d0e2387a1b00, type: 2}
+  - {fileID: 11400000, guid: 8cd2a1342969c5b4c9443d023f8af8da, type: 2}
+  - {fileID: 11400000, guid: 84445032ee6a6474896bcd732fd05ebd, type: 2}
+  - {fileID: 11400000, guid: f4a11a485204f5a469729d30796e9f8a, type: 2}
+  - {fileID: 11400000, guid: 09930acb54f2bef4aaa527d60e2aec16, type: 2}
+  AllMiniBosses:
+  - {fileID: 11400000, guid: 2fb4237ea93407a499a2ca7565fcad24, type: 2}
+  - {fileID: 11400000, guid: d17208b7ed500324cb29343416057e4e, type: 2}
+  ChapterSpecificUnlocks: []
