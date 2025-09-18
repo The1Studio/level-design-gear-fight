@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Fight - Game Mechanics Analysis Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .critical-alert {
+            background: #dc3545;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #a71d2a;
+        }
+        
+        .critical-alert h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+        }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+        }
+        
+        .card-header {
+            padding: 20px;
+            font-weight: 600;
+            font-size: 1.1em;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .card-content {
+            padding: 20px;
+        }
+        
+        .overview-header {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+        }
+        
+        .enemies-header {
+            background: linear-gradient(135deg, #fa709a, #fee140);
+            color: white;
+        }
+        
+        .structures-header {
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            color: #333;
+        }
+        
+        .gear-header {
+            background: linear-gradient(135deg, #ffecd2, #fcb69f);
+            color: #333;
+        }
+        
+        .progression-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .discovery-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .discovery-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .discovery-item:last-child {
+            border-bottom: none;
+        }
+        
+        .discovery-name {
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .discovery-usage {
+            background: #e9ecef;
+            color: #495057;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .missing-alert {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .missing-alert h4 {
+            margin: 0 0 10px 0;
+            color: #856404;
+        }
+        
+        .recommendations {
+            grid-column: 1 / -1;
+        }
+        
+        .recommendation-item {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        
+        .priority-p0 {
+            border-left-color: #dc3545;
+            background: #fff5f5;
+        }
+        
+        .priority-p1 {
+            border-left-color: #ffc107;
+            background: #fffbf0;
+        }
+        
+        .priority-p2 {
+            border-left-color: #28a745;
+            background: #f8fff8;
+        }
+        
+        .priority-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .tag-p0 {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .tag-p1 {
+            background: #ffc107;
+            color: #212529;
+        }
+        
+        .tag-p2 {
+            background: #28a745;
+            color: white;
+        }
+        
+        .timeline-item {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        .level-key {
+            font-weight: 600;
+            color: #007bff;
+            margin-bottom: 8px;
+        }
+        
+        .mechanic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .mechanic-tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+        }
+        
+        .enemy-tag {
+            background: #ffeaa7;
+            color: #856404;
+        }
+        
+        .structure-tag {
+            background: #ddd6fe;
+            color: #5b21b6;
+        }
+        
+        .tutorial-tag {
+            background: #fecaca;
+            color: #7f1d1d;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+        
+        .footer p {
+            margin: 5px 0;
+        }
+        
+        .load-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 500;
+            margin: 10px;
+            transition: all 0.2s;
+        }
+        
+        .load-button:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 Gear Fight Analysis Dashboard</h1>
+            <p>Comprehensive Game Mechanics Discovery & Analysis</p>
+            <button id="loadAnalysis" class="load-button">🔍 Load Game Analysis</button>
+        </div>
+        
+        <div id="criticalAlert" class="critical-alert" style="display: none;">
+            <h3>🚨 CRITICAL: Incomplete Mechanic Discovery</h3>
+            <p>Analysis shows significant gaps between expected mechanics and discovered data. This indicates the conversion process may not be extracting all Unity game elements.</p>
+        </div>
+        
+        <div id="loading" class="loading">
+            <p>Click "Load Game Analysis" to examine the comprehensive mechanics discovery results.</p>
+        </div>
+        
+        <div id="dashboard" class="dashboard" style="display: none;">
+            <!-- Content will be populated by JavaScript -->
+        </div>
+        
+        <div class="footer">
+            <p><strong>🔍 Mechanic Discovery Tool</strong> - Comprehensive analysis of all 134 Gear Fight levels</p>
+            <p>Purpose: Discover ALL game mechanics from Unity data - Never miss any mechanic, component, or behavior</p>
+        </div>
+    </div>
+
+    <script>
+        let analysisData = null;
+
+        document.getElementById('loadAnalysis').addEventListener('click', loadAnalysisData);
+
+        async function loadAnalysisData() {
+            try {
+                document.getElementById('loading').innerHTML = '<p>Loading analysis data...</p>';
+                
+                const response = await fetch('/api/analysis');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                analysisData = await response.json();
+                renderAnalysis();
+                
+            } catch (error) {
+                console.error('Error loading analysis:', error);
+                document.getElementById('loading').innerHTML = `
+                    <p style="color: #dc3545;">❌ Error loading analysis: ${error.message}</p>
+                    <p>Make sure the API server is running and try again.</p>
+                `;
+            }
+        }
+
+        function renderAnalysis() {
+            if (!analysisData) return;
+            
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('dashboard').style.display = 'grid';
+            
+            // Check for critical issues
+            const expectedEnemies = 9; // From config.json
+            const discoveredEnemies = analysisData.mechanics.enemies.total_discovered;
+            
+            if (discoveredEnemies < expectedEnemies) {
+                document.getElementById('criticalAlert').style.display = 'block';
+            }
+            
+            const dashboard = document.getElementById('dashboard');
+            dashboard.innerHTML = `
+                ${renderOverviewCard()}
+                ${renderEnemiesCard()}
+                ${renderStructuresCard()}
+                ${renderGearCard()}
+                ${renderProgressionCard()}
+                ${renderRecommendationsCard()}
+            `;
+        }
+
+        function renderOverviewCard() {
+            const stats = analysisData.statistics;
+            return `
+                <div class="card">
+                    <div class="card-header overview-header">📊 Game Overview</div>
+                    <div class="card-content">
+                        <div class="stat-grid">
+                            <div class="stat-item">
+                                <div class="stat-value">${stats.game_overview.total_levels}</div>
+                                <div class="stat-label">Total Levels</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${stats.game_overview.total_worlds}</div>
+                                <div class="stat-label">Worlds</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${stats.level_distribution.procedural_levels}</div>
+                                <div class="stat-label">Procedural</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${stats.level_distribution.custom_levels}</div>
+                                <div class="stat-label">Custom</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                            Version: ${analysisData.version} | 
+                            Analysis: ${new Date(analysisData.analysis_date).toLocaleDateString()}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderEnemiesCard() {
+            const enemies = analysisData.mechanics.enemies;
+            const comparison = enemies.catalog_comparison;
+            
+            return `
+                <div class="card">
+                    <div class="card-header enemies-header">⚔️ Enemy Discovery</div>
+                    <div class="card-content">
+                        <div class="stat-grid" style="margin-bottom: 20px;">
+                            <div class="stat-item">
+                                <div class="stat-value">${enemies.total_discovered}</div>
+                                <div class="stat-label">Discovered</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${comparison.catalog_count}</div>
+                                <div class="stat-label">Expected</div>
+                            </div>
+                        </div>
+                        
+                        ${comparison.missing_from_catalog.length > 0 ? `
+                        <div class="missing-alert">
+                            <h4>⚠️ Missing from Catalog</h4>
+                            <p>${comparison.missing_from_catalog.join(', ')}</p>
+                        </div>
+                        ` : ''}
+                        
+                        <ul class="discovery-list">
+                            ${enemies.all_enemy_types.map(enemy => `
+                                <li class="discovery-item">
+                                    <span class="discovery-name">${enemy}</span>
+                                    <span class="discovery-usage">${enemies.usage_frequency[enemy]}x</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                        
+                        ${enemies.total_discovered < 9 ? `
+                        <div style="margin-top: 15px; padding: 10px; background: #fff3cd; border-radius: 6px; font-size: 0.9em;">
+                            🔍 <strong>Critical Gap:</strong> Only ${enemies.total_discovered}/9 expected enemies discovered. 
+                            Investigation needed in Unity data extraction.
+                        </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderStructuresCard() {
+            const structures = analysisData.mechanics.structures;
+            const comparison = structures.catalog_comparison;
+            
+            return `
+                <div class="card">
+                    <div class="card-header structures-header">🏗️ Structure Discovery</div>
+                    <div class="card-content">
+                        <div class="stat-grid" style="margin-bottom: 20px;">
+                            <div class="stat-item">
+                                <div class="stat-value">${structures.total_discovered}</div>
+                                <div class="stat-label">Discovered</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">30</div>
+                                <div class="stat-label">Expected</div>
+                            </div>
+                        </div>
+                        
+                        ${structures.all_structure_types.length > 0 ? `
+                        <ul class="discovery-list">
+                            ${structures.all_structure_types.map(structure => `
+                                <li class="discovery-item">
+                                    <span class="discovery-name">${structure}</span>
+                                    <span class="discovery-usage">${structures.usage_frequency[structure] || 0}x</span>
+                                </li>
+                            `).join('')}
+                        </ul>
+                        ` : '<p style="color: #666;">No structures discovered in level data.</p>'}
+                        
+                        <div style="margin-top: 15px; padding: 10px; background: #fff3cd; border-radius: 6px; font-size: 0.9em;">
+                            🔍 <strong>Critical Gap:</strong> Only ${structures.total_discovered}/30 expected structures discovered. 
+                            Major data extraction issue.
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderGearCard() {
+            const gear = analysisData.mechanics.gear_economy;
+            
+            return `
+                <div class="card">
+                    <div class="card-header gear-header">⚙️ Gear Economy</div>
+                    <div class="card-content">
+                        <div class="stat-grid" style="margin-bottom: 20px;">
+                            <div class="stat-item">
+                                <div class="stat-value">${gear.total_gear_types}</div>
+                                <div class="stat-label">Gear Types</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${Math.round(gear.avg_starting_coins)}</div>
+                                <div class="stat-label">Avg Coins</div>
+                            </div>
+                        </div>
+                        
+                        <div style="font-size: 0.9em; color: #666; margin-bottom: 15px;">
+                            Collection sizes: ${gear.collection_size_stats.min_size}-${gear.collection_size_stats.max_size} items<br>
+                            Fight values: ${gear.fight_value_stats.min_value}-${gear.fight_value_stats.max_value}
+                        </div>
+                        
+                        <ul class="discovery-list">
+                            ${gear.all_gear_types.slice(0, 5).map(gearType => `
+                                <li class="discovery-item">
+                                    <span class="discovery-name">${gearType}</span>
+                                    <span class="discovery-usage">${gear.gear_usage_frequency[gearType] || 0}x</span>
+                                </li>
+                            `).join('')}
+                            ${gear.all_gear_types.length > 5 ? `
+                                <li style="text-align: center; color: #666; font-size: 0.9em; padding: 10px;">
+                                    ... and ${gear.all_gear_types.length - 5} more gear types
+                                </li>
+                            ` : ''}
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderProgressionCard() {
+            const progression = analysisData.progression;
+            const significantLevels = progression.filter(p => 
+                p.new_enemies.length > 0 || p.new_structures.length > 0 || p.mechanics.length > 0
+            );
+            
+            return `
+                <div class="card">
+                    <div class="card-header progression-header">📈 Progression Timeline</div>
+                    <div class="card-content">
+                        <p style="margin-bottom: 20px; color: #666;">
+                            ${significantLevels.length} levels introduce new mechanics
+                        </p>
+                        
+                        ${significantLevels.slice(0, 3).map(level => `
+                            <div class="timeline-item">
+                                <div class="level-key">${level.level}</div>
+                                <div class="mechanic-tags">
+                                    ${level.new_enemies.map(enemy => `
+                                        <span class="mechanic-tag enemy-tag">${enemy}</span>
+                                    `).join('')}
+                                    ${level.new_structures.map(structure => `
+                                        <span class="mechanic-tag structure-tag">${structure}</span>
+                                    `).join('')}
+                                    ${level.mechanics.map(mechanic => `
+                                        <span class="mechanic-tag tutorial-tag">${mechanic}</span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `).join('')}
+                        
+                        ${significantLevels.length > 3 ? `
+                            <p style="text-align: center; color: #666; font-size: 0.9em; margin-top: 15px;">
+                                ... and ${significantLevels.length - 3} more progression points
+                            </p>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderRecommendationsCard() {
+            const recommendations = analysisData.recommendations;
+            
+            return `
+                <div class="card recommendations">
+                    <div class="card-header" style="background: linear-gradient(135deg, #ff7675, #fd79a8); color: white;">
+                        🔧 Critical Recommendations
+                    </div>
+                    <div class="card-content">
+                        ${recommendations.map(rec => `
+                            <div class="recommendation-item priority-${rec.priority.toLowerCase()}">
+                                <div>
+                                    <span class="priority-tag tag-${rec.priority.toLowerCase()}">${rec.priority}</span>
+                                    <strong>${rec.issue}</strong>
+                                </div>
+                                <p style="margin: 8px 0 5px 0; color: #666;">${rec.description}</p>
+                                <p style="margin: 0; font-size: 0.9em;">
+                                    <strong>Action:</strong> ${rec.action}<br>
+                                    <strong>Owner:</strong> ${rec.owner}
+                                </p>
+                            </div>
+                        `).join('')}
+                        
+                        <div style="margin-top: 20px; padding: 15px; background: #f8f9fa; border-radius: 6px;">
+                            <h4 style="margin: 0 0 10px 0;">🎯 Next Steps:</h4>
+                            <ol style="margin: 0; padding-left: 20px;">
+                                <li>Investigate Unity data converter for missing enemies</li>
+                                <li>Update enemy and structure catalogs with discoveries</li>
+                                <li>Enhance mechanic extraction from procedural levels</li>
+                                <li>Implement validation for complete data coverage</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

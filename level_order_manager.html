@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Fight Level Order Manager</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #333;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #444;
+            z-index: 100;
+            height: 60px;
+        }
+
+        .header h1 {
+            color: #4CAF50;
+            font-size: 20px;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .btn:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+
+        .btn.secondary {
+            background: #666;
+        }
+
+        .btn.danger {
+            background: #f44336;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 320px;
+            background: #2a2a2a;
+            border-right: 1px solid #444;
+            margin-top: 60px;
+            overflow-y: auto;
+            height: calc(100vh - 60px);
+        }
+
+        .sidebar-section {
+            padding: 15px;
+            border-bottom: 1px solid #444;
+        }
+
+        .sidebar-section h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Search */
+        .search-box {
+            width: 100%;
+            padding: 8px;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            color: #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        /* Filters */
+        .filter-group {
+            margin-bottom: 15px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .filter-group select {
+            width: 100%;
+            padding: 6px;
+            background: #333;
+            border: 1px solid #444;
+            color: #e0e0e0;
+            border-radius: 4px;
+        }
+
+        /* Statistics */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .stat-card {
+            background: #333;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: #4CAF50;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            color: #999;
+            margin-top: 2px;
+        }
+
+        /* World Navigation */
+        .world-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .world-btn {
+            padding: 6px 12px;
+            background: #444;
+            border: none;
+            color: #e0e0e0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+
+        .world-btn:hover {
+            background: #555;
+        }
+
+        .world-btn.active {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-top: 60px;
+            padding: 20px;
+            overflow-y: auto;
+            height: calc(100vh - 60px);
+        }
+
+        /* View Toggle */
+        .view-toggle {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-btn {
+            padding: 8px 16px;
+            background: #444;
+            border: none;
+            color: #e0e0e0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .view-btn.active {
+            background: #4CAF50;
+            color: white;
+        }
+
+        /* Level Grid */
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .world-group {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid #444;
+        }
+
+        .world-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #444;
+        }
+
+        .world-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4CAF50;
+        }
+
+        .world-stats {
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* Level List */
+        .level-list {
+            min-height: 100px;
+        }
+
+        .level-item {
+            background: #333;
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 8px;
+            cursor: move;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .level-item:hover {
+            background: #404040;
+            border-color: #4CAF50;
+        }
+
+        .level-item.dragging {
+            opacity: 0.5;
+            transform: rotate(5deg);
+        }
+
+        .level-item.drag-over {
+            border-color: #4CAF50;
+            background: #2a4a3a;
+        }
+
+        .level-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .level-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .level-order {
+            background: #4CAF50;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .level-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .level-badges {
+            display: flex;
+            gap: 5px;
+        }
+
+        .level-badge {
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 600;
+        }
+
+        .badge-custom {
+            background: #FF9800;
+            color: white;
+        }
+
+        .badge-procedural {
+            background: #2196F3;
+            color: white;
+        }
+
+        .difficulty-easy { background: #4CAF50; color: white; }
+        .difficulty-medium { background: #FF9800; color: white; }
+        .difficulty-hard { background: #f44336; color: white; }
+        .difficulty-very-hard { background: #9C27B0; color: white; }
+
+        /* Drop Zone */
+        .drop-zone {
+            border: 2px dashed #666;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+            color: #999;
+            margin: 10px 0;
+            transition: all 0.3s;
+        }
+
+        .drop-zone.active {
+            border-color: #4CAF50;
+            background: #1a3a2a;
+            color: #4CAF50;
+        }
+
+        /* Loading */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        .spinner {
+            border: 3px solid #333;
+            border-top: 3px solid #4CAF50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Status Message */
+        .status-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 200;
+            transform: translateY(100px);
+            transition: transform 0.3s;
+        }
+
+        .status-message.show {
+            transform: translateY(0);
+        }
+
+        .status-success {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .status-error {
+            background: #f44336;
+            color: white;
+        }
+
+        .status-info {
+            background: #2196F3;
+            color: white;
+        }
+
+        /* Batch Operations */
+        .batch-operations {
+            background: #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .batch-operations h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .batch-controls {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 300px;
+            }
+
+            .main-content {
+                margin-top: 0;
+                padding: 10px;
+            }
+
+            .levels-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Level Order Manager - Gear Fight</h1>
+        <div class="header-controls">
+            <span id="statusText">Loading...</span>
+            <button class="btn secondary" onclick="resetOrder()">Reset Order</button>
+            <button class="btn" onclick="saveOrder()" id="saveBtn" disabled>Save Changes</button>
+            <button class="btn secondary" onclick="exportOrder()">Export</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Search -->
+            <div class="sidebar-section">
+                <h3>Search & Filter</h3>
+                <input type="text" class="search-box" id="searchBox" placeholder="Search levels...">
+
+                <div class="filter-group">
+                    <label>Filter by World</label>
+                    <select id="worldFilter">
+                        <option value="">All Worlds</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Filter by Type</label>
+                    <select id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="custom">Custom Fights</option>
+                        <option value="procedural">Procedural</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Filter by Difficulty</label>
+                    <select id="difficultyFilter">
+                        <option value="">All Difficulties</option>
+                        <option value="0">Easy</option>
+                        <option value="1">Medium</option>
+                        <option value="2">Hard</option>
+                        <option value="3">Very Hard</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="sidebar-section">
+                <h3>Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalLevels">0</div>
+                        <div class="stat-label">Total Levels</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalWorlds">0</div>
+                        <div class="stat-label">Worlds</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="customLevels">0</div>
+                        <div class="stat-label">Custom</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="proceduralLevels">0</div>
+                        <div class="stat-label">Procedural</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- World Navigation -->
+            <div class="sidebar-section">
+                <h3>Jump to World</h3>
+                <div class="world-nav" id="worldNav">
+                    <!-- World buttons will be generated here -->
+                </div>
+            </div>
+
+            <!-- Batch Operations -->
+            <div class="sidebar-section">
+                <h3>Batch Operations</h3>
+                <div class="batch-controls">
+                    <button class="btn secondary" onclick="reverseWorldOrder()">Reverse World</button>
+                    <button class="btn secondary" onclick="shuffleWorld()">Shuffle World</button>
+                    <button class="btn secondary" onclick="sortByDifficulty()">Sort by Difficulty</button>
+                    <button class="btn secondary" onclick="sortByEnemyCount()">Sort by Enemies</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- View Toggle -->
+            <div class="view-toggle">
+                <button class="view-btn active" onclick="switchView('world')" id="worldViewBtn">By World</button>
+                <button class="view-btn" onclick="switchView('flat')" id="flatViewBtn">Flat List</button>
+            </div>
+
+            <!-- Batch Operations -->
+            <div class="batch-operations">
+                <h3>Quick Actions</h3>
+                <div class="batch-controls">
+                    <button class="btn secondary" onclick="moveSelectedUp()">Move Up</button>
+                    <button class="btn secondary" onclick="moveSelectedDown()">Move Down</button>
+                    <button class="btn secondary" onclick="swapChapters()">Swap Chapters</button>
+                    <button class="btn secondary" onclick="insertAfter()">Insert After</button>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div id="contentArea">
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Message -->
+    <div id="statusMessage" class="status-message"></div>
+
+    <script>
+        // Global variables
+        let levelData = [];
+        let originalOrder = [];
+        let currentView = 'world';
+        let selectedLevel = null;
+        let hasChanges = false;
+        let draggedElement = null;
+
+        // API configuration
+        const API_BASE = 'http://localhost:3205';
+
+        // Initialize
+        window.addEventListener('load', init);
+
+        async function init() {
+            try {
+                await loadLevelData();
+                generateWorldNavigation();
+                updateStatistics();
+                renderLevels();
+                updateStatus('Ready - Drag levels to reorder', 'info');
+            } catch (error) {
+                console.error('Initialization error:', error);
+                updateStatus('Failed to initialize', 'error');
+            }
+        }
+
+        async function loadLevelData() {
+            try {
+                const response = await fetch(`${API_BASE}/api/levels/list`);
+                if (!response.ok) throw new Error('Failed to load levels');
+
+                const data = await response.json();
+                levelData = data.levels.map(level => ({
+                    ...level,
+                    originalOrder: level.displayLevelNumber || level.levelNumber || level.sort_key,
+                    currentOrder: level.displayLevelNumber || level.levelNumber || level.sort_key
+                }));
+
+                // Sort by current order
+                levelData.sort((a, b) => a.currentOrder - b.currentOrder);
+                originalOrder = [...levelData];
+
+                console.log(`Loaded ${levelData.length} levels`);
+            } catch (error) {
+                console.error('Error loading level data:', error);
+                throw error;
+            }
+        }
+
+        function generateWorldNavigation() {
+            const worldNav = document.getElementById('worldNav');
+            const worldFilter = document.getElementById('worldFilter');
+
+            const worlds = [...new Set(levelData.map(level => level.worldNumber))].sort((a, b) => a - b);
+
+            // Generate world buttons
+            worldNav.innerHTML = worlds.map(world =>
+                `<button class="world-btn" onclick="scrollToWorld(${world})">World ${world}</button>`
+            ).join('');
+
+            // Generate world filter options
+            worldFilter.innerHTML = '<option value="">All Worlds</option>' +
+                worlds.map(world => `<option value="${world}">World ${world}</option>`).join('');
+        }
+
+        function updateStatistics() {
+            const customCount = levelData.filter(level => level.hasCustomFights).length;
+            const proceduralCount = levelData.length - customCount;
+            const worldCount = [...new Set(levelData.map(level => level.worldNumber))].length;
+
+            document.getElementById('totalLevels').textContent = levelData.length;
+            document.getElementById('totalWorlds').textContent = worldCount;
+            document.getElementById('customLevels').textContent = customCount;
+            document.getElementById('proceduralLevels').textContent = proceduralCount;
+        }
+
+        function renderLevels() {
+            const contentArea = document.getElementById('contentArea');
+
+            if (currentView === 'world') {
+                renderWorldView(contentArea);
+            } else {
+                renderFlatView(contentArea);
+            }
+        }
+
+        function renderWorldView(container) {
+            const worldGroups = {};
+
+            // Group levels by world
+            levelData.forEach(level => {
+                if (!worldGroups[level.worldNumber]) {
+                    worldGroups[level.worldNumber] = [];
+                }
+                worldGroups[level.worldNumber].push(level);
+            });
+
+            // Render world groups
+            container.innerHTML = '<div class="levels-grid">' +
+                Object.keys(worldGroups).sort((a, b) => a - b).map(worldNum => {
+                    const worldLevels = worldGroups[worldNum].sort((a, b) => a.currentOrder - b.currentOrder);
+                    const avgEnemies = Math.round(worldLevels.reduce((sum, level) => sum + (level.totalEnemies || 0), 0) / worldLevels.length);
+
+                    return `
+                        <div class="world-group" id="world-${worldNum}">
+                            <div class="world-header">
+                                <div class="world-title">World ${worldNum}</div>
+                                <div class="world-stats">${worldLevels.length} levels • ~${avgEnemies} enemies avg</div>
+                            </div>
+                            <div class="level-list" data-world="${worldNum}">
+                                ${worldLevels.map(level => renderLevelItem(level)).join('')}
+                            </div>
+                        </div>
+                    `;
+                }).join('') +
+            '</div>';
+
+            // Add drag and drop event listeners
+            addDragDropListeners();
+        }
+
+        function renderFlatView(container) {
+            const sortedLevels = [...levelData].sort((a, b) => a.currentOrder - b.currentOrder);
+
+            container.innerHTML = `
+                <div class="world-group">
+                    <div class="world-header">
+                        <div class="world-title">All Levels (Flat View)</div>
+                        <div class="world-stats">${sortedLevels.length} levels total</div>
+                    </div>
+                    <div class="level-list" data-world="all">
+                        ${sortedLevels.map(level => renderLevelItem(level)).join('')}
+                    </div>
+                </div>
+            `;
+
+            // Add drag and drop event listeners
+            addDragDropListeners();
+        }
+
+        function renderLevelItem(level) {
+            const difficultyClass = getDifficultyClass(level.levelDifficulty);
+            const typeClass = level.hasCustomFights ? 'badge-custom' : 'badge-procedural';
+            const typeText = level.hasCustomFights ? 'Custom' : 'Procedural';
+
+            return `
+                <div class="level-item"
+                     draggable="true"
+                     data-world="${level.worldNumber}"
+                     data-level="${level.levelInWorld}"
+                     data-order="${level.currentOrder}">
+                    <div class="level-header">
+                        <div class="level-name">${level.name}</div>
+                        <div class="level-order">#${level.currentOrder}</div>
+                    </div>
+                    <div class="level-info">
+                        <div>
+                            <span>World ${level.worldNumber}-${level.levelInWorld}</span>
+                            <span> • ${level.fightCount || 0} fights</span>
+                            <span> • ${level.totalEnemies || 0} enemies</span>
+                        </div>
+                        <div class="level-badges">
+                            <span class="level-badge ${typeClass}">${typeText}</span>
+                            <span class="level-badge ${difficultyClass}">${getDifficultyText(level.levelDifficulty)}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getDifficultyClass(difficulty) {
+            switch(difficulty) {
+                case 0: return 'difficulty-easy';
+                case 1: return 'difficulty-medium';
+                case 2: return 'difficulty-hard';
+                case 3: return 'difficulty-very-hard';
+                default: return 'difficulty-easy';
+            }
+        }
+
+        function getDifficultyText(difficulty) {
+            switch(difficulty) {
+                case 0: return 'Easy';
+                case 1: return 'Medium';
+                case 2: return 'Hard';
+                case 3: return 'Very Hard';
+                default: return 'Easy';
+            }
+        }
+
+        function addDragDropListeners() {
+            const levelItems = document.querySelectorAll('.level-item');
+            const levelLists = document.querySelectorAll('.level-list');
+
+            levelItems.forEach(item => {
+                item.addEventListener('dragstart', handleDragStart);
+                item.addEventListener('dragend', handleDragEnd);
+            });
+
+            levelLists.forEach(list => {
+                list.addEventListener('dragover', handleDragOver);
+                list.addEventListener('drop', handleDrop);
+            });
+        }
+
+        function handleDragStart(e) {
+            draggedElement = e.target;
+            e.target.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/html', e.target.outerHTML);
+        }
+
+        function handleDragEnd(e) {
+            e.target.classList.remove('dragging');
+            draggedElement = null;
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+
+            const afterElement = getDragAfterElement(e.currentTarget, e.clientY);
+            const dragging = document.querySelector('.dragging');
+
+            if (afterElement == null) {
+                e.currentTarget.appendChild(dragging);
+            } else {
+                e.currentTarget.insertBefore(dragging, afterElement);
+            }
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            updateOrderFromDOM();
+            markAsChanged();
+        }
+
+        function getDragAfterElement(container, y) {
+            const draggableElements = [...container.querySelectorAll('.level-item:not(.dragging)')];
+
+            return draggableElements.reduce((closest, child) => {
+                const box = child.getBoundingClientRect();
+                const offset = y - box.top - box.height / 2;
+
+                if (offset < 0 && offset > closest.offset) {
+                    return { offset: offset, element: child };
+                } else {
+                    return closest;
+                }
+            }, { offset: Number.NEGATIVE_INFINITY }).element;
+        }
+
+        function updateOrderFromDOM() {
+            const levelItems = document.querySelectorAll('.level-item');
+            let newOrder = 1;
+
+            levelItems.forEach(item => {
+                const world = parseInt(item.dataset.world);
+                const level = parseInt(item.dataset.level);
+
+                const levelObj = levelData.find(l => l.worldNumber === world && l.levelInWorld === level);
+                if (levelObj) {
+                    levelObj.currentOrder = newOrder++;
+                    item.dataset.order = levelObj.currentOrder;
+                    item.querySelector('.level-order').textContent = `#${levelObj.currentOrder}`;
+                }
+            });
+
+            console.log('Updated order from DOM');
+        }
+
+        function switchView(view) {
+            currentView = view;
+
+            document.querySelectorAll('.view-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(view + 'ViewBtn').classList.add('active');
+
+            renderLevels();
+        }
+
+        function scrollToWorld(worldNum) {
+            const worldElement = document.getElementById(`world-${worldNum}`);
+            if (worldElement) {
+                worldElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function markAsChanged() {
+            hasChanges = true;
+            document.getElementById('saveBtn').disabled = false;
+            updateStatus('Changes detected - Click Save to apply', 'info');
+        }
+
+        async function saveOrder() {
+            try {
+                updateStatus('Saving changes...', 'info');
+                document.getElementById('saveBtn').disabled = true;
+
+                const orderData = levelData.map(level => ({
+                    world: level.worldNumber,
+                    level: level.levelInWorld,
+                    displayOrder: level.currentOrder
+                }));
+
+                const response = await fetch(`${API_BASE}/api/level-order`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ levels: orderData })
+                });
+
+                if (!response.ok) {
+                    const error = await response.json();
+                    throw new Error(error.error || 'Failed to save order');
+                }
+
+                const result = await response.json();
+                hasChanges = false;
+                originalOrder = [...levelData];
+
+                updateStatus(`Saved order for ${result.updated_count} levels`, 'success');
+            } catch (error) {
+                console.error('Error saving order:', error);
+                updateStatus('Failed to save order: ' + error.message, 'error');
+                document.getElementById('saveBtn').disabled = false;
+            }
+        }
+
+        function resetOrder() {
+            if (hasChanges && !confirm('Reset to original order? All unsaved changes will be lost.')) {
+                return;
+            }
+
+            levelData = [...originalOrder];
+            hasChanges = false;
+            document.getElementById('saveBtn').disabled = true;
+            renderLevels();
+            updateStatus('Order reset to original', 'info');
+        }
+
+        function exportOrder() {
+            const orderData = levelData.map(level => ({
+                world: level.worldNumber,
+                level: level.levelInWorld,
+                name: level.name,
+                originalOrder: level.originalOrder,
+                currentOrder: level.currentOrder,
+                hasCustomFights: level.hasCustomFights,
+                difficulty: level.levelDifficulty,
+                enemies: level.totalEnemies
+            }));
+
+            const dataStr = JSON.stringify(orderData, null, 2);
+            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+
+            const exportName = `gear_fight_level_order_${new Date().toISOString().split('T')[0]}.json`;
+
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', exportName);
+            linkElement.click();
+
+            updateStatus('Order exported', 'success');
+        }
+
+        // Batch operations
+        function reverseWorldOrder() {
+            const selectedWorld = document.getElementById('worldFilter').value;
+            if (!selectedWorld) {
+                updateStatus('Please select a world first', 'error');
+                return;
+            }
+
+            const worldLevels = levelData.filter(level => level.worldNumber == selectedWorld);
+            worldLevels.sort((a, b) => b.currentOrder - a.currentOrder);
+
+            let nextOrder = Math.min(...worldLevels.map(l => l.currentOrder));
+            worldLevels.forEach(level => {
+                level.currentOrder = nextOrder++;
+            });
+
+            markAsChanged();
+            renderLevels();
+            updateStatus(`Reversed order for World ${selectedWorld}`, 'info');
+        }
+
+        function shuffleWorld() {
+            const selectedWorld = document.getElementById('worldFilter').value;
+            if (!selectedWorld) {
+                updateStatus('Please select a world first', 'error');
+                return;
+            }
+
+            const worldLevels = levelData.filter(level => level.worldNumber == selectedWorld);
+            const orders = worldLevels.map(l => l.currentOrder);
+
+            // Fisher-Yates shuffle
+            for (let i = orders.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [orders[i], orders[j]] = [orders[j], orders[i]];
+            }
+
+            worldLevels.forEach((level, index) => {
+                level.currentOrder = orders[index];
+            });
+
+            markAsChanged();
+            renderLevels();
+            updateStatus(`Shuffled World ${selectedWorld}`, 'info');
+        }
+
+        function sortByDifficulty() {
+            const selectedWorld = document.getElementById('worldFilter').value;
+            const levels = selectedWorld ?
+                levelData.filter(level => level.worldNumber == selectedWorld) :
+                levelData;
+
+            levels.sort((a, b) => (a.levelDifficulty || 0) - (b.levelDifficulty || 0));
+
+            let nextOrder = Math.min(...levels.map(l => l.currentOrder));
+            levels.forEach(level => {
+                level.currentOrder = nextOrder++;
+            });
+
+            markAsChanged();
+            renderLevels();
+            updateStatus('Sorted by difficulty', 'info');
+        }
+
+        function sortByEnemyCount() {
+            const selectedWorld = document.getElementById('worldFilter').value;
+            const levels = selectedWorld ?
+                levelData.filter(level => level.worldNumber == selectedWorld) :
+                levelData;
+
+            levels.sort((a, b) => (a.totalEnemies || 0) - (b.totalEnemies || 0));
+
+            let nextOrder = Math.min(...levels.map(l => l.currentOrder));
+            levels.forEach(level => {
+                level.currentOrder = nextOrder++;
+            });
+
+            markAsChanged();
+            renderLevels();
+            updateStatus('Sorted by enemy count', 'info');
+        }
+
+        function updateStatus(message, type = 'info') {
+            const statusMessage = document.getElementById('statusMessage');
+            const statusText = document.getElementById('statusText');
+
+            statusText.textContent = message;
+
+            statusMessage.className = `status-message status-${type}`;
+            statusMessage.textContent = message;
+            statusMessage.classList.add('show');
+
+            setTimeout(() => {
+                statusMessage.classList.remove('show');
+            }, 3000);
+        }
+
+        // Filter functionality
+        document.getElementById('searchBox').addEventListener('input', filterLevels);
+        document.getElementById('worldFilter').addEventListener('change', filterLevels);
+        document.getElementById('typeFilter').addEventListener('change', filterLevels);
+        document.getElementById('difficultyFilter').addEventListener('change', filterLevels);
+
+        function filterLevels() {
+            const search = document.getElementById('searchBox').value.toLowerCase();
+            const world = document.getElementById('worldFilter').value;
+            const type = document.getElementById('typeFilter').value;
+            const difficulty = document.getElementById('difficultyFilter').value;
+
+            const levelItems = document.querySelectorAll('.level-item');
+
+            levelItems.forEach(item => {
+                const levelWorld = item.dataset.world;
+                const levelLevel = item.dataset.level;
+                const level = levelData.find(l => l.worldNumber == levelWorld && l.levelInWorld == levelLevel);
+
+                if (!level) return;
+
+                const matchesSearch = !search || level.name.toLowerCase().includes(search);
+                const matchesWorld = !world || level.worldNumber == world;
+                const matchesType = !type ||
+                    (type === 'custom' && level.hasCustomFights) ||
+                    (type === 'procedural' && !level.hasCustomFights);
+                const matchesDifficulty = !difficulty || level.levelDifficulty == difficulty;
+
+                const visible = matchesSearch && matchesWorld && matchesType && matchesDifficulty;
+                item.style.display = visible ? 'block' : 'none';
+            });
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 's':
+                        e.preventDefault();
+                        if (!document.getElementById('saveBtn').disabled) {
+                            saveOrder();
+                        }
+                        break;
+                    case 'r':
+                        e.preventDefault();
+                        resetOrder();
+                        break;
+                    case 'e':
+                        e.preventDefault();
+                        exportOrder();
+                        break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

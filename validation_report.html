@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Fight Validation Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #333;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #444;
+            z-index: 100;
+            height: 60px;
+        }
+
+        .header h1 {
+            color: #4CAF50;
+            font-size: 20px;
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .btn:disabled {
+            background: #666;
+            cursor: not-allowed;
+        }
+
+        .btn.secondary {
+            background: #666;
+        }
+
+        .btn.danger {
+            background: #f44336;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 320px;
+            background: #2a2a2a;
+            border-right: 1px solid #444;
+            margin-top: 60px;
+            overflow-y: auto;
+            height: calc(100vh - 60px);
+        }
+
+        .sidebar-section {
+            padding: 15px;
+            border-bottom: 1px solid #444;
+        }
+
+        .sidebar-section h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Summary Dashboard */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .summary-card {
+            background: #333;
+            padding: 12px;
+            border-radius: 4px;
+            text-align: center;
+            border-left: 3px solid #4CAF50;
+        }
+
+        .summary-card.errors {
+            border-left-color: #f44336;
+        }
+
+        .summary-card.warnings {
+            border-left-color: #FF9800;
+        }
+
+        .summary-card.info {
+            border-left-color: #2196F3;
+        }
+
+        .summary-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: #4CAF50;
+        }
+
+        .summary-card.errors .summary-value {
+            color: #f44336;
+        }
+
+        .summary-card.warnings .summary-value {
+            color: #FF9800;
+        }
+
+        .summary-card.info .summary-value {
+            color: #2196F3;
+        }
+
+        .summary-label {
+            font-size: 10px;
+            color: #999;
+            margin-top: 2px;
+        }
+
+        /* Filters */
+        .filter-group {
+            margin-bottom: 15px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            width: 100%;
+            padding: 6px;
+            background: #333;
+            border: 1px solid #444;
+            color: #e0e0e0;
+            border-radius: 4px;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .filter-checkbox input[type="checkbox"] {
+            width: auto;
+        }
+
+        .filter-checkbox label {
+            margin: 0;
+            font-size: 12px;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #333;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #4CAF50;
+            transition: width 0.3s;
+            width: 0%;
+        }
+
+        .progress-text {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-top: 60px;
+            padding: 20px;
+            overflow-y: auto;
+            height: calc(100vh - 60px);
+        }
+
+        /* Validation Results */
+        .validation-results {
+            display: grid;
+            gap: 15px;
+        }
+
+        .level-result {
+            background: #2a2a2a;
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid #444;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .level-result.has-errors {
+            border-left-color: #f44336;
+        }
+
+        .level-result.has-warnings {
+            border-left-color: #FF9800;
+        }
+
+        .level-result.has-suggestions {
+            border-left-color: #2196F3;
+        }
+
+        .level-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .level-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #e0e0e0;
+        }
+
+        .level-summary {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .issue-badge {
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .badge-error {
+            background: #f44336;
+            color: white;
+        }
+
+        .badge-warning {
+            background: #FF9800;
+            color: white;
+        }
+
+        .badge-suggestion {
+            background: #2196F3;
+            color: white;
+        }
+
+        .badge-valid {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .expand-icon {
+            font-size: 18px;
+            transition: transform 0.3s;
+            color: #999;
+        }
+
+        .level-result.expanded .expand-icon {
+            transform: rotate(90deg);
+        }
+
+        /* Issue Details */
+        .level-details {
+            display: none;
+            border-top: 1px solid #444;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+
+        .level-result.expanded .level-details {
+            display: block;
+        }
+
+        .issue-section {
+            margin-bottom: 20px;
+        }
+
+        .issue-section h4 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .issue-list {
+            list-style: none;
+        }
+
+        .issue-item {
+            background: #333;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border-left: 3px solid #4CAF50;
+        }
+
+        .issue-item.error {
+            border-left-color: #f44336;
+            background: #3a2222;
+        }
+
+        .issue-item.warning {
+            border-left-color: #FF9800;
+            background: #3a3122;
+        }
+
+        .issue-item.suggestion {
+            border-left-color: #2196F3;
+            background: #223135;
+        }
+
+        .issue-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .issue-meta {
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+
+        /* Solvability Score */
+        .solvability-score {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .score-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: conic-gradient(#4CAF50 0deg, #4CAF50 calc(var(--score) * 3.6deg), #333 calc(var(--score) * 3.6deg));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+            position: relative;
+        }
+
+        .score-circle::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #2a2a2a;
+            border-radius: 50%;
+        }
+
+        .score-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Loading States */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .spinner {
+            border: 3px solid #333;
+            border-top: 3px solid #4CAF50;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .empty-state h3 {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        /* Status Message */
+        .status-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 200;
+            transform: translateY(100px);
+            transition: transform 0.3s;
+        }
+
+        .status-message.show {
+            transform: translateY(0);
+        }
+
+        .status-success {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .status-error {
+            background: #f44336;
+            color: white;
+        }
+
+        .status-info {
+            background: #2196F3;
+            color: white;
+        }
+
+        /* Export Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 8px;
+            min-width: 500px;
+            max-width: 80%;
+            max-height: 80%;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-header h3 {
+            color: #4CAF50;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Export Options */
+        .export-options {
+            display: grid;
+            gap: 15px;
+        }
+
+        .export-option {
+            background: #333;
+            padding: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .export-option:hover {
+            background: #404040;
+        }
+
+        .export-option h4 {
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+
+        .export-option p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 300px;
+            }
+
+            .main-content {
+                margin-top: 0;
+                padding: 10px;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Validation Report - Gear Fight</h1>
+        <div class="header-controls">
+            <span id="lastUpdated">Never</span>
+            <button class="btn" onclick="runValidation()" id="validateBtn">Run Validation</button>
+            <button class="btn secondary" onclick="refreshReport()">Refresh</button>
+            <button class="btn secondary" onclick="openExportModal()">Export</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Summary Dashboard -->
+            <div class="sidebar-section">
+                <h3>Summary Dashboard</h3>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-value" id="totalLevels">0</div>
+                        <div class="summary-label">Total Levels</div>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-value" id="validLevels">0</div>
+                        <div class="summary-label">Valid Levels</div>
+                    </div>
+                    <div class="summary-card errors">
+                        <div class="summary-value" id="totalErrors">0</div>
+                        <div class="summary-label">Total Errors</div>
+                    </div>
+                    <div class="summary-card warnings">
+                        <div class="summary-value" id="totalWarnings">0</div>
+                        <div class="summary-label">Total Warnings</div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="validationProgress"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">Ready</div>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="sidebar-section">
+                <h3>Filters</h3>
+
+                <div class="filter-group">
+                    <label>Search Levels</label>
+                    <input type="text" id="searchFilter" placeholder="Search levels...">
+                </div>
+
+                <div class="filter-group">
+                    <label>Filter by World</label>
+                    <select id="worldFilter">
+                        <option value="">All Worlds</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Filter by Severity</label>
+                    <div class="filter-checkbox">
+                        <input type="checkbox" id="showErrors" checked>
+                        <label>Show Errors</label>
+                    </div>
+                    <div class="filter-checkbox">
+                        <input type="checkbox" id="showWarnings" checked>
+                        <label>Show Warnings</label>
+                    </div>
+                    <div class="filter-checkbox">
+                        <input type="checkbox" id="showSuggestions" checked>
+                        <label>Show Suggestions</label>
+                    </div>
+                    <div class="filter-checkbox">
+                        <input type="checkbox" id="showValid" checked>
+                        <label>Show Valid Levels</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Solvability Score</label>
+                    <select id="solvabilityFilter">
+                        <option value="">All Scores</option>
+                        <option value="perfect">100% (Perfect)</option>
+                        <option value="high">90-99% (High)</option>
+                        <option value="medium">70-89% (Medium)</option>
+                        <option value="low">Below 70% (Low)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="sidebar-section">
+                <h3>Quick Actions</h3>
+                <button class="btn secondary" onclick="expandAll()" style="width: 100%; margin-bottom: 10px;">Expand All</button>
+                <button class="btn secondary" onclick="collapseAll()" style="width: 100%; margin-bottom: 10px;">Collapse All</button>
+                <button class="btn secondary" onclick="showOnlyIssues()" style="width: 100%; margin-bottom: 10px;">Show Only Issues</button>
+                <button class="btn secondary" onclick="resetFilters()" style="width: 100%;">Reset Filters</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div id="contentArea">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <div>Loading validation report...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Message -->
+    <div id="statusMessage" class="status-message"></div>
+
+    <!-- Export Modal -->
+    <div id="exportModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Export Validation Report</h3>
+                <button class="modal-close" onclick="closeExportModal()">&times;</button>
+            </div>
+            <div class="export-options">
+                <div class="export-option" onclick="exportAsJSON()">
+                    <h4>JSON Report</h4>
+                    <p>Export the complete validation report as JSON for further processing</p>
+                </div>
+                <div class="export-option" onclick="exportAsCSV()">
+                    <h4>CSV Summary</h4>
+                    <p>Export a summary of all issues as CSV for spreadsheet analysis</p>
+                </div>
+                <div class="export-option" onclick="exportAsPDF()">
+                    <h4>PDF Report</h4>
+                    <p>Generate a formatted PDF report (requires print dialog)</p>
+                </div>
+                <div class="export-option" onclick="exportFilteredResults()">
+                    <h4>Filtered Results</h4>
+                    <p>Export only the currently filtered results</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let validationData = null;
+        let filteredResults = [];
+        let isRunningValidation = false;
+
+        // API configuration
+        const API_BASE = 'http://localhost:3205';
+
+        // Initialize
+        window.addEventListener('load', init);
+
+        async function init() {
+            try {
+                await loadValidationReport();
+                setupFilters();
+                updateStatus('Validation report loaded', 'success');
+            } catch (error) {
+                console.error('Initialization error:', error);
+                showEmptyState('Failed to load validation report');
+            }
+        }
+
+        async function loadValidationReport() {
+            try {
+                const response = await fetch(`${API_BASE}/api/validation/report`);
+
+                if (response.status === 404) {
+                    showEmptyState('No validation report found. Click "Run Validation" to generate one.');
+                    return;
+                }
+
+                if (!response.ok) throw new Error('Failed to load validation report');
+
+                const data = await response.json();
+                validationData = data.results;
+
+                updateLastUpdated(data.timestamp);
+                updateSummaryDashboard();
+                populateWorldFilter();
+                renderValidationResults();
+            } catch (error) {
+                console.error('Error loading validation report:', error);
+                throw error;
+            }
+        }
+
+        async function runValidation() {
+            if (isRunningValidation) return;
+
+            try {
+                isRunningValidation = true;
+                document.getElementById('validateBtn').disabled = true;
+                document.getElementById('progressText').textContent = 'Running validation...';
+
+                updateProgress(0);
+                updateStatus('Starting validation...', 'info');
+
+                const response = await fetch(`${API_BASE}/api/validation/run`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({})
+                });
+
+                if (!response.ok) throw new Error('Validation failed');
+
+                const result = await response.json();
+
+                if (result.status === 'completed') {
+                    validationData = result.results;
+                    updateProgress(100);
+                    updateSummaryDashboard();
+                    populateWorldFilter();
+                    renderValidationResults();
+                    updateStatus('Validation completed successfully', 'success');
+                } else {
+                    throw new Error(result.error || 'Validation failed');
+                }
+
+            } catch (error) {
+                console.error('Validation error:', error);
+                updateStatus('Validation failed: ' + error.message, 'error');
+            } finally {
+                isRunningValidation = false;
+                document.getElementById('validateBtn').disabled = false;
+                document.getElementById('progressText').textContent = 'Ready';
+            }
+        }
+
+        async function refreshReport() {
+            updateStatus('Refreshing report...', 'info');
+            await loadValidationReport();
+        }
+
+        function updateLastUpdated(timestamp) {
+            const lastUpdated = document.getElementById('lastUpdated');
+            if (timestamp) {
+                const date = new Date(timestamp);
+                lastUpdated.textContent = date.toLocaleString();
+            } else {
+                lastUpdated.textContent = 'Never';
+            }
+        }
+
+        function updateSummaryDashboard() {
+            if (!validationData) return;
+
+            document.getElementById('totalLevels').textContent = validationData.total_levels || 0;
+            document.getElementById('validLevels').textContent = validationData.valid_levels || 0;
+            document.getElementById('totalErrors').textContent = validationData.total_errors || 0;
+            document.getElementById('totalWarnings').textContent = validationData.total_warnings || 0;
+
+            const validPercentage = validationData.total_levels > 0 ?
+                Math.round((validationData.valid_levels / validationData.total_levels) * 100) : 0;
+
+            updateProgress(validPercentage);
+        }
+
+        function updateProgress(percentage) {
+            const progressFill = document.getElementById('validationProgress');
+            const progressText = document.getElementById('progressText');
+
+            progressFill.style.width = percentage + '%';
+
+            if (percentage === 100) {
+                progressFill.style.background = '#4CAF50';
+                progressText.textContent = 'All levels valid';
+            } else if (percentage >= 90) {
+                progressFill.style.background = '#8BC34A';
+                progressText.textContent = `${percentage}% valid`;
+            } else if (percentage >= 70) {
+                progressFill.style.background = '#FF9800';
+                progressText.textContent = `${percentage}% valid`;
+            } else {
+                progressFill.style.background = '#f44336';
+                progressText.textContent = `${percentage}% valid`;
+            }
+        }
+
+        function populateWorldFilter() {
+            if (!validationData || !validationData.results) return;
+
+            const worlds = [...new Set(validationData.results.map(result => {
+                const levelId = result.level_id || '';
+                const world = levelId.split('_')[0];
+                return parseInt(world);
+            }))].filter(w => !isNaN(w)).sort((a, b) => a - b);
+
+            const worldFilter = document.getElementById('worldFilter');
+            worldFilter.innerHTML = '<option value="">All Worlds</option>' +
+                worlds.map(world => `<option value="${world}">World ${world}</option>`).join('');
+        }
+
+        function renderValidationResults() {
+            if (!validationData || !validationData.results) {
+                showEmptyState('No validation results available');
+                return;
+            }
+
+            applyFilters();
+            renderFilteredResults();
+        }
+
+        function applyFilters() {
+            if (!validationData || !validationData.results) {
+                filteredResults = [];
+                return;
+            }
+
+            const searchTerm = document.getElementById('searchFilter').value.toLowerCase();
+            const worldFilter = document.getElementById('worldFilter').value;
+            const showErrors = document.getElementById('showErrors').checked;
+            const showWarnings = document.getElementById('showWarnings').checked;
+            const showSuggestions = document.getElementById('showSuggestions').checked;
+            const showValid = document.getElementById('showValid').checked;
+            const solvabilityFilter = document.getElementById('solvabilityFilter').value;
+
+            filteredResults = validationData.results.filter(result => {
+                // Search filter
+                if (searchTerm && !result.level_id.toLowerCase().includes(searchTerm)) {
+                    return false;
+                }
+
+                // World filter
+                if (worldFilter) {
+                    const levelWorld = result.level_id.split('_')[0];
+                    if (levelWorld !== worldFilter) return false;
+                }
+
+                // Severity filter
+                const hasErrors = result.errors && result.errors.length > 0;
+                const hasWarnings = result.warnings && result.warnings.length > 0;
+                const hasSuggestions = result.suggestions && result.suggestions.length > 0;
+                const isValid = result.is_valid && !hasErrors && !hasWarnings;
+
+                if (hasErrors && !showErrors) return false;
+                if (hasWarnings && !showWarnings && !hasErrors) return false;
+                if (hasSuggestions && !showSuggestions && !hasErrors && !hasWarnings) return false;
+                if (isValid && !showValid) return false;
+
+                // Solvability filter
+                if (solvabilityFilter) {
+                    const score = result.solvability_score || 100;
+                    switch (solvabilityFilter) {
+                        case 'perfect':
+                            if (score !== 100) return false;
+                            break;
+                        case 'high':
+                            if (score < 90 || score >= 100) return false;
+                            break;
+                        case 'medium':
+                            if (score < 70 || score >= 90) return false;
+                            break;
+                        case 'low':
+                            if (score >= 70) return false;
+                            break;
+                    }
+                }
+
+                return true;
+            });
+        }
+
+        function renderFilteredResults() {
+            const contentArea = document.getElementById('contentArea');
+
+            if (filteredResults.length === 0) {
+                showEmptyState('No results match the current filters');
+                return;
+            }
+
+            contentArea.innerHTML = `
+                <div class="validation-results">
+                    ${filteredResults.map(result => renderLevelResult(result)).join('')}
+                </div>
+            `;
+
+            // Add click listeners for expand/collapse
+            document.querySelectorAll('.level-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const levelResult = header.closest('.level-result');
+                    levelResult.classList.toggle('expanded');
+                });
+            });
+        }
+
+        function renderLevelResult(result) {
+            const hasErrors = result.errors && result.errors.length > 0;
+            const hasWarnings = result.warnings && result.warnings.length > 0;
+            const hasSuggestions = result.suggestions && result.suggestions.length > 0;
+
+            let resultClass = '';
+            if (hasErrors) resultClass = 'has-errors';
+            else if (hasWarnings) resultClass = 'has-warnings';
+            else if (hasSuggestions) resultClass = 'has-suggestions';
+
+            const solvabilityScore = result.solvability_score || 100;
+
+            return `
+                <div class="level-result ${resultClass}">
+                    <div class="level-header">
+                        <div class="level-title">Level ${result.level_id.replace('_', '-')}</div>
+                        <div class="level-summary">
+                            ${hasErrors ? `<span class="issue-badge badge-error">${result.errors.length} Error${result.errors.length !== 1 ? 's' : ''}</span>` : ''}
+                            ${hasWarnings ? `<span class="issue-badge badge-warning">${result.warnings.length} Warning${result.warnings.length !== 1 ? 's' : ''}</span>` : ''}
+                            ${hasSuggestions ? `<span class="issue-badge badge-suggestion">${result.suggestions.length} Suggestion${result.suggestions.length !== 1 ? 's' : ''}</span>` : ''}
+                            ${!hasErrors && !hasWarnings && !hasSuggestions ? '<span class="issue-badge badge-valid">Valid</span>' : ''}
+                            <span class="expand-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="level-details">
+                        <div class="solvability-score">
+                            <div class="score-circle" style="--score: ${solvabilityScore}">
+                                <span class="score-text">${Math.round(solvabilityScore)}%</span>
+                            </div>
+                            <div>
+                                <strong>Solvability Score</strong><br>
+                                <span style="color: #999; font-size: 12px;">Level completion difficulty assessment</span>
+                            </div>
+                        </div>
+                        ${renderIssueSection('Errors', result.errors, 'error')}
+                        ${renderIssueSection('Warnings', result.warnings, 'warning')}
+                        ${renderIssueSection('Suggestions', result.suggestions, 'suggestion')}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderIssueSection(title, issues, type) {
+            if (!issues || issues.length === 0) return '';
+
+            const icon = type === 'error' ? '🚨' : type === 'warning' ? '⚠️' : '💡';
+
+            return `
+                <div class="issue-section">
+                    <h4>${icon} ${title} (${issues.length})</h4>
+                    <ul class="issue-list">
+                        ${issues.map(issue => `
+                            <li class="issue-item ${type}">
+                                <div class="issue-text">${issue}</div>
+                                <div class="issue-meta">Detected during validation</div>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+        }
+
+        function showEmptyState(message) {
+            const contentArea = document.getElementById('contentArea');
+            contentArea.innerHTML = `
+                <div class="empty-state">
+                    <h3>No Data Available</h3>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+
+        function setupFilters() {
+            // Add event listeners for filters
+            document.getElementById('searchFilter').addEventListener('input', onFilterChange);
+            document.getElementById('worldFilter').addEventListener('change', onFilterChange);
+            document.getElementById('showErrors').addEventListener('change', onFilterChange);
+            document.getElementById('showWarnings').addEventListener('change', onFilterChange);
+            document.getElementById('showSuggestions').addEventListener('change', onFilterChange);
+            document.getElementById('showValid').addEventListener('change', onFilterChange);
+            document.getElementById('solvabilityFilter').addEventListener('change', onFilterChange);
+        }
+
+        function onFilterChange() {
+            if (validationData) {
+                renderValidationResults();
+            }
+        }
+
+        // Quick Actions
+        function expandAll() {
+            document.querySelectorAll('.level-result').forEach(result => {
+                result.classList.add('expanded');
+            });
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.level-result').forEach(result => {
+                result.classList.remove('expanded');
+            });
+        }
+
+        function showOnlyIssues() {
+            document.getElementById('showErrors').checked = true;
+            document.getElementById('showWarnings').checked = true;
+            document.getElementById('showSuggestions').checked = true;
+            document.getElementById('showValid').checked = false;
+            onFilterChange();
+        }
+
+        function resetFilters() {
+            document.getElementById('searchFilter').value = '';
+            document.getElementById('worldFilter').value = '';
+            document.getElementById('showErrors').checked = true;
+            document.getElementById('showWarnings').checked = true;
+            document.getElementById('showSuggestions').checked = true;
+            document.getElementById('showValid').checked = true;
+            document.getElementById('solvabilityFilter').value = '';
+            onFilterChange();
+        }
+
+        // Export Functions
+        function openExportModal() {
+            document.getElementById('exportModal').style.display = 'block';
+        }
+
+        function closeExportModal() {
+            document.getElementById('exportModal').style.display = 'none';
+        }
+
+        function exportAsJSON() {
+            const exportData = {
+                timestamp: new Date().toISOString(),
+                summary: {
+                    total_levels: validationData.total_levels,
+                    valid_levels: validationData.valid_levels,
+                    total_errors: validationData.total_errors,
+                    total_warnings: validationData.total_warnings
+                },
+                results: filteredResults
+            };
+
+            downloadJSON(exportData, `gear_fight_validation_report_${new Date().toISOString().split('T')[0]}.json`);
+            closeExportModal();
+            updateStatus('JSON report exported', 'success');
+        }
+
+        function exportAsCSV() {
+            const csvData = [
+                ['Level ID', 'Valid', 'Errors', 'Warnings', 'Suggestions', 'Solvability Score', 'Issues']
+            ];
+
+            filteredResults.forEach(result => {
+                const allIssues = [
+                    ...(result.errors || []).map(e => `ERROR: ${e}`),
+                    ...(result.warnings || []).map(w => `WARNING: ${w}`),
+                    ...(result.suggestions || []).map(s => `SUGGESTION: ${s}`)
+                ].join('; ');
+
+                csvData.push([
+                    result.level_id,
+                    result.is_valid ? 'Yes' : 'No',
+                    (result.errors || []).length,
+                    (result.warnings || []).length,
+                    (result.suggestions || []).length,
+                    Math.round(result.solvability_score || 100),
+                    allIssues
+                ]);
+            });
+
+            downloadCSV(csvData, `gear_fight_validation_summary_${new Date().toISOString().split('T')[0]}.csv`);
+            closeExportModal();
+            updateStatus('CSV summary exported', 'success');
+        }
+
+        function exportAsPDF() {
+            window.print();
+            closeExportModal();
+            updateStatus('PDF export initiated', 'info');
+        }
+
+        function exportFilteredResults() {
+            const exportData = {
+                timestamp: new Date().toISOString(),
+                filters_applied: {
+                    search: document.getElementById('searchFilter').value,
+                    world: document.getElementById('worldFilter').value,
+                    severity: {
+                        errors: document.getElementById('showErrors').checked,
+                        warnings: document.getElementById('showWarnings').checked,
+                        suggestions: document.getElementById('showSuggestions').checked,
+                        valid: document.getElementById('showValid').checked
+                    },
+                    solvability: document.getElementById('solvabilityFilter').value
+                },
+                filtered_results: filteredResults
+            };
+
+            downloadJSON(exportData, `gear_fight_filtered_validation_${new Date().toISOString().split('T')[0]}.json`);
+            closeExportModal();
+            updateStatus('Filtered results exported', 'success');
+        }
+
+        // Utility Functions
+        function downloadJSON(data, filename) {
+            const dataStr = JSON.stringify(data, null, 2);
+            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', filename);
+            linkElement.click();
+        }
+
+        function downloadCSV(data, filename) {
+            const csvContent = data.map(row =>
+                row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')
+            ).join('\n');
+
+            const dataUri = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csvContent);
+
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', filename);
+            linkElement.click();
+        }
+
+        function updateStatus(message, type = 'info') {
+            const statusMessage = document.getElementById('statusMessage');
+
+            statusMessage.className = `status-message status-${type}`;
+            statusMessage.textContent = message;
+            statusMessage.classList.add('show');
+
+            setTimeout(() => {
+                statusMessage.classList.remove('show');
+            }, 3000);
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'r':
+                        e.preventDefault();
+                        if (!isRunningValidation) {
+                            runValidation();
+                        }
+                        break;
+                    case 'f':
+                        e.preventDefault();
+                        document.getElementById('searchFilter').focus();
+                        break;
+                    case 'e':
+                        e.preventDefault();
+                        openExportModal();
+                        break;
+                }
+            }
+        });
+
+        // Close modal on click outside
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('exportModal');
+            if (e.target === modal) {
+                closeExportModal();
+            }
+        });
+    </script>
+</body>
+</html>

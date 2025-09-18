@@ -1,0 +1,1117 @@
+{
+  "gear": {
+    "GearAcorn": {
+      "name": "GearAcorn",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearAcorn.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "35b95d1bcf8cbb04f9204c34e1eba245"
+      }
+    },
+    "GearAnubis": {
+      "name": "GearAnubis",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearAnubis.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "78d3853467df0a243814ded642e770ff"
+      }
+    },
+    "GearArrow": {
+      "name": "GearArrow",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearArrow.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "6d0be33cf80cabc4f8276212af0bc56a"
+      }
+    },
+    "GearAsteroid": {
+      "name": "GearAsteroid",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearAsteroid.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "e3ba55417f4b5c640a983cb2bc2449d9"
+      }
+    },
+    "GearBeamBot": {
+      "name": "GearBeamBot",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearBeamBot.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "95981d2612805d94eafde5c47e7fa02f",
+        "gearController": "3acd26470720bf449aa27cc6d133e75a"
+      }
+    },
+    "GearBeeGrenade": {
+      "name": "GearBeeGrenade",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearBeeGrenade.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "65e4da8a4deb16449aa7cf727785f73d"
+      }
+    },
+    "GearBone": {
+      "name": "GearBone",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearBone.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "20d69e90d94b0fa43bc6248b2ce03269"
+      }
+    },
+    "GearBoomerang": {
+      "name": "GearBoomerang",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearBoomerang.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "4edd345313a6e5f4d8af2399294a7eb3",
+        "gearController": "32f28a5fd43d8fe478d8736f4233df66"
+      }
+    },
+    "GearBrain": {
+      "name": "GearBrain",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearBrain.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "0b6df10f188616c42ad2a6d0f9b3e046"
+      }
+    },
+    "GearBreakable": {
+      "name": "GearBreakable",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearBreakable.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "b067ff0ea3fc7dd489a3b7d6ddf544d8"
+      }
+    },
+    "GearCactus": {
+      "name": "GearCactus",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCactus.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "0ea35c5b9eeb7ff4bacd7e7ca5e93b2f"
+      }
+    },
+    "GearCannon": {
+      "name": "GearCannon",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCannon.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "d31d0a42174548645adee0c3eb7a215d",
+        "gearController": "5ee9d3ddf9e131548a3104a55c37a127"
+      }
+    },
+    "GearCauldron": {
+      "name": "GearCauldron",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCauldron.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "2b477b74be817cc42afa867540724469"
+      }
+    },
+    "GearCaveman": {
+      "name": "GearCaveman",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCaveman.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "0bbb51b6febb97f419eb86e478087e5d"
+      }
+    },
+    "GearChest1": {
+      "name": "GearChest1",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearChest1.asset",
+      "file_references": {
+        "m_Script": "b06605c3f9fb663e4114c85e47302873",
+        "IconSprite": "f65ce3fe4ea8f4a468cd3a4e17d5f481"
+      }
+    },
+    "GearChest2": {
+      "name": "GearChest2",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearChest2.asset",
+      "file_references": {
+        "m_Script": "b06605c3f9fb663e4114c85e47302873",
+        "IconSprite": "46c9207b310964c40a456f264aee9a7e"
+      }
+    },
+    "GearChest3": {
+      "name": "GearChest3",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearChest3.asset",
+      "file_references": {
+        "m_Script": "b06605c3f9fb663e4114c85e47302873",
+        "IconSprite": "ff727dccd922e734392fe658a0e8b08d"
+      }
+    },
+    "GearCoin": {
+      "name": "GearCoin",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCoin_0.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "09393aa4287d5fb4896461b7ecf18759"
+      }
+    },
+    "GearCoinCofinControlller": {
+      "name": "GearCoinCofinControlller",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCoinCofinControlller.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "d854e804fdbc26a429b3aa809d02943e"
+      }
+    },
+    "GearCorn": {
+      "name": "GearCorn",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCorn.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "6e30f9a37353a22428ac53c4813c1a0e"
+      }
+    },
+    "GearCrippledFour": {
+      "name": "GearCrippledFour",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCrippledFour.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "80b67ed9d9203cf46875da703c13f735"
+      }
+    },
+    "GearCrippledOne": {
+      "name": "GearCrippledOne",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCrippledOne.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "cce51cf7231d2b4478f15fd5f7e98503"
+      }
+    },
+    "GearCrippledThree": {
+      "name": "GearCrippledThree",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCrippledThree.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "7205211b96db0284d98fd8497164e3f1"
+      }
+    },
+    "GearCrippledTwo": {
+      "name": "GearCrippledTwo",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearCrippledTwo.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "1581de2c30b84a0459cbae59318c2a19"
+      }
+    },
+    "GearDeathKnight": {
+      "name": "GearDeathKnight",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearDeathKnight.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "9148346304611d445b1f5e6cd4b3254b"
+      }
+    },
+    "GearDefaultSpinner": {
+      "name": "GearDefaultSpinner",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearDefaultSpinner.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "2d8456c7b94509444b7bf3a6d9012e7e"
+      }
+    },
+    "GearDiamondHoe": {
+      "name": "GearDiamondHoe",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearDiamondHoe.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "2061f39320b7d6a43990ad777f653232"
+      }
+    },
+    "GearEgg": {
+      "name": "GearEgg",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearEgg.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "beccaea5f4b3ae749964eed162748072"
+      }
+    },
+    "GearExplosiveBarrel": {
+      "name": "GearExplosiveBarrel",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearExplosiveBarrel.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "d70a010b8742a48409fd243d1963b411"
+      }
+    },
+    "GearFire": {
+      "name": "GearFire",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearFire.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "115cb2183dbb31241aed27cb4a0cf647",
+        "gearController": "783680cceeb926c47a17fbe44dd85cb8"
+      }
+    },
+    "GearFlamingArrow": {
+      "name": "GearFlamingArrow",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearFlamingArrow.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "c03acb706b696934a8879c6c5a16d6e6",
+        "gearController": "e3a6e19ed76662441a003b681eb0ac21"
+      }
+    },
+    "GearFlyTrap": {
+      "name": "GearFlyTrap",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearFlyTrap.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "fd5add70dbbdc4844b6a5dbdffacca1a"
+      }
+    },
+    "GearFlyingAxe": {
+      "name": "GearFlyingAxe",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearFlyingAxe.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "c662fa03600fe7f44950d5eca0822c56"
+      }
+    },
+    "GearFrost": {
+      "name": "GearFrost",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearFrost.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "f02ce29971613084c879e3bd9bb7c002"
+      }
+    },
+    "GearGoldenPick": {
+      "name": "GearGoldenPick",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearGoldenPick.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "03d0208cf3939204280b83d76ea8b249"
+      }
+    },
+    "GearGrenade": {
+      "name": "GearGrenade",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearGrenade.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "53957b5d0cc471a4d973a266c8eb5ff4",
+        "gearController": "259dec5a44e118d45998d60e1d1cb7ad"
+      }
+    },
+    "GearGuardian": {
+      "name": "GearGuardian",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearGuardian.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "93fe6943a41b0924caa58f8776669f1d"
+      }
+    },
+    "GearHaunchOfMeat": {
+      "name": "GearHaunchOfMeat",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearHaunchOfMeat.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "8f27d3cac33196440b87be9562101424"
+      }
+    },
+    "GearHeavy": {
+      "name": "GearHeavy",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearHeavy.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "ac4832e15eb389d49a47aa7e58f3582e"
+      }
+    },
+    "GearJuiceBuff": {
+      "name": "GearJuiceBuff",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearJuiceBuff.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "e899a42ef1c743540ab788275886451a"
+      }
+    },
+    "GearKingMonkey": {
+      "name": "GearKingMonkey",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearKingMonkey.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "379c16851e5ad5744b0e7d061af3c294"
+      }
+    },
+    "GearKnife": {
+      "name": "GearKnife",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearKnife.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "d0e5fb3ffaaf2e749b35541c75405858",
+        "gearController": "495b0b145dd36ab45b8fb08280b593da"
+      }
+    },
+    "GearKunai": {
+      "name": "GearKunai",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearKunai.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "7cc783b8e6b0e5d42bf403f44c79eaa3"
+      }
+    },
+    "GearMagician": {
+      "name": "GearMagician",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMagician.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "ebb80b3b34d76574d89d3735fe465d53"
+      }
+    },
+    "GearMining": {
+      "name": "GearMining",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMining.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "cae371d87d7e480439df2c317aca01cf"
+      }
+    },
+    "GearMinotaur": {
+      "name": "GearMinotaur",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMinotaur.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "66598bd9a2685fb47b4137ea9bac6229"
+      }
+    },
+    "GearMissile": {
+      "name": "GearMissile",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMissile.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "527945b72cb571841b627ee48b8e1707"
+      }
+    },
+    "GearMoneyTree": {
+      "name": "GearMoneyTree",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMoneyTree.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "eaa388e7ea0669442a0019d0b3c2634e"
+      }
+    },
+    "GearMrD": {
+      "name": "GearMrD",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMrD.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "0df71e5657aef7b43ab79a1959d52158"
+      }
+    },
+    "GearMultiplierFour": {
+      "name": "GearMultiplierFour",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMultiplierFour.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "d9ba8293e92bb8b4ca9de66045f13499"
+      }
+    },
+    "GearMultiplierOne": {
+      "name": "GearMultiplierOne",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMultiplierOne.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "a700e458593c5e5429f7d136b2e689f6"
+      }
+    },
+    "GearMultiplierThree": {
+      "name": "GearMultiplierThree",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMultiplierThree.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "eadc6f0b8553ff54f97de405243ae597"
+      }
+    },
+    "GearMultiplierTwo": {
+      "name": "GearMultiplierTwo",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMultiplierTwo.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "8b4daf5feab19f546831650d24e5c891"
+      }
+    },
+    "GearMummy": {
+      "name": "GearMummy",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMummy.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "c3adf391719d3dc478f979ec3e4a83c0",
+        "gearController": "1690d96cda43d1849ae12c8f11970108"
+      }
+    },
+    "GearMushroom": {
+      "name": "GearMushroom",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearMushroom.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "4bd12b7c17175e841892572aa8703409"
+      }
+    },
+    "GearNecro": {
+      "name": "GearNecro",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearNecro.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "3ef51bd98f506f649b59a44062eeefce"
+      }
+    },
+    "GearNegativeOne": {
+      "name": "GearNegativeOne",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearNegativeOne.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "bdcc6f3ee6dfaab41a9d0b5b471f19dc"
+      }
+    },
+    "GearNinja": {
+      "name": "GearNinja",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearNinja.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "af68f0e85535e9542b36791c2e9053cc"
+      }
+    },
+    "GearOilDrop": {
+      "name": "GearOilDrop",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearOilDrop.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "22cecb6d3f9dfd3499e1dd7da8102093"
+      }
+    },
+    "GearPepper": {
+      "name": "GearPepper",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearPepper.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "98234d755fe942241be2250d213e47af"
+      }
+    },
+    "GearPoison": {
+      "name": "GearPoison",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearPoison.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "242e42b141212c24884a901d50f652c7"
+      }
+    },
+    "GearPottery": {
+      "name": "GearPottery",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearPottery.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "deaf7c35e6352da458fd0de6c9528933"
+      }
+    },
+    "GearProductionFour": {
+      "name": "GearProductionFour",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearProductionFour.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "54abe0323a75bca4eb7def15f8375cd9"
+      }
+    },
+    "GearProductionOne": {
+      "name": "GearProductionOne",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearProductionOne.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "70fe489647ed90a4285b5bba4f1eb95f"
+      }
+    },
+    "GearProductionThree": {
+      "name": "GearProductionThree",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearProductionThree.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "dfeace18fc74d6149873521544347e30"
+      }
+    },
+    "GearProductionTwo": {
+      "name": "GearProductionTwo",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearProductionTwo.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "67df8a600246f914b9db49abf9385f6a"
+      }
+    },
+    "GearRaiseUndead": {
+      "name": "GearRaiseUndead",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearRaiseUndead.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "3f6458a91cf21414981b61ca7e92bbe5"
+      }
+    },
+    "GearRock": {
+      "name": "GearRock",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearRock.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "4c5d994e22edf86468029b424073e0d0"
+      }
+    },
+    "GearRollingRock": {
+      "name": "GearRollingRock",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearRollingRock.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "0624a6ba3696f6d42ac543e009b183c6"
+      }
+    },
+    "GearSamurai": {
+      "name": "GearSamurai",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSamurai.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "d0c93d4e61defe845934f406056f7ae0"
+      }
+    },
+    "GearSavageBite": {
+      "name": "GearSavageBite",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSavageBite.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "3fee14b307ea64944bef38308ad67fea"
+      }
+    },
+    "GearScythe": {
+      "name": "GearScythe",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearScythe.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "1cae2b7581b70cb499fe451315236d28"
+      }
+    },
+    "GearSharpenedStick": {
+      "name": "GearSharpenedStick",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSharpenedStick.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "dd11bf78819ab3a4aa7121272079decc"
+      }
+    },
+    "GearShotgun": {
+      "name": "GearShotgun",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearShotgun.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "017dfe79be399324d84b33d53f8891d8"
+      }
+    },
+    "GearShovel": {
+      "name": "GearShovel",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearShovel.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "71532d5a537d1d54e836eaca0ae63cbf"
+      }
+    },
+    "GearShuriken": {
+      "name": "GearShuriken",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearShuriken.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "fdd62698bf2851a4b9e060a11b68bfce",
+        "gearController": "5d979efc20c8b9e4b8efa2f4eead7d97"
+      }
+    },
+    "GearSnake": {
+      "name": "GearSnake",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSnake.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "Icon": "1d9b5df9f63c88a41a255c9bc6cca2f4",
+        "miniGearPrefab": "62431ffb37a52444997a4793564fdcdb",
+        "gearController": "651ca8166ff834d418959b58404eb5a5"
+      }
+    },
+    "GearSpartan": {
+      "name": "GearSpartan",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSpartan.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "41e191c4d9155be499d574dffbce1988"
+      }
+    },
+    "GearSpecialIncomeControlller": {
+      "name": "GearSpecialIncomeControlller",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSpecialIncomeControlller.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "2cefbb211e05e23429a57c9c1bbc40e1"
+      }
+    },
+    "GearSpeedup": {
+      "name": "GearSpeedup",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSpeedup.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "0e11f4b3da3d4e24d895f886326012dd"
+      }
+    },
+    "GearStar": {
+      "name": "GearStar",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearStar.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "259033e420c70eb47bd652b9201dc3e6"
+      }
+    },
+    "GearStone": {
+      "name": "GearStone",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearStone.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "950bc9a4fc110a84fbd1a1c1308ddefd"
+      }
+    },
+    "GearSunFour": {
+      "name": "GearSunFour",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSunFour.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "6c7fd05aac2864341adc0273a6433da2"
+      }
+    },
+    "GearSunOne": {
+      "name": "GearSunOne",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSunOne.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "104fbf5ef0f06fc48a7f32ff44cabfc8"
+      }
+    },
+    "GearSunThree": {
+      "name": "GearSunThree",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSunThree.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "c2ec1b2563226364791568c5d0ed4a76"
+      }
+    },
+    "GearSunTwo": {
+      "name": "GearSunTwo",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSunTwo.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "1134b5eede8ecd743b3fce28b8b90a33"
+      }
+    },
+    "GearSunflower": {
+      "name": "GearSunflower",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSunflower.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "fcee053ee7dd3314cbe5a17b30159987"
+      }
+    },
+    "GearSword": {
+      "name": "GearSword",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearSword.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "18742cd76af58074c8feb0fc77606d60",
+        "gearController": "f7897893440d15048b7cb0d4c15c1b55"
+      }
+    },
+    "GearTNT": {
+      "name": "GearTNT",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearTNT.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "b4c12eba0dde9374ea6067f9986d4ee6"
+      }
+    },
+    "GearTargeting": {
+      "name": "GearTargeting",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearTargeting.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "2a8bd145911aacc42bf728720cb239fe",
+        "gearController": "e45494755dda7ac4191d230c00fe9776"
+      }
+    },
+    "GearTheClaw": {
+      "name": "GearTheClaw",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearTheClaw.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "9da48f09c1178124c87b020e2df72a7c"
+      }
+    },
+    "GearTheCount": {
+      "name": "GearTheCount",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearTheCount.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "cdf2639f6d5b060479ac43ea3892dfd7"
+      }
+    },
+    "GearThorHammer": {
+      "name": "GearThorHammer",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearThorHammer.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "ac9f946c427f2c54289d1ba01dfe1d49"
+      }
+    },
+    "GearTorch": {
+      "name": "GearTorch",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearTorch.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "c89f67f242d553742a6f2d09a72a5227",
+        "gearController": "6bf3b9fbd1e353543ba7ffa5932e84e9"
+      }
+    },
+    "GearTribe": {
+      "name": "GearTribe",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearTribe.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "8bfa653b0819a5b47a28f1e8b909b6c2"
+      }
+    },
+    "GearUZI": {
+      "name": "GearUZI",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearUZI.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "Icon": "899c0078ca33a4b4c97f1c0a21eea8e0",
+        "miniGearPrefab": "852a697b48c3b234f9e952e1b4e130ba",
+        "gearController": "0faafd75aeadca64f8ef70f52077acc6"
+      }
+    },
+    "GearUndeadArrow": {
+      "name": "GearUndeadArrow",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearUndeadArrow.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "30554e3ffeb4c3f4ebbeeebf509b3a1a"
+      }
+    },
+    "GearUndeadEye": {
+      "name": "GearUndeadEye",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearUndeadEye.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "6d69c9d98fbb65c4a9d80639a199f2a2"
+      }
+    },
+    "GearViking": {
+      "name": "GearViking",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearViking.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "75a657e4be1efb84abe3c4c97390efc6"
+      }
+    },
+    "GearVolcano": {
+      "name": "GearVolcano",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearVolcano.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "b50a00beab6e1d344b84d4c8edf16763"
+      }
+    },
+    "GearWaterExplosion": {
+      "name": "GearWaterExplosion",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearWaterExplosion.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "8f08f625ab3a51545babc6eed26fb802",
+        "gearController": "b1287f59d05d391479a5091989b949ec"
+      }
+    },
+    "GearWateringCan": {
+      "name": "GearWateringCan",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearWateringCan.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "cf19038bdaee077459cd405b905117bb"
+      }
+    },
+    "GearWatermelon": {
+      "name": "GearWatermelon",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearWatermelon.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "f9af69fea50a0964e810b80d02c2c78e"
+      }
+    },
+    "GearZapper": {
+      "name": "GearZapper",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearZapper.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "miniGearPrefab": "80b2a1b039cff964e8d1de8288020407",
+        "gearController": "056f95ba71b8809478ee2590030b8b72"
+      }
+    },
+    "GearZombieBrute": {
+      "name": "GearZombieBrute",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearZombieBrute.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "1f2af153c349c7c41937b7e2332ca763"
+      }
+    },
+    "GearZombieGrunt": {
+      "name": "GearZombieGrunt",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearZombieGrunt.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "5df58d194c59b4b44a23c81350c438b8"
+      }
+    },
+    "GearZombieHand": {
+      "name": "GearZombieHand",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearZombieHand.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "99d38a08437e88b42a0539c57973d8ad"
+      }
+    },
+    "GearZombieRanged": {
+      "name": "GearZombieRanged",
+      "id": "",
+      "file_path": "../UnityProject/MonoBehaviour/GearZombieRanged.asset",
+      "file_references": {
+        "m_Script": "2556c9f8ed3eb2ed8ba627891dabcd1c",
+        "gearController": "d6cb93fb986bc7043976d9844ca4a05b"
+      }
+    }
+  },
+  "categories": {
+    "Unknown": [
+      "GearAcorn",
+      "GearAnubis",
+      "GearArrow",
+      "GearAsteroid",
+      "GearBeamBot",
+      "GearBeeGrenade",
+      "GearBone",
+      "GearBoomerang",
+      "GearBrain",
+      "GearBreakable",
+      "GearCactus",
+      "GearCannon",
+      "GearCauldron",
+      "GearCaveman",
+      "GearChest1",
+      "GearChest2",
+      "GearChest3",
+      "GearCoin",
+      "GearCoinCofinControlller",
+      "GearCoin",
+      "GearCorn",
+      "GearCrippledFour",
+      "GearCrippledOne",
+      "GearCrippledThree",
+      "GearCrippledTwo",
+      "GearDeathKnight",
+      "GearDefaultSpinner",
+      "GearDiamondHoe",
+      "GearEgg",
+      "GearExplosiveBarrel",
+      "GearFire",
+      "GearFlamingArrow",
+      "GearFlyTrap",
+      "GearFlyingAxe",
+      "GearFrost",
+      "GearGoldenPick",
+      "GearGrenade",
+      "GearGuardian",
+      "GearHaunchOfMeat",
+      "GearHeavy",
+      "GearJuiceBuff",
+      "GearKingMonkey",
+      "GearKnife",
+      "GearKunai",
+      "GearMagician",
+      "GearMining",
+      "GearMinotaur",
+      "GearMissile",
+      "GearMoneyTree",
+      "GearMrD",
+      "GearMultiplierFour",
+      "GearMultiplierOne",
+      "GearMultiplierThree",
+      "GearMultiplierTwo",
+      "GearMummy",
+      "GearMushroom",
+      "GearNecro",
+      "GearNegativeOne",
+      "GearNinja",
+      "GearOilDrop",
+      "GearPepper",
+      "GearPoison",
+      "GearPottery",
+      "GearProductionFour",
+      "GearProductionOne",
+      "GearProductionThree",
+      "GearProductionTwo",
+      "GearRaiseUndead",
+      "GearRock",
+      "GearRollingRock",
+      "GearSamurai",
+      "GearSavageBite",
+      "GearScythe",
+      "GearSharpenedStick",
+      "GearShotgun",
+      "GearShovel",
+      "GearShuriken",
+      "GearSnake",
+      "GearSpartan",
+      "GearSpecialIncomeControlller",
+      "GearSpeedup",
+      "GearStar",
+      "GearStone",
+      "GearSunFour",
+      "GearSunOne",
+      "GearSunThree",
+      "GearSunTwo",
+      "GearSunflower",
+      "GearSword",
+      "GearTNT",
+      "GearTargeting",
+      "GearTheClaw",
+      "GearTheCount",
+      "GearThorHammer",
+      "GearTorch",
+      "GearTribe",
+      "GearUZI",
+      "GearUndeadArrow",
+      "GearUndeadEye",
+      "GearViking",
+      "GearVolcano",
+      "GearWaterExplosion",
+      "GearWateringCan",
+      "GearWatermelon",
+      "GearZapper",
+      "GearZombieBrute",
+      "GearZombieGrunt",
+      "GearZombieHand",
+      "GearZombieRanged"
+    ]
+  },
+  "statistics": {
+    "total_gear": 108,
+    "by_category": {
+      "Unknown": 109
+    }
+  },
+  "extraction_info": {
+    "total_files_scanned": 109,
+    "total_gear_found": 108
+  }
+}

@@ -1,12 +1,442 @@
 {
   "enemies": [
+    "TroopAnubis",
+    "TroopArcher",
+    "TroopBeamBot",
+    "TroopCactus",
+    "TroopCactusEvolutionTwo",
+    "TroopCaveBat",
     "TroopCaveman",
+    "TroopData",
+    "TroopDeathKnight",
+    "TroopDefender",
+    "TroopDino",
+    "TroopFlyTrap",
+    "TroopFlyTrapEvolutionTwo",
+    "TroopFlyingDemon",
+    "TroopForestGolem",
+    "TroopForestGuardian",
+    "TroopGreekWarrior",
+    "TroopIceGolem",
+    "TroopIncan",
+    "TroopInfectedRat",
+    "TroopInfectedWolf",
+    "TroopKingMonkey",
+    "TroopLittleMonster",
+    "TroopMagician",
+    "TroopMinotaur",
+    "TroopMinotaurEvolutionTwo",
+    "TroopMohawkBat",
+    "TroopMossQueen",
+    "TroopMrD",
+    "TroopMummy",
+    "TroopMushroom",
+    "TroopMushroomEvolutionTwo",
+    "TroopNecro",
+    "TroopNecromancerSpawnOne",
+    "TroopNecromancerSpawnThree",
+    "TroopNecromancerSpawnTwo",
+    "TroopNinja",
+    "TroopPossessedRat",
+    "TroopRaiseUndeadSkeleton",
+    "TroopRobotBossThree",
+    "TroopRobotBossTwo",
+    "TroopRobotMelee",
+    "TroopRobotRanged",
+    "TroopSamurai",
+    "TroopSergeant",
+    "TroopShaman",
+    "TroopSheep",
+    "TroopSkeletonOne",
+    "TroopSkeletonThree",
+    "TroopSkeletonTwo",
+    "TroopSpartan",
+    "TroopTheCount",
+    "TroopTheCountSkeleton",
     "TroopTribe",
     "TroopTutorialCaveman",
-    "TroopWolfOne"
+    "TroopUndeadBrute",
+    "TroopUndeadRanged",
+    "TroopUndeadRangedEvolutionThree",
+    "TroopUndeadRangedEvolutionTwo",
+    "TroopViking",
+    "TroopVikingEvolutionTwo",
+    "TroopWizard",
+    "TroopWolfOne",
+    "TroopWolfThree",
+    "TroopWolfTwo",
+    "TroopWormOne",
+    "TroopZombieGrunt",
+    "TroopZombieGruntEvolutionThree",
+    "TroopZombieGruntEvolutionTwo"
   ],
-  "total": 4,
-  "guid_mappings": {
-    "f2efdf89ca3df48478969eded671dd3c": "TroopMrD.asset"
-  }
+  "total": 69,
+  "categories": {
+    "Enemy": [
+      "TroopAnubis",
+      "TroopArcher",
+      "TroopBeamBot",
+      "TroopCactus",
+      "TroopCactusEvolutionTwo",
+      "TroopCaveBat",
+      "TroopCaveman",
+      "TroopData",
+      "TroopDeathKnight",
+      "TroopDefender",
+      "TroopDino",
+      "TroopFlyTrap",
+      "TroopFlyTrapEvolutionTwo",
+      "TroopFlyingDemon",
+      "TroopForestGolem",
+      "TroopForestGuardian",
+      "TroopGreekWarrior",
+      "TroopIceGolem",
+      "TroopIncan",
+      "TroopInfectedRat",
+      "TroopInfectedWolf",
+      "TroopKingMonkey",
+      "TroopLittleMonster",
+      "TroopMagician",
+      "TroopMinotaur",
+      "TroopMinotaurEvolutionTwo",
+      "TroopMohawkBat",
+      "TroopMossQueen",
+      "TroopMrD",
+      "TroopMummy",
+      "TroopMushroom",
+      "TroopMushroomEvolutionTwo",
+      "TroopNecro",
+      "TroopNecromancerSpawnOne",
+      "TroopNecromancerSpawnThree",
+      "TroopNecromancerSpawnTwo",
+      "TroopNinja",
+      "TroopPossessedRat",
+      "TroopRaiseUndeadSkeleton",
+      "TroopRobotBossThree",
+      "TroopRobotBossTwo",
+      "TroopRobotMelee",
+      "TroopRobotRanged",
+      "TroopSamurai",
+      "TroopSergeant",
+      "TroopShaman",
+      "TroopSheep",
+      "TroopSkeletonOne",
+      "TroopSkeletonThree",
+      "TroopSkeletonTwo",
+      "TroopSpartan",
+      "TroopTheCount",
+      "TroopTheCountSkeleton",
+      "TroopTribe",
+      "TroopTutorialCaveman",
+      "TroopUndeadBrute",
+      "TroopUndeadRanged",
+      "TroopUndeadRangedEvolutionThree",
+      "TroopUndeadRangedEvolutionTwo",
+      "TroopViking",
+      "TroopVikingEvolutionTwo",
+      "TroopWizard",
+      "TroopWolfOne",
+      "TroopWolfThree",
+      "TroopWolfTwo",
+      "TroopWormOne",
+      "TroopZombieGrunt",
+      "TroopZombieGruntEvolutionThree",
+      "TroopZombieGruntEvolutionTwo"
+    ]
+  },
+  "statistics": {
+    "total_enemies": 69,
+    "by_category": {
+      "Enemy": 69
+    },
+    "evolution_chains": 0,
+    "level_generation_included": 0,
+    "unlocked_by_default": 0,
+    "has_custom_gear": 0
+  },
+  "level_ranges": {
+    "TroopAnubis": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopArcher": {
+      "x": 5,
+      "y": 20
+    },
+    "TroopBeamBot": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopCactus": {
+      "x": 30,
+      "y": 9999
+    },
+    "TroopCactusEvolutionTwo": {
+      "x": 45,
+      "y": 9999
+    },
+    "TroopCaveBat": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopCaveman": {
+      "x": 0,
+      "y": 8
+    },
+    "TroopDeathKnight": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopDefender": {
+      "x": 50,
+      "y": 999999
+    },
+    "TroopDino": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopFlyTrap": {
+      "x": 60,
+      "y": 9999
+    },
+    "TroopFlyTrapEvolutionTwo": {
+      "x": 60,
+      "y": 9999
+    },
+    "TroopFlyingDemon": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopForestGolem": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopForestGuardian": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopGreekWarrior": {
+      "x": 24,
+      "y": 50
+    },
+    "TroopIceGolem": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopIncan": {
+      "x": 8,
+      "y": 14
+    },
+    "TroopInfectedRat": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopInfectedWolf": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopKingMonkey": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopLittleMonster": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopMagician": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopMinotaur": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopMinotaurEvolutionTwo": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopMohawkBat": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopMossQueen": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopMrD": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopMummy": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopMushroom": {
+      "x": 20,
+      "y": 9999
+    },
+    "TroopMushroomEvolutionTwo": {
+      "x": 35,
+      "y": 9999
+    },
+    "TroopNecro": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopNecromancerSpawnOne": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopNecromancerSpawnThree": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopNecromancerSpawnTwo": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopNinja": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopPossessedRat": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopRaiseUndeadSkeleton": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopRobotBossThree": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopRobotBossTwo": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopRobotMelee": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopRobotRanged": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopSamurai": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopSergeant": {
+      "x": 14,
+      "y": 999999
+    },
+    "TroopShaman": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopSheep": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopSkeletonOne": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopSkeletonThree": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopSkeletonTwo": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopSpartan": {
+      "x": 8,
+      "y": 24
+    },
+    "TroopTheCount": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopTheCountSkeleton": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopTribe": {
+      "x": 0,
+      "y": 5
+    },
+    "TroopTutorialCaveman": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopUndeadBrute": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopUndeadRanged": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopUndeadRangedEvolutionThree": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopUndeadRangedEvolutionTwo": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopViking": {
+      "x": 15,
+      "y": 30
+    },
+    "TroopVikingEvolutionTwo": {
+      "x": 30,
+      "y": 99999
+    },
+    "TroopWizard": {
+      "x": 20,
+      "y": 99999999
+    },
+    "TroopWolfOne": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopWolfThree": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopWolfTwo": {
+      "x": 0,
+      "y": 9999999
+    },
+    "TroopWormOne": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopZombieGrunt": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopZombieGruntEvolutionThree": {
+      "x": 0,
+      "y": 0
+    },
+    "TroopZombieGruntEvolutionTwo": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "extraction_info": {
+    "total_files_scanned": 69,
+    "total_enemies_found": 69,
+    "expected_enemies_found": 9,
+    "missing_expected": [
+      "TroopRobotRange",
+      "TroopOrc",
+      "TroopAngel"
+    ]
+  },
+  "guid_mappings": {}
 }

@@ -1,6 +1,845 @@
 {
   "structures": [
-    "Forest_Structure_1"
+    "City_Structure_1",
+    "City_Structure_2",
+    "City_Structure_3",
+    "Desert_Structure_1",
+    "Desert_Structure_2",
+    "Desert_Structure_3",
+    "Forest_Structure_1",
+    "Forest_Structure_2",
+    "Forest_Structure_3",
+    "Haunt_Structure_1",
+    "Haunt_Structure_2",
+    "Haunt_Structure_3",
+    "Jungle_Structure_1",
+    "Jungle_Structure_2",
+    "Jungle_Structure_3",
+    "Lava_Structure_1",
+    "Lava_Structure_2",
+    "Lava_Structure_3",
+    "Mine_Structure_1",
+    "Mine_Structure_2",
+    "Mine_Structure_3",
+    "Nimbus_Structure_1",
+    "Nimbus_Structure_2",
+    "Nimbus_Structure_3",
+    "Snow_Structure_1",
+    "Snow_Structure_2",
+    "Snow_Structure_3",
+    "Spore_Structure_1",
+    "Spore_Structure_2",
+    "Spore_Structure_3"
   ],
-  "total": 1
+  "total": 30,
+  "environment_types": {
+    "City": [
+      "City_Structure_1",
+      "City_Structure_2",
+      "City_Structure_3"
+    ],
+    "Desert": [
+      "Desert_Structure_1",
+      "Desert_Structure_2",
+      "Desert_Structure_3"
+    ],
+    "Forest": [
+      "Forest_Structure_1",
+      "Forest_Structure_2",
+      "Forest_Structure_3"
+    ],
+    "Haunt": [
+      "Haunt_Structure_1",
+      "Haunt_Structure_2",
+      "Haunt_Structure_3"
+    ],
+    "Jungle": [
+      "Jungle_Structure_1",
+      "Jungle_Structure_2",
+      "Jungle_Structure_3"
+    ],
+    "Lava": [
+      "Lava_Structure_1",
+      "Lava_Structure_2",
+      "Lava_Structure_3"
+    ],
+    "Mine": [
+      "Mine_Structure_1",
+      "Mine_Structure_2",
+      "Mine_Structure_3"
+    ],
+    "Nimbus": [
+      "Nimbus_Structure_1",
+      "Nimbus_Structure_2",
+      "Nimbus_Structure_3"
+    ],
+    "Snow": [
+      "Snow_Structure_1",
+      "Snow_Structure_2",
+      "Snow_Structure_3"
+    ],
+    "Spore": [
+      "Spore_Structure_1",
+      "Spore_Structure_2",
+      "Spore_Structure_3"
+    ]
+  },
+  "statistics": {
+    "total_structures": 30,
+    "by_environment": {
+      "City": 3,
+      "Desert": 3,
+      "Forest": 3,
+      "Haunt": 3,
+      "Jungle": 3,
+      "Lava": 3,
+      "Mine": 3,
+      "Nimbus": 3,
+      "Snow": 3,
+      "Spore": 3
+    },
+    "variants_per_environment": {
+      "City": 3,
+      "Desert": 3,
+      "Forest": 3,
+      "Haunt": 3,
+      "Jungle": 3,
+      "Lava": 3,
+      "Mine": 3,
+      "Nimbus": 3,
+      "Snow": 3,
+      "Spore": 3
+    },
+    "average_unlock_cost": 15.0,
+    "generation_included": 0,
+    "has_controller": 0
+  },
+  "extraction_info": {
+    "total_files_scanned": 30,
+    "total_structures_found": 30,
+    "expected_environments": 10,
+    "found_environments": 10
+  },
+  "detailed_structures": {
+    "City_Structure_1": {
+      "name": "City_Structure_1",
+      "id": "",
+      "environment_type": "City",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/City_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "68242aa571b64dd409f4d3b96a184017"
+      },
+      "controller_guid": "68242aa571b64dd409f4d3b96a184017"
+    },
+    "City_Structure_2": {
+      "name": "City_Structure_2",
+      "id": "",
+      "environment_type": "City",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/City_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "a4bd2c6058525d642a776212483d8b24"
+      },
+      "controller_guid": "a4bd2c6058525d642a776212483d8b24"
+    },
+    "City_Structure_3": {
+      "name": "City_Structure_3",
+      "id": "",
+      "environment_type": "City",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/City_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "e0c21ffa85d78a34da5b43bced1f4ada"
+      },
+      "controller_guid": "e0c21ffa85d78a34da5b43bced1f4ada"
+    },
+    "Desert_Structure_1": {
+      "name": "Desert_Structure_1",
+      "id": "",
+      "environment_type": "Desert",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Desert_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "4c3f9a83ec168504887063ecb1681d3f"
+      },
+      "controller_guid": "4c3f9a83ec168504887063ecb1681d3f"
+    },
+    "Desert_Structure_2": {
+      "name": "Desert_Structure_2",
+      "id": "",
+      "environment_type": "Desert",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Desert_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "0272a809122767648b9ce50e24d838e9"
+      },
+      "controller_guid": "0272a809122767648b9ce50e24d838e9"
+    },
+    "Desert_Structure_3": {
+      "name": "Desert_Structure_3",
+      "id": "",
+      "environment_type": "Desert",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Desert_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "326df92b0d55e1243a70f7c5643a7d5e"
+      },
+      "controller_guid": "326df92b0d55e1243a70f7c5643a7d5e"
+    },
+    "Forest_Structure_1": {
+      "name": "Forest_Structure_1",
+      "id": "",
+      "environment_type": "Forest",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Forest_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "cc737db971674474fb241897b170b058"
+      },
+      "controller_guid": "cc737db971674474fb241897b170b058"
+    },
+    "Forest_Structure_2": {
+      "name": "Forest_Structure_2",
+      "id": "",
+      "environment_type": "Forest",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Forest_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "5c981464171ab2548bae08a4b2abe7cd"
+      },
+      "controller_guid": "5c981464171ab2548bae08a4b2abe7cd"
+    },
+    "Forest_Structure_3": {
+      "name": "Forest_Structure_3",
+      "id": "",
+      "environment_type": "Forest",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Forest_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "118c4de64d48e934ab824fbd8cf10d9c"
+      },
+      "controller_guid": "118c4de64d48e934ab824fbd8cf10d9c"
+    },
+    "Haunt_Structure_1": {
+      "name": "Haunt_Structure_1",
+      "id": "",
+      "environment_type": "Haunt",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Haunt_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "3fd6dfa45275ce24c85b5a78eaaaa57c"
+      },
+      "controller_guid": "3fd6dfa45275ce24c85b5a78eaaaa57c"
+    },
+    "Haunt_Structure_2": {
+      "name": "Haunt_Structure_2",
+      "id": "",
+      "environment_type": "Haunt",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Haunt_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "b8e51decc3f11cb45b911d129ef73f44"
+      },
+      "controller_guid": "b8e51decc3f11cb45b911d129ef73f44"
+    },
+    "Haunt_Structure_3": {
+      "name": "Haunt_Structure_3",
+      "id": "",
+      "environment_type": "Haunt",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Haunt_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "93e480c3c6710b24a836489a74b3cd87"
+      },
+      "controller_guid": "93e480c3c6710b24a836489a74b3cd87"
+    },
+    "Jungle_Structure_1": {
+      "name": "Jungle_Structure_1",
+      "id": "",
+      "environment_type": "Jungle",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Jungle_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "c8502be5381ce0345902501563e1aab8"
+      },
+      "controller_guid": "c8502be5381ce0345902501563e1aab8"
+    },
+    "Jungle_Structure_2": {
+      "name": "Jungle_Structure_2",
+      "id": "",
+      "environment_type": "Jungle",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Jungle_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "effa5787380b95d4baac361ba871a96e"
+      },
+      "controller_guid": "effa5787380b95d4baac361ba871a96e"
+    },
+    "Jungle_Structure_3": {
+      "name": "Jungle_Structure_3",
+      "id": "",
+      "environment_type": "Jungle",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Jungle_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "5620c2cffc3e75f41a6303a9aa8bda77"
+      },
+      "controller_guid": "5620c2cffc3e75f41a6303a9aa8bda77"
+    },
+    "Lava_Structure_1": {
+      "name": "Lava_Structure_1",
+      "id": "",
+      "environment_type": "Lava",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Lava_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "efb7b0dc965337e45af5d453222430c8"
+      },
+      "controller_guid": "efb7b0dc965337e45af5d453222430c8"
+    },
+    "Lava_Structure_2": {
+      "name": "Lava_Structure_2",
+      "id": "",
+      "environment_type": "Lava",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Lava_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "1f2f43dd49b2910408a460fd071e0d6d"
+      },
+      "controller_guid": "1f2f43dd49b2910408a460fd071e0d6d"
+    },
+    "Lava_Structure_3": {
+      "name": "Lava_Structure_3",
+      "id": "",
+      "environment_type": "Lava",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Lava_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "c229710eba2fcae479942081c712a339"
+      },
+      "controller_guid": "c229710eba2fcae479942081c712a339"
+    },
+    "Mine_Structure_1": {
+      "name": "Mine_Structure_1",
+      "id": "",
+      "environment_type": "Mine",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Mine_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "995716538affbc944b8715be37f6fcd8"
+      },
+      "controller_guid": "995716538affbc944b8715be37f6fcd8"
+    },
+    "Mine_Structure_2": {
+      "name": "Mine_Structure_2",
+      "id": "",
+      "environment_type": "Mine",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Mine_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "84f890306471d394b85a4a8ea1f1af5d"
+      },
+      "controller_guid": "84f890306471d394b85a4a8ea1f1af5d"
+    },
+    "Mine_Structure_3": {
+      "name": "Mine_Structure_3",
+      "id": "",
+      "environment_type": "Mine",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Mine_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "eefc06deb7a25d640859ab6049782947"
+      },
+      "controller_guid": "eefc06deb7a25d640859ab6049782947"
+    },
+    "Nimbus_Structure_1": {
+      "name": "Nimbus_Structure_1",
+      "id": "",
+      "environment_type": "Nimbus",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Nimbus_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "65f6e35b7a91991499d711e22573b647"
+      },
+      "controller_guid": "65f6e35b7a91991499d711e22573b647"
+    },
+    "Nimbus_Structure_2": {
+      "name": "Nimbus_Structure_2",
+      "id": "",
+      "environment_type": "Nimbus",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Nimbus_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "c4343ec777db5514a9ce6ba27f1ae24f"
+      },
+      "controller_guid": "c4343ec777db5514a9ce6ba27f1ae24f"
+    },
+    "Nimbus_Structure_3": {
+      "name": "Nimbus_Structure_3",
+      "id": "",
+      "environment_type": "Nimbus",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Nimbus_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "50cfb41258925f041a2ffbeb3782b6fa"
+      },
+      "controller_guid": "50cfb41258925f041a2ffbeb3782b6fa"
+    },
+    "Snow_Structure_1": {
+      "name": "Snow_Structure_1",
+      "id": "",
+      "environment_type": "Snow",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Snow_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "6ed32f764c456a448b0f592934fbceec"
+      },
+      "controller_guid": "6ed32f764c456a448b0f592934fbceec"
+    },
+    "Snow_Structure_2": {
+      "name": "Snow_Structure_2",
+      "id": "",
+      "environment_type": "Snow",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Snow_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "204fd87672e291047a9e7b12a3d0558c"
+      },
+      "controller_guid": "204fd87672e291047a9e7b12a3d0558c"
+    },
+    "Snow_Structure_3": {
+      "name": "Snow_Structure_3",
+      "id": "",
+      "environment_type": "Snow",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Snow_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "d89a51ca2c9ec694991295e1820dd3cb"
+      },
+      "controller_guid": "d89a51ca2c9ec694991295e1820dd3cb"
+    },
+    "Spore_Structure_1": {
+      "name": "Spore_Structure_1",
+      "id": "",
+      "environment_type": "Spore",
+      "variant_number": 1,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Spore_Structure_1.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "b8470c6479f4b264aa893e3aed30de88"
+      },
+      "controller_guid": "b8470c6479f4b264aa893e3aed30de88"
+    },
+    "Spore_Structure_2": {
+      "name": "Spore_Structure_2",
+      "id": "",
+      "environment_type": "Spore",
+      "variant_number": 2,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Spore_Structure_2.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "169224467c54a4a43a3183cef7f43d2f"
+      },
+      "controller_guid": "169224467c54a4a43a3183cef7f43d2f"
+    },
+    "Spore_Structure_3": {
+      "name": "Spore_Structure_3",
+      "id": "",
+      "environment_type": "Spore",
+      "variant_number": 3,
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 99,
+      "category_id": 3,
+      "category": "Structure",
+      "included_in_generation": false,
+      "level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "unlock_cost_override": 15,
+      "override_unlock_cost": false,
+      "file_path": "../UnityProject/MonoBehaviour/Spore_Structure_3.asset",
+      "file_references": {
+        "m_Script": "0e8fa992d21a5ccfa91df53988571db8",
+        "troopController": "f590a642e477c444897988b1faaff9c4"
+      },
+      "controller_guid": "f590a642e477c444897988b1faaff9c4"
+    }
+  }
 }

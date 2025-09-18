@@ -235,6 +235,50 @@ def update_level(world, level):
         logger.error(f"Update level error: {e}")
         return jsonify({"error": str(e)}), 500
 
+@app.route('/api/level-order', methods=['PUT'])
+def update_level_order():
+    """Update the display order of levels"""
+    try:
+        if not request.json or 'levels' not in request.json:
+            return jsonify({"error": "No level order data provided"}), 400
+
+        new_order = request.json['levels']
+
+        # Validate that all levels exist
+        for level_data in new_order:
+            if 'world' not in level_data or 'level' not in level_data or 'displayOrder' not in level_data:
+                return jsonify({"error": "Invalid level order data format"}), 400
+
+            file_path = LEVEL_DATA_DIR / f"level_{level_data['world']}_{level_data['level']}.json"
+            if not file_path.exists():
+                return jsonify({"error": f"Level {level_data['world']}-{level_data['level']} not found"}), 404
+
+        # Update each level file with new display order
+        updated_count = 0
+        for level_data in new_order:
+            file_path = LEVEL_DATA_DIR / f"level_{level_data['world']}_{level_data['level']}.json"
+
+            with open(file_path, 'r') as f:
+                level_json = json.load(f)
+
+            # Update the displayLevelNumber field
+            level_json['displayLevelNumber'] = level_data['displayOrder']
+
+            with open(file_path, 'w') as f:
+                json.dump(level_json, f, indent=2)
+
+            updated_count += 1
+
+        return jsonify({
+            "status": "success",
+            "message": f"Updated display order for {updated_count} levels",
+            "updated_count": updated_count
+        })
+
+    except Exception as e:
+        logger.error(f"Level order update error: {e}")
+        return jsonify({"error": str(e)}), 500
+
 @app.route('/api/validation/run', methods=['POST'])
 def run_validation():
     """Run validation on levels"""
@@ -288,6 +332,28 @@ def run_validation():
         return jsonify({"status": "error", "error": "Validation timeout"}), 500
     except Exception as e:
         logger.error(f"Validation error: {e}")
+        return jsonify({"status": "error", "error": str(e)}), 500
+
+@app.route('/api/validation/report')
+def get_validation_report():
+    """Get the latest validation report"""
+    try:
+        report_path = BASE_DIR / "validation_report.json"
+        if report_path.exists():
+            with open(report_path, 'r') as f:
+                validation_data = json.load(f)
+            return jsonify({
+                "status": "success",
+                "timestamp": datetime.fromtimestamp(report_path.stat().st_mtime).isoformat(),
+                "results": validation_data
+            })
+        else:
+            return jsonify({
+                "status": "not_found",
+                "message": "No validation report found. Run validation first."
+            }), 404
+    except Exception as e:
+        logger.error(f"Error reading validation report: {e}")
         return jsonify({"status": "error", "error": str(e)}), 500
 
 @app.route('/api/analysis')
