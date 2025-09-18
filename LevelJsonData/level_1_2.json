@@ -1,0 +1,82 @@
+{
+  "levelNumber": 1002,
+  "worldNumber": 1,
+  "levelInWorld": 2,
+  "name": "World 1 - Level 2",
+  "guid": "caaa7c66d6755e44b826e4474b177c4d",
+  "levelSettings": {
+    "useCustomFights": 0,
+    "useCustomGears": 0,
+    "puzzleConfiguration": 0,
+    "customLevelGrid": null,
+    "startingCoins": 34,
+    "numLevels": 10,
+    "numberOfSpinners": 1,
+    "tutorialSkipString": null,
+    "gridDimensions": {
+      "width": 7,
+      "height": 7
+    },
+    "nivSettings": {
+      "use_level_value": 1,
+      "use_custom_level_for_payouts": 0,
+      "custom_level_for_payouts": 0,
+      "override_target_level_for_max": 0,
+      "target_level_max": 0,
+      "level_niv_max": 0,
+      "level_niv_min": 0,
+      "target_level_for_niv": 0
+    },
+    "difficultyProfile": {
+      "name": "Linear 100%.asset",
+      "guid": "621b225a282f40e40beff03c12f65d74"
+    }
+  },
+  "fights": [
+    {
+      "fightNumber": 1,
+      "enemies": [
+        {
+          "character": "",
+          "characterGuid": null,
+          "level": 0,
+          "delay": 0,
+          "isBeast": 0
+        },
+        {
+          "character": "",
+          "characterGuid": null,
+          "level": 0,
+          "delay": 0,
+          "isBeast": 0
+        },
+        {
+          "character": "",
+          "characterGuid": null,
+          "level": 0,
+          "delay": 0,
+          "isBeast": 0
+        }
+      ],
+      "structure": null,
+      "structureGuid": null,
+      "valueOfFight": 0,
+      "forceBasicShop": 0,
+      "fightOffset": 0,
+      "hasStructureChest": 0,
+      "overrideStructureLevel": 0,
+      "structureLevelOverride": 0
+    }
+  ],
+  "gearStoreCollections": [],
+  "premiumGearStoreCollections": [],
+  "metadata": {
+    "isProcedurallyGenerated": true,
+    "hasCustomFights": false,
+    "fightCount": 1,
+    "totalEnemies": 3,
+    "hasStructures": true
+  },
+  "enemies": [],
+  "structures": []
+}

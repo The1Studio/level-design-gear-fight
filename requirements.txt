@@ -1,0 +1,7 @@
+flask==2.3.2
+flask-cors==4.0.0
+ruamel.yaml==0.17.32
+pathlib
+typing
+dataclasses
+concurrent.futures

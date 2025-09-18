@@ -1,0 +1,232 @@
+{
+  "levelNumber": 1001,
+  "worldNumber": 1,
+  "levelInWorld": 1,
+  "name": "World 1 - Level 1",
+  "guid": "346e207eb93fd9a4d99d87490b837da4",
+  "levelSettings": {
+    "useCustomFights": 1,
+    "useCustomGears": 1,
+    "puzzleConfiguration": 0,
+    "customLevelGrid": {
+      "name": "Tutorial Grid Layout.asset",
+      "guid": "0aa9b1f8c0cfeb44bb517bf1f27c8e37"
+    },
+    "startingCoins": 15,
+    "numLevels": 0,
+    "numberOfSpinners": 1,
+    "tutorialSkipString": "FIRSTTUTORIAL",
+    "gridDimensions": {
+      "width": 7,
+      "height": 7
+    },
+    "nivSettings": {
+      "use_level_value": 1,
+      "use_custom_level_for_payouts": 0,
+      "custom_level_for_payouts": 0,
+      "override_target_level_for_max": 0,
+      "target_level_max": 0,
+      "level_niv_max": 0,
+      "level_niv_min": 0,
+      "target_level_for_niv": 0
+    },
+    "difficultyProfile": {
+      "name": "TUTORIAL.asset",
+      "guid": "917c88483410f6d45b9ee6173002b75b"
+    }
+  },
+  "fights": [
+    {
+      "fightNumber": 1,
+      "enemies": [
+        {
+          "character": "TroopTutorialCaveman",
+          "characterGuid": "80924e83f992c1c49a086d34551e1a9b",
+          "level": 0,
+          "delay": 1,
+          "isBeast": 0
+        }
+      ],
+      "structure": null,
+      "structureGuid": null,
+      "valueOfFight": 10,
+      "forceBasicShop": 1,
+      "fightOffset": 0,
+      "hasStructureChest": 0,
+      "overrideStructureLevel": 0,
+      "structureLevelOverride": 0
+    },
+    {
+      "fightNumber": 2,
+      "enemies": [
+        {
+          "character": "TroopCaveman",
+          "characterGuid": "7cdd71bd9cf908041864f52b9522e486",
+          "level": 0,
+          "delay": 5,
+          "isBeast": 0
+        }
+      ],
+      "structure": null,
+      "structureGuid": null,
+      "valueOfFight": 20,
+      "forceBasicShop": 1,
+      "fightOffset": 0,
+      "hasStructureChest": 0,
+      "overrideStructureLevel": 0,
+      "structureLevelOverride": 0
+    },
+    {
+      "fightNumber": 3,
+      "enemies": [
+        {
+          "character": "TroopCaveman",
+          "characterGuid": "7cdd71bd9cf908041864f52b9522e486",
+          "level": 0,
+          "delay": 5,
+          "isBeast": 0
+        }
+      ],
+      "structure": null,
+      "structureGuid": null,
+      "valueOfFight": 30,
+      "forceBasicShop": 1,
+      "fightOffset": 0,
+      "hasStructureChest": 0,
+      "overrideStructureLevel": 0,
+      "structureLevelOverride": 0
+    },
+    {
+      "fightNumber": 4,
+      "enemies": [
+        {
+          "character": "TroopCaveman",
+          "characterGuid": "7cdd71bd9cf908041864f52b9522e486",
+          "level": 0,
+          "delay": 5,
+          "isBeast": 0
+        },
+        {
+          "character": "TroopWolfOne",
+          "characterGuid": "8fbd3895bf4ab604ea5d09c829160ca2",
+          "level": 0,
+          "delay": 8,
+          "isBeast": 0
+        }
+      ],
+      "structure": null,
+      "structureGuid": null,
+      "valueOfFight": 30,
+      "forceBasicShop": 1,
+      "fightOffset": 0,
+      "hasStructureChest": 0,
+      "overrideStructureLevel": 0,
+      "structureLevelOverride": 0
+    },
+    {
+      "fightNumber": 5,
+      "enemies": [
+        {
+          "character": "TroopCaveman",
+          "characterGuid": "7cdd71bd9cf908041864f52b9522e486",
+          "level": 0,
+          "delay": 5,
+          "isBeast": 0
+        },
+        {
+          "character": "TroopTribe",
+          "characterGuid": "d0017b0b667136e47a009d314ec40615",
+          "level": 0,
+          "delay": 10,
+          "isBeast": 0
+        },
+        {
+          "character": "TroopWolfOne",
+          "characterGuid": "8fbd3895bf4ab604ea5d09c829160ca2",
+          "level": 0,
+          "delay": 15,
+          "isBeast": 0
+        }
+      ],
+      "structure": "Forest_Structure_1.asset",
+      "structureGuid": "d215b56b06f67704e965b915f58cac38",
+      "valueOfFight": 50,
+      "forceBasicShop": 1,
+      "fightOffset": 0,
+      "hasStructureChest": 0,
+      "overrideStructureLevel": 0,
+      "structureLevelOverride": 0
+    }
+  ],
+  "gearStoreCollections": [
+    [
+      {
+        "name": "GearCaveman.asset",
+        "guid": "d64e431cafc8eb0458e199221e5124ae"
+      }
+    ],
+    [
+      {
+        "name": "GearProductionOne.asset",
+        "guid": "488aefa1b9e9c484cb133fae757b4cd5"
+      }
+    ],
+    [
+      {
+        "name": "GearProductionOne.asset",
+        "guid": "488aefa1b9e9c484cb133fae757b4cd5"
+      }
+    ],
+    [
+      {
+        "name": "GearProductionOne.asset",
+        "guid": "488aefa1b9e9c484cb133fae757b4cd5"
+      }
+    ],
+    [
+      {
+        "name": "GearProductionOne.asset",
+        "guid": "488aefa1b9e9c484cb133fae757b4cd5"
+      },
+      {
+        "name": "GearCaveman.asset",
+        "guid": "d64e431cafc8eb0458e199221e5124ae"
+      },
+      {
+        "name": "GearProductionOne.asset",
+        "guid": "488aefa1b9e9c484cb133fae757b4cd5"
+      }
+    ],
+    [
+      {
+        "name": "GearMissile.asset",
+        "guid": "ca10dfdc80d4fe84fb63bc318ccbfddd"
+      },
+      {
+        "name": "GearProductionTwo.asset",
+        "guid": "0d092d851f3ec4446b0a1a239229d7e4"
+      },
+      {
+        "name": "GearProductionOne.asset",
+        "guid": "488aefa1b9e9c484cb133fae757b4cd5"
+      }
+    ]
+  ],
+  "premiumGearStoreCollections": [],
+  "metadata": {
+    "isProcedurallyGenerated": false,
+    "hasCustomFights": true,
+    "fightCount": 5,
+    "totalEnemies": 8,
+    "hasStructures": false
+  },
+  "enemies": [
+    "TroopCaveman",
+    "TroopTribe",
+    "TroopTutorialCaveman",
+    "TroopWolfOne"
+  ],
+  "structures": [
+    "Forest_Structure_1"
+  ]
+}

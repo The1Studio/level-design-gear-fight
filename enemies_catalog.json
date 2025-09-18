@@ -1,0 +1,12 @@
+{
+  "enemies": [
+    "TroopCaveman",
+    "TroopTribe",
+    "TroopTutorialCaveman",
+    "TroopWolfOne"
+  ],
+  "total": 4,
+  "guid_mappings": {
+    "f2efdf89ca3df48478969eded671dd3c": "TroopMrD.asset"
+  }
+}

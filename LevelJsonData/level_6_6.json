@@ -1,0 +1,85 @@
+{
+  "levelNumber": 6006,
+  "worldNumber": 6,
+  "levelInWorld": 6,
+  "name": "World 6 - Level 6",
+  "guid": "56145fe9a2274ae44b51b1cc9077be4d",
+  "levelSettings": {
+    "useCustomFights": 0,
+    "useCustomGears": 0,
+    "puzzleConfiguration": 1,
+    "customLevelGrid": {
+      "name": "Construction Bridge.asset",
+      "guid": "a5aa25d8e79ea344c88274ef14c3ae6e"
+    },
+    "startingCoins": 22,
+    "numLevels": 12,
+    "numberOfSpinners": 1,
+    "tutorialSkipString": null,
+    "gridDimensions": {
+      "width": 7,
+      "height": 7
+    },
+    "nivSettings": {
+      "use_level_value": 1,
+      "use_custom_level_for_payouts": 0,
+      "custom_level_for_payouts": 0,
+      "override_target_level_for_max": 0,
+      "target_level_max": 0,
+      "level_niv_max": 0,
+      "level_niv_min": 0,
+      "target_level_for_niv": 0
+    },
+    "difficultyProfile": {
+      "name": "Linear 50%.asset",
+      "guid": "2c632fcdc51b25943a943afe8973c24c"
+    }
+  },
+  "fights": [
+    {
+      "fightNumber": 1,
+      "enemies": [
+        {
+          "character": "",
+          "characterGuid": null,
+          "level": 0,
+          "delay": 0,
+          "isBeast": 0
+        },
+        {
+          "character": "",
+          "characterGuid": null,
+          "level": 0,
+          "delay": 0,
+          "isBeast": 0
+        },
+        {
+          "character": "",
+          "characterGuid": null,
+          "level": 0,
+          "delay": 0,
+          "isBeast": 0
+        }
+      ],
+      "structure": null,
+      "structureGuid": null,
+      "valueOfFight": 0,
+      "forceBasicShop": 0,
+      "fightOffset": 0,
+      "hasStructureChest": 0,
+      "overrideStructureLevel": 0,
+      "structureLevelOverride": 0
+    }
+  ],
+  "gearStoreCollections": [],
+  "premiumGearStoreCollections": [],
+  "metadata": {
+    "isProcedurallyGenerated": true,
+    "hasCustomFights": false,
+    "fightCount": 1,
+    "totalEnemies": 3,
+    "hasStructures": true
+  },
+  "enemies": [],
+  "structures": []
+}

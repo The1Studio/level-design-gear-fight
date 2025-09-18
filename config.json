@@ -1,0 +1,69 @@
+{
+  "game": "GearFight",
+  "id": "gear-fight",
+  "version": "5.1.3",
+  "environment": "development",
+  "apiPort": 3205,
+  "dashboard": {
+    "proxyPath": "/game-tools/gear-fight"
+  },
+  "api": {
+    "endpoints": {
+      "levels": "/api/levels",
+      "validation": "/api/validation",
+      "validate": "/api/validation/validate",
+      "config": "/api/config",
+      "analysis": "/api/analysis",
+      "levelOrder": "/api/level-order",
+      "chapters": "/api/chapters",
+      "enemies": "/api/enemies",
+      "structures": "/api/structures"
+    }
+  },
+  "paths": {
+    "levelData": "LevelJsonData",
+    "unityData": "UnityProject",
+    "monoBehaviours": "UnityProject/MonoBehaviour",
+    "gameObjects": "UnityProject/GameObject",
+    "resources": "UnityProject/Resources"
+  },
+  "features": {
+    "validation": true,
+    "export": true,
+    "import": true,
+    "analysis": true,
+    "levelOrdering": true,
+    "chapterSystem": true,
+    "proceduralGeneration": true,
+    "enemyWaves": true
+  },
+  "grid": {
+    "width": 7,
+    "height": 7
+  },
+  "game_specifics": {
+    "total_levels": 134,
+    "total_chapters": 11,
+    "total_worlds": 10,
+    "procedural_levels": 133,
+    "custom_fight_levels": 1,
+    "difficulty_profiles": ["Linear 50%"],
+    "enemy_types": [
+      "TroopPlayerBasicCharacter",
+      "TroopViking",
+      "TroopSpartan",
+      "TroopZombieGrunt",
+      "TroopRobotMelee",
+      "TroopRobotRange",
+      "TroopOrc",
+      "TroopAngel",
+      "TroopMrD"
+    ],
+    "structure_types": 30
+  },
+  "ports": {
+    "development": 3205,
+    "staging": 3105,
+    "production": 3005
+  }
+}
