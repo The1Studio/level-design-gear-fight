@@ -1,0 +1,418 @@
+{
+  "extraction_info": {
+    "date": "2025-09-18T21:44:54.732179",
+    "version": "2.0 - Clean Architecture",
+    "total_quests": 11
+  },
+  "quests": [
+    "QuestDailyGroupD 0",
+    "QuestDailyGroupD 6",
+    "QuestDailyGroupD 8",
+    "QuestDailyGroupD 7",
+    "QuestWeeklyGroupW 2",
+    "QuestDailyGroupD 1",
+    "QuestDailyGroupD 2",
+    "QuestWeeklyGroupW 1",
+    "QuestDailyGroupD 5",
+    "QuestDailyGroupD 4",
+    "QuestDailyGroupD 3"
+  ],
+  "quests_detailed": {
+    "QuestDailyGroupD 0": {
+      "name": "QuestDailyGroupD 0",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 0.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 6": {
+      "name": "QuestDailyGroupD 6",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 6.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 8": {
+      "name": "QuestDailyGroupD 8",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 8.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 7": {
+      "name": "QuestDailyGroupD 7",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 7.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestWeeklyGroupW 2": {
+      "name": "QuestWeeklyGroupW 2",
+      "filepath": "UnityProject/MonoBehaviour/QuestWeeklyGroupW 2.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 1": {
+      "name": "QuestDailyGroupD 1",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 1.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 2": {
+      "name": "QuestDailyGroupD 2",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 2.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestWeeklyGroupW 1": {
+      "name": "QuestWeeklyGroupW 1",
+      "filepath": "UnityProject/MonoBehaviour/QuestWeeklyGroupW 1.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 5": {
+      "name": "QuestDailyGroupD 5",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 5.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 4": {
+      "name": "QuestDailyGroupD 4",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 4.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "QuestDailyGroupD 3": {
+      "name": "QuestDailyGroupD 3",
+      "filepath": "UnityProject/MonoBehaviour/QuestDailyGroupD 3.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "quest_type": "",
+      "target_count": 0,
+      "current_progress": 0,
+      "completion_reward": {},
+      "requirements": [],
+      "daily_quest": false,
+      "weekly_quest": false,
+      "description_key": "",
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    }
+  }
+}

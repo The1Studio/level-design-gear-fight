@@ -1,0 +1,5527 @@
+{
+  "game": "Gear Fight 5.1.3",
+  "extraction_date": "2025-09-18",
+  "extraction_version": "Enhanced Detailed Extractor v2.0",
+  "statistics": {
+    "total_troops_detailed": 69,
+    "total_structures_detailed": 30,
+    "total_gears_detailed": 109,
+    "total_guid_mappings": 613
+  },
+  "detailed_troops": {
+    "TroopAnubis": {
+      "name": "TroopAnubis",
+      "id": "38e9e6696a7181c4da8aae135e2faf49",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearAnubis.asset",
+        "guid": "677ab1f8f569e3b4dac533a58129a7dc"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "d95c7d2dc32e8aa4b9a11990b2d8446d",
+      "display_sprite_enemy": "d95c7d2dc32e8aa4b9a11990b2d8446d",
+      "display_sprite_gear": "6efe7327cd274ce438496d602a044ef9",
+      "display_sprite_upgrade_button": "d95c7d2dc32e8aa4b9a11990b2d8446d",
+      "falling_troop": "15275a6b28e2b90499d7e76eb854f41c",
+      "troop_controller": "28b0e270020738b40adad6f37a5fd2f3"
+    },
+    "TroopArcher": {
+      "name": "TroopArcher",
+      "id": "2e778e497d9b53648ba1c4bfa8f0b400",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 8,
+      "evolves_into": {
+        "name": "TroopWizard.asset",
+        "guid": "ffaff18cc30798c4f8bf780e68518ab0"
+      },
+      "name_loc_key": "archer",
+      "troop_category": 1,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 5,
+        "y": 20
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearTribe.asset",
+        "guid": "e97dba9b6689eb749aca1553b99a6868"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "18a489a593621704f98621673db2f289",
+      "display_sprite_enemy": "ce67383838ff3794f8fa8922a99cd24e",
+      "display_sprite_gear": "14213bc5f71c9e7468a720902c50e41e",
+      "display_sprite_upgrade_button": "18a489a593621704f98621673db2f289",
+      "falling_troop": "6752c3cc85d8e7a449ba217f48548f48",
+      "troop_controller": "9da16034b82af9a4993068ebfa2540d3"
+    },
+    "TroopBeamBot": {
+      "name": "TroopBeamBot",
+      "id": "c6c0b326d30ae0d48839bd11c842d17a",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 1,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearBeamBot.asset",
+        "guid": "e2f71a76f891f1845956242b4ff570f1"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "7dc5d144ab846ad4fab2a0f4ce82ae18",
+      "display_sprite_enemy": "b18381b72144cc14287cb289d2cf5e98",
+      "display_sprite_gear": "832b93912d7565947a5aa8238e2ac11e",
+      "display_sprite_upgrade_button": "7dc5d144ab846ad4fab2a0f4ce82ae18",
+      "falling_troop": "1ff9bc9309ecde343b2b1a67f24b267f",
+      "troop_controller": "b6463880d8281d04a818a695a7632f90"
+    },
+    "TroopCactus": {
+      "name": "TroopCactus",
+      "id": "9482278c10f5355458c2bf797596c457",
+      "unlocked_by_default": 0,
+      "evolve_level": 20,
+      "starting_level": 0,
+      "evolves_into": {
+        "name": "TroopCactusEvolutionTwo.asset",
+        "guid": "cabaa149fa4485248b8cf4337be17984"
+      },
+      "name_loc_key": "l_cactus",
+      "troop_category": 1,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 30,
+        "y": 9999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearCactus.asset",
+        "guid": "8e1bfc47604661c4fa06d8c3fa9aa3a6"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "9a9de8f2935cacc43b5f3ec842203401",
+      "display_sprite_enemy": "60a9637166e992b42831cb58ed508240",
+      "display_sprite_gear": "cf7c5406e4de95d439667cfed73cee0e",
+      "display_sprite_upgrade_button": "9a9de8f2935cacc43b5f3ec842203401",
+      "falling_troop": "56f94029adfc9ca4e877df4a3c3dd396",
+      "troop_controller": "45d9821118b62a145b60942bf4bb7804"
+    },
+    "TroopCactusEvolutionTwo": {
+      "name": "TroopCactusEvolutionTwo",
+      "id": "36b9693c407286e48bf7601278e3fb3b",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": "l_kingCactus",
+      "troop_category": 1,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 45,
+        "y": 9999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearCactus.asset",
+        "guid": "8e1bfc47604661c4fa06d8c3fa9aa3a6"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "4d7244da78730f347b644cb5b4f8142e",
+      "display_sprite_enemy": "4d7244da78730f347b644cb5b4f8142e",
+      "display_sprite_gear": "c0bda23d17983a34fa8bb89637509e90",
+      "display_sprite_upgrade_button": "4d7244da78730f347b644cb5b4f8142e",
+      "falling_troop": "c5bbbee88b20d0841aa16f601752e30d",
+      "troop_controller": "5fb4397ed28a58e42a1dc2dfb9c01984"
+    },
+    "TroopCaveBat": {
+      "name": "TroopCaveBat",
+      "id": "0c6a51d64802615489612d9e3e24ef8c",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "96a31b545f69d3b4d8e7419e4cc9f549",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "42ba4b421a4aa8f4c97fb68c7e25ba3a",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "e28d58f7eed8ab74daad9f49b63b5fc1",
+      "display_sprite_enemy": "e28d58f7eed8ab74daad9f49b63b5fc1",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "e28d58f7eed8ab74daad9f49b63b5fc1",
+      "falling_troop": "7385c99830a9cce42bfdd7ec274ef532",
+      "troop_controller": "748975e8fb0a84e46a1261a2bdf6d105"
+    },
+    "TroopCaveman": {
+      "name": "TroopCaveman",
+      "id": "53bd3e30ed399c3408d58dacb578d1ee",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": {
+        "name": "TroopIncan.asset",
+        "guid": "ee67292d2347fd14cae2062be27acbde"
+      },
+      "name_loc_key": "caveman",
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 8
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearCaveman.asset",
+        "guid": "d64e431cafc8eb0458e199221e5124ae"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "88d0e157e19d1de4da0045edfa400a87",
+      "display_sprite_enemy": "a37987fd365bbcb40b8b80b6372e8dd2",
+      "display_sprite_gear": "90dba87f88d89df448bf4dec69410749",
+      "display_sprite_upgrade_button": "88d0e157e19d1de4da0045edfa400a87",
+      "falling_troop": "c6b3d00568032af4cadaa990b0c4440d",
+      "troop_controller": "360b056f56a7a41488bf3daf2c546887"
+    },
+    "TroopData": {
+      "name": "TroopData",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": false,
+      "override_unlock_cost": false,
+      "unlock_cost_override": 0,
+      "associated_gear": null,
+      "anchored_position_offset": {},
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": null,
+      "troop_controller": null
+    },
+    "TroopDeathKnight": {
+      "name": "TroopDeathKnight",
+      "id": "74f1ccc055bc6c346b9a9f76bc870405",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearDeathKnight.asset",
+        "guid": "203588d16a958414aa987e885e947706"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "65900a1680fb0f643a07b9fb56b948a6",
+      "display_sprite_enemy": "65900a1680fb0f643a07b9fb56b948a6",
+      "display_sprite_gear": "295473a7396681f4ba3ae6dcd175a792",
+      "display_sprite_upgrade_button": "65900a1680fb0f643a07b9fb56b948a6",
+      "falling_troop": "997def6c8d6e54945ab1af642280663f",
+      "troop_controller": "129d2ba4f1045df4887d9fb3bb98f295"
+    },
+    "TroopDefender": {
+      "name": "TroopDefender",
+      "id": "d10a140e1f0553d458d5118d433d68c5",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 22,
+      "evolves_into": null,
+      "name_loc_key": "heavyKnight",
+      "troop_category": 2,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 50,
+        "y": 999999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearSpartan.asset",
+        "guid": "4bdd758593f0f4a4eb2d89f90bb7482a"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "ef60e1f3921d7ef448e9d2e33dc1f007",
+      "display_sprite_enemy": "aaef0e740a7cc3947acd33ba3c87f3fe",
+      "display_sprite_gear": "8434df84d66f435478257600aceb9176",
+      "display_sprite_upgrade_button": "ef60e1f3921d7ef448e9d2e33dc1f007",
+      "falling_troop": "47d0ec8da33ca9b40995642e1e400e43",
+      "troop_controller": "9c9f1fcc22e2a4d49a23ced387d708b9"
+    },
+    "TroopDino": {
+      "name": "TroopDino",
+      "id": "fa1e2456db273ae41b5a9dccebf0a50a",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "053c9e7467afc2a4a977e4387bd84bcc",
+      "display_sprite_enemy": "053c9e7467afc2a4a977e4387bd84bcc",
+      "display_sprite_gear": "053c9e7467afc2a4a977e4387bd84bcc",
+      "display_sprite_upgrade_button": "053c9e7467afc2a4a977e4387bd84bcc",
+      "falling_troop": "6ddec61ed8af0b64db6d55065484efb1",
+      "troop_controller": "1a5cf75b4f97d7b4b9e743e5ced4aaed"
+    },
+    "TroopFlyTrap": {
+      "name": "TroopFlyTrap",
+      "id": "130b7a1db50187c409ab2d0b79f9c351",
+      "unlocked_by_default": 0,
+      "evolve_level": 20,
+      "starting_level": 0,
+      "evolves_into": {
+        "name": "TroopFlyTrapEvolutionTwo.asset",
+        "guid": "84bf6137cbd19b34ca6fbafb08339955"
+      },
+      "name_loc_key": "l_flyTrap",
+      "troop_category": 2,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 60,
+        "y": 9999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearFlyTrap.asset",
+        "guid": "c819942550ece3a49bbc56e400c1b749"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "d6095c356a92a584da3f1222605f648c",
+      "display_sprite_enemy": "4d1bd7bffe305f84290d11b6e2e162e5",
+      "display_sprite_gear": "bd61546dcb62c8f49ac3d977017a5b0b",
+      "display_sprite_upgrade_button": "d6095c356a92a584da3f1222605f648c",
+      "falling_troop": "d938f78a4c63e854a8ba13688f82cc22",
+      "troop_controller": "cb19c0f3910007746a9ea8d0c4ab2eaa"
+    },
+    "TroopFlyTrapEvolutionTwo": {
+      "name": "TroopFlyTrapEvolutionTwo",
+      "id": "362b167b707cf1f4c9d8c99d711e7b3e",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": "l_flyTrap",
+      "troop_category": 2,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 60,
+        "y": 9999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearFlyTrap.asset",
+        "guid": "c819942550ece3a49bbc56e400c1b749"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "736deef1a6bac904ca2b9566ee61b607",
+      "display_sprite_enemy": "736deef1a6bac904ca2b9566ee61b607",
+      "display_sprite_gear": "823cfe709412f524c827c6f92a0be7a6",
+      "display_sprite_upgrade_button": "736deef1a6bac904ca2b9566ee61b607",
+      "falling_troop": "b8fcb86affec84c49aef2e758af388dd",
+      "troop_controller": "09cd35630b8832f49b722f6065f209e3"
+    },
+    "TroopFlyingDemon": {
+      "name": "TroopFlyingDemon",
+      "id": "55f2a9c7769ed734daf41fa4a4924dd5",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 2,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "96a31b545f69d3b4d8e7419e4cc9f549",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "42ba4b421a4aa8f4c97fb68c7e25ba3a",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "061425070cb99684699a7f7ab11220d2",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "1b5ee010c8802324ab080c91e6029a37",
+      "troop_controller": "25037346a25a99440bf67a8cc280d0ec"
+    },
+    "TroopForestGolem": {
+      "name": "TroopForestGolem",
+      "id": "16e1f0ae78ae72e46a4b43f376ea593a",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 4,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "fef83d7d9592bdf4691d66582a41fc29",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": null,
+      "troop_controller": "d0cf2c14db6da2441bb907995d63ea51"
+    },
+    "TroopForestGuardian": {
+      "name": "TroopForestGuardian",
+      "id": "676a2beef41ef0e4c81fb4ae48e8ec9e",
+      "unlocked_by_default": 0,
+      "evolve_level": 2000,
+      "starting_level": 20,
+      "evolves_into": null,
+      "name_loc_key": "forestGuardian",
+      "troop_category": 2,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearGuardian.asset",
+        "guid": "d32aa6292c3288b4a8c550d7372f6304"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "1e9e871bf6effd44584a89745961d395",
+      "display_sprite_enemy": "1e9e871bf6effd44584a89745961d395",
+      "display_sprite_gear": "f92d28f7c1e90fc42af48f1306a42fa7",
+      "display_sprite_upgrade_button": "1e9e871bf6effd44584a89745961d395",
+      "falling_troop": "f635b47348f29ac4faccc655476afcea",
+      "troop_controller": "0eb80361e90b2fd4c833269a7031f7cb"
+    },
+    "TroopGreekWarrior": {
+      "name": "TroopGreekWarrior",
+      "id": "6335ff534695a7e4ba29316011cace25",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 16,
+      "evolves_into": {
+        "name": "TroopDefender.asset",
+        "guid": "8ecb0d7e611481c4085f719e7de00053"
+      },
+      "name_loc_key": "greekWarrior",
+      "troop_category": 2,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 24,
+        "y": 50
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearSpartan.asset",
+        "guid": "4bdd758593f0f4a4eb2d89f90bb7482a"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "37a46f5b84e47f849b453c5a4ac5b945",
+      "display_sprite_enemy": "8e1bcd590f6a6e7428d3414af173f689",
+      "display_sprite_gear": "545258119b5897e4ca31889dd4fa617f",
+      "display_sprite_upgrade_button": "37a46f5b84e47f849b453c5a4ac5b945",
+      "falling_troop": "fa508bf17d738574b805aefbf6f528ca",
+      "troop_controller": "922715cd5b2d2f64b90f3058330c2d89"
+    },
+    "TroopIceGolem": {
+      "name": "TroopIceGolem",
+      "id": "88b6315ad3fa49a429cd5abd271e4ef1",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 4,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "4eaeb4bc7b68d5c45956363ba5d2aed5",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": null,
+      "troop_controller": "3c97e3bec8a76b141a5ec81f96f8d181"
+    },
+    "TroopIncan": {
+      "name": "TroopIncan",
+      "id": "acf524bdd36d1784cbc5867967dec10e",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 6,
+      "evolves_into": {
+        "name": "TroopSergeant.asset",
+        "guid": "edaf3611e799a3f48ac61dc0068a05cd"
+      },
+      "name_loc_key": "incan",
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 8,
+        "y": 14
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearCaveman.asset",
+        "guid": "d64e431cafc8eb0458e199221e5124ae"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "e8917b53183fb034e8d5ace45361b230",
+      "display_sprite_enemy": "aee95ee600b595e4486996c65780e0e4",
+      "display_sprite_gear": "0f10e00d0c70fd14a8ba1dbb2bb552f6",
+      "display_sprite_upgrade_button": "e8917b53183fb034e8d5ace45361b230",
+      "falling_troop": "c171c77b5765a2144814ee7975f9e180",
+      "troop_controller": "3ff1eff8bb0fca14684bc8aa92c30125"
+    },
+    "TroopInfectedRat": {
+      "name": "TroopInfectedRat",
+      "id": "865658f6359ca15429887f8b91d7df73",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "96a31b545f69d3b4d8e7419e4cc9f549",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "42ba4b421a4aa8f4c97fb68c7e25ba3a",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "d3e2b4e1b18beaa4f8e7a3a2a6fc994a",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "fa1119469ef68834e9d449de3ee98c94",
+      "troop_controller": "50d1c066d6a27e84483ab7aadb404c54"
+    },
+    "TroopInfectedWolf": {
+      "name": "TroopInfectedWolf",
+      "id": "29ea236284e868d428c1fd3dee8a92ba",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 2,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "96a31b545f69d3b4d8e7419e4cc9f549",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "42ba4b421a4aa8f4c97fb68c7e25ba3a",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "0135608284a7ce04bad2310ce4c0a4e3",
+      "display_sprite_enemy": "0135608284a7ce04bad2310ce4c0a4e3",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "0135608284a7ce04bad2310ce4c0a4e3",
+      "falling_troop": "c466a174d77244840b8d04792bfff925",
+      "troop_controller": "a796d7cd188e3514194f346a973a4878"
+    },
+    "TroopKingMonkey": {
+      "name": "TroopKingMonkey",
+      "id": "dd7028bc3a417604f97c3cf2b75cf94c",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearKingMonkey.asset",
+        "guid": "32349eaccd6a97f45ad22d57f1f34ed9"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "88a0dce6917aaae40bcdf561d72adacf",
+      "display_sprite_enemy": "88a0dce6917aaae40bcdf561d72adacf",
+      "display_sprite_gear": "5daf64f7879ef6d479f5d3404a4783fb",
+      "display_sprite_upgrade_button": "88a0dce6917aaae40bcdf561d72adacf",
+      "falling_troop": "22f0b65d4f99cf7438c0c2590b87b33a",
+      "troop_controller": "ff7bf4952e7d17345a500e8155299ad4"
+    },
+    "TroopLittleMonster": {
+      "name": "TroopLittleMonster",
+      "id": "2699d7388819f614999400c9f6283a5c",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "9c26e10a38904d54190b48e0c8683f3f",
+      "display_sprite_enemy": "9c26e10a38904d54190b48e0c8683f3f",
+      "display_sprite_gear": "9c26e10a38904d54190b48e0c8683f3f",
+      "display_sprite_upgrade_button": "9c26e10a38904d54190b48e0c8683f3f",
+      "falling_troop": null,
+      "troop_controller": "c7ed7b867b14908499093e19b980bb64"
+    },
+    "TroopMagician": {
+      "name": "TroopMagician",
+      "id": "c3b80c105629af047b49a18c4adb12b4",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearMagician.asset",
+        "guid": "66be0525d677af84d860db0901b7d061"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "7e1f402d32c6be742a5b0151d72f7a9f",
+      "display_sprite_enemy": "7e1f402d32c6be742a5b0151d72f7a9f",
+      "display_sprite_gear": "6f683976b0468cc44878b02bbfccc159",
+      "display_sprite_upgrade_button": "7e1f402d32c6be742a5b0151d72f7a9f",
+      "falling_troop": "d613cfc150a7cce48b1a6c4325d22115",
+      "troop_controller": "cdfd3108dbfaa5646b8493fe91315185"
+    },
+    "TroopMinotaur": {
+      "name": "TroopMinotaur",
+      "id": "a784732ec0c6230479263d1b6177aa0c",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 12,
+      "evolves_into": {
+        "name": "TroopMinotaurEvolutionTwo.asset",
+        "guid": "74e24ac4502a188409bc6472e2408679"
+      },
+      "name_loc_key": "minotaur",
+      "troop_category": 0,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearMinotaur.asset",
+        "guid": "f450ea198670002459c8a513da8f5ecc"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "e876fd7934122c440941150b1cac90f4",
+      "display_sprite_enemy": "e876fd7934122c440941150b1cac90f4",
+      "display_sprite_gear": "002224375c52685409dc141bd75ecdc0",
+      "display_sprite_upgrade_button": "e876fd7934122c440941150b1cac90f4",
+      "falling_troop": "0d6c5b49168945049a07b3286bfceb0c",
+      "troop_controller": "f0c485ef59c9d0a4db1558ef063e037b"
+    },
+    "TroopMinotaurEvolutionTwo": {
+      "name": "TroopMinotaurEvolutionTwo",
+      "id": "1ebcc242a463f374680cb21997617c48",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 18,
+      "evolves_into": null,
+      "name_loc_key": "minotaur2",
+      "troop_category": 0,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearMinotaur.asset",
+        "guid": "f450ea198670002459c8a513da8f5ecc"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "839f5da605587a5469b5bc9a12592d7f",
+      "display_sprite_enemy": "839f5da605587a5469b5bc9a12592d7f",
+      "display_sprite_gear": "e0170d75193fb8c478d368eb26df1972",
+      "display_sprite_upgrade_button": "839f5da605587a5469b5bc9a12592d7f",
+      "falling_troop": "ee6a1c66115ca684699b06e93ca087f7",
+      "troop_controller": "3c923a654633d684e9ddb370f19dca34"
+    },
+    "TroopMohawkBat": {
+      "name": "TroopMohawkBat",
+      "id": "32a5f367d1bbe7d42b73ce4a239bf093",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "96a31b545f69d3b4d8e7419e4cc9f549",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "42ba4b421a4aa8f4c97fb68c7e25ba3a",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "f17a1069d05f7374c86aa8f41009a601",
+      "display_sprite_enemy": "f17a1069d05f7374c86aa8f41009a601",
+      "display_sprite_gear": "f17a1069d05f7374c86aa8f41009a601",
+      "display_sprite_upgrade_button": "f17a1069d05f7374c86aa8f41009a601",
+      "falling_troop": "5afd9a8fd53c0fc4aa0c87fbe5ec8463",
+      "troop_controller": "78060fa2b4f0a714787b22729151e225"
+    },
+    "TroopMossQueen": {
+      "name": "TroopMossQueen",
+      "id": "f371b5a224c7cc647ba63549ce2324a1",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 4,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "52452ae6d2c4ff149be9461d09199687",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": null,
+      "troop_controller": "36a7f9fd22710af478c6ecd62cf36bf2"
+    },
+    "TroopMrD": {
+      "name": "TroopMrD",
+      "id": "5b23c927eeb23824ba0c8657ade9d6ed",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearMrD.asset",
+        "guid": "7e3de8d686181884fbbb90419485ff2e"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "360ed80b4272b0f48b1bc2da0a2ee0cd",
+      "display_sprite_enemy": "360ed80b4272b0f48b1bc2da0a2ee0cd",
+      "display_sprite_gear": "9d4daa3e4a5f6894697d64928f60b2f7",
+      "display_sprite_upgrade_button": "360ed80b4272b0f48b1bc2da0a2ee0cd",
+      "falling_troop": "99b2898a64d2631448781f238bc8fa8a",
+      "troop_controller": "fc8fed9b631b02c4eb3d1f094f725bfa"
+    },
+    "TroopMummy": {
+      "name": "TroopMummy",
+      "id": "d08c92b838373ff4381e824ef4603627",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearMummy.asset",
+        "guid": "d5f1cf1081e19ff449d19ef4d5d850cc"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "b35456ccbd88d38459c7f25d3eca32ba",
+      "display_sprite_enemy": "b35456ccbd88d38459c7f25d3eca32ba",
+      "display_sprite_gear": "7b5f08977e7d92c4c860b401e4bae0c3",
+      "display_sprite_upgrade_button": "b35456ccbd88d38459c7f25d3eca32ba",
+      "falling_troop": "6a129af215c493445b15a00ccfc92c48",
+      "troop_controller": "abc6f7a8103c95b4a93eafc477958907"
+    },
+    "TroopMushroom": {
+      "name": "TroopMushroom",
+      "id": "0de9bbffff61ef04db28d13468aaaffa",
+      "unlocked_by_default": 1,
+      "evolve_level": 20,
+      "starting_level": 0,
+      "evolves_into": {
+        "name": "TroopMushroomEvolutionTwo.asset",
+        "guid": "01e14642c74df7540bbba4dc2e73c16b"
+      },
+      "name_loc_key": "l_mushroom",
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 20,
+        "y": 9999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearMushroom.asset",
+        "guid": "b06986d6503b50f4ea174e4a392c5271"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "0ea701e1736e8f446af0703f04027d8f",
+      "display_sprite_enemy": "630e09d0df145aa4f80800ea916f80be",
+      "display_sprite_gear": "68a053e49d3214947a82703375a12e36",
+      "display_sprite_upgrade_button": "0ea701e1736e8f446af0703f04027d8f",
+      "falling_troop": "c3e4182bf3a79874f85ce1ca5a3f18b5",
+      "troop_controller": "b30ed32ce7f696544b8bbb7b2317d16c"
+    },
+    "TroopMushroomEvolutionTwo": {
+      "name": "TroopMushroomEvolutionTwo",
+      "id": "a9e0416b21832cd449d6f7446f3ac649",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": "l_hornCap",
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 35,
+        "y": 9999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearMushroom.asset",
+        "guid": "b06986d6503b50f4ea174e4a392c5271"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "989e5426f35633045804456337f8b861",
+      "display_sprite_enemy": "630e09d0df145aa4f80800ea916f80be",
+      "display_sprite_gear": "e8c184999da0b5642bb9002b8493c35d",
+      "display_sprite_upgrade_button": "989e5426f35633045804456337f8b861",
+      "falling_troop": "d78d4dbeb6885ce4e88a1588cfad2626",
+      "troop_controller": "87ea78d3c31c9ed48a0c0542ba0ab590"
+    },
+    "TroopNecro": {
+      "name": "TroopNecro",
+      "id": "1ace6418092b72341a721bbec3b5a456",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearNecro.asset",
+        "guid": "1807fcf9dd0574e40b046b96d25cd845"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "97a43d0ac96193e4c9b2952557bb2085",
+      "display_sprite_enemy": "97a43d0ac96193e4c9b2952557bb2085",
+      "display_sprite_gear": "ea41065f69015ab40be71ad660fe2564",
+      "display_sprite_upgrade_button": "97a43d0ac96193e4c9b2952557bb2085",
+      "falling_troop": "792d837226a069541ae0358f9febb136",
+      "troop_controller": "6539cbc114fa01241aa8f9d9b229e113"
+    },
+    "TroopNecromancerSpawnOne": {
+      "name": "TroopNecromancerSpawnOne",
+      "id": "88c92f484916ced4cadf4339c64c59f0",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "e902cd0dd4ac33d4194b0b8f4d8ecf50",
+      "display_sprite_enemy": "e902cd0dd4ac33d4194b0b8f4d8ecf50",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "e902cd0dd4ac33d4194b0b8f4d8ecf50",
+      "falling_troop": null,
+      "troop_controller": "4870ac0fa82119d46a90c9a35ea688c4"
+    },
+    "TroopNecromancerSpawnThree": {
+      "name": "TroopNecromancerSpawnThree",
+      "id": "41811e173f627e4499e980c2dffb011b",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "2c3894d727e6e1440882ad7743064205",
+      "display_sprite_enemy": "2c3894d727e6e1440882ad7743064205",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "2c3894d727e6e1440882ad7743064205",
+      "falling_troop": null,
+      "troop_controller": "bb67b1a2032b8b94ebbb81ab8d8f5e73"
+    },
+    "TroopNecromancerSpawnTwo": {
+      "name": "TroopNecromancerSpawnTwo",
+      "id": "09b6abf3678b7ea4c89d6e334beaea83",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "bf8a793aaebae2d47925639bf45fa36f",
+      "display_sprite_enemy": "bf8a793aaebae2d47925639bf45fa36f",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "bf8a793aaebae2d47925639bf45fa36f",
+      "falling_troop": null,
+      "troop_controller": "3d54bc4749c094a4f949e70f9eec3e6a"
+    },
+    "TroopNinja": {
+      "name": "TroopNinja",
+      "id": "c4ca698a27f4ae348bdfe8ffd4c1a98e",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearNinja.asset",
+        "guid": "790b95b3f730dcd4d971ebea20792356"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "e0afac34e0f8ec54689f86ba5783012c",
+      "display_sprite_enemy": "e0afac34e0f8ec54689f86ba5783012c",
+      "display_sprite_gear": "46108f5bf784f3f46a45ab48250d4a2a",
+      "display_sprite_upgrade_button": "e0afac34e0f8ec54689f86ba5783012c",
+      "falling_troop": "e23412541af5f6846985fd1434415a05",
+      "troop_controller": "6f56dff538292a440b05cdec4bf046cf"
+    },
+    "TroopPossessedRat": {
+      "name": "TroopPossessedRat",
+      "id": "1c6d3e74e6653394dae0c78c731fc646",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "96a31b545f69d3b4d8e7419e4cc9f549",
+          "type": 2
+        },
+        {
+          "fileID": 11400000,
+          "guid": "42ba4b421a4aa8f4c97fb68c7e25ba3a",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "5301c31e4683c0049bf7ed592d52c3dd",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "ffcec77c0ace702429699ea49ed08638",
+      "troop_controller": "65de834c563088847bfdb2b78fc0ec13"
+    },
+    "TroopRaiseUndeadSkeleton": {
+      "name": "TroopRaiseUndeadSkeleton",
+      "id": "f506633b18051c840b824e472f5b690b",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "769db0e8578df6244b82bac36c8538e8",
+      "display_sprite_enemy": "276eb4aa2b9966547a68a39b0a703e53",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "769db0e8578df6244b82bac36c8538e8",
+      "falling_troop": null,
+      "troop_controller": "7aa532dcdb059d846b3afd5480b46bdd"
+    },
+    "TroopRobotBossThree": {
+      "name": "TroopRobotBossThree",
+      "id": "4c9972666af15f340b09a34668d347ec",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "df9178b7d762c364c9ba6a9f6d094167",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "acc773045dcb526419e9b99c6ec89c9d",
+      "troop_controller": "9813efc37989e37489c7d6ee383b51b6"
+    },
+    "TroopRobotBossTwo": {
+      "name": "TroopRobotBossTwo",
+      "id": "a7d6811f74e3bb24fb3fa69554474dd2",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "36bc8a8881757384fb79b129c33eafb2",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "b0aa903b62ac9a94e93177edd78eb16f",
+      "troop_controller": "2bf95f13bf6993243971d01eb8ff24be"
+    },
+    "TroopRobotMelee": {
+      "name": "TroopRobotMelee",
+      "id": "3eb401c40c553e24f9a7d139bcc735a7",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "89b4e11534bdd97478e976233fcf5d62",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "1fcc0aa133d891b4bb60ca97dbeebee5",
+      "troop_controller": "782cf2e93cb905349a5daa6ccde33258"
+    },
+    "TroopRobotRanged": {
+      "name": "TroopRobotRanged",
+      "id": "a91dffbc3ff59fc4692696e43c65182a",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "bf636317f4f428849bcc649992ed5ac3",
+      "display_sprite_enemy": "bf636317f4f428849bcc649992ed5ac3",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "bf636317f4f428849bcc649992ed5ac3",
+      "falling_troop": "e58aeb309f606014081aa4115ce6a539",
+      "troop_controller": "9b5915e6219a89448bf2a759fcfe4e94"
+    },
+    "TroopSamurai": {
+      "name": "TroopSamurai",
+      "id": "d5fcd22e2ecaab1498adda654163ae0d",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearSamurai.asset",
+        "guid": "52a3b8abdf854124fb439d466edb3a83"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "2021c7561723b9e45a6ee5a11dec4f24",
+      "display_sprite_enemy": "2021c7561723b9e45a6ee5a11dec4f24",
+      "display_sprite_gear": "dfb3c537c7d5d5e41bb7ebb6dbc096d2",
+      "display_sprite_upgrade_button": "2021c7561723b9e45a6ee5a11dec4f24",
+      "falling_troop": "dcfd07ddbf4fbe140a30b1fe3af1d9b7",
+      "troop_controller": "3f244551dacf79b48b2bae1957f0f94f"
+    },
+    "TroopSergeant": {
+      "name": "TroopSergeant",
+      "id": "719dc12e2761dd14b954fabb4c0f2aff",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 14,
+      "evolves_into": null,
+      "name_loc_key": "sergeant",
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 14,
+        "y": 999999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearCaveman.asset",
+        "guid": "d64e431cafc8eb0458e199221e5124ae"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "b0535b7239795af4e853aedd5bc4ef10",
+      "display_sprite_enemy": "bde71ed2fc315e74a8e504cfecb3c312",
+      "display_sprite_gear": "8b21bf02f9d9b834a9cd06f2a83f1602",
+      "display_sprite_upgrade_button": "b0535b7239795af4e853aedd5bc4ef10",
+      "falling_troop": "e62eb072ada0e28419c61571f5d7b78e",
+      "troop_controller": "6a99e6d0d8396684aa3fe95211269bd7"
+    },
+    "TroopShaman": {
+      "name": "TroopShaman",
+      "id": "cf6e984d5d32f5b4e93cd81d649c44c6",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "d6f63f599cf56c14aa3ea10720382997",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "31098aae29fdfa8488ae0976744a9caf",
+      "display_sprite_enemy": "31098aae29fdfa8488ae0976744a9caf",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "31098aae29fdfa8488ae0976744a9caf",
+      "falling_troop": "00d796aef752a50499f98474fece2298",
+      "troop_controller": "228b9347ce97fdc4aaebb16fe198e3ae"
+    },
+    "TroopSheep": {
+      "name": "TroopSheep",
+      "id": "ecbd001eb75c15f41a8e01028ccd9131",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "23f1afec4162f9b4fae7aa56379dcf4b",
+      "display_sprite_enemy": "23f1afec4162f9b4fae7aa56379dcf4b",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "23f1afec4162f9b4fae7aa56379dcf4b",
+      "falling_troop": null,
+      "troop_controller": "d954079817e435640bea9260bf38cc97"
+    },
+    "TroopSkeletonOne": {
+      "name": "TroopSkeletonOne",
+      "id": "2bf556de4635f814fa384c4952663815",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "9b03048aba2809747a7e75108a67e101",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "3539f30abbe31c848badd63b4cb08940",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "ec1871c78b0622144b9463c3600fc68b",
+      "troop_controller": "8728498a9410dec4b96c45cf12f9f3c0"
+    },
+    "TroopSkeletonThree": {
+      "name": "TroopSkeletonThree",
+      "id": "900e38afd5a9691449ed31cf4530e337",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "9b03048aba2809747a7e75108a67e101",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "7faebfe4248942e4ca59f0f7fbfd8350",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "49d191f6ec828ff4fa7d7af4cd46d153",
+      "troop_controller": "d983275c6e88e414ea5daaaf01b7b979"
+    },
+    "TroopSkeletonTwo": {
+      "name": "TroopSkeletonTwo",
+      "id": "3c463d730e4022340aa201d48f8b10fa",
+      "unlocked_by_default": 1,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [
+        {
+          "fileID": 11400000,
+          "guid": "9b03048aba2809747a7e75108a67e101",
+          "type": 2
+        }
+      ],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "81dd18e1f6f79fb49920a57d0cbf2fc1",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "be5ebd9089cf22d468253451709a6892",
+      "troop_controller": "7e8740916ce5f324fa86c18ada845afd"
+    },
+    "TroopSpartan": {
+      "name": "TroopSpartan",
+      "id": "e48e1ccc865dbe945bbb8f8e31374a46",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 10,
+      "evolves_into": {
+        "name": "TroopGreekWarrior.asset",
+        "guid": "c3edf6910ad52a24aba14c3222b8dd81"
+      },
+      "name_loc_key": "spartan",
+      "troop_category": 2,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 8,
+        "y": 24
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 1,
+      "unlock_cost_override": 150,
+      "associated_gear": {
+        "name": "GearSpartan.asset",
+        "guid": "4bdd758593f0f4a4eb2d89f90bb7482a"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "3f7a104a0b1351149a18b08c1951ede8",
+      "display_sprite_enemy": "56b2e0373ea7c4f4db85381fa5bbaaac",
+      "display_sprite_gear": "c03b4261e038e034d95074cabc13f8e2",
+      "display_sprite_upgrade_button": "3f7a104a0b1351149a18b08c1951ede8",
+      "falling_troop": "557058061919186459136891f98b3963",
+      "troop_controller": "56d0cc25452e0d34bbe2fd3653217275"
+    },
+    "TroopTheCount": {
+      "name": "TroopTheCount",
+      "id": "a056e7ee2d9185542be81a3d9b0ccb25",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearTheCount.asset",
+        "guid": "afa59a1b798e5bd438d0cc19818ecf28"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "e0c6cbb8cb78e3942a702f4cfd6f4698",
+      "display_sprite_enemy": "e0c6cbb8cb78e3942a702f4cfd6f4698",
+      "display_sprite_gear": "0a8afa38616842c4f99202c68a2a68e0",
+      "display_sprite_upgrade_button": "e0c6cbb8cb78e3942a702f4cfd6f4698",
+      "falling_troop": "36c7b459fe6aefd4cb5931ff65e8964c",
+      "troop_controller": "1c47f6c886fbf694ba869831dd71c2ed"
+    },
+    "TroopTheCountSkeleton": {
+      "name": "TroopTheCountSkeleton",
+      "id": "052ac37c135fb044f9fc2c57e4c18688",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "769db0e8578df6244b82bac36c8538e8",
+      "display_sprite_enemy": "276eb4aa2b9966547a68a39b0a703e53",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": "769db0e8578df6244b82bac36c8538e8",
+      "falling_troop": null,
+      "troop_controller": "be7aa6e26f93d87469d008c23f47543e"
+    },
+    "TroopTribe": {
+      "name": "TroopTribe",
+      "id": "2590c3c2a977ea541ba6f044205f1fa8",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 2,
+      "evolves_into": {
+        "name": "TroopArcher.asset",
+        "guid": "8f48c53702f41444480b5ce819accc34"
+      },
+      "name_loc_key": "tribe",
+      "troop_category": 1,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 5
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 1,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearTribe.asset",
+        "guid": "e97dba9b6689eb749aca1553b99a6868"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "371f01090e99e104fa63e87bdea432a1",
+      "display_sprite_enemy": "8515b5eaedd66e24090d8871bd646e14",
+      "display_sprite_gear": "1bb4647990d0a7041925ee03c99ad378",
+      "display_sprite_upgrade_button": "371f01090e99e104fa63e87bdea432a1",
+      "falling_troop": "1b4dd27e447e08645b7c1705d6d64cfd",
+      "troop_controller": "fdb0a4365660d5b4cae0d47d922b40fd"
+    },
+    "TroopTutorialCaveman": {
+      "name": "TroopTutorialCaveman",
+      "id": "27e1bebeda8ae874d84c128f61309f00",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearCaveman.asset",
+        "guid": "d64e431cafc8eb0458e199221e5124ae"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "88d0e157e19d1de4da0045edfa400a87",
+      "display_sprite_enemy": "a37987fd365bbcb40b8b80b6372e8dd2",
+      "display_sprite_gear": "90dba87f88d89df448bf4dec69410749",
+      "display_sprite_upgrade_button": "88d0e157e19d1de4da0045edfa400a87",
+      "falling_troop": "82712cce113837a45acbca2372d8fa74",
+      "troop_controller": "83a265716865d564a8fdd9e0f03e2c04"
+    },
+    "TroopUndeadBrute": {
+      "name": "TroopUndeadBrute",
+      "id": "747ce5da868acdf449b195e799672c85",
+      "unlocked_by_default": 0,
+      "evolve_level": 2000,
+      "starting_level": 30,
+      "evolves_into": null,
+      "name_loc_key": "l_undeadBrute",
+      "troop_category": 2,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearZombieBrute.asset",
+        "guid": "7e759a7d9a15acd4cb41263e6fcbd85e"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "ccd09d677348f6943a78be6088732f32",
+      "display_sprite_enemy": "9367b051f5e87db48a027377bef745ad",
+      "display_sprite_gear": "98f79858434629c43a56b8f50ce82af0",
+      "display_sprite_upgrade_button": "ccd09d677348f6943a78be6088732f32",
+      "falling_troop": "ca8b625d7352d474eb7136f1ab3589a5",
+      "troop_controller": "7163a57d0dbf42747a63c072a3a55d88"
+    },
+    "TroopUndeadRanged": {
+      "name": "TroopUndeadRanged",
+      "id": "49b464697063d864aa02d75c21c2a8f1",
+      "unlocked_by_default": 0,
+      "evolve_level": 20,
+      "starting_level": 30,
+      "evolves_into": {
+        "name": "TroopUndeadRangedEvolutionTwo.asset",
+        "guid": "f0af3c1aa73f8124b8e21a83e1da1fc1"
+      },
+      "name_loc_key": "l_undeadRanger",
+      "troop_category": 1,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearZombieRanged.asset",
+        "guid": "133eb148e8912a748b2b539ddd57cf26"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "fe2f255e095ee014396977308e842f6e",
+      "display_sprite_enemy": "861df4eafa10a4240973995c5d8936ad",
+      "display_sprite_gear": "7c73d87ae487cc849890cd397d03ab03",
+      "display_sprite_upgrade_button": "fe2f255e095ee014396977308e842f6e",
+      "falling_troop": "d13cca23d3f608e4eaec4d995a5b5578",
+      "troop_controller": "81a62d56bb8373b42b085481b0f2e6d6"
+    },
+    "TroopUndeadRangedEvolutionThree": {
+      "name": "TroopUndeadRangedEvolutionThree",
+      "id": "a899e6f91419a434da8936eed553be47",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 30,
+      "evolves_into": null,
+      "name_loc_key": "undeadRanged3",
+      "troop_category": 1,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearZombieRanged.asset",
+        "guid": "133eb148e8912a748b2b539ddd57cf26"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "92a4601045ffb2945bdd1895690b0269",
+      "display_sprite_enemy": "cfde0d51222d88a4ea564bd8420fea24",
+      "display_sprite_gear": "d6f630b3efc6f8643a4d1b35d94d860d",
+      "display_sprite_upgrade_button": "92a4601045ffb2945bdd1895690b0269",
+      "falling_troop": "2c58370baab57534591f75a47a9d364b",
+      "troop_controller": "578da08ea2a86d74db0116852d785994"
+    },
+    "TroopUndeadRangedEvolutionTwo": {
+      "name": "TroopUndeadRangedEvolutionTwo",
+      "id": "5343e589142946346adaa7637fa48d3b",
+      "unlocked_by_default": 1,
+      "evolve_level": 20,
+      "starting_level": 30,
+      "evolves_into": {
+        "name": "TroopUndeadRangedEvolutionThree.asset",
+        "guid": "e255571ebcfeb0a4bba22af8331f1d2a"
+      },
+      "name_loc_key": "undeadRanged2",
+      "troop_category": 1,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearZombieRanged.asset",
+        "guid": "133eb148e8912a748b2b539ddd57cf26"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "15e0284b0ed5e5344b15d3611aa35c19",
+      "display_sprite_enemy": "61466b83e8974be4685ad3699909a5fb",
+      "display_sprite_gear": "652b2547d4fe14241b0f66bc1f44ce41",
+      "display_sprite_upgrade_button": "15e0284b0ed5e5344b15d3611aa35c19",
+      "falling_troop": "81ba7de95cf912c468067c787c58d030",
+      "troop_controller": "de3af6c1325f8e940bb7dcea08ae1e9e"
+    },
+    "TroopViking": {
+      "name": "TroopViking",
+      "id": "5e4ef1b7871d4b74db4cbb59c32f71d0",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 16,
+      "evolves_into": {
+        "name": "TroopVikingEvolutionTwo.asset",
+        "guid": "561c2c2409608214e95ece96e1a05d33"
+      },
+      "name_loc_key": "viking",
+      "troop_category": 1,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 15,
+        "y": 30
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearViking.asset",
+        "guid": "2b4a4835e0aecb347bb5032aac7ce850"
+      },
+      "anchored_position_offset": {
+        "x": 10,
+        "y": 0
+      },
+      "display_sprite_ally": "820f37cf187a42640a86dbc6544107d9",
+      "display_sprite_enemy": "32d7083ac76ca4141969387320468664",
+      "display_sprite_gear": "a31534020ddc31a48b1707716c94ddd4",
+      "display_sprite_upgrade_button": "820f37cf187a42640a86dbc6544107d9",
+      "falling_troop": "36ff924f3ffd60847850b1cc0b4e2489",
+      "troop_controller": "3f9bd3c6a959e3c49bed4627cc70e98f"
+    },
+    "TroopVikingEvolutionTwo": {
+      "name": "TroopVikingEvolutionTwo",
+      "id": "3695e2b1feb1d6c4b90cabceae488a3f",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 22,
+      "evolves_into": null,
+      "name_loc_key": "vikingThug",
+      "troop_category": 1,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 30,
+        "y": 99999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearViking.asset",
+        "guid": "2b4a4835e0aecb347bb5032aac7ce850"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "c00bc87d9596501478ee20ed1a130144",
+      "display_sprite_enemy": "fb6968c027f649d49ba382fdf02441b9",
+      "display_sprite_gear": "a52d2fe7afe457f43b4e41544e14bc4b",
+      "display_sprite_upgrade_button": "c00bc87d9596501478ee20ed1a130144",
+      "falling_troop": "4710af7571a510e499be9191650402fb",
+      "troop_controller": "1eb637c2d3a87144c98ff2582f589b74"
+    },
+    "TroopWizard": {
+      "name": "TroopWizard",
+      "id": "21635c4b60cb2774a8fb0a2e075453c7",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 14,
+      "evolves_into": null,
+      "name_loc_key": "blackWizard",
+      "troop_category": 1,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 20,
+        "y": 99999999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearTribe.asset",
+        "guid": "e97dba9b6689eb749aca1553b99a6868"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "dfeec9469a92fc34eb6917f061cdb090",
+      "display_sprite_enemy": "6352c13d9570ff64a83c84f04a6062db",
+      "display_sprite_gear": "84ba2ac379b5b6a488867f5385700103",
+      "display_sprite_upgrade_button": "dfeec9469a92fc34eb6917f061cdb090",
+      "falling_troop": "530e909b962977843a0315a1e8dffb2f",
+      "troop_controller": "5184a2407d43dfb4b88a71f1fb8a5c13"
+    },
+    "TroopWolfOne": {
+      "name": "TroopWolfOne",
+      "id": "ee11a4105d4c62042ae43cb7eb5c780c",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "a4dffbb3b6b7d1b4ba3f9dbdf784bfba",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "aa27917829cda2f49ba3ea643a620489",
+      "troop_controller": "977cfca8911ecf744a3d48ef87dfbf07"
+    },
+    "TroopWolfThree": {
+      "name": "TroopWolfThree",
+      "id": "e1991aad8e54a724a9760b85cbcb732b",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 9,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "e41d0d29cad55ad4c9d67fe59cf45d3e",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "8ed442fb0bef3e24882d4381a8a11b95",
+      "troop_controller": "14f498d97dcec944f8cd166c87389864"
+    },
+    "TroopWolfTwo": {
+      "name": "TroopWolfTwo",
+      "id": "752e373878ac2d443b2ebb45d0471e57",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 5,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 1,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 9999999
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "822752bd0761cf9458bd229e9688e45c",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "9aab418096a742f48a86278e79f99e65",
+      "troop_controller": "0fb907804f3f0c34992a22130ed6820b"
+    },
+    "TroopWormOne": {
+      "name": "TroopWormOne",
+      "id": "f6514f8159232f84fb8d245e2e08b102",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 0,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 0,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": "85c07e4c0c9e2c44dbcb5f987e04abc2",
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null,
+      "falling_troop": "f2763d895f6568a45957544e6c46ef36",
+      "troop_controller": "9814399713df9af42b58c546396e262d"
+    },
+    "TroopZombieGrunt": {
+      "name": "TroopZombieGrunt",
+      "id": "8e851ecaafe04404488b510b813e2eb7",
+      "unlocked_by_default": 1,
+      "evolve_level": 20,
+      "starting_level": 30,
+      "evolves_into": {
+        "name": "TroopZombieGruntEvolutionTwo.asset",
+        "guid": "df623d7dd7a397542b30fd30297e0fbd"
+      },
+      "name_loc_key": "l_undeadGrunt",
+      "troop_category": 0,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearZombieGrunt.asset",
+        "guid": "3cb04a5d53a04cb49af4203eaf1bb56c"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "641273169c40c434f8b4ea6d3de24237",
+      "display_sprite_enemy": "e6c59f14cd564024cbb2d022442dfb9d",
+      "display_sprite_gear": "60a5ebc0be9336f4f8c844c1bccd9bf2",
+      "display_sprite_upgrade_button": "641273169c40c434f8b4ea6d3de24237",
+      "falling_troop": "c7534d5c40960b54880ef8fa21f57d77",
+      "troop_controller": "27f71d529d6720949b2f8c508ee71f37"
+    },
+    "TroopZombieGruntEvolutionThree": {
+      "name": "TroopZombieGruntEvolutionThree",
+      "id": "bc5dba6c319f7b140a868a2aa078691e",
+      "unlocked_by_default": 1,
+      "evolve_level": 2000,
+      "starting_level": 30,
+      "evolves_into": null,
+      "name_loc_key": "undeadGrunt3",
+      "troop_category": 0,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearZombieGrunt.asset",
+        "guid": "3cb04a5d53a04cb49af4203eaf1bb56c"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "769db0e8578df6244b82bac36c8538e8",
+      "display_sprite_enemy": "276eb4aa2b9966547a68a39b0a703e53",
+      "display_sprite_gear": "1ad0cf62dc874804f9c5dd5f7df0d663",
+      "display_sprite_upgrade_button": "769db0e8578df6244b82bac36c8538e8",
+      "falling_troop": "6b2f362578cf79845be817b5fad027d2",
+      "troop_controller": "1f66f7047e6e7cf48bd15b0955258717"
+    },
+    "TroopZombieGruntEvolutionTwo": {
+      "name": "TroopZombieGruntEvolutionTwo",
+      "id": "1b55506a2031294409b2728ed3da9f27",
+      "unlocked_by_default": 1,
+      "evolve_level": 20,
+      "starting_level": 30,
+      "evolves_into": {
+        "name": "TroopZombieGruntEvolutionThree.asset",
+        "guid": "221a87e41a1528c459b683519f3e676a"
+      },
+      "name_loc_key": "undeadGrunt2",
+      "troop_category": 0,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": {
+        "name": "GearZombieGrunt.asset",
+        "guid": "3cb04a5d53a04cb49af4203eaf1bb56c"
+      },
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": "38ec1744e7b9fc74dbab1582a222cce9",
+      "display_sprite_enemy": "4d4d434c993fee84bb282e1fb2d4a720",
+      "display_sprite_gear": "34d1c3f1195199249b9b4bbe0e6c6488",
+      "display_sprite_upgrade_button": "38ec1744e7b9fc74dbab1582a222cce9",
+      "falling_troop": "91b9bac429da45241bdce526d2a69188",
+      "troop_controller": "9d11e1a5cdcbc3b46ba0c5fff48e127e"
+    }
+  },
+  "detailed_structures": {
+    "Snow_Structure_2": {
+      "name": "Snow_Structure_2",
+      "id": "c5fa8e0a5da3c3147af861e03980d485",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Mine_Structure_2": {
+      "name": "Mine_Structure_2",
+      "id": "547dc682871e84a49a676d45f77252cc",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Desert_Structure_1": {
+      "name": "Desert_Structure_1",
+      "id": "2c13474fc15e24259b55c8f28569284f",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Lava_Structure_2": {
+      "name": "Lava_Structure_2",
+      "id": "ad979b31368a1c14584fd421beaf5e6c",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "City_Structure_3": {
+      "name": "City_Structure_3",
+      "id": "1f541927fb2b94d739c16b6039825556",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Desert_Structure_3": {
+      "name": "Desert_Structure_3",
+      "id": "dd44b36e71e8e4d9686cb0d8ecccfcc8",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Forest_Structure_1": {
+      "name": "Forest_Structure_1",
+      "id": "a7ffe02a8e32c3242b65cbdf00dbeb72",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "City_Structure_1": {
+      "name": "City_Structure_1",
+      "id": "de3fbcad1aa4b4f818d1b4f7b3d11a94",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Mine_Structure_1": {
+      "name": "Mine_Structure_1",
+      "id": "049ce1786fb504b5aae66756645879b7",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Snow_Structure_1": {
+      "name": "Snow_Structure_1",
+      "id": "0c77a61241999e24db3e64f5ce90aab1",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "City_Structure_2": {
+      "name": "City_Structure_2",
+      "id": "21c9a79195bd540568459d8704867d49",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Jungle_Structure_1": {
+      "name": "Jungle_Structure_1",
+      "id": "40c1ab5de9c24474ca90774c974dedb2",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Desert_Structure_2": {
+      "name": "Desert_Structure_2",
+      "id": "b9ccd36bcb57d48e79c91d4f92de8dc6",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Nimbus_Structure_1": {
+      "name": "Nimbus_Structure_1",
+      "id": "0cdb1ac2cb35447f4b2111b12f384478",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Nimbus_Structure_2": {
+      "name": "Nimbus_Structure_2",
+      "id": "d65a3fe18afe24b73b4578b6df64e03e",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Nimbus_Structure_3": {
+      "name": "Nimbus_Structure_3",
+      "id": "fdc5f70b0f7e646bcb98d1bc742e9f44",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Forest_Structure_2": {
+      "name": "Forest_Structure_2",
+      "id": "d9cc810447af898419608a06073f3df4",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Forest_Structure_3": {
+      "name": "Forest_Structure_3",
+      "id": "2078cf97e0c4bc64caf19134c0e50133",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Lava_Structure_3": {
+      "name": "Lava_Structure_3",
+      "id": "b4a689f4b3d5e4047aa78b5b86830bb3",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Haunt_Structure_2": {
+      "name": "Haunt_Structure_2",
+      "id": "6ae6600779ace44009f02d0d116a81f9",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Spore_Structure_1": {
+      "name": "Spore_Structure_1",
+      "id": "ec1dff369df334952a3bd30045c6325f",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Jungle_Structure_3": {
+      "name": "Jungle_Structure_3",
+      "id": "514b4868b6c54438f9a15694adce4a19",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Spore_Structure_3": {
+      "name": "Spore_Structure_3",
+      "id": "f0f0a8b91bc57434594a0c0ebebce1da",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Mine_Structure_3": {
+      "name": "Mine_Structure_3",
+      "id": "7f8e3889b502640a3b96caa30e89a440",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Snow_Structure_3": {
+      "name": "Snow_Structure_3",
+      "id": "dcb68fa9af0a846a9806758887cda3ff",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Spore_Structure_2": {
+      "name": "Spore_Structure_2",
+      "id": "1c7de4c1e537d45faae25e136ba220dc",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Haunt_Structure_3": {
+      "name": "Haunt_Structure_3",
+      "id": "b30317a419591407b9e869472b60ea51",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Lava_Structure_1": {
+      "name": "Lava_Structure_1",
+      "id": "98ea1924a1975d7409ee751939a77520",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Haunt_Structure_1": {
+      "name": "Haunt_Structure_1",
+      "id": "c74542bee3f074b82afbcb15869fedcc",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    },
+    "Jungle_Structure_2": {
+      "name": "Jungle_Structure_2",
+      "id": "b7ef5e297d4a44250a7228d17725c920",
+      "unlocked_by_default": 0,
+      "evolve_level": 5,
+      "starting_level": 99,
+      "evolves_into": null,
+      "name_loc_key": null,
+      "troop_category": 3,
+      "included_in_level_generation": 0,
+      "acceptable_level_range": {
+        "x": 0,
+        "y": 0
+      },
+      "only_included_in_scenes": [],
+      "show_fullscreen_popup_when_unlocked": 0,
+      "override_unlock_cost": 0,
+      "unlock_cost_override": 15,
+      "associated_gear": null,
+      "anchored_position_offset": {
+        "x": 0,
+        "y": 0
+      },
+      "display_sprite_ally": null,
+      "display_sprite_enemy": null,
+      "display_sprite_gear": null,
+      "display_sprite_upgrade_button": null
+    }
+  },
+  "detailed_gears": {
+    "GearAcorn": {
+      "name": "GearAcorn",
+      "id": "f76a6e6618abbb448a784ea3e90f85af",
+      "m_name": "GearAcorn",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearAnubis": {
+      "name": "GearAnubis",
+      "id": "40c484e72b97f1442b6be2fec861c686",
+      "m_name": "GearAnubis",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearArrow": {
+      "name": "GearArrow",
+      "id": "a3c571b762a8eb640aaad92c9e0e8aa9",
+      "m_name": "GearArrow",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearAsteroid": {
+      "name": "GearAsteroid",
+      "id": "d0bc1ffbc794c2f4f8f4bb30e885b191",
+      "m_name": "GearAsteroid",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearBeamBot": {
+      "name": "GearBeamBot",
+      "id": "97048f3eeae59e14bbb7bf28ac97b053",
+      "m_name": "GearBeamBot",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearBeeGrenade": {
+      "name": "GearBeeGrenade",
+      "id": "edefe6052ab7b284e867f8dbca14e52e",
+      "m_name": "GearBeeGrenade",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearBone": {
+      "name": "GearBone",
+      "id": "5ec572f8db75c474e8da2161f8413dea",
+      "m_name": "GearBone",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearBoomerang": {
+      "name": "GearBoomerang",
+      "id": "74a80c1b32279504b9006c32b63e4cbe",
+      "m_name": "GearBoomerang",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearBrain": {
+      "name": "GearBrain",
+      "id": "e48a4c2ade9e586478b11defc94cac45",
+      "m_name": "GearBrain",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearBreakable": {
+      "name": "GearBreakable",
+      "id": "3d8e839bfaec3db428123ae72f79536b",
+      "m_name": "GearBreakable",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCactus": {
+      "name": "GearCactus",
+      "id": "e39b8033522dcb04e813dac8dbf6ebad",
+      "m_name": "GearCactus",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCannon": {
+      "name": "GearCannon",
+      "id": "c1c6fe2b7acb7684286a536acf865905",
+      "m_name": "GearCannon",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCauldron": {
+      "name": "GearCauldron",
+      "id": "5afb241f03ca2c449811697aaf80f21b",
+      "m_name": "GearCauldron",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCaveman": {
+      "name": "GearCaveman",
+      "id": "da9f7cba5c37a134bb3a85fe331f0997",
+      "m_name": "GearCaveman",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearChest1": {
+      "name": "GearChest1",
+      "id": "",
+      "m_name": "GearChest1",
+      "gear_type": "",
+      "level": 0,
+      "rarity": 0,
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearChest2": {
+      "name": "GearChest2",
+      "id": "",
+      "m_name": "GearChest2",
+      "gear_type": "",
+      "level": 0,
+      "rarity": 0,
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearChest3": {
+      "name": "GearChest3",
+      "id": "",
+      "m_name": "GearChest3",
+      "gear_type": "",
+      "level": 0,
+      "rarity": 0,
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCoin": {
+      "name": "GearCoin",
+      "id": "",
+      "m_name": "GearCoin",
+      "gear_type": "",
+      "level": 0,
+      "rarity": 0,
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCoinCofinControlller": {
+      "name": "GearCoinCofinControlller",
+      "id": "0896a039c3b41634eb1de418afe8bd8e",
+      "m_name": "GearCoinCofinControlller",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCoin_0": {
+      "name": "GearCoin_0",
+      "id": "fd6b4502e5b9fbc4e8df19bb9d73c393",
+      "m_name": "GearCoin",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCorn": {
+      "name": "GearCorn",
+      "id": "66002cffe8340af49984140ca2445ab5",
+      "m_name": "GearCorn",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCrippledFour": {
+      "name": "GearCrippledFour",
+      "id": "ff322a9e39b792f459ca97fb6b0ce300",
+      "m_name": "GearCrippledFour",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCrippledOne": {
+      "name": "GearCrippledOne",
+      "id": "e8bc0ca2329b7b4438d10e228cd2fbac",
+      "m_name": "GearCrippledOne",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCrippledThree": {
+      "name": "GearCrippledThree",
+      "id": "04450474c2572d1418ad3d2f52b7c68b",
+      "m_name": "GearCrippledThree",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearCrippledTwo": {
+      "name": "GearCrippledTwo",
+      "id": "25506cf14952a7240bebd1b6b9a9de43",
+      "m_name": "GearCrippledTwo",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearDeathKnight": {
+      "name": "GearDeathKnight",
+      "id": "56d983b8e2c447e46a4000ac3904becc",
+      "m_name": "GearDeathKnight",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearDefaultSpinner": {
+      "name": "GearDefaultSpinner",
+      "id": "d9eef68e97feaf640b126c63624bd155",
+      "m_name": "GearDefaultSpinner",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearDiamondHoe": {
+      "name": "GearDiamondHoe",
+      "id": "4f9a27361446aa5448412b5fc3c58c61",
+      "m_name": "GearDiamondHoe",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearEgg": {
+      "name": "GearEgg",
+      "id": "b588d1a926b00454fac85f07a49a0cd5",
+      "m_name": "GearEgg",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearExplosiveBarrel": {
+      "name": "GearExplosiveBarrel",
+      "id": "1483a41df1a9b0b4fa8f373177966474",
+      "m_name": "GearExplosiveBarrel",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearFire": {
+      "name": "GearFire",
+      "id": "40ca5a95d2642a147ace8d076a1ae982",
+      "m_name": "GearFire",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearFlamingArrow": {
+      "name": "GearFlamingArrow",
+      "id": "9ec2bea97fc7ece43aa339b8c2f6bed2",
+      "m_name": "GearFlamingArrow",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearFlyTrap": {
+      "name": "GearFlyTrap",
+      "id": "e222c46ade87ac4449264a7e879f33b3",
+      "m_name": "GearFlyTrap",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearFlyingAxe": {
+      "name": "GearFlyingAxe",
+      "id": "e92820212c753bd4bb1532ca7bd35dd8",
+      "m_name": "GearFlyingAxe",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearFrost": {
+      "name": "GearFrost",
+      "id": "532059d8947eca54690eac1aea9a9339",
+      "m_name": "GearFrost",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearGoldenPick": {
+      "name": "GearGoldenPick",
+      "id": "b885e46ece096864c9776d37d4753744",
+      "m_name": "GearGoldenPick",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearGrenade": {
+      "name": "GearGrenade",
+      "id": "7b85bc714213d6647b0d12e8990e7945",
+      "m_name": "GearGrenade",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearGuardian": {
+      "name": "GearGuardian",
+      "id": "357cfd3978ac85e41987d06c03b4c91f",
+      "m_name": "GearGuardian",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearHaunchOfMeat": {
+      "name": "GearHaunchOfMeat",
+      "id": "2b80fcffe2a607e4c9d78508fcb3a048",
+      "m_name": "GearHaunchOfMeat",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearHeavy": {
+      "name": "GearHeavy",
+      "id": "bf19bd69114d8a44ebc7df01fed5607c",
+      "m_name": "GearHeavy",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearJuiceBuff": {
+      "name": "GearJuiceBuff",
+      "id": "2712311ce7a0e7043be66a226ba78ea0",
+      "m_name": "GearJuiceBuff",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearKingMonkey": {
+      "name": "GearKingMonkey",
+      "id": "339a9305f1fd1324eafd80bc65fdded2",
+      "m_name": "GearKingMonkey",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearKnife": {
+      "name": "GearKnife",
+      "id": "9ae9ab72ed8bbda408047b51a36d7c15",
+      "m_name": "GearKnife",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearKunai": {
+      "name": "GearKunai",
+      "id": "2d926a14379d1b54ead79b927e036c49",
+      "m_name": "GearKunai",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMagician": {
+      "name": "GearMagician",
+      "id": "2de608accc6a32940bcc809f9b8f9f0d",
+      "m_name": "GearMagician",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMining": {
+      "name": "GearMining",
+      "id": "698a05218ac63d44991903f40aa20aff",
+      "m_name": "GearMining",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMinotaur": {
+      "name": "GearMinotaur",
+      "id": "e0a16672e187bf84f9587e5964678942",
+      "m_name": "GearMinotaur",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMissile": {
+      "name": "GearMissile",
+      "id": "5c66de7b76cb935468953ed5641a7e02",
+      "m_name": "GearMissile",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMoneyTree": {
+      "name": "GearMoneyTree",
+      "id": "ebf7c85f0a085224d9f3ce8a5eaad970",
+      "m_name": "GearMoneyTree",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMrD": {
+      "name": "GearMrD",
+      "id": "620b896180b25a2418e4440e6592b3d6",
+      "m_name": "GearMrD",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMultiplierFour": {
+      "name": "GearMultiplierFour",
+      "id": "1d55d7fc9c935a14abbbcbad5cee6122",
+      "m_name": "GearMultiplierFour",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMultiplierOne": {
+      "name": "GearMultiplierOne",
+      "id": "60e0e7d4c785b294d81611a1795a2979",
+      "m_name": "GearMultiplierOne",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMultiplierThree": {
+      "name": "GearMultiplierThree",
+      "id": "6cadcce1094621f469c60d264521075e",
+      "m_name": "GearMultiplierThree",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMultiplierTwo": {
+      "name": "GearMultiplierTwo",
+      "id": "18fb2595e2054564b9a9bb2ae306fae9",
+      "m_name": "GearMultiplierTwo",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMummy": {
+      "name": "GearMummy",
+      "id": "f129f6f20f0572649a3115e5bb5dede1",
+      "m_name": "GearMummy",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearMushroom": {
+      "name": "GearMushroom",
+      "id": "25ed030b5a3a1ee4a9c1803ba42b45cf",
+      "m_name": "GearMushroom",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearNecro": {
+      "name": "GearNecro",
+      "id": "62e1b0121d58ad046ba464e0dbaf5d8f",
+      "m_name": "GearNecro",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearNegativeOne": {
+      "name": "GearNegativeOne",
+      "id": "e714c793517011d40b0e4b08fa9e3dc7",
+      "m_name": "GearNegativeOne",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearNinja": {
+      "name": "GearNinja",
+      "id": "bc624c3ee751183469349e15a325ad61",
+      "m_name": "GearNinja",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearOilDrop": {
+      "name": "GearOilDrop",
+      "id": "18e1b681fc754bf4dbf03d13ce8fb7aa",
+      "m_name": "GearOilDrop",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearPepper": {
+      "name": "GearPepper",
+      "id": "89b91837a9a99644ba8ab1e38b9b453f",
+      "m_name": "GearPepper",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearPoison": {
+      "name": "GearPoison",
+      "id": "6f74ddbb2c824274cbbbc27427fa61c1",
+      "m_name": "GearPoison",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearPottery": {
+      "name": "GearPottery",
+      "id": "847f97eea58d65146984b099ec3039fb",
+      "m_name": "GearPottery",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearProductionFour": {
+      "name": "GearProductionFour",
+      "id": "bd8fc4b4eafcbe1458814f1fbab2d486",
+      "m_name": "GearProductionFour",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearProductionOne": {
+      "name": "GearProductionOne",
+      "id": "68ecb9ed9bf07394596c3d4886df65cd",
+      "m_name": "GearProductionOne",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearProductionThree": {
+      "name": "GearProductionThree",
+      "id": "77d4737b738ef6e40ba7c151415a5ddb",
+      "m_name": "GearProductionThree",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearProductionTwo": {
+      "name": "GearProductionTwo",
+      "id": "1866020ea1b245d4287e7b39c3b8911d",
+      "m_name": "GearProductionTwo",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearRaiseUndead": {
+      "name": "GearRaiseUndead",
+      "id": "1add278925caf1f4186b2930ade3f726",
+      "m_name": "GearRaiseUndead",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearRock": {
+      "name": "GearRock",
+      "id": "2592ffff38e81eb40add3bff6afb8f5e",
+      "m_name": "GearRock",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearRollingRock": {
+      "name": "GearRollingRock",
+      "id": "69b83444edb53714abeee1618a7a3359",
+      "m_name": "GearRollingRock",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSamurai": {
+      "name": "GearSamurai",
+      "id": "bb1ebc85aaf424147bdcfd1fa13d976c",
+      "m_name": "GearSamurai",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSavageBite": {
+      "name": "GearSavageBite",
+      "id": "c4f10f25395583143ac3eb14c7786655",
+      "m_name": "GearSavageBite",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearScythe": {
+      "name": "GearScythe",
+      "id": "94354218b2ed1c648988b5340c9f0303",
+      "m_name": "GearScythe",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSharpenedStick": {
+      "name": "GearSharpenedStick",
+      "id": "9b9fba3bd86639e47998806fe180af44",
+      "m_name": "GearSharpenedStick",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearShotgun": {
+      "name": "GearShotgun",
+      "id": "deee5aebffca59c47b11c362ab04a249",
+      "m_name": "GearShotgun",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearShovel": {
+      "name": "GearShovel",
+      "id": "74fee4f70ba0b4c459db896a8bff33b0",
+      "m_name": "GearShovel",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearShuriken": {
+      "name": "GearShuriken",
+      "id": "9d274aabba966fd4a98dc4aa1466926a",
+      "m_name": "GearShuriken",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSnake": {
+      "name": "GearSnake",
+      "id": "a5e7456c0e275cb4e9672a5809051dfe",
+      "m_name": "GearSnake",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": "1d9b5df9f63c88a41a255c9bc6cca2f4"
+    },
+    "GearSpartan": {
+      "name": "GearSpartan",
+      "id": "0a013948bd53754448b57dd3dc41f5c7",
+      "m_name": "GearSpartan",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSpecialIncomeControlller": {
+      "name": "GearSpecialIncomeControlller",
+      "id": "83b24d38fa119924fbb04e9b24e7ccd6",
+      "m_name": "GearSpecialIncomeControlller",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSpeedup": {
+      "name": "GearSpeedup",
+      "id": "050ad8240b667d446b856e755c88b053",
+      "m_name": "GearSpeedup",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearStar": {
+      "name": "GearStar",
+      "id": "b86b5747df92cab4aad60b67a3d73ef3",
+      "m_name": "GearStar",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearStone": {
+      "name": "GearStone",
+      "id": "9e784e9bd4f544f47903906b8dd0eeb8",
+      "m_name": "GearStone",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSunFour": {
+      "name": "GearSunFour",
+      "id": "14c82fe3cd71b95498eb9ddbb6bebbe9",
+      "m_name": "GearSunFour",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSunOne": {
+      "name": "GearSunOne",
+      "id": "905e7964b7863ab42a1ff482bfa4844a",
+      "m_name": "GearSunOne",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSunThree": {
+      "name": "GearSunThree",
+      "id": "004750a52b54089449cc33e66cbc6fd1",
+      "m_name": "GearSunThree",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSunTwo": {
+      "name": "GearSunTwo",
+      "id": "0e6a581d3a0d9d247bfc24eaeaa65aee",
+      "m_name": "GearSunTwo",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSunflower": {
+      "name": "GearSunflower",
+      "id": "3a60c5ffdd6f54a488fb9724a24e621e",
+      "m_name": "GearSunflower",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearSword": {
+      "name": "GearSword",
+      "id": "ce30d06503efedd4f90f0358b84a6d4c",
+      "m_name": "GearSword",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearTNT": {
+      "name": "GearTNT",
+      "id": "3f7b9ec1d05676c49b3d0aad50319314",
+      "m_name": "GearTNT",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearTargeting": {
+      "name": "GearTargeting",
+      "id": "70a13ab3411846a438457917f909e661",
+      "m_name": "GearTargeting",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearTheClaw": {
+      "name": "GearTheClaw",
+      "id": "003df3bfbc5612b48afa46af1a9a6206",
+      "m_name": "GearTheClaw",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearTheCount": {
+      "name": "GearTheCount",
+      "id": "40ab3e085bb98294896885bdeca162fd",
+      "m_name": "GearTheCount",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearThorHammer": {
+      "name": "GearThorHammer",
+      "id": "f825c341b450da242b3a0cd3032a08a3",
+      "m_name": "GearThorHammer",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearTorch": {
+      "name": "GearTorch",
+      "id": "caf6a842fdd64cc4bbf2e50db7dbe3f2",
+      "m_name": "GearTorch",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearTribe": {
+      "name": "GearTribe",
+      "id": "5c8b41fa67b35494c8205ceb32814aa4",
+      "m_name": "GearTribe",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearUZI": {
+      "name": "GearUZI",
+      "id": "550eceee7d2e58846ba95a0907ebbbb9",
+      "m_name": "GearUZI",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": "899c0078ca33a4b4c97f1c0a21eea8e0"
+    },
+    "GearUndeadArrow": {
+      "name": "GearUndeadArrow",
+      "id": "b5f8d5c7e6395a641ac1e4141677364e",
+      "m_name": "GearUndeadArrow",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearUndeadEye": {
+      "name": "GearUndeadEye",
+      "id": "32ca14e009dd9b345b405c72cff43886",
+      "m_name": "GearUndeadEye",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearViking": {
+      "name": "GearViking",
+      "id": "ba50582ae3428c34e9349f75f1f93096",
+      "m_name": "GearViking",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearVolcano": {
+      "name": "GearVolcano",
+      "id": "eab4a334f20470b4393229904a2c2ee9",
+      "m_name": "GearVolcano",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearWaterExplosion": {
+      "name": "GearWaterExplosion",
+      "id": "a27fe2e2d0a24934ebc9f9faf97fed7d",
+      "m_name": "GearWaterExplosion",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearWateringCan": {
+      "name": "GearWateringCan",
+      "id": "77708713c73226b4892ff714a25fb7d1",
+      "m_name": "GearWateringCan",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearWatermelon": {
+      "name": "GearWatermelon",
+      "id": "f235348730d7aab458793ea9077a9084",
+      "m_name": "GearWatermelon",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearZapper": {
+      "name": "GearZapper",
+      "id": "b21c2924aac2997478129a229899def1",
+      "m_name": "GearZapper",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearZombieBrute": {
+      "name": "GearZombieBrute",
+      "id": "d5cca97255bab4742a84ccfe868702c9",
+      "m_name": "GearZombieBrute",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearZombieGrunt": {
+      "name": "GearZombieGrunt",
+      "id": "a29ec3911a6520e43a10934191fbe7ae",
+      "m_name": "GearZombieGrunt",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearZombieHand": {
+      "name": "GearZombieHand",
+      "id": "b360ac56572d9b54ca9c2d327b4c11d8",
+      "m_name": "GearZombieHand",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    },
+    "GearZombieRanged": {
+      "name": "GearZombieRanged",
+      "id": "4d2035d300692274fa44810e0e9021b4",
+      "m_name": "GearZombieRanged",
+      "gear_type": "",
+      "level": 0,
+      "rarity": {
+        "fileID": 0
+      },
+      "stats": {},
+      "effects": {},
+      "unlock_requirements": {},
+      "cost": 0,
+      "description_key": "",
+      "icon_reference": null
+    }
+  },
+  "guid_mappings": {
+    "total_mapped": 613,
+    "mappings": {
+      "adb2beb6a1ab0214aa88a707c16d28d5": "2 & 4 Gear Level.asset",
+      "e0f09e35730ed7745ac909c28b5e15bd": "Acorn Boost (Buff).asset",
+      "00615ec5b8e725845bcb42d75f0a10d2": "Actions Database.asset",
+      "b9398a208cd88c74d8b68c5a707a2ac4": "Alt Grid Shape 2.asset",
+      "3b87cbe1969dc6b4ca19f16ab3ff6832": "Alt Grid Shape.asset",
+      "9312057d901d1de4ca5001e9d42d546d": "Alt Layout 2x.asset",
+      "ac7647bda927cb34aafbdd5ff195e718": "Alt Layout Again.asset",
+      "86f5bcbca9da09c49a0e35fac12adfac": "Appearances Database.asset",
+      "5ef44f6bfb81d704193e7723eab08974": "BadgeIcons.asset",
+      "dea8e1dc31f2ffe4a9610d65d65fd2fc": "Behaviors Database.asset",
+      "6e47091816d9488459337ad04630c41f": "BlessingsSettings.asset",
+      "04e660206e3eedb4491a1439fcf7e265": "Blocked Corners.asset",
+      "f43c94e80d1cb654298fcd7a42dbe9ee": "Blocked Side.asset",
+      "2ec6188638293fc43a6eeae5f77714fc": "Blocker Level 2.asset",
+      "f33602fa07b3503448c78ad6eacfa67f": "Blocker Level.asset",
+      "3cc14aa70a937cd439b4fac16fa88c51": "Blocker Plus falling.asset",
+      "b8a11d4f0f3e531489ae91cc2ccc27e2": "Bloom.asset",
+      "3c620c36fb443bd4b8b75f24bb9edf30": "Blue Coin Forced.asset",
+      "60c57775c45a61a438f8f3e5f42f5bcf": "Blue Coin Freebie.asset",
+      "fab724fa0961b7d41affc0bdf84c1cfb": "Blue Coin Template 1.asset",
+      "8459fe1df02e2354a883cd3633af1cf0": "Blue Coin.asset",
+      "b62efe57530721d469d3097a1809cd44": "Blue Coin_0.asset",
+      "10810ddfe12c5e140baf2a2eb4deea0a": "Blue Large (150%).asset",
+      "727766c77368b4d4f8c11f87968ee1f5": "Blue Large.asset",
+      "fc022d00b9d093446becae2dbaacb0ee": "Blue Small.asset",
+      "15e42da103a43e24788c2e5f947deec3": "Blue-Currency.asset",
+      "a4ce30e08233ae148b4e5bc5c2a8f4ac": "BlueCoins1.asset",
+      "a8f1e61f02573e74c9f7af11774b84c1": "BlueCoins2.asset",
+      "46037144c7260774493b52a79b54e374": "Boss Robot Chapter.asset",
+      "8409d396ff739484bbb7e58a4f3a3102": "BossChapterProgression.asset",
+      "7208577794b86354b90384309f249e90": "BounceBehavior.asset",
+      "6fd3ef2799930ab4da8703fba57ca2da": "Brain Boost.asset",
+      "61ff9272756e3e747b40df97a70f94f1": "Bulk Offering Collection 1.asset",
+      "7ec69e71fa33ce04d86713070ad393ce": "Bulk Offering Collection 2.asset",
+      "17f52528e83e023449ec944052d2ca55": "Bulk Offering Collection 3.asset",
+      "6273adf52d34d2340b28850d2bbdd90d": "ChannelMixer.asset",
+      "dbae60c19a47dc54793e4a9a0c6f046f": "Chapter 1 - Tribal Forest.asset",
+      "42ba4b421a4aa8f4c97fb68c7e25ba3a": "Chapter 10 - Undergrove.asset",
+      "55e04726d29f45542a5bb3a865ee2480": "Chapter 2 - Dusty Desert.asset",
+      "1e4c83f8c8e64514ca4e97135dfd32af": "Chapter 3 -Snowy Slopes.asset",
+      "85b421fa0a28fba41a57b78efce49e3f": "Chapter 4 - Flaming Inferno.asset",
+      "9b03048aba2809747a7e75108a67e101": "Chapter 5 - Haunted Hills.asset",
+      "d6f63f599cf56c14aa3ea10720382997": "Chapter 6 - Jungle.asset",
+      "96a31b545f69d3b4d8e7419e4cc9f549": "Chapter 7 - The Mines.asset",
+      "7d89b7d1d6b80954693a5bbc96015f0c": "Chapter 8 - Frozen Forest.asset",
+      "6bf823d2dd632944f81f7d775e8da5a3": "Chapter 9 - The City.asset",
+      "f76b3760c9cc7a546bb33de8c90e8123": "ChaptersProgressionSettings.asset",
+      "85120f55a9c45bb48b07687009787485": "CharacterHealth.asset",
+      "9e2c1c97d00de9d448196733d73e6d7c": "CheatSettings.asset",
+      "a61c8cc98c66c0f4eb6dfbf324feeae8": "ChromaticAberration.asset",
+      "4661098176a7de647a7913b0f3337318": "CinemachineBlenderSettings.asset",
+      "bb6122e4b2f0a14449f923473b3a2352": "City_Structure_1.asset",
+      "bfcc81fc05182eb41bc779ccea36b844": "City_Structure_2.asset",
+      "911d730657fe724409e681c5f9378ba2": "City_Structure_3.asset",
+      "cb1d3e4865f740c49a88ee0be587dfee": "Coins.asset",
+      "d77dab6bedc53104caf86930cb1bbe25": "ColorAdjustments.asset",
+      "30877a2fecaffb44da9585ba68f5411f": "Completed.asset",
+      "a5aa25d8e79ea344c88274ef14c3ae6e": "Construction Bridge.asset",
+      "63b764edacd4cfd4686dba6074c477f1": "Construction Gear Level 1.asset",
+      "059d0011c609f2b4bb73f28f7b9ee0f5": "Construction Gears 2.asset",
+      "90be12a24619b494bb0cc740928fbfba": "ConsumableIAPManager.asset",
+      "b4f0eac9b0491194a8dea2c2ab7d469d": "Corner Explosions.asset",
+      "fe26b5595634c0d4dac98d84a2262d6a": "Currency.asset",
+      "6e02b252b10efb94d83f764a0232da3c": "Currency_Gem.asset",
+      "6c02f3be84726a048ada1a9fb2e89f82": "Damage.asset",
+      "01f0c9209f935c143b1c5c6056884d0e": "DangleBehavior.asset",
+      "fb388b46afd539a45baf668baefefae4": "DebuggerCanvas.asset",
+      "15c4c2adf0cc0e44fb93204a409e342c": "Default Grid Layout.asset",
+      "44f6e9b0a0563e544a5e06d0ffc58bf0": "Default-StatFormatting.asset",
+      "725d211e26a43744a8beb6f32a24ce5b": "DefaultLandscapePadding.asset",
+      "d72796d634bd4384e85a9d7f1dd0edc4": "DepthOfField.asset",
+      "2edfea5bfdbf0bd46b051063a10ece31": "Desert_Structure_1.asset",
+      "aa2bfb1aee9a6e64ab133c150a817161": "Desert_Structure_2.asset",
+      "b7c3da4d00748b043ba634bf7f94f09c": "Desert_Structure_3.asset",
+      "7b815f0c48cef164abf234b634017bfb": "DiagonalExpandAppearance.asset",
+      "52cf63dbf44107d40b634fdeaaf63a63": "Diamond Forced.asset",
+      "8882c9f1257836748835c85e5ec1143c": "Diamond Freebie.asset",
+      "5bcaa8f267db89c479d813efef961331": "Diamond Shape.asset",
+      "6a2e422935ff1874bb48016e4187ce69": "Diamond Template 1.asset",
+      "e35486198e3981e41a1a3209ebd0318e": "Diamond Template 1_0.asset",
+      "24a86cef52a2dd24581cc69afad106e6": "Diamond Template 2.asset",
+      "968329250c1b5d14ba11a0fff4dea3f2": "Diamond Template 3.asset",
+      "a542a2f4d8a141249be6c54e948dee39": "Diamond-Currency.asset",
+      "0f44cc6190d75144997147b2ddc70602": "Diamond.asset",
+      "82fd6625694642645889b82ac41ca200": "DiamondCoin.asset",
+      "031e81ede92abb84c84e0481015ef290": "Dodge.asset",
+      "bbe0a1111157fd8429c9610f6ddf346e": "Experiment.asset",
+      "1e875e15c79c21f4d87b4f343f8f0260": "FIRSTGEARSET.asset",
+      "73d09317b29b5904e8fad9b11cc63a4d": "FadeAppearance.asset",
+      "5efc95371980fa449b35f68f932ead79": "FadeBehavior.asset",
+      "0659cddf92ee2284989b12a7d1ec499f": "Falling Pegs 2.asset",
+      "e9d57103d9c70774198d0390deba9784": "Falling Pegs 3.asset",
+      "3fb0cfead89ca0d469b32f10954dde7b": "Falling Pegs.asset",
+      "92042d0e0133db14ba9de9a7d1a1da65": "FilmGrain.asset",
+      "3be3dc74dcad1f74390af8aaaa53dc3c": "Forest Pack.asset",
+      "d215b56b06f67704e965b915f58cac38": "Forest_Structure_1.asset",
+      "c1ee11a8e9d283141b8c0426df64d1c3": "Forest_Structure_2.asset",
+      "a6eb9ebe71ddccc449a491c0ba5b822d": "Forest_Structure_3.asset",
+      "664ed468e22608740906e196e70fc9ab": "FreeChest-Currency.asset",
+      "f1ccf06e2b745444e9f8a02a78c7acd8": "FreeReroll.asset",
+      "956f85e3d98d56848ad82396bcae166a": "GameplayDataProvider.asset",
+      "fd7e377c43cbb1d49aa67d7a1c666059": "GearAcorn.asset",
+      "677ab1f8f569e3b4dac533a58129a7dc": "GearAnubis.asset",
+      "01080717b3dc4a24296c447c0d0c7e11": "GearArrow.asset",
+      "8423a228f9d074f4a8f6aac0f19ee409": "GearAsteroid.asset",
+      "e2f71a76f891f1845956242b4ff570f1": "GearBeamBot.asset",
+      "a3f9451677bd27b43b1fdabdcdc4d1b0": "GearBeeGrenade.asset",
+      "75bd67525c23bc04ba8e700e85cd8e72": "GearBone.asset",
+      "40f936bcb470c6d4794ab39bd9f6d064": "GearBoomerang.asset",
+      "ab1ea268649ac534b94910daa7829c26": "GearBrain.asset",
+      "08aa880713cf475498d38f4c46aa4fdb": "GearBreakable.asset",
+      "8e1bfc47604661c4fa06d8c3fa9aa3a6": "GearCactus.asset",
+      "a59b5eb10c5f89a42a2cfe2f75333d52": "GearCannon.asset",
+      "c7e7f36dcd23c6d49902114e0e07a93c": "GearCauldron.asset",
+      "d64e431cafc8eb0458e199221e5124ae": "GearCaveman.asset",
+      "6ff5e100fde09af43bfef83fd7bdef1e": "GearChest1.asset",
+      "d41f574853272a740a9c3d9675e04904": "GearChest2.asset",
+      "58168ecc9ae8bac47b990abdca73c3b9": "GearChest3.asset",
+      "60c7aa5c07c646146bd273da05365d24": "GearCoin.asset",
+      "73c23655b5021a3468cfafe6d0d42b71": "GearCoinCofinControlller.asset",
+      "2cb3a1f140bbc6f4ab43459a7e05f0e4": "GearCoin_0.asset",
+      "fc14eb2284727ad428d8399ed0c0d330": "GearCorn.asset",
+      "c505f319339dc7245b595e4199b0a1ad": "GearCrippledFour.asset",
+      "b7aa05cd191768a4d859bd2bf9aeff07": "GearCrippledOne.asset",
+      "2968a9412c3e3884aa85dfbb019d2081": "GearCrippledThree.asset",
+      "2218c0afe44849e4aa75a5360625e8eb": "GearCrippledTwo.asset",
+      "203588d16a958414aa987e885e947706": "GearDeathKnight.asset",
+      "988d732985c3eb845844f5f59d73c980": "GearDefaultSpinner.asset",
+      "12a61fa874207a542bb1bba416cf5fe1": "GearDiamondHoe.asset",
+      "f81201d6ddeb5e34695a14be2da9fd57": "GearEgg.asset",
+      "621e806971a3c4a45ac095170627bbd6": "GearExplosiveBarrel.asset",
+      "2048332be48149c458c52e4d5023d0cd": "GearFire.asset",
+      "6f1ede97561b12b4183aa2b7634e237f": "GearFlamingArrow.asset",
+      "c819942550ece3a49bbc56e400c1b749": "GearFlyTrap.asset",
+      "27e8a33fe08f5fe449d8e12c61777f56": "GearFlyingAxe.asset",
+      "71a4efe986760094d90439229964a3b9": "GearFrost.asset",
+      "b31ed6433c7b5c345a350c5989077750": "GearGoldenPick.asset",
+      "ff6820cf92cfd134086f749a38e4ebee": "GearGrenade.asset",
+      "d32aa6292c3288b4a8c550d7372f6304": "GearGuardian.asset",
+      "420f450a1c6fffe4eab47eb1a993ec7d": "GearHaunchOfMeat.asset",
+      "54e7fb54d2184284e9eec8d2e34c98d2": "GearHeavy.asset",
+      "5ba8b1f95b5e90a4584fc5691a809a47": "GearJuiceBuff.asset",
+      "32349eaccd6a97f45ad22d57f1f34ed9": "GearKingMonkey.asset",
+      "ecead25a98158924c8b75f65b037c438": "GearKnife.asset",
+      "0bf912f3e601e994c8bea942a66850d6": "GearKunai.asset",
+      "66be0525d677af84d860db0901b7d061": "GearMagician.asset",
+      "7c28527b7def7004995a2193b7d4738d": "GearMining.asset",
+      "f450ea198670002459c8a513da8f5ecc": "GearMinotaur.asset",
+      "ca10dfdc80d4fe84fb63bc318ccbfddd": "GearMissile.asset",
+      "e4e7ff0f425eeca46ad22bc098a8a644": "GearMoneyTree.asset",
+      "7e3de8d686181884fbbb90419485ff2e": "GearMrD.asset",
+      "5d0e4a625a6ce6947b3b5b35d2b400d0": "GearMultiplierFour.asset",
+      "9c7fefb9dff07ad459ea1e94d69afbd6": "GearMultiplierOne.asset",
+      "3c60e9469e152fe488bbef8d39c23986": "GearMultiplierThree.asset",
+      "49743b62b1d4f1a419d921294731de2e": "GearMultiplierTwo.asset",
+      "d5f1cf1081e19ff449d19ef4d5d850cc": "GearMummy.asset",
+      "b06986d6503b50f4ea174e4a392c5271": "GearMushroom.asset",
+      "1807fcf9dd0574e40b046b96d25cd845": "GearNecro.asset",
+      "86fdfa97ab65c124c966796f77490d5d": "GearNegativeOne.asset",
+      "790b95b3f730dcd4d971ebea20792356": "GearNinja.asset",
+      "6fd14952d491cf34485c4f87a232ac22": "GearOilDrop.asset",
+      "cb98dc2d6ca645845a8cdfd6a9e040e2": "GearPepper.asset",
+      "a5b81865af85c5b46918a68a88945fec": "GearPoison.asset",
+      "9a41cfa3b20c5de488b6102c5857b615": "GearPottery.asset",
+      "3161249e93348f946ad58f835cac9ad6": "GearProductionFour.asset",
+      "488aefa1b9e9c484cb133fae757b4cd5": "GearProductionOne.asset",
+      "b1c71db0d737b8844904a921d744f57a": "GearProductionThree.asset",
+      "0d092d851f3ec4446b0a1a239229d7e4": "GearProductionTwo.asset",
+      "a54ff412b7101cd44ac92853c8a64d6b": "GearRaiseUndead.asset",
+      "c6a1517a06c2959419724d8fb0f43a35": "GearRock.asset",
+      "e00fc05ca0bd7b344a4f104c7803e9b5": "GearRollingRock.asset",
+      "52a3b8abdf854124fb439d466edb3a83": "GearSamurai.asset",
+      "a03b490d49801fa4180bbde48c984e52": "GearSavageBite.asset",
+      "6f58140d1406f454891c571c8bf33ba0": "GearScythe.asset",
+      "6551aa5f2704eb54e8ccf11ae115896a": "GearSharpenedStick.asset",
+      "e8dc15d6928078d4d804141d3377d095": "GearShotgun.asset",
+      "37662ce662f4aa44089744bea4b66027": "GearShovel.asset",
+      "8ee1fa7396fa6ce489cda07c277b2c02": "GearShuriken.asset",
+      "4000ba7d5b82b38429658bf53a2550ad": "GearSnake.asset",
+      "4bdd758593f0f4a4eb2d89f90bb7482a": "GearSpartan.asset",
+      "0f28c40d75da0ec449d21705c6aa8318": "GearSpecialIncomeControlller.asset",
+      "a184cb71b798931429229b71c8014a43": "GearSpeedup.asset",
+      "5bcf2c9306321dc45ab49aca5f7c2c6a": "GearStar.asset",
+      "42c55f285d7bc2942a172a33a17d8836": "GearStone.asset",
+      "42ce80c3be2e9ba408117df36bcd5043": "GearSunFour.asset",
+      "8f6994e44f37041418191ee4c5f22d76": "GearSunOne.asset",
+      "e089e2d6f60da33408dc1ab092a3e21c": "GearSunThree.asset",
+      "5e424d5d36f239f4e9b1953214de53d2": "GearSunTwo.asset",
+      "c717178bc53348a4db55025a08ade69a": "GearSunflower.asset",
+      "327a45ccb21ca6040a32febc9cdc1c12": "GearSword.asset",
+      "c6a0a08e336fa1e4cb98dc67653d583e": "GearTNT.asset",
+      "9a37b34ad321ce5459a6b861fbe9afa4": "GearTargeting.asset",
+      "4de4a8aba1f016a428a806377a7b520d": "GearTheClaw.asset",
+      "afa59a1b798e5bd438d0cc19818ecf28": "GearTheCount.asset",
+      "f9abe2373af925f409605514a63b668f": "GearThorHammer.asset",
+      "236576a121aa1d74f8c3cb5c1c99660e": "GearTorch.asset",
+      "e97dba9b6689eb749aca1553b99a6868": "GearTribe.asset",
+      "114b48083d40a7a49b57516047dda06a": "GearUZI.asset",
+      "317ff8894e231d148a4413c13adb7855": "GearUndeadArrow.asset",
+      "896960a1a3e84834c9becd707aa4c1c1": "GearUndeadEye.asset",
+      "2b4a4835e0aecb347bb5032aac7ce850": "GearViking.asset",
+      "a445490988c02b84486dbe69d2a29f8c": "GearVolcano.asset",
+      "6cb5afd72082b814a8f8e80f0c4a19de": "GearWaterExplosion.asset",
+      "2f994ca3306e3c74b8ee2adc3c47aef0": "GearWateringCan.asset",
+      "a008c8077babe144190b5538f3a5cdbd": "GearWatermelon.asset",
+      "d4e1cc5389e72414692b7b25f58f9d2e": "GearZapper.asset",
+      "7e759a7d9a15acd4cb41263e6fcbd85e": "GearZombieBrute.asset",
+      "3cb04a5d53a04cb49af4203eaf1bb56c": "GearZombieGrunt.asset",
+      "944f321e4f117e643b2b718a1c3d63aa": "GearZombieHand.asset",
+      "133eb148e8912a748b2b539ddd57cf26": "GearZombieRanged.asset",
+      "d0f05d06caa0f7a4fb50482a3eedebb4": "GemPack1.asset",
+      "502f21456538686429c413aac609abe7": "GemPack2.asset",
+      "7d252ad8388ddac45b85c54fc2b65ea8": "GemPack3.asset",
+      "ea6379eb6b4bdb64a8c80ab62c48dbda": "GodTierGradient.asset",
+      "91614e887d668e04ca6f6d6bc2e7dc05": "Gold-Currency.asset",
+      "c30ea6d4e34ad434d8783eca7ae3dc1e": "GoldGradient.asset",
+      "f4ffc0c36e53b834e802890fe1c07f64": "Green Coin Freebie.asset",
+      "7e5abb2d11cabd1419b79f60ceb0796a": "Green Coin Template.asset",
+      "6e841919b8d54014c8c656c45440cac3": "Green Coin.asset",
+      "fa3f58ff8b6c01d4e8ce0958541e3762": "Green Coins.asset",
+      "a5a9052cccf5c274ea21e4bd039578dc": "Green Large (50%).asset",
+      "3296a6171ff4b2a49b939702d2728f64": "Green Large.asset",
+      "eae22cfb557f3e14b8225bfb063aaec2": "Green Small.asset",
+      "e72671b5ccf9b75458f7992404e800b1": "Green-Currency.asset",
+      "fafaed14c09d9b543ac7ffdd830253dd": "GreenCoins1.asset",
+      "eb75c58bbad4b3f47b48879672d28441": "GreenCoins2.asset",
+      "90e427f3ae91d174881f731da8e801bf": "Haunt_Structure_1.asset",
+      "47bf03f0a8f53514b80c3f6f49364c49": "Haunt_Structure_2.asset",
+      "05151130667bddd478a8f1abda0b4d9e": "Haunt_Structure_3.asset",
+      "f2c1e16b2bb9af446b21d5db66a4578c": "Health.asset",
+      "351bd7e1ad12cfc41a70935028c552b3": "Heavy Gears.asset",
+      "ce2f3b0f21f83784cbf6b27e7ee4ab39": "Hole Middle.asset",
+      "8c2faed94bf61a5459d596db9b5be52b": "HorizontalExpandAppearance.asset",
+      "bcf702ea50308d8498b3c4c1d5f3d6d7": "Ice Level 1.asset",
+      "933fe79d7aba0654d871bfe0273244f0": "Ice Level 2.asset",
+      "ada694caaaed2694ebdc30e6156ece61": "Income.asset",
+      "3f99cbc25d93b9944a62080773accf28": "ItemManager.asset",
+      "6cef6120a9f8674409bbc1076d94056f": "Juice Boost.asset",
+      "6dce257e06a4a28409d4bb01c626813b": "Jungle_Structure_1.asset",
+      "95199b4180c7a9948bc5a08010c5fcbe": "Jungle_Structure_2.asset",
+      "aef3ed9dcddaadb438ea6fbcc3570046": "Jungle_Structure_3.asset",
+      "dd859d54527fa9641bacd374582bf0eb": "Lava_Structure_1.asset",
+      "db8eac8cbf44c054d9e260c10c45dedb": "Lava_Structure_2.asset",
+      "1fa743ca1e113bd4b96f97284e1066e3": "Lava_Structure_3.asset",
+      "6b3f14cd6bfbb774780455fe03eef7c9": "LensDistortion.asset",
+      "f86d91f862c65c5459d6378ac610c424": "LevelData.asset",
+      "243f2d0eb7ad61c4e889ab66a942afe2": "LiberationSans SDF - VS - Fallback.asset",
+      "82277399452904b40b49326331a52700": "LiberationSans SDF - VS.asset",
+      "621b225a282f40e40beff03c12f65d74": "Linear 100%.asset",
+      "2c632fcdc51b25943a943afe8973c24c": "Linear 50%.asset",
+      "7045dce0c7fc8ad4a8b93544234ca6d5": "Luck.asset",
+      "c7320341766f8ab498f2684412185146": "Main.asset",
+      "3370e0f7b6bc5754cad0eb2bd74c2b8d": "Mine_Structure_1.asset",
+      "93a44eb5c7ef9324a8e449bac0cd6c0f": "Mine_Structure_2.asset",
+      "7aed997bd41031344a0ae4391bc062b2": "Mine_Structure_3.asset",
+      "d8172519c2d2da944bcdb625e9f6ba6f": "Mini Gear Template 1.asset",
+      "649de825eda3c6842981880a56d76f95": "Mini Gear.asset",
+      "480b530089878cd4aa24af2b0ec2f9af": "Mini Gear_0.asset",
+      "46a5b7ef84d52254898b7326e83e24b5": "Mini Gear_1.asset",
+      "74b0e73b4809a1448b5e43263cbce38b": "MiniGear.asset",
+      "8b5d546de3f14294b96237a58461f6b3": "Mining Level 1.asset",
+      "fb86cd21d27262c47bee9ef74f4485b6": "MotionBlur.asset",
+      "9b3c795d254af944592e376c4b2f5691": "Multiplier Level 1.asset",
+      "604befc18b646934fac99d5d53f49cd6": "Negative Gears Level 1.asset",
+      "decaf12720b51904aa439a665cce6ec3": "Nimbus_Structure_1.asset",
+      "216f6b8dcd6ee204e9feaf57ab7accee": "Nimbus_Structure_2.asset",
+      "612524e0a4be82845890bd5c0591223d": "Nimbus_Structure_3.asset",
+      "3e2cccda106c9ce489c8bdc61bfec655": "NotoSansJP-Regular SDF.asset",
+      "99e6caaf4bef14b468f9c4bf89db9422": "NotoSansKR-Regular SDF.asset",
+      "d271ad37f175c84408b4304c090db651": "OfferImages.asset",
+      "2ead775d9c89fee438cd8fb63c37445a": "OffersConfig.asset",
+      "24dfdd9b2a61265428be3ec5b0cd8fa5": "OffsetAppearance.asset",
+      "6fbff0a340c392848a602bfe68502ba2": "Pack XP Boost Bulk Offering.asset",
+      "89253638450404746a929dcd618ded81": "Pack XP Boost.asset",
+      "561e056f391ab3542b6d5bd341cc2d99": "PaidChest-Currency.asset",
+      "f912bf06bdd40f242979c19c5b9e404b": "PaniniProjection.asset",
+      "65c13b42acd054d4ba4787f46f072beb": "PendulumBehavior.asset",
+      "ee0475e74d854c0419cbc46ea0ae2e88": "Plant Pack.asset",
+      "4594e3e0bc83de64aa36f2ba0d39e80a": "PlayerHealth.asset",
+      "6d501bc19dd81af4cbd345afa51edec6": "PopupDictionnary.asset",
+      "a03260b57b6be5d47a67858b813be276": "Q12_ReachLevel_d1.asset",
+      "22cd62d00371342479f3b105dfdbe019": "Q13_KillBrutesD1.asset",
+      "f451b3d5abdd7ea46b85de90ad490077": "Q16_SpendBlue_D1.asset",
+      "c6a711b3117ed284bac2d66440b5203a": "Q17_Boomerangs_D0.asset",
+      "15ca602995cef26458a48dbc032d5bd5": "Q17_Boomerangs_D2.asset",
+      "3b11811173f1b4847a74b07fd4c9fa22": "Q19_SpawnTroops_D1.asset",
+      "c66305f517b042e4590f4ef42e504499": "Q19_SpawnTroops_D2.asset",
+      "4a10991397316014c9d2ced300f78a84": "Q1_upgradeTroops_W1.asset",
+      "b7482b3cf19a8334e8b5e7607e225dcc": "Q1_upgradeTroops_W2.asset",
+      "7c99121ce399fc342940d68a5c3303c1": "Q20_SpawnTroop_w2.asset",
+      "e2af3cb2431386845890716a360de65f": "Q20_UpgradeTroops_D2.asset",
+      "8e3e7c22a01e4744991a2118395343d7": "Q21_SpendGreen_D2.asset",
+      "141354620f12c8b4f99715229a268ebe": "Q24_KillBrutes_W1.asset",
+      "746656c9ab6f2e845a0698ef73cba675": "Q24_KillBrutes_W2.asset",
+      "917eb6e3673170f4db0f41508573fdd5": "Q31_TrhowRocks_D3.asset",
+      "a6cc97ef18a3f5b45a6ff23865050f31": "Q31_reroll_D1.asset",
+      "57ad6abfa04b0654083a255cbcd31e3e": "Q31_reroll_D2.asset",
+      "dc9b7ee6c04e97f43be2ae7dfea7c79f": "Q31_reroll_D3.asset",
+      "65fb9c229df9d1f42a27c609abb57538": "Q33_SpendBlue_D3.asset",
+      "1beb593764e90434fb7d8991f61835d8": "Q34_SpendGreen_D3.asset",
+      "9431970c2baec2a48854caf9d3206c24": "Q35_UpgradeTroops_D4.asset",
+      "73d5d17a5312c4240b35bbd8072f8d00": "Q36_KillBrutes_D4.asset",
+      "9b07c6061b2a5fb4aa568e8e1e81cfbe": "Q38_SpendGreen_D4.asset",
+      "bb12712b9ee2bbc4fa9aca43801002cf": "Q40_SpendGreen_D4.asset",
+      "482a4e13248db6b42a21e229d81c172c": "Q41_Boomerangs_D4.asset",
+      "1845db7bd70d0f243b0d192f5c361576": "Q42_SpawnTroops_D5.asset",
+      "1b0d2894e2642f543b81c16631c7a836": "Q43_PlaceGears_D5.asset",
+      "6f3089d03ac9ea649be2094db87c7746": "Q47_UpgradeTroops_D5.asset",
+      "2a9fcee311ddcb84bb6590e488d30ac0": "Q49_SpawnTroops_D6.asset",
+      "e6e5d0adc74b5d244872d67569d2df86": "Q50_TrhowRocks_D6.asset",
+      "1fe0a7f184b707a40ae2402d0c0fbe31": "Q51_SpendBlue_D6.asset",
+      "22a7f3b9dfe02474b9fb7ca7650103d2": "Q55_reroll_D7.asset",
+      "3eeea8742bc89e84d92d2fad2c719bba": "Q57_SpendBlue_D7.asset",
+      "d0901b135a1ca6049bb8cf0fc68fb3a2": "Q59_UpgradeTroops_D7.asset",
+      "4a468b8ea40d18d42a6bb03cc69f5466": "Q60_KillBrutesD8.asset",
+      "e84b6458def4be3488d4a797addec52b": "Q61_reroll_D8.asset",
+      "8e7280e7f7de3814489cac037fc1da73": "Q63_TrhowRocks_D8.asset",
+      "836bbde402187304d9cf20fc590c63ba": "Q64_Boomerangs_D2 1.asset",
+      "8de93252cd251574a93aae763a1eecd7": "Q6_KillBrutes_D0.asset",
+      "858ccf5d76a9cd441a8ac28221ba30e5": "Q7_DaysInRow_w1.asset",
+      "3363ed9178165e34580b5a0daf7c87dc": "Q7_DaysInRow_w2.asset",
+      "e28ceb6039379db47a578a207a799241": "Q7_ReachLevel_d0.asset",
+      "c6ac0443355037d499800a2a7e0ca12b": "Q8_UpgradeTroops.asset",
+      "4793e5cc520d56848aef91d3a547947f": "QX_MergeGears_W1.asset",
+      "df582bcafa044a84aaa55f3f072bfa62": "QX_MergeGears_W2.asset",
+      "931d2f60f15bdaf42afb0ac99d895ad5": "QX_Reroll_W1.asset",
+      "9e1bcaee73b60b341a933914b8cc1a0d": "QX_Reroll_W2.asset",
+      "efd1780a263ceb0409968dcbd3f379a0": "QX_SpawnTroop_w1.asset",
+      "899bc806d2fc68649bf7c1fab506bc4b": "QuestDailyGroupD 0.asset",
+      "8c6b4d219ff7eb04c9828cdb4e756b57": "QuestDailyGroupD 1.asset",
+      "739adbad4c5295248908936de8423be5": "QuestDailyGroupD 2.asset",
+      "ce1114773c5f81545b4477f7a385b881": "QuestDailyGroupD 3.asset",
+      "c859e94edf9be1e4db05bb7265ed6951": "QuestDailyGroupD 4.asset",
+      "0abb86cb82abcd04aa586fa73ffa6154": "QuestDailyGroupD 5.asset",
+      "5606b45ec7a81bb4d9b3546bb943aa15": "QuestDailyGroupD 6.asset",
+      "e9e66666816cc594c9255b71954cc3e4": "QuestDailyGroupD 7.asset",
+      "3225273e4d4a5b149aab8855703848b6": "QuestDailyGroupD 8.asset",
+      "eb8c90464c30904438cc252ce61bd862": "QuestWeeklyGroupW 1.asset",
+      "2fefb8c44979c034581d54927866cf18": "QuestWeeklyGroupW 2.asset",
+      "fa384f16b32d299428766d4b399548d8": "ROBOT BOSS.asset",
+      "ef3b032848826224c867f264ee554604": "RainbowBehavior.asset",
+      "c745bd6c504befa4ca55e4bf66551ca7": "RandomDirectionAppearance.asset",
+      "ca8e0578da3d51e49931a61427185355": "Rare-Rarity.asset",
+      "a488fea442e74fe4baaf419fa5c9b3a2": "Reward Data.asset",
+      "7ccf164a46efae944b1332ccd415971c": "RotatingAppearance.asset",
+      "6f068541f8f16f747bda5901397998a5": "RotationBehavior.asset",
+      "157b1f0c2909d1347afad8cd67b0195f": "SSAO.asset",
+      "a2d543f4679a589458b46ce043c6fa3b": "Savage Pack.asset",
+      "bb61c72dfc84139459fdeed2e8aef368": "Server.asset",
+      "328325cc94d025744a250bc9210d8afe": "ShakeBehavior.asset",
+      "198b0da5eba694a49a7d52741e9c929f": "ShapeProfile.asset",
+      "290d5c2a4adf45a48a346d29f96d5493": "ShopConfig.asset",
+      "ce41facc4e062fb49a5514edb7d4711b": "Shuriken Gear (Shop Item).asset",
+      "67c70cddf9b797f40885355fc6d40c08": "Simple Falling Peg.asset",
+      "86325ddc4f2034648ba765bc0b044081": "Simple Puzzle 2.asset",
+      "fab0a90ac3ea8a646abb0ee470694dee": "Simple Puzzle 3.asset",
+      "5f45c6607acda58468faab9811dd93b6": "Simple Puzzle 4.asset",
+      "63ffde664d99a9f45a8260bc83cc5c97": "Simple Puzzle 5.asset",
+      "9b6ca484bf7850f4ba29242a12cfbd71": "Simple Puzzle.asset",
+      "7a65c3b7522d36f4785b48fa3d914873": "SizeAppearance.asset",
+      "05305af7a821b1347bb4f7d9974788ac": "SizeBehavior.asset",
+      "4fcd9d1fe1f257447b1a67b257bd2a4f": "Skip Ticket Forced.asset",
+      "d9c722bfcafd1144481bb7abadbca752": "Skip Ticket Large.asset",
+      "18bc84bcb9c098f4ea562067a6b7b29c": "Skip Ticket Small.asset",
+      "13ed5190ff54f8541ab61305c2869483": "SkipTicket-Currency.asset",
+      "5beeccead4262824cbdb9cb41b3578f3": "SkipTickets1.asset",
+      "2c0b21356a5822f478ef4a1fef66e45b": "SkipTickets2.asset",
+      "5d7bf03616059154ca8a6cea31b6e862": "SlideBehavior.asset",
+      "c321404ffe91a0142a325681ec1c9f8b": "Small Blue Coin Bulk Offering.asset",
+      "90f4a49011daa674fa4c003c0ba7679d": "Small Blue Coin Reward.asset",
+      "02d89883b9476794fa32014181d0f0b0": "Small Ticket Bulk Offering.asset",
+      "8900e20448d859d42b2645132fc08577": "Small Ticket Reward.asset",
+      "cf700d992507cbf46ae141ee64339040": "Snake Gear (Shop Item).asset",
+      "f3dbea24eeee4cb46afec79535e0d1b1": "Snow_Structure_1.asset",
+      "bea86e3c8ad16024ebe485579054ce18": "Snow_Structure_2.asset",
+      "8aa2e72836ac6d74cb5117e721615c00": "Snow_Structure_3.asset",
+      "6bc6c68d9a2128049930485b35d22021": "SpeedAction.asset",
+      "c60c5d91f708fd74ba345c3819aba2ba": "Spinner.asset",
+      "d07764f283bd88649bbae2a5429849a9": "Spore_Structure_1.asset",
+      "9c12301e11a88004eacef4e7b76c8c4d": "Spore_Structure_2.asset",
+      "daca13ff9ada47542bae6f5d0ba005af": "Spore_Structure_3.asset",
+      "665a717dfed5d9746b008c1bf137f1ca": "SpriteDictionary.asset",
+      "e24aae6c887604441a2cdf7e01856af0": "SwingBehavior.asset",
+      "917c88483410f6d45b9ee6173002b75b": "TUTORIAL.asset",
+      "82ec55cb26e2d8a458bbabf4f3ef82ba": "TextAnimator StyleSheet.asset",
+      "d89d8ce7c854c304b8833b890368fe52": "TroopAnubis.asset",
+      "8f48c53702f41444480b5ce819accc34": "TroopArcher.asset",
+      "26ba0bae95153db4280ab7094f16b339": "TroopBeamBot.asset",
+      "1e4f2c81ad7ea9946a4204b2c998bcc1": "TroopCactus.asset",
+      "cabaa149fa4485248b8cf4337be17984": "TroopCactusEvolutionTwo.asset",
+      "01fdccc20f170944188f879b37f735c7": "TroopCaveBat.asset",
+      "7cdd71bd9cf908041864f52b9522e486": "TroopCaveman.asset",
+      "fb2aaaaab53041b438b8d9304f9e38ea": "TroopData.asset",
+      "aef2903ad87e50a49a00cf3033eb7dfa": "TroopDeathKnight.asset",
+      "8ecb0d7e611481c4085f719e7de00053": "TroopDefender.asset",
+      "af34e0fd21042bf4a8bf1fb03380ff57": "TroopDino.asset",
+      "a194b9b2289c95040a5c152f65a2a6af": "TroopFlyTrap.asset",
+      "84bf6137cbd19b34ca6fbafb08339955": "TroopFlyTrapEvolutionTwo.asset",
+      "048be52bc28961940857c04061f6527f": "TroopFlyingDemon.asset",
+      "2fb4237ea93407a499a2ca7565fcad24": "TroopForestGolem.asset",
+      "2de5e25cbfd0cc14c98e279c20777e3e": "TroopForestGuardian.asset",
+      "c3edf6910ad52a24aba14c3222b8dd81": "TroopGreekWarrior.asset",
+      "a07719c919cfd3741b2d39a5a3005ed9": "TroopIceGolem.asset",
+      "ee67292d2347fd14cae2062be27acbde": "TroopIncan.asset",
+      "b9ffc8631fe2b64418f0182bba3c4727": "TroopInfectedRat.asset",
+      "c56c9d71d09c4b149be88a629936c90b": "TroopInfectedWolf.asset",
+      "aa6768cadb7b52d4eba06736b6b88f03": "TroopKingMonkey.asset",
+      "7168d3e814188154c823f026dcf1e193": "TroopLittleMonster.asset",
+      "60f4f57a5660be548917da8dbb32900b": "TroopMagician.asset",
+      "da38704fc4ad4c749be8fc86300ee973": "TroopMinotaur.asset",
+      "74e24ac4502a188409bc6472e2408679": "TroopMinotaurEvolutionTwo.asset",
+      "baa3683ef2bf96342937d31b9d24f981": "TroopMohawkBat.asset",
+      "d17208b7ed500324cb29343416057e4e": "TroopMossQueen.asset",
+      "f2efdf89ca3df48478969eded671dd3c": "TroopMrD.asset",
+      "7490db266619c074983b9ab62a052d4e": "TroopMummy.asset",
+      "51be120938311e84a9e6ced8e69e28ad": "TroopMushroom.asset",
+      "01e14642c74df7540bbba4dc2e73c16b": "TroopMushroomEvolutionTwo.asset",
+      "a0bcb6c03b003574daea622654db5095": "TroopNecro.asset",
+      "6f8033d03585dbf4888a964d985590b8": "TroopNecromancerSpawnOne.asset",
+      "b2278e5c50cfc094a910aec2d76cc640": "TroopNecromancerSpawnThree.asset",
+      "c4332e54ac9761e488771fbd0ec43668": "TroopNecromancerSpawnTwo.asset",
+      "9a26d8c9542f95e4e9940a0796803412": "TroopNinja.asset",
+      "8527d57683847bf418b3a3dd9c919335": "TroopPossessedRat.asset",
+      "144e1369ac9557648bd393da2f6b56bd": "TroopRaiseUndeadSkeleton.asset",
+      "e8d3c469c596e4b4993eef8ee314a45f": "TroopRobotBossThree.asset",
+      "9a1ffd56135554044807aec9dd1a3651": "TroopRobotBossTwo.asset",
+      "f2e988d9b5df8444eabe21c8fa901790": "TroopRobotMelee.asset",
+      "03b90ed394bb118459b0a510a8f986fc": "TroopRobotRanged.asset",
+      "7553c0272bd1d644f9fc378ef73885b0": "TroopSamurai.asset",
+      "edaf3611e799a3f48ac61dc0068a05cd": "TroopSergeant.asset",
+      "20ce48adc271fe14aa5a4de1e9c5f3b1": "TroopShaman.asset",
+      "ae9cc805f5ff46c4d9ec0311c9a94ae5": "TroopSheep.asset",
+      "455f7776e7067304788fb270829e26f9": "TroopSkeletonOne.asset",
+      "73d8caf6d894cca4c808d5bf948f9584": "TroopSkeletonThree.asset",
+      "fefb896de780e254ab22bb3cda2b2f77": "TroopSkeletonTwo.asset",
+      "c4c3ee56cc7587e4b8527f22dcabe689": "TroopSpartan.asset",
+      "0cfe4a5ddefd61d42814406c17c36745": "TroopTheCount.asset",
+      "8b7c37b5c4ecc4f4cbdab5e8f42c6f0c": "TroopTheCountSkeleton.asset",
+      "d0017b0b667136e47a009d314ec40615": "TroopTribe.asset",
+      "80924e83f992c1c49a086d34551e1a9b": "TroopTutorialCaveman.asset",
+      "056295a9b01fb8a4c9dc43657ee8e389": "TroopUndeadBrute.asset",
+      "11ed68eca6a57c04ba0c33b35baec44f": "TroopUndeadRanged.asset",
+      "e255571ebcfeb0a4bba22af8331f1d2a": "TroopUndeadRangedEvolutionThree.asset",
+      "f0af3c1aa73f8124b8e21a83e1da1fc1": "TroopUndeadRangedEvolutionTwo.asset",
+      "51e8969bfa42e5e4bac51c2c6cb8ec74": "TroopViking.asset",
+      "561c2c2409608214e95ece96e1a05d33": "TroopVikingEvolutionTwo.asset",
+      "ffaff18cc30798c4f8bf780e68518ab0": "TroopWizard.asset",
+      "8fbd3895bf4ab604ea5d09c829160ca2": "TroopWolfOne.asset",
+      "04bdbfec07ea643458954860c94ae1fa": "TroopWolfThree.asset",
+      "2bad11163615b1f4491d0d15dd809bb9": "TroopWolfTwo.asset",
+      "19c3e9a20c3237f4dbecf947b648483f": "TroopWormOne.asset",
+      "534b063c738c2704ab698ea1b689d086": "TroopZombieGrunt.asset",
+      "221a87e41a1528c459b683519f3e676a": "TroopZombieGruntEvolutionThree.asset",
+      "df623d7dd7a397542b30fd30297e0fbd": "TroopZombieGruntEvolutionTwo.asset",
+      "0aa9b1f8c0cfeb44bb517bf1f27c8e37": "Tutorial Grid Layout.asset",
+      "d66c1fa9ab90c2045ae69cde3e67589a": "TutorialSettings.asset",
+      "7ef663499932c874dbb8e13ff3fba618": "Two Corners.asset",
+      "5910cade7de23dd4f9112ce016110754": "UIParticleProjectSettings.asset",
+      "6758deb8ed939b44f981f89821f598cb": "UNDERWORLD BOSS.asset",
+      "bed74c98a2f9b714fa2176adad0fb16a": "URP-HighFidelity-Renderer.asset",
+      "f644f05954a517043bf69deef073407b": "URP-HighFidelity.asset",
+      "5c35dca0244ff1542ac67e4728ea68d0": "URP-Performant-Renderer.asset",
+      "db6885f5c11e891418da88e40a817d17": "URP-Performant.asset",
+      "e236d26f0260e5a47a544a4d930573aa": "UZI Gear (Shop Item).asset",
+      "3114f7bcb3338c74389aedec5cecb2be": "Undead Pack.asset",
+      "34f412b58e311994299bb760676fab61": "Underworld Boss Chapter.asset",
+      "048e2e3f0eba4d9469e707a9345f1a08": "UniversalRenderPipelineGlobalSettings.asset",
+      "0110e81a7575ebe48bd2f5c15254c1f3": "VerticalExpandAppearance.asset",
+      "0c0f6fff1d5e3d543aa224cbfb4e03c8": "Vignette.asset",
+      "d6d85ac141b15484eb6f947b53a92b14": "WaitAnyInputAction.asset",
+      "73a697771ab42d841ac49bd0b728ac83": "WaitForAction.asset",
+      "0e3ff9a8cf3f43843bbd19a4d4c13626": "WaveBehavior.asset",
+      "79b1feb7daeaaf14587632f3211ca46d": "WhiteBalance.asset",
+      "ebb91f813fb8ba940b8fc8c78fa4b125": "WiggleBehavior.asset",
+      "f988456cca450494e9e881a03ba0bbc7": "World 1 - Level 1.asset",
+      "64f6f4e616da4b44c864df0e79e2d1bc": "World 1 - Level 2.asset",
+      "af83152e53ba23b4888b49d0a36d076c": "World 1 - Level 3.asset",
+      "e9a06bd620f6c434abad69143dd89095": "World 1 - Level 4.asset",
+      "5f192e7b03f18d04f9cf80412e790bbc": "World 10 - Level 1.asset",
+      "dcb36a97b626ed54c93f7fac18ddf9f3": "World 10 - Level 10.asset",
+      "211613ee28544a949ad95466029e0824": "World 10 - Level 11.asset",
+      "764759fb768388944ac235f55c2c18aa": "World 10 - Level 12.asset",
+      "6b7fdac8d949d474eb34d4af71b40c16": "World 10 - Level 13.asset",
+      "7e46c2838262e3c40905dd8090f52b72": "World 10 - Level 14.asset",
+      "bb5e6ccfa680814429f4ba2d338a5944": "World 10 - Level 15.asset",
+      "c263b398efff41949b44172e01c51868": "World 10 - Level 16.asset",
+      "b6ac1c9fed0b3d44eaac84eb06a76a8f": "World 10 - Level 17.asset",
+      "5ceb4949d6ff37047a0cd21282fe5d20": "World 10 - Level 18.asset",
+      "44f07a5b3c214b542bbd7bd28e9f13cc": "World 10 - Level 19.asset",
+      "939c04fcad4ecfb4da2f315bb8cfd047": "World 10 - Level 2.asset",
+      "32a755795cb93c94ab6db27f0485a35d": "World 10 - Level 20.asset",
+      "98641f05271b9094a884cdf354b099fe": "World 10 - Level 3.asset",
+      "940eddbe1b95f8141af745d509f9d122": "World 10 - Level 4.asset",
+      "77c64f8e0319f6a478848e6fb7892237": "World 10 - Level 5.asset",
+      "ba6d5dc017eab9b4db7275578704f5e9": "World 10 - Level 6.asset",
+      "15bef801e770617428a355576cbd4569": "World 10 - Level 7.asset",
+      "690b2ed5e76cfd24da227ccc15e86af6": "World 10 - Level 8.asset",
+      "043275e3d69e047488c09f0e2e1a5e56": "World 10 - Level 9.asset",
+      "a34c53700807f104dab19082a30d5e88": "World 2 - Level 1.asset",
+      "20d816f6696e315438d97223f97eea85": "World 2 - Level 2.asset",
+      "3fbb7f57aeb3c0a4a9d711030480289b": "World 2 - Level 3.asset",
+      "487feabf67c4ec1419b2703729a6f668": "World 2 - Level 4.asset",
+      "811ce87c48244bc4a812f28dca0212aa": "World 3 - Level 1.asset",
+      "2af5b064a7dafbb45ac0dfe458fcc9a0": "World 3 - Level 2.asset",
+      "2321add1e19f813499009e10a3b960d2": "World 3 - Level 3.asset",
+      "3ef3d138bebde21479fb31d5718f3101": "World 3 - Level 4.asset",
+      "29b93bfd06fde4848a05c8aa01591719": "World 3 - Level 5.asset",
+      "a07b9c4bfebabe446a234fbf1e8f965f": "World 3 - Level 6.asset",
+      "1847d69cff058044d84d03541f5a83e7": "World 4 - Level 1.asset",
+      "f5e6c3245020ad74899997a3a6224f3e": "World 4 - Level 10.asset",
+      "ed0a7c2710cfbbe4fa5a1213c9e5e9fd": "World 4 - Level 2.asset",
+      "691ce575a25409d47a2e6cc43a962607": "World 4 - Level 3.asset",
+      "de526ee2413dfc2438679298067a8276": "World 4 - Level 4.asset",
+      "e2b8ba93075de5541be54e95685f89aa": "World 4 - Level 5.asset",
+      "57e9e7db367fe634b924e01f7467f9ae": "World 4 - Level 6.asset",
+      "8f5deedc9147590429624b90f70eb7f8": "World 4 - Level 7.asset",
+      "521220bba512eef4985ccd3baea03066": "World 4 - Level 8.asset",
+      "382bc2bc24446be4daebe3c3ee2b99af": "World 4 - Level 9.asset",
+      "9ab4b059942cbed4da9b5bc5ce6d3b06": "World 5 - Level 1.asset",
+      "350ffc3b68392a344983515f88007158": "World 5 - Level 10.asset",
+      "83ea62661543636449f6ca6b2c90a2bd": "World 5 - Level 11.asset",
+      "66c0c00ce94490848af4744da8b3ea2a": "World 5 - Level 12.asset",
+      "be93e74f033d9fa45bca059ba377a631": "World 5 - Level 13.asset",
+      "09573d83333d0014eb4e4ae1d7421690": "World 5 - Level 14.asset",
+      "fa9b81c63ad216d4e8fdcb8615758dac": "World 5 - Level 15.asset",
+      "9adb866b6c08b0a4da5cb66b97b48837": "World 5 - Level 2.asset",
+      "08c8926614b080e4aab2d38e61822154": "World 5 - Level 3.asset",
+      "d8f890914d81ca54daff6f7afa39c408": "World 5 - Level 4.asset",
+      "1f510d7a9b99eff4eb0da7e560a93eaf": "World 5 - Level 5.asset",
+      "9fc57fbb01918af40951344a8828f9ae": "World 5 - Level 6.asset",
+      "699ad96476f03d444971ee6e4add486c": "World 5 - Level 7.asset",
+      "1b660fcef9b1d3c4a83f763774e42403": "World 5 - Level 8.asset",
+      "54ad4c217c94651478cf9d35853414dc": "World 5 - Level 9.asset",
+      "08701f4c46b30394cb21b99c9bb9968a": "World 6 - Level 1.asset",
+      "d9bd5c06a602ad946aa25a0473dcd5a3": "World 6 - Level 10.asset",
+      "aa1870131f1a15e428e7d0e2387a1b00": "World 6 - Level 11.asset",
+      "8cd2a1342969c5b4c9443d023f8af8da": "World 6 - Level 12.asset",
+      "84445032ee6a6474896bcd732fd05ebd": "World 6 - Level 13.asset",
+      "f4a11a485204f5a469729d30796e9f8a": "World 6 - Level 14.asset",
+      "09930acb54f2bef4aaa527d60e2aec16": "World 6 - Level 15.asset",
+      "a7f5f44c0288d2348b89fc5fd3d042fe": "World 6 - Level 2.asset",
+      "b64e8c24870266b44b82438a86e0134e": "World 6 - Level 3.asset",
+      "8346949a486e7214988c46c663264e8b": "World 6 - Level 4.asset",
+      "34c519000515345468ceef16de31aa2d": "World 6 - Level 5.asset",
+      "44cb5409dcfbe164a9d3cd29cee469f3": "World 6 - Level 6.asset",
+      "61ef8dbaa187a7e4f8c88e6db6b866df": "World 6 - Level 7.asset",
+      "2b469a9b06804de48b82c4fe6e947624": "World 6 - Level 8.asset",
+      "9c83787917b966146a1f7ea229f15b8f": "World 6 - Level 9.asset",
+      "f88f6c5baac6e89459a716921f76200c": "World 7 - Level 1.asset",
+      "82dee431447216541a37a30b36281b2f": "World 7 - Level 10.asset",
+      "ac4fe137aa2f9e9488dc93567a6a2224": "World 7 - Level 11.asset",
+      "590faa4f3f4ab054086270f07e41a88b": "World 7 - Level 12.asset",
+      "85ac4b7843ade11458f6924ab1e6fd70": "World 7 - Level 13.asset",
+      "9174a85a44b9bac4285da3db66d4f30b": "World 7 - Level 14.asset",
+      "4b099758b3e9e3244a9f763d9bb40622": "World 7 - Level 15.asset",
+      "986897301de0e3144b0afd52e2366b46": "World 7 - Level 16.asset",
+      "de127eb3622fc6144a58851070998f69": "World 7 - Level 17.asset",
+      "740aa3c4418ad464984b6485b4d62d97": "World 7 - Level 18.asset",
+      "09d16e91bf4f84d47b8effc4e8ba7ecc": "World 7 - Level 19.asset",
+      "3ae4177d4174e5d4b81f7c09405bf7fb": "World 7 - Level 2.asset",
+      "d316e2c9ed79ad74b8bdf1d69977919d": "World 7 - Level 20.asset",
+      "75b8c291210f04a4aaebd342bc9e8e9c": "World 7 - Level 3.asset",
+      "0b73ea25c4097984c9c3a51695f3735d": "World 7 - Level 4.asset",
+      "d317e9a6ca54676429403a531e6bd359": "World 7 - Level 5.asset",
+      "03106acdfb1a1624b8e5975597e5b918": "World 7 - Level 6.asset",
+      "2010bd52d66749747b8e0706f7cfa534": "World 7 - Level 7.asset",
+      "d960b98464001a544b898afacf4ee666": "World 7 - Level 8.asset",
+      "fb546bb342e6bd8498c435566ee6ee1b": "World 7 - Level 9.asset",
+      "f333d1fb019ae0347961022937f72c9d": "World 8 - Level 1.asset",
+      "796ad48949d365849af430009fa4144e": "World 8 - Level 10.asset",
+      "b918877016410a74eb5b33cd21824a16": "World 8 - Level 11.asset",
+      "773268a97c146a347b1dffc73876f9ab": "World 8 - Level 12.asset",
+      "02c452babe97ea04cb01c10d90789222": "World 8 - Level 13.asset",
+      "22fa205d49706d8418445e84afbd407d": "World 8 - Level 14.asset",
+      "bb0d412e1719ef54a8ecc3fb80665a6a": "World 8 - Level 15.asset",
+      "633ce262f011ee74698a7f4b0be12afc": "World 8 - Level 16.asset",
+      "d1a11dcd10ad69d4883a988305fab899": "World 8 - Level 17.asset",
+      "5d25508a2c7b68648a23dc394e3739c3": "World 8 - Level 18.asset",
+      "06bd666e9431d5840ab65f0434d3b7a3": "World 8 - Level 19.asset",
+      "a8541e10641a1534d86a8cb61b82ccd9": "World 8 - Level 2.asset",
+      "2b0b72eb9099d1647b724c4d0ae4c0c9": "World 8 - Level 20.asset",
+      "76edb053da6f58349a6f22a5216ad264": "World 8 - Level 3.asset",
+      "d844bd5f2b047634fb4b64fcad286a3e": "World 8 - Level 4.asset",
+      "d680c3ab065917846aa7b0e7442464f2": "World 8 - Level 5.asset",
+      "0fe3b373c93efbc4381a291a4ecf5646": "World 8 - Level 6.asset",
+      "915e4009060285e46950df309e001c2c": "World 8 - Level 7.asset",
+      "6072efc4a5dd7124499c2d5d1f8792eb": "World 8 - Level 8.asset",
+      "d2f2d74e36770074984da53604fe294a": "World 8 - Level 9.asset",
+      "6c6fc0d5f7256e740a61c85b673d0756": "World 9 - Level 1.asset",
+      "9f9ddd94187da774095f1049e0894fac": "World 9 - Level 10.asset",
+      "23ec3c931193ca245a5728c31cc71af2": "World 9 - Level 11.asset",
+      "46470e47b3769ed489759ee59f09edcd": "World 9 - Level 12.asset",
+      "ce93e9984353727479ea4851d7a741e5": "World 9 - Level 13.asset",
+      "ba3adc2d5fba11746a654a2c829eedb7": "World 9 - Level 14.asset",
+      "4dba391901a2f6c4d883cc72b132893f": "World 9 - Level 15.asset",
+      "1adbdeaca7e60a847be09af12f8106db": "World 9 - Level 16.asset",
+      "a7c6bb5143a68674c96c169c414626fe": "World 9 - Level 17.asset",
+      "dc2245bab4dfa234c813771898e4ea0a": "World 9 - Level 18.asset",
+      "9ce41de7d653b0f47b2c3a32ca4d7104": "World 9 - Level 19.asset",
+      "39d140dab414e7946870524abfc5d998": "World 9 - Level 2.asset",
+      "46ba2481095cfc4429d40bd26ead8c0a": "World 9 - Level 20.asset",
+      "4817b6d29f010134696ee9b4a039bade": "World 9 - Level 3.asset",
+      "ede6f8b06deee2846adf566bd4f3c29e": "World 9 - Level 4.asset",
+      "3f9a68cd8151af24fb1386b477b858aa": "World 9 - Level 5.asset",
+      "b8ac0dc9aeeab0540b8041df012c1f83": "World 9 - Level 6.asset",
+      "09d0b4150eba41c4d968718bf3acf31a": "World 9 - Level 7.asset",
+      "e375eb7deaa5eff4f80fa9a33b4fe885": "World 9 - Level 8.asset",
+      "7a77811c2e8b96d4489e0cd096041cf8": "World 9 - Level 9.asset",
+      "472d072effc2bf346b57d65019ec5e37": "XRSystemData.asset",
+      "de4f7f6826f25d44ca933ccec1cca99d": "q11_MergeGears_d0.asset",
+      "31db746efa19a6141b27da09baf9bc35": "q11_MergeGears_d1.asset",
+      "e296c5074a7227c4485d6e191d5993db": "q11_MergeGears_d2.asset",
+      "37f716813c886094f8138e9f50831c57": "q37_MergeGears_d4.asset"
+    }
+  }
+}

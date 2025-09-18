@@ -177,34 +177,205 @@ def get_chapters():
 
 @app.route('/api/enemies')
 def get_enemies():
-    """Get enemies catalog"""
+    """Get enemies catalog (basic list for backward compatibility)"""
     try:
+        # Try detailed catalog first
+        detailed_file = BASE_DIR / "enemies_catalog_detailed.json"
+        if detailed_file.exists():
+            with open(detailed_file, 'r') as f:
+                detailed_data = json.load(f)
+            return jsonify({"enemies": detailed_data["enemies"]})
+
+        # Fallback to basic catalog
         enemies_file = BASE_DIR / "enemies_catalog.json"
-        if not enemies_file.exists():
-            return jsonify({"error": "Enemies catalog not found"}), 404
+        if enemies_file.exists():
+            with open(enemies_file, 'r') as f:
+                enemies_data = json.load(f)
+            return jsonify(enemies_data)
 
-        with open(enemies_file, 'r') as f:
-            enemies_data = json.load(f)
-
-        return jsonify(enemies_data)
+        return jsonify({"error": "Enemies catalog not found"}), 404
     except Exception as e:
         logger.error(f"Get enemies error: {e}")
         return jsonify({"error": str(e)}), 500
 
+@app.route('/api/enemies/detailed')
+def get_enemies_detailed():
+    """Get detailed enemies catalog with all properties"""
+    try:
+        detailed_file = BASE_DIR / "enemies_catalog_detailed.json"
+        if not detailed_file.exists():
+            return jsonify({"error": "Detailed enemies catalog not found"}), 404
+
+        with open(detailed_file, 'r') as f:
+            detailed_data = json.load(f)
+
+        return jsonify(detailed_data)
+    except Exception as e:
+        logger.error(f"Get detailed enemies error: {e}")
+        return jsonify({"error": str(e)}), 500
+
 @app.route('/api/structures')
 def get_structures():
-    """Get structures catalog"""
+    """Get structures catalog (basic list for backward compatibility)"""
     try:
+        # Try detailed catalog first
+        detailed_file = BASE_DIR / "structures_catalog_detailed.json"
+        if detailed_file.exists():
+            with open(detailed_file, 'r') as f:
+                detailed_data = json.load(f)
+            return jsonify({"structures": detailed_data["structures"]})
+
+        # Fallback to basic catalog
         structures_file = BASE_DIR / "structures_catalog.json"
-        if not structures_file.exists():
-            return jsonify({"error": "Structures catalog not found"}), 404
+        if structures_file.exists():
+            with open(structures_file, 'r') as f:
+                structures_data = json.load(f)
+            return jsonify(structures_data)
 
-        with open(structures_file, 'r') as f:
-            structures_data = json.load(f)
-
-        return jsonify(structures_data)
+        return jsonify({"error": "Structures catalog not found"}), 404
     except Exception as e:
         logger.error(f"Get structures error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/structures/detailed')
+def get_structures_detailed():
+    """Get detailed structures catalog with all properties"""
+    try:
+        detailed_file = BASE_DIR / "structures_catalog_detailed.json"
+        if not detailed_file.exists():
+            return jsonify({"error": "Detailed structures catalog not found"}), 404
+
+        with open(detailed_file, 'r') as f:
+            detailed_data = json.load(f)
+
+        return jsonify(detailed_data)
+    except Exception as e:
+        logger.error(f"Get detailed structures error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/gears')
+def get_gears():
+    """Get gears catalog (basic list)"""
+    try:
+        detailed_file = BASE_DIR / "gears_catalog_detailed.json"
+        if not detailed_file.exists():
+            return jsonify({"error": "Gears catalog not found"}), 404
+
+        with open(detailed_file, 'r') as f:
+            detailed_data = json.load(f)
+
+        return jsonify({"gears": detailed_data["gears"]})
+    except Exception as e:
+        logger.error(f"Get gears error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/gears/detailed')
+def get_gears_detailed():
+    """Get detailed gears catalog with all properties"""
+    try:
+        detailed_file = BASE_DIR / "gears_catalog_detailed.json"
+        if not detailed_file.exists():
+            return jsonify({"error": "Detailed gears catalog not found"}), 404
+
+        with open(detailed_file, 'r') as f:
+            detailed_data = json.load(f)
+
+        return jsonify(detailed_data)
+    except Exception as e:
+        logger.error(f"Get detailed gears error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/behaviors')
+def get_behaviors():
+    """Get animation behaviors catalog (basic list)"""
+    try:
+        detailed_file = BASE_DIR / "behaviors_catalog_detailed.json"
+        if detailed_file.exists():
+            with open(detailed_file, 'r') as f:
+                detailed_data = json.load(f)
+            return jsonify({"behaviors": detailed_data["behaviors"]})
+
+        return jsonify({"error": "Behaviors catalog not found"}), 404
+    except Exception as e:
+        logger.error(f"Get behaviors error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/behaviors/detailed')
+def get_behaviors_detailed():
+    """Get detailed animation behaviors catalog with all properties"""
+    try:
+        detailed_file = BASE_DIR / "behaviors_catalog_detailed.json"
+        if not detailed_file.exists():
+            return jsonify({"error": "Detailed behaviors catalog not found"}), 404
+
+        with open(detailed_file, 'r') as f:
+            detailed_data = json.load(f)
+
+        return jsonify(detailed_data)
+    except Exception as e:
+        logger.error(f"Get detailed behaviors error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/currencies')
+def get_currencies():
+    """Get currencies catalog (basic list)"""
+    try:
+        detailed_file = BASE_DIR / "currencies_catalog_detailed.json"
+        if detailed_file.exists():
+            with open(detailed_file, 'r') as f:
+                detailed_data = json.load(f)
+            return jsonify({"currencies": detailed_data["currencies"]})
+
+        return jsonify({"error": "Currencies catalog not found"}), 404
+    except Exception as e:
+        logger.error(f"Get currencies error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/currencies/detailed')
+def get_currencies_detailed():
+    """Get detailed currencies catalog with all properties"""
+    try:
+        detailed_file = BASE_DIR / "currencies_catalog_detailed.json"
+        if not detailed_file.exists():
+            return jsonify({"error": "Detailed currencies catalog not found"}), 404
+
+        with open(detailed_file, 'r') as f:
+            detailed_data = json.load(f)
+
+        return jsonify(detailed_data)
+    except Exception as e:
+        logger.error(f"Get detailed currencies error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/quests')
+def get_quests():
+    """Get quests catalog (basic list)"""
+    try:
+        detailed_file = BASE_DIR / "quests_catalog_detailed.json"
+        if detailed_file.exists():
+            with open(detailed_file, 'r') as f:
+                detailed_data = json.load(f)
+            return jsonify({"quests": detailed_data["quests"]})
+
+        return jsonify({"error": "Quests catalog not found"}), 404
+    except Exception as e:
+        logger.error(f"Get quests error: {e}")
+        return jsonify({"error": str(e)}), 500
+
+@app.route('/api/quests/detailed')
+def get_quests_detailed():
+    """Get detailed quests catalog with all properties"""
+    try:
+        detailed_file = BASE_DIR / "quests_catalog_detailed.json"
+        if not detailed_file.exists():
+            return jsonify({"error": "Detailed quests catalog not found"}), 404
+
+        with open(detailed_file, 'r') as f:
+            detailed_data = json.load(f)
+
+        return jsonify(detailed_data)
+    except Exception as e:
+        logger.error(f"Get detailed quests error: {e}")
         return jsonify({"error": str(e)}), 500
 
 @app.route('/api/levels/<world>/<int:level>', methods=['PUT'])

@@ -1,0 +1,544 @@
+{
+  "extraction_info": {
+    "date": "2025-09-18T21:44:54.732179",
+    "version": "2.0 - Clean Architecture",
+    "total_behaviors": 13
+  },
+  "behaviors": [
+    "SizeBehavior",
+    "BounceBehavior",
+    "DangleBehavior",
+    "RotationBehavior",
+    "RainbowBehavior",
+    "FadeBehavior",
+    "Behaviors Database",
+    "WiggleBehavior",
+    "SlideBehavior",
+    "SwingBehavior",
+    "WaveBehavior",
+    "ShakeBehavior",
+    "PendulumBehavior"
+  ],
+  "behaviors_detailed": {
+    "SizeBehavior": {
+      "name": "SizeBehavior",
+      "filepath": "UnityProject/MonoBehaviour/SizeBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "BounceBehavior": {
+      "name": "BounceBehavior",
+      "filepath": "UnityProject/MonoBehaviour/BounceBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "DangleBehavior": {
+      "name": "DangleBehavior",
+      "filepath": "UnityProject/MonoBehaviour/DangleBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "RotationBehavior": {
+      "name": "RotationBehavior",
+      "filepath": "UnityProject/MonoBehaviour/RotationBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "RainbowBehavior": {
+      "name": "RainbowBehavior",
+      "filepath": "UnityProject/MonoBehaviour/RainbowBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "FadeBehavior": {
+      "name": "FadeBehavior",
+      "filepath": "UnityProject/MonoBehaviour/FadeBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "Behaviors Database": {
+      "name": "Behaviors Database",
+      "filepath": "UnityProject/MonoBehaviour/Behaviors Database.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "WiggleBehavior": {
+      "name": "WiggleBehavior",
+      "filepath": "UnityProject/MonoBehaviour/WiggleBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "SlideBehavior": {
+      "name": "SlideBehavior",
+      "filepath": "UnityProject/MonoBehaviour/SlideBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "SwingBehavior": {
+      "name": "SwingBehavior",
+      "filepath": "UnityProject/MonoBehaviour/SwingBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "WaveBehavior": {
+      "name": "WaveBehavior",
+      "filepath": "UnityProject/MonoBehaviour/WaveBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "ShakeBehavior": {
+      "name": "ShakeBehavior",
+      "filepath": "UnityProject/MonoBehaviour/ShakeBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    },
+    "PendulumBehavior": {
+      "name": "PendulumBehavior",
+      "filepath": "UnityProject/MonoBehaviour/PendulumBehavior.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "amplitude": 0,
+      "frequency": 0,
+      "wave_size": 0,
+      "behavior_type": "",
+      "duration": 0,
+      "loop_type": "",
+      "ease_type": "",
+      "target_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "prefab_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      }
+    }
+  }
+}

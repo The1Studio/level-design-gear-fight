@@ -1,202 +1,217 @@
 #!/usr/bin/env python3
 """
-Structure extraction module
-Extracts ALL structure definitions from Unity data
+Structure Extractor - Specialized extractor for environmental structure assets
+Based on analysis of structure patterns and environmental themes
 """
 
-import json
-import sys
 from pathlib import Path
+from typing import Dict, List, Any, Optional
+import logging
 
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
+from ..core.base_extractor import BaseExtractor
 
-from utils.yaml_parser import UnityYAMLParser, UnityAssetScanner
-from constants.unity_guids import UnityGUIDManager
-from constants.game_constants import (
-    UNITY_MONOBEHAVIOUR_PATH, STRUCTURE_ENVIRONMENTS, TROOP_CATEGORIES
-)
+logger = logging.getLogger(__name__)
 
-class StructureExtractor:
-    """Extracts structure data from Unity assets"""
-    
-    def __init__(self, unity_project_path, guid_manager=None):
-        self.unity_path = Path(unity_project_path)
-        self.guid_manager = guid_manager or UnityGUIDManager()
-        self.parser = UnityYAMLParser()
-        
-    def extract_all_structures(self):
-        """Extract all structure definitions from Unity assets"""
-        print("🏗️ Scanning for structure assets...")
-        
-        # Find all Structure asset files
-        structure_files = UnityAssetScanner.scan_for_structures(self.unity_path)
-        print(f"Found {len(structure_files)} structure asset files")
-        
-        structures_data = {}
-        environment_types = {}
-        
-        for structure_file in structure_files:
-            structure_data = self._extract_structure_from_file(structure_file)
-            if structure_data:
-                structure_name = structure_data['name']
-                structures_data[structure_name] = structure_data
-                
-                # Track environment types
-                env_type = structure_data.get('environment_type')
-                if env_type not in environment_types:
-                    environment_types[env_type] = []
-                environment_types[env_type].append(structure_name)
-        
-        # Generate statistics
-        stats = self._generate_structure_statistics(structures_data, environment_types)
-        
-        return {
-            'structures': structures_data,
-            'environment_types': environment_types,
-            'statistics': stats,
-            'extraction_info': {
-                'total_files_scanned': len(structure_files),
-                'total_structures_found': len(structures_data),
-                'expected_environments': len(STRUCTURE_ENVIRONMENTS),
-                'found_environments': len(environment_types)
-            }
-        }
-    
-    def _extract_structure_from_file(self, structure_file):
-        """Extract structure data from a single Unity asset file"""
+class StructureExtractor(BaseExtractor):
+    """
+    Specialized extractor for Structure assets
+
+    Extracts detailed properties from structure files including:
+    - Environmental structure properties
+    - Theme-based organization (City, Desert, Forest, Snow, etc.)
+    - Level generation parameters
+    - Associated effects and interactions
+
+    Based on documented environmental themes and structure system
+    """
+
+    @property
+    def file_patterns(self) -> List[str]:
+        """File patterns for structure assets"""
+        return [
+            "*Structure*.asset",
+            "City_*.asset",
+            "Desert_*.asset",
+            "Forest_*.asset",
+            "Snow_*.asset",
+            "Volcano_*.asset"
+        ]
+
+    @property
+    def asset_type_name(self) -> str:
+        """Human-readable name for structure assets"""
+        return "Environmental Structures"
+
+    def extract_single_asset(self, filepath: Path, data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """
+        Extract detailed data from a single structure asset
+
+        Returns comprehensive structure data including environmental
+        theme classification and gameplay properties
+        """
         try:
-            asset_data = self.parser.load_unity_asset(structure_file)
-            if not asset_data:
-                return None
-            
-            # Extract basic properties
-            properties = self.parser.extract_asset_properties(asset_data)
-            file_refs = self.parser.extract_file_references(asset_data)
-            
-            # Parse structure name to extract environment type
-            structure_name = properties.get('name', structure_file.stem)
-            environment_type, variant_number = self._parse_structure_name(structure_name)
-            
-            # Build structure definition
+            structure_name = filepath.stem
+
+            # Extract basic Unity ScriptableObject properties
+            basic_props = self.extract_basic_properties(data)
+
+            # Extract evolution data (structures can evolve too)
+            evolution_data = self.extract_evolution_data(data)
+
+            # Extract associated gear reference
+            gear_reference = self.extract_gear_reference(data)
+
+            # Extract sprite references
+            sprite_refs = self.extract_sprite_references(data)
+
+            # Determine environmental theme from name
+            theme = self._determine_environmental_theme(structure_name)
+
+            # Extract structure-specific properties
+            structure_specific = self._extract_structure_specific_properties(data)
+
+            # Combine all extracted data
             structure_data = {
                 'name': structure_name,
-                'id': properties.get('ID', ''),
-                'environment_type': environment_type,
-                'variant_number': variant_number,
-                'unlocked_by_default': bool(properties.get('UnlockedByDefault', 0)),
-                'evolve_level': properties.get('EvolveLevel', 0),
-                'starting_level': properties.get('StartingLevel', 99),  # Most structures start at 99
-                'category_id': properties.get('ThisTroopCategory', 3),  # 3 = Structure
-                'category': TROOP_CATEGORIES.get(properties.get('ThisTroopCategory', 3), 'Structure'),
-                'included_in_generation': bool(properties.get('IncludedInLevelGeneration', 0)),
-                'level_range': self.parser.extract_vector2(
-                    properties.get('acceptableLevelRangeForGeneration', {})
-                ),
-                'unlock_cost_override': properties.get('unlockCostOverride', 15),  # Default 15
-                'override_unlock_cost': bool(properties.get('overrideUnlockCost', 0)),
-                'file_path': str(structure_file),
-                'file_references': file_refs
+                'file_path': str(filepath),
+                'environmental_theme': theme,
+                **basic_props,
+                **structure_specific,
+                'evolution_chain': evolution_data,
+                'associated_gear': gear_reference,
+                'sprite_references': sprite_refs,
+                'extraction_metadata': {
+                    'source_file': str(filepath),
+                    'extraction_method': 'StructureExtractor v1.0',
+                    'environmental_classification': theme
+                }
             }
-            
-            # Extract controller reference (important for structures)
-            troop_controller = properties.get('troopController', {})
-            if not self.parser.is_null_reference(troop_controller):
-                structure_data['controller_guid'] = file_refs.get('troopController')
-                if self.guid_manager:
-                    controller_name = self.guid_manager.get_asset_name(
-                        file_refs.get('troopController', '')
-                    )
-                    if controller_name != f"Unknown_{file_refs.get('troopController', '')}":
-                        structure_data['controller'] = controller_name
-            
+
             return structure_data
-            
+
         except Exception as e:
-            print(f"Error extracting structure from {structure_file}: {e}")
+            logger.error(f"Error extracting structure {filepath}: {e}")
             return None
-    
-    def _parse_structure_name(self, structure_name):
-        """Parse structure name to extract environment and variant"""
-        # Expected format: EnvironmentType_Structure_Number
-        # Examples: Forest_Structure_1, City_Structure_2
-        
-        parts = structure_name.split('_')
-        if len(parts) >= 3 and parts[1] == 'Structure':
-            environment_type = parts[0]
-            try:
-                variant_number = int(parts[2])
-            except (ValueError, IndexError):
-                variant_number = 1
+
+    def _determine_environmental_theme(self, structure_name: str) -> str:
+        """
+        Determine environmental theme from structure name
+
+        Based on documented environmental themes:
+        - City: Urban structures
+        - Desert: Desert/arid environment structures
+        - Forest: Forest/nature structures
+        - Snow: Snow/winter structures
+        - Volcano: Volcanic/lava structures
+        """
+        name_lower = structure_name.lower()
+
+        if 'city' in name_lower:
+            return 'City'
+        elif 'desert' in name_lower:
+            return 'Desert'
+        elif 'forest' in name_lower:
+            return 'Forest'
+        elif 'snow' in name_lower:
+            return 'Snow'
+        elif 'volcano' in name_lower:
+            return 'Volcano'
+        elif 'structure' in name_lower:
+            return 'Generic'
         else:
-            # Fallback parsing
-            environment_type = 'Unknown'
-            variant_number = 1
-            
-            # Try to identify environment from name
-            for env in STRUCTURE_ENVIRONMENTS:
-                if env.lower() in structure_name.lower():
-                    environment_type = env
-                    break
-        
-        return environment_type, variant_number
-    
-    def _generate_structure_statistics(self, structures_data, environment_types):
-        """Generate statistics about extracted structures"""
-        stats = {
-            'total_structures': len(structures_data),
-            'by_environment': {env: len(structures) for env, structures in environment_types.items()},
-            'variants_per_environment': {},
-            'average_unlock_cost': 0,
-            'generation_included': 0,
-            'has_controller': 0
+            return 'Unknown'
+
+    def _extract_structure_specific_properties(self, data: Dict[str, Any]) -> Dict[str, Any]:
+        """Extract properties specific to structures"""
+        return {
+            # Structure-specific gameplay properties
+            'blocking_properties': data.get('BlockingProperties', {}),
+            'interaction_type': data.get('InteractionType', ''),
+            'environment_effects': data.get('EnvironmentEffects', []),
+            'placement_rules': data.get('PlacementRules', {}),
+            'destruction_properties': data.get('DestructionProperties', {}),
+            'visual_effects': data.get('VisualEffects', []),
+            # Resource/reward properties
+            'resource_yield': data.get('ResourceYield', 0),
+            'interaction_cost': data.get('InteractionCost', 0),
+            'regeneration_time': data.get('RegenerationTime', 0)
         }
-        
-        # Calculate variants per environment
-        for env, structures in environment_types.items():
-            variant_counts = {}
-            for struct_name in structures:
-                struct_data = structures_data[struct_name]
-                variant = struct_data.get('variant_number', 1)
-                variant_counts[variant] = variant_counts.get(variant, 0) + 1
-            stats['variants_per_environment'][env] = len(variant_counts)
-        
-        # Calculate other statistics
-        total_cost = 0
-        for structure in structures_data.values():
-            total_cost += structure.get('unlock_cost_override', 15)
-            if structure.get('included_in_generation'):
-                stats['generation_included'] += 1
-            if 'controller' in structure:
-                stats['has_controller'] += 1
-        
-        if structures_data:
-            stats['average_unlock_cost'] = total_cost / len(structures_data)
-        
-        return stats
-    
-    def save_structures_catalog(self, output_path, structures_data):
-        """Save structures catalog to JSON file"""
-        try:
-            # Create simplified catalog for compatibility
-            catalog_data = {
-                'structures': sorted(list(structures_data['structures'].keys())),
-                'total': len(structures_data['structures']),
-                'environment_types': structures_data['environment_types'],
-                'statistics': structures_data['statistics'],
-                'extraction_info': structures_data['extraction_info'],
-                'detailed_structures': structures_data['structures']  # Full data
+
+    def get_structures_by_theme(self) -> Dict[str, List[str]]:
+        """
+        Get structures organized by environmental theme
+
+        Returns dictionary where keys are theme names and values
+        are lists of structure names in that theme
+        """
+        themes = {}
+
+        for structure_name, structure_data in self.extracted_data.items():
+            theme = structure_data.get('environmental_theme', 'Unknown')
+            if theme not in themes:
+                themes[theme] = []
+            themes[theme].append(structure_name)
+
+        return themes
+
+    def get_interactive_structures(self) -> Dict[str, Dict[str, Any]]:
+        """
+        Get structures that have interaction capabilities
+
+        Based on interaction_type and associated properties
+        """
+        interactive_structures = {}
+
+        for structure_name, structure_data in self.extracted_data.items():
+            interaction_type = structure_data.get('interaction_type', '')
+            if interaction_type:
+                interactive_structures[structure_name] = {
+                    'interaction_type': interaction_type,
+                    'interaction_cost': structure_data.get('interaction_cost', 0),
+                    'resource_yield': structure_data.get('resource_yield', 0),
+                    'environmental_theme': structure_data.get('environmental_theme', 'Unknown')
+                }
+
+        return interactive_structures
+
+    def get_level_generation_structures(self) -> Dict[str, Dict[str, Any]]:
+        """
+        Get structures included in procedural level generation
+
+        Similar to troops, structures can be procedurally placed
+        """
+        generation_structures = {}
+
+        for structure_name, structure_data in self.extracted_data.items():
+            if structure_data.get('included_in_level_generation', False):
+                level_range = structure_data.get('acceptable_level_range', {})
+                generation_structures[structure_name] = {
+                    'min_level': level_range.get('x', 0),
+                    'max_level': level_range.get('y', 0),
+                    'environmental_theme': structure_data.get('environmental_theme', 'Unknown'),
+                    'troop_category': structure_data.get('troop_category', 0)
+                }
+
+        return generation_structures
+
+    def get_extraction_summary(self) -> Dict[str, Any]:
+        """Get comprehensive summary of structure extraction"""
+        base_stats = self.get_extraction_stats()
+
+        themes = self.get_structures_by_theme()
+        interactive = self.get_interactive_structures()
+        generation_structures = self.get_level_generation_structures()
+
+        return {
+            **base_stats,
+            'environmental_themes': themes,
+            'theme_counts': {theme: len(structures) for theme, structures in themes.items()},
+            'interactive_structures': len(interactive),
+            'structures_in_level_generation': len(generation_structures),
+            'analysis': {
+                'total_themes': len(themes),
+                'most_common_theme': max(themes.items(), key=lambda x: len(x[1]))[0] if themes else 'None',
+                'interactive_coverage': f"{len(interactive)}/{len(self.extracted_data)} structures",
+                'procedural_generation_coverage': f"{len(generation_structures)}/{len(self.extracted_data)} structures"
             }
-            
-            with open(output_path, 'w') as f:
-                json.dump(catalog_data, f, indent=2)
-            
-            print(f"✅ Saved structures catalog to {output_path}")
-            print(f"   Total structures: {catalog_data['total']}")
-            print(f"   Environment types: {list(catalog_data['environment_types'].keys())}")
-            
-            return catalog_data
-            
-        except Exception as e:
-            print(f"❌ Error saving structures catalog: {e}")
-            return None
+        }

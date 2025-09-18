@@ -1,0 +1,1446 @@
+{
+  "extraction_info": {
+    "date": "2025-09-18T21:44:54.732179",
+    "version": "2.0 - Clean Architecture",
+    "total_currencies": 41
+  },
+  "currencies": [
+    "DiamondCoin",
+    "Green Coins",
+    "Green-Currency",
+    "Blue Coin",
+    "Small Blue Coin Reward",
+    "Diamond Template 1_0",
+    "Diamond Freebie",
+    "GemPack2",
+    "Blue Coin_0",
+    "GearCoin",
+    "Small Blue Coin Bulk Offering",
+    "GreenCoins1",
+    "GemPack3",
+    "GreenCoins2",
+    "Blue Coin Forced",
+    "GearCoinCofinControlller",
+    "BlueCoins1",
+    "Diamond Template 1",
+    "BlueCoins2",
+    "FreeChest-Currency",
+    "Blue-Currency",
+    "Blue Coin Template 1",
+    "Diamond Template 3",
+    "Diamond Shape",
+    "Green Coin",
+    "Currency",
+    "SkipTicket-Currency",
+    "Green Coin Template",
+    "Diamond Forced",
+    "Diamond",
+    "Currency_Gem",
+    "Gold-Currency",
+    "Blue Coin Freebie",
+    "Green Coin Freebie",
+    "GearCoin_0",
+    "Diamond Template 2",
+    "GemPack1",
+    "Diamond-Currency",
+    "PaidChest-Currency",
+    "Coins",
+    "GearDiamondHoe"
+  ],
+  "currencies_detailed": {
+    "DiamondCoin": {
+      "name": "DiamondCoin",
+      "filepath": "UnityProject/MonoBehaviour/DiamondCoin.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Green Coins": {
+      "name": "Green Coins",
+      "filepath": "UnityProject/MonoBehaviour/Green Coins.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Green-Currency": {
+      "name": "Green-Currency",
+      "filepath": "UnityProject/MonoBehaviour/Green-Currency.asset",
+      "id": "d1618013649d896478c97a677221d3b7",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": "8451c7dce0a07a94c94728c323393e32",
+        "is_null": false
+      },
+      "display_format": ""
+    },
+    "Blue Coin": {
+      "name": "Blue Coin",
+      "filepath": "UnityProject/MonoBehaviour/Blue Coin.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Small Blue Coin Reward": {
+      "name": "Small Blue Coin Reward",
+      "filepath": "UnityProject/MonoBehaviour/Small Blue Coin Reward.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond Template 1_0": {
+      "name": "Diamond Template 1_0",
+      "filepath": "UnityProject/MonoBehaviour/Diamond Template 1_0.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond Freebie": {
+      "name": "Diamond Freebie",
+      "filepath": "UnityProject/MonoBehaviour/Diamond Freebie.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GemPack2": {
+      "name": "GemPack2",
+      "filepath": "UnityProject/MonoBehaviour/GemPack2.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Blue Coin_0": {
+      "name": "Blue Coin_0",
+      "filepath": "UnityProject/MonoBehaviour/Blue Coin_0.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GearCoin": {
+      "name": "GearCoin",
+      "filepath": "UnityProject/MonoBehaviour/GearCoin.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Small Blue Coin Bulk Offering": {
+      "name": "Small Blue Coin Bulk Offering",
+      "filepath": "UnityProject/MonoBehaviour/Small Blue Coin Bulk Offering.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GreenCoins1": {
+      "name": "GreenCoins1",
+      "filepath": "UnityProject/MonoBehaviour/GreenCoins1.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GemPack3": {
+      "name": "GemPack3",
+      "filepath": "UnityProject/MonoBehaviour/GemPack3.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GreenCoins2": {
+      "name": "GreenCoins2",
+      "filepath": "UnityProject/MonoBehaviour/GreenCoins2.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Blue Coin Forced": {
+      "name": "Blue Coin Forced",
+      "filepath": "UnityProject/MonoBehaviour/Blue Coin Forced.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GearCoinCofinControlller": {
+      "name": "GearCoinCofinControlller",
+      "filepath": "UnityProject/MonoBehaviour/GearCoinCofinControlller.asset",
+      "id": "0896a039c3b41634eb1de418afe8bd8e",
+      "unlocked_by_default": 1,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "BlueCoins1": {
+      "name": "BlueCoins1",
+      "filepath": "UnityProject/MonoBehaviour/BlueCoins1.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond Template 1": {
+      "name": "Diamond Template 1",
+      "filepath": "UnityProject/MonoBehaviour/Diamond Template 1.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "BlueCoins2": {
+      "name": "BlueCoins2",
+      "filepath": "UnityProject/MonoBehaviour/BlueCoins2.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "FreeChest-Currency": {
+      "name": "FreeChest-Currency",
+      "filepath": "UnityProject/MonoBehaviour/FreeChest-Currency.asset",
+      "id": "0d0eaaf2b017eb84e97235c54a14e461",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Blue-Currency": {
+      "name": "Blue-Currency",
+      "filepath": "UnityProject/MonoBehaviour/Blue-Currency.asset",
+      "id": "a38f35ed8ca675d49910db202b5895a1",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": "fdd6ba684243ce74393e3d5b172274f6",
+        "is_null": false
+      },
+      "display_format": ""
+    },
+    "Blue Coin Template 1": {
+      "name": "Blue Coin Template 1",
+      "filepath": "UnityProject/MonoBehaviour/Blue Coin Template 1.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond Template 3": {
+      "name": "Diamond Template 3",
+      "filepath": "UnityProject/MonoBehaviour/Diamond Template 3.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond Shape": {
+      "name": "Diamond Shape",
+      "filepath": "UnityProject/MonoBehaviour/Diamond Shape.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Green Coin": {
+      "name": "Green Coin",
+      "filepath": "UnityProject/MonoBehaviour/Green Coin.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Currency": {
+      "name": "Currency",
+      "filepath": "UnityProject/MonoBehaviour/Currency.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "coins",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": "a9d384716ba190040ababa719a880786",
+        "is_null": false
+      },
+      "display_format": ""
+    },
+    "SkipTicket-Currency": {
+      "name": "SkipTicket-Currency",
+      "filepath": "UnityProject/MonoBehaviour/SkipTicket-Currency.asset",
+      "id": "bbdb3c18ec2334741866a3e06a1ea35e",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": "6d292b853f8e72c48ae8a94f1fb21895",
+        "is_null": false
+      },
+      "display_format": ""
+    },
+    "Green Coin Template": {
+      "name": "Green Coin Template",
+      "filepath": "UnityProject/MonoBehaviour/Green Coin Template.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond Forced": {
+      "name": "Diamond Forced",
+      "filepath": "UnityProject/MonoBehaviour/Diamond Forced.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond": {
+      "name": "Diamond",
+      "filepath": "UnityProject/MonoBehaviour/Diamond.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Currency_Gem": {
+      "name": "Currency_Gem",
+      "filepath": "UnityProject/MonoBehaviour/Currency_Gem.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Gold-Currency": {
+      "name": "Gold-Currency",
+      "filepath": "UnityProject/MonoBehaviour/Gold-Currency.asset",
+      "id": "0d398d2ea4d71406290d7943941e686c",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": "9565c38d4642f5c47ac163e96d8f4290",
+        "is_null": false
+      },
+      "display_format": ""
+    },
+    "Blue Coin Freebie": {
+      "name": "Blue Coin Freebie",
+      "filepath": "UnityProject/MonoBehaviour/Blue Coin Freebie.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Green Coin Freebie": {
+      "name": "Green Coin Freebie",
+      "filepath": "UnityProject/MonoBehaviour/Green Coin Freebie.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GearCoin_0": {
+      "name": "GearCoin_0",
+      "filepath": "UnityProject/MonoBehaviour/GearCoin_0.asset",
+      "id": "fd6b4502e5b9fbc4e8df19bb9d73c393",
+      "unlocked_by_default": 1,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond Template 2": {
+      "name": "Diamond Template 2",
+      "filepath": "UnityProject/MonoBehaviour/Diamond Template 2.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GemPack1": {
+      "name": "GemPack1",
+      "filepath": "UnityProject/MonoBehaviour/GemPack1.asset",
+      "id": "",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Diamond-Currency": {
+      "name": "Diamond-Currency",
+      "filepath": "UnityProject/MonoBehaviour/Diamond-Currency.asset",
+      "id": "5faeed92cf85e4c4198773250fb2c2c7",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": "034eb587d2a206d4887bb5cfbad76ced",
+        "is_null": false
+      },
+      "display_format": ""
+    },
+    "PaidChest-Currency": {
+      "name": "PaidChest-Currency",
+      "filepath": "UnityProject/MonoBehaviour/PaidChest-Currency.asset",
+      "id": "dc760be213a61d54db324da1d95eab5a",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "Coins": {
+      "name": "Coins",
+      "filepath": "UnityProject/MonoBehaviour/Coins.asset",
+      "id": "87243ee303fa5284e8667480f6ae703b",
+      "unlocked_by_default": false,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    },
+    "GearDiamondHoe": {
+      "name": "GearDiamondHoe",
+      "filepath": "UnityProject/MonoBehaviour/GearDiamondHoe.asset",
+      "id": "4f9a27361446aa5448412b5fc3c58c61",
+      "unlocked_by_default": 0,
+      "evolve_level": 0,
+      "starting_level": 0,
+      "name_loc_key": "",
+      "troop_category": 0,
+      "included_in_level_generation": false,
+      "acceptable_level_range": {},
+      "unlock_cost_override": 0,
+      "evolution_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "gear_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "currency_type": "",
+      "base_value": 0,
+      "exchange_rate": 1.0,
+      "max_capacity": 0,
+      "purchase_options": [],
+      "icon_reference": {
+        "name": null,
+        "guid": null,
+        "is_null": true
+      },
+      "display_format": ""
+    }
+  }
+}

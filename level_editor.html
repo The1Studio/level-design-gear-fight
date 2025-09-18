@@ -401,6 +401,138 @@
             color: #888;
         }
 
+        /* New data card styles */
+        .behaviors-grid, .currencies-grid, .quests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 10px 0;
+        }
+
+        .behavior-card, .currency-card, .quest-card {
+            background: #333;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
+
+        .behavior-card h5, .currency-card h5, .quest-card h5 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 14px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 5px;
+        }
+
+        .behavior-details, .currency-details, .quest-details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .behavior-details div, .currency-details div, .quest-details div {
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .behavior-details strong, .currency-details strong, .quest-details strong {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* Warning banner styles */
+        .warning-banner {
+            background: linear-gradient(90deg, #ff6b35, #f7931e);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ff8c42;
+        }
+
+        .warning-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .warning-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .warning-text {
+            flex-grow: 1;
+        }
+
+        .warning-text strong {
+            color: #fff;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .warning-text p {
+            color: #fff;
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .info-panel {
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-panel h5 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .procedural-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .procedural-param {
+            background: #333;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #444;
+        }
+
+        .procedural-param strong {
+            color: #4CAF50;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        .procedural-param span {
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        /* Placeholder enemy chip styles */
+        .enemy-chip.placeholder {
+            background: #444;
+            border: 1px dashed #666;
+            opacity: 0.7;
+        }
+
+        .placeholder-badge {
+            background: #ff6b35;
+            color: white;
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+
         .modal-header {
             display: flex;
             justify-content: space-between;
@@ -524,6 +656,9 @@
                 <button class="tab" onclick="switchTab('fights')">Fights</button>
                 <button class="tab" onclick="switchTab('grid')">Grid</button>
                 <button class="tab" onclick="switchTab('gears')">Gear Store</button>
+                <button class="tab" onclick="switchTab('behaviors')">Behaviors</button>
+                <button class="tab" onclick="switchTab('currencies')">Currencies</button>
+                <button class="tab" onclick="switchTab('quests')">Quests</button>
                 <button class="tab" onclick="switchTab('stats')">Statistics</button>
             </div>
 
@@ -622,10 +757,30 @@
 
                 <!-- Fights Tab -->
                 <div id="fights-tab" class="tab-pane">
+                    <!-- Procedural Level Warning Banner -->
+                    <div id="procedural-warning" class="warning-banner" style="display: none;">
+                        <div class="warning-content">
+                            <span class="warning-icon">⚠️</span>
+                            <div class="warning-text">
+                                <strong>Procedural Level</strong>
+                                <p>This level uses procedural fight generation. Fight data is generated at runtime based on difficulty curves and NIV settings. Only Level 1-1 (tutorial) has custom fight data.</p>
+                            </div>
+                            <button class="btn secondary" onclick="showProceduralInfo()">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Procedural Generation Info Panel -->
+                    <div id="procedural-info" class="info-panel" style="display: none;">
+                        <h5>Procedural Generation Parameters</h5>
+                        <div class="procedural-details" id="proceduralDetails">
+                            <!-- Procedural parameters will be shown here -->
+                        </div>
+                    </div>
+
                     <div class="form-section">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
                             <h4>Fight Configuration</h4>
-                            <button class="btn" onclick="addFight()">Add Fight</button>
+                            <button class="btn" id="addFightBtn" onclick="addFight()">Add Fight</button>
                         </div>
                         <div class="fight-list" id="fightList">
                             <!-- Fights will be loaded here -->
@@ -726,6 +881,36 @@
                         <h4>Structures Used</h4>
                         <div class="enemy-list" id="structuresUsedList">
                             <!-- Structure list will be shown here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Behaviors Tab -->
+                <div id="behaviors-tab" class="tab-pane">
+                    <div class="form-section">
+                        <h4>Animation Behaviors (13 total)</h4>
+                        <div class="behaviors-grid" id="behaviorsGrid">
+                            <!-- Behaviors will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Currencies Tab -->
+                <div id="currencies-tab" class="tab-pane">
+                    <div class="form-section">
+                        <h4>Currency System (41 total)</h4>
+                        <div class="currencies-grid" id="currenciesGrid">
+                            <!-- Currencies will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quests Tab -->
+                <div id="quests-tab" class="tab-pane">
+                    <div class="form-section">
+                        <h4>Quest System (11 total)</h4>
+                        <div class="quests-grid" id="questsGrid">
+                            <!-- Quests will be loaded here -->
                         </div>
                     </div>
                 </div>
@@ -933,6 +1118,55 @@
                 const structuresData = await structuresResponse.json();
                 structureCatalog = structuresData.structures || [];
 
+                // Load gears with detailed data
+                try {
+                    const gearsResponse = await fetch(`${API_BASE}/api/gears/detailed`);
+                    const gearsData = await gearsResponse.json();
+                    window.gearsCatalog = gearsData.gears_detailed || {};
+                    console.log(`Loaded ${Object.keys(window.gearsCatalog).length} gears`);
+                } catch (error) {
+                    console.log('Gears data not available yet');
+                    window.gearsCatalog = {};
+                }
+
+                // Load behaviors with detailed data
+                try {
+                    const behaviorsResponse = await fetch(`${API_BASE}/api/behaviors/detailed`);
+                    const behaviorsData = await behaviorsResponse.json();
+                    window.behaviorsCatalog = behaviorsData.behaviors_detailed || {};
+                    console.log(`Loaded ${Object.keys(window.behaviorsCatalog).length} behaviors`);
+                } catch (error) {
+                    console.log('Behaviors data not available yet');
+                    window.behaviorsCatalog = {};
+                }
+
+                // Load currencies with detailed data
+                try {
+                    const currenciesResponse = await fetch(`${API_BASE}/api/currencies/detailed`);
+                    const currenciesData = await currenciesResponse.json();
+                    window.currenciesCatalog = currenciesData.currencies_detailed || {};
+                    console.log(`Loaded ${Object.keys(window.currenciesCatalog).length} currencies`);
+                } catch (error) {
+                    console.log('Currencies data not available yet');
+                    window.currenciesCatalog = {};
+                }
+
+                // Load quests with detailed data
+                try {
+                    const questsResponse = await fetch(`${API_BASE}/api/quests/detailed`);
+                    const questsData = await questsResponse.json();
+                    window.questsCatalog = questsData.quests_detailed || {};
+                    console.log(`Loaded ${Object.keys(window.questsCatalog).length} quests`);
+                } catch (error) {
+                    console.log('Quests data not available yet');
+                    window.questsCatalog = {};
+                }
+
+                // Update all displays
+                updateBehaviorsDisplay();
+                updateCurrenciesDisplay();
+                updateQuestsDisplay();
+
                 console.log(`Loaded ${enemyCatalog.length} enemies and ${structureCatalog.length} structures`);
             } catch (error) {
                 console.error('Error loading catalogs:', error);
@@ -992,28 +1226,79 @@
         }
 
         function updateFightsDisplay() {
+            if (!levelData) return;
+
+            const isProceduralLevel = levelData.levelSettings.useCustomFights === 0;
+            const proceduralWarning = document.getElementById('procedural-warning');
+            const proceduralInfo = document.getElementById('procedural-info');
+            const addFightBtn = document.getElementById('addFightBtn');
+
+            // Show/hide procedural warning
+            if (isProceduralLevel) {
+                proceduralWarning.style.display = 'block';
+                addFightBtn.disabled = true;
+                addFightBtn.textContent = 'Procedural Level';
+                addFightBtn.title = 'This level uses procedural generation';
+
+                // Show procedural generation parameters
+                updateProceduralInfo();
+            } else {
+                proceduralWarning.style.display = 'none';
+                addFightBtn.disabled = false;
+                addFightBtn.textContent = 'Add Fight';
+                addFightBtn.title = '';
+                proceduralInfo.style.display = 'none';
+            }
+
             const fightList = document.getElementById('fightList');
             fightList.innerHTML = '';
 
             const fights = levelData.fights || [];
+
+            if (isProceduralLevel && fights.length > 0) {
+                // For procedural levels, show a notice about placeholder data
+                const noticeDiv = document.createElement('div');
+                noticeDiv.className = 'procedural-notice';
+                noticeDiv.innerHTML = `
+                    <div style="background: #333; padding: 15px; border-radius: 8px; border: 1px solid #555;">
+                        <h5 style="color: #4CAF50; margin-bottom: 10px;">Placeholder Fight Data</h5>
+                        <p style="color: #ccc; margin: 0; font-size: 14px;">
+                            The fight data below contains placeholders. In the actual game, fights are generated procedurally
+                            using difficulty curves, NIV settings, and enemy distribution algorithms.
+                        </p>
+                    </div>
+                `;
+                fightList.appendChild(noticeDiv);
+            }
+
             fights.forEach((fight, index) => {
                 const fightDiv = document.createElement('div');
                 fightDiv.className = 'fight-item';
 
+                if (isProceduralLevel) {
+                    fightDiv.style.opacity = '0.6';
+                }
+
                 const enemies = fight.enemies || [];
-                const enemyChips = enemies.map(enemy => `
-                    <div class="enemy-chip">
-                        ${enemy.character || 'Unknown'}
-                        <span class="delay">@${enemy.delay}s</span>
-                    </div>
-                `).join('');
+                const enemyChips = enemies.map(enemy => {
+                    const enemyName = enemy.character || 'Placeholder';
+                    const isPlaceholder = !enemy.character || enemy.character === '';
+
+                    return `
+                        <div class="enemy-chip ${isPlaceholder ? 'placeholder' : ''}">
+                            ${enemyName}
+                            <span class="delay">@${enemy.delay}s</span>
+                            ${isPlaceholder ? '<span class="placeholder-badge">Procedural</span>' : ''}
+                        </div>
+                    `;
+                }).join('');
 
                 fightDiv.innerHTML = `
                     <div class="fight-header">
-                        <div class="fight-title">Fight ${index + 1}</div>
+                        <div class="fight-title">Fight ${index + 1}${isProceduralLevel ? ' (Placeholder)' : ''}</div>
                         <div>
-                            <button class="btn secondary" onclick="editFight(${index})">Edit</button>
-                            <button class="btn danger" onclick="removeFight(${index})">Remove</button>
+                            <button class="btn secondary" onclick="editFight(${index})" ${isProceduralLevel ? 'disabled' : ''}>Edit</button>
+                            <button class="btn danger" onclick="removeFight(${index})" ${isProceduralLevel ? 'disabled' : ''}>Remove</button>
                         </div>
                     </div>
                     <div>Value: ${fight.valueOfFight || 0} | Structure: ${fight.structure || 'None'}</div>
@@ -1022,6 +1307,41 @@
 
                 fightList.appendChild(fightDiv);
             });
+        }
+
+        function updateProceduralInfo() {
+            const proceduralDetails = document.getElementById('proceduralDetails');
+            if (!proceduralDetails || !levelData) return;
+
+            const settings = levelData.levelSettings;
+            const params = [
+                { label: 'Difficulty Profile', value: settings.difficultyProfile || 'Linear 50%' },
+                { label: 'Starting Coins', value: settings.startingCoins || 0 },
+                { label: 'Number of Spinners', value: settings.numberOfSpinners || 0 },
+                { label: 'Level Time', value: `${settings.levelTime || 0}s` },
+                { label: 'Level Difficulty', value: settings.levelDifficulty || 0 },
+                { label: 'NIV Use Level Value', value: settings.nivSettings?.useLevelValue ? 'Yes' : 'No' },
+                { label: 'NIV Custom Payouts', value: settings.nivSettings?.useCustomLevelForPayouts ? 'Yes' : 'No' },
+                { label: 'World Number', value: levelData.worldNumber || 0 },
+                { label: 'Level in World', value: levelData.levelInWorld || 0 }
+            ];
+
+            proceduralDetails.innerHTML = params.map(param => `
+                <div class="procedural-param">
+                    <strong>${param.label}:</strong>
+                    <span>${param.value}</span>
+                </div>
+            `).join('');
+        }
+
+        function showProceduralInfo() {
+            const proceduralInfo = document.getElementById('procedural-info');
+            if (proceduralInfo.style.display === 'none' || !proceduralInfo.style.display) {
+                proceduralInfo.style.display = 'block';
+                updateProceduralInfo();
+            } else {
+                proceduralInfo.style.display = 'none';
+            }
         }
 
         function updateStatsDisplay() {
@@ -1514,6 +1834,68 @@
                     </div>
                 `).join('');
             }
+        }
+
+        function updateBehaviorsDisplay() {
+            const behaviorGrid = document.getElementById('behaviorsGrid');
+            if (!behaviorGrid || !window.behaviorsCatalog) return;
+
+            const behaviors = Object.entries(window.behaviorsCatalog);
+            behaviorGrid.innerHTML = behaviors.map(([name, behavior]) => `
+                <div class="behavior-card">
+                    <h5>${name}</h5>
+                    <div class="behavior-details">
+                        <div><strong>Type:</strong> ${behavior.behavior_type || 'N/A'}</div>
+                        <div><strong>Amplitude:</strong> ${behavior.amplitude || 0}</div>
+                        <div><strong>Frequency:</strong> ${behavior.frequency || 0}</div>
+                        <div><strong>Wave Size:</strong> ${behavior.wave_size || 0}</div>
+                        <div><strong>Duration:</strong> ${behavior.duration || 0}</div>
+                        <div><strong>Loop Type:</strong> ${behavior.loop_type || 'N/A'}</div>
+                        <div><strong>Ease Type:</strong> ${behavior.ease_type || 'N/A'}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateCurrenciesDisplay() {
+            const currencyGrid = document.getElementById('currenciesGrid');
+            if (!currencyGrid || !window.currenciesCatalog) return;
+
+            const currencies = Object.entries(window.currenciesCatalog);
+            currencyGrid.innerHTML = currencies.map(([name, currency]) => `
+                <div class="currency-card">
+                    <h5>${name}</h5>
+                    <div class="currency-details">
+                        <div><strong>Type:</strong> ${currency.currency_type || 'N/A'}</div>
+                        <div><strong>Base Value:</strong> ${currency.base_value || 0}</div>
+                        <div><strong>Exchange Rate:</strong> ${currency.exchange_rate || 1.0}</div>
+                        <div><strong>Max Capacity:</strong> ${currency.max_capacity || 'Unlimited'}</div>
+                        <div><strong>Display Format:</strong> ${currency.display_format || 'N/A'}</div>
+                        <div><strong>ID:</strong> ${currency.id || 'N/A'}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updateQuestsDisplay() {
+            const questGrid = document.getElementById('questsGrid');
+            if (!questGrid || !window.questsCatalog) return;
+
+            const quests = Object.entries(window.questsCatalog);
+            questGrid.innerHTML = quests.map(([name, quest]) => `
+                <div class="quest-card">
+                    <h5>${name}</h5>
+                    <div class="quest-details">
+                        <div><strong>Type:</strong> ${quest.quest_type || 'N/A'}</div>
+                        <div><strong>Target Count:</strong> ${quest.target_count || 0}</div>
+                        <div><strong>Current Progress:</strong> ${quest.current_progress || 0}</div>
+                        <div><strong>Daily Quest:</strong> ${quest.daily_quest ? 'Yes' : 'No'}</div>
+                        <div><strong>Weekly Quest:</strong> ${quest.weekly_quest ? 'Yes' : 'No'}</div>
+                        <div><strong>Description Key:</strong> ${quest.description_key || 'N/A'}</div>
+                        <div><strong>ID:</strong> ${quest.id || 'N/A'}</div>
+                    </div>
+                </div>
+            `).join('');
         }
 
         let currentGearIndex = -1;
