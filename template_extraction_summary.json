@@ -1,0 +1,15 @@
+{
+  "total_levels": 0,
+  "procedural_levels": 0,
+  "custom_levels": 0,
+  "key_findings": [
+    "All 0 procedural levels have template configurations",
+    "Enemy slot counts range: 0-0",
+    "Structure pool sizes range: 0-0",
+    "Template data defines procedural generation parameters, not empty slots"
+  ],
+  "template_patterns": {
+    "enemy_slot_distributions": {},
+    "structure_pool_distributions": {}
+  }
+}

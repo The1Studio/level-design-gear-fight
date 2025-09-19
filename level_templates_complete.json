@@ -1,0 +1,10 @@
+{
+  "extraction_info": {
+    "purpose": "Extract template configuration data from procedural levels",
+    "date": "2025-09-18",
+    "levels_analyzed": 0,
+    "procedural_levels": 0,
+    "custom_levels": 0
+  },
+  "level_templates": {}
+}

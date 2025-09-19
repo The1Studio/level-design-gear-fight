@@ -1,0 +1,163 @@
+{
+  "extraction_info": {
+    "total_levels": 134,
+    "procedural_levels": 5,
+    "custom_levels": 0
+  },
+  "templates": {
+    "World 1 - Level 2": {
+      "level_name": "World 1 - Level 2",
+      "file_path": "UnityProject/MonoBehaviour/World 1 - Level 2.asset",
+      "is_procedural": true,
+      "fight_template": {
+        "enemy_slots": 3,
+        "placeholder_slots": 4,
+        "template_purpose": "Defines 3 enemy positions for procedural generation"
+      },
+      "structure_pool": [
+        {
+          "guid": "d215b56b06f67704e965b915f58cac38",
+          "purpose": "Available for procedural selection"
+        },
+        {
+          "guid": "c1ee11a8e9d283141b8c0426df64d1c3",
+          "purpose": "Available for procedural selection"
+        }
+      ],
+      "economic_template": {
+        "starting_coins": 34,
+        "number_of_spinners": 1,
+        "num_levels_param": 10,
+        "difficulty_profile_guid": "621b225a282f40e40beff03c12f65d74"
+      },
+      "raw_findings": [
+        "Found 3 enemy template slots",
+        "Found 2 structures in pool"
+      ]
+    },
+    "World 1 - Level 3": {
+      "level_name": "World 1 - Level 3",
+      "file_path": "UnityProject/MonoBehaviour/World 1 - Level 3.asset",
+      "is_procedural": true,
+      "fight_template": {
+        "enemy_slots": 3,
+        "placeholder_slots": 4,
+        "template_purpose": "Defines 3 enemy positions for procedural generation"
+      },
+      "structure_pool": [
+        {
+          "guid": "c1ee11a8e9d283141b8c0426df64d1c3",
+          "purpose": "Available for procedural selection"
+        },
+        {
+          "guid": "a6eb9ebe71ddccc449a491c0ba5b822d",
+          "purpose": "Available for procedural selection"
+        }
+      ],
+      "economic_template": {
+        "starting_coins": 22,
+        "number_of_spinners": 1,
+        "num_levels_param": 10,
+        "difficulty_profile_guid": "2c632fcdc51b25943a943afe8973c24c"
+      },
+      "raw_findings": [
+        "Found 3 enemy template slots",
+        "Found 2 structures in pool"
+      ]
+    },
+    "World 1 - Level 4": {
+      "level_name": "World 1 - Level 4",
+      "file_path": "UnityProject/MonoBehaviour/World 1 - Level 4.asset",
+      "is_procedural": true,
+      "fight_template": {
+        "enemy_slots": 3,
+        "placeholder_slots": 4,
+        "template_purpose": "Defines 3 enemy positions for procedural generation"
+      },
+      "structure_pool": [
+        {
+          "guid": "a6eb9ebe71ddccc449a491c0ba5b822d",
+          "purpose": "Available for procedural selection"
+        },
+        {
+          "guid": "a6eb9ebe71ddccc449a491c0ba5b822d",
+          "purpose": "Available for procedural selection"
+        }
+      ],
+      "economic_template": {
+        "starting_coins": 22,
+        "number_of_spinners": 1,
+        "num_levels_param": 10,
+        "difficulty_profile_guid": "2c632fcdc51b25943a943afe8973c24c"
+      },
+      "raw_findings": [
+        "Found 3 enemy template slots",
+        "Found 2 structures in pool"
+      ]
+    },
+    "World 2 - Level 1": {
+      "level_name": "World 2 - Level 1",
+      "file_path": "UnityProject/MonoBehaviour/World 2 - Level 1.asset",
+      "is_procedural": true,
+      "fight_template": {
+        "enemy_slots": 3,
+        "placeholder_slots": 4,
+        "template_purpose": "Defines 3 enemy positions for procedural generation"
+      },
+      "structure_pool": [
+        {
+          "guid": "2edfea5bfdbf0bd46b051063a10ece31",
+          "purpose": "Available for procedural selection"
+        },
+        {
+          "guid": "2edfea5bfdbf0bd46b051063a10ece31",
+          "purpose": "Available for procedural selection"
+        },
+        {
+          "guid": "aa2bfb1aee9a6e64ab133c150a817161",
+          "purpose": "Available for procedural selection"
+        }
+      ],
+      "economic_template": {
+        "starting_coins": 22,
+        "number_of_spinners": 2,
+        "num_levels_param": 12,
+        "difficulty_profile_guid": "2c632fcdc51b25943a943afe8973c24c"
+      },
+      "raw_findings": [
+        "Found 3 enemy template slots",
+        "Found 3 structures in pool"
+      ]
+    },
+    "World 5 - Level 10": {
+      "level_name": "World 5 - Level 10",
+      "file_path": "UnityProject/MonoBehaviour/World 5 - Level 10.asset",
+      "is_procedural": true,
+      "fight_template": {
+        "enemy_slots": 3,
+        "placeholder_slots": 4,
+        "template_purpose": "Defines 3 enemy positions for procedural generation"
+      },
+      "structure_pool": [
+        {
+          "guid": "47bf03f0a8f53514b80c3f6f49364c49",
+          "purpose": "Available for procedural selection"
+        },
+        {
+          "guid": "05151130667bddd478a8f1abda0b4d9e",
+          "purpose": "Available for procedural selection"
+        }
+      ],
+      "economic_template": {
+        "starting_coins": 22,
+        "number_of_spinners": 2,
+        "num_levels_param": 12,
+        "difficulty_profile_guid": "2c632fcdc51b25943a943afe8973c24c"
+      },
+      "raw_findings": [
+        "Found 3 enemy template slots",
+        "Found 2 structures in pool"
+      ]
+    }
+  }
+}

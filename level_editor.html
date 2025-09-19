@@ -595,6 +595,91 @@
             color: #4CAF50;
         }
 
+        /* Template Data Visualization Styles */
+        .template-section {
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #444;
+        }
+
+        .template-section h3 {
+            color: #ff8c42;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .template-card {
+            background: #333;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 3px solid #ff6b35;
+        }
+
+        .template-card h4 {
+            color: #ff8c42;
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+
+        .template-slots {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .slot-badge {
+            background: #444;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #aaa;
+            border: 1px dashed #666;
+        }
+
+        .structure-pool-item {
+            background: #3a3a3a;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 4px 0;
+            font-size: 13px;
+            color: #ccc;
+            border: 1px solid #555;
+        }
+
+        .economic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .economic-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            background: #3a3a3a;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        .economic-label {
+            color: #999;
+        }
+
+        .economic-value {
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
         /* Enemy Selector */
         .enemy-selector {
             display: grid;
@@ -774,6 +859,44 @@
                         <h5>Procedural Generation Parameters</h5>
                         <div class="procedural-details" id="proceduralDetails">
                             <!-- Procedural parameters will be shown here -->
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Template Data Visualization -->
+                    <div id="template-visualization" class="template-section" style="display: none;">
+                        <h3>📋 Template Configuration Data</h3>
+                        <div class="template-grid">
+                            <!-- Fight Template Card -->
+                            <div class="template-card">
+                                <h4>🎯 Fight Templates</h4>
+                                <div id="fight-template-info">
+                                    <p style="color: #999; font-size: 13px;">Loading template data...</p>
+                                </div>
+                            </div>
+
+                            <!-- Structure Pool Card -->
+                            <div class="template-card">
+                                <h4>🏗️ Structure Pool</h4>
+                                <div id="structure-pool-info">
+                                    <p style="color: #999; font-size: 13px;">Loading structure pool...</p>
+                                </div>
+                            </div>
+
+                            <!-- Economic Template Card -->
+                            <div class="template-card">
+                                <h4>💰 Economic Parameters</h4>
+                                <div id="economic-template-info">
+                                    <p style="color: #999; font-size: 13px;">Loading economic data...</p>
+                                </div>
+                            </div>
+
+                            <!-- Difficulty Settings Card -->
+                            <div class="template-card">
+                                <h4>📈 Difficulty Configuration</h4>
+                                <div id="difficulty-template-info">
+                                    <p style="color: #999; font-size: 13px;">Loading difficulty settings...</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -1336,12 +1459,209 @@
 
         function showProceduralInfo() {
             const proceduralInfo = document.getElementById('procedural-info');
+            const templateViz = document.getElementById('template-visualization');
+
             if (proceduralInfo.style.display === 'none' || !proceduralInfo.style.display) {
                 proceduralInfo.style.display = 'block';
                 updateProceduralInfo();
+
+                // Also show template visualization for procedural levels
+                if (levelData && levelData.levelSettings.useCustomFights === 0) {
+                    templateViz.style.display = 'block';
+                    loadTemplateData();
+                }
             } else {
                 proceduralInfo.style.display = 'none';
+                templateViz.style.display = 'none';
             }
+        }
+
+        async function loadTemplateData() {
+            try {
+                // Try to load pre-extracted template configuration data
+                const response = await fetch('level_template_configurations.json');
+                if (response.ok) {
+                    const templateData = await response.json();
+                    const levelName = levelData.name;
+                    const levelTemplate = templateData.templates[levelName];
+
+                    if (levelTemplate) {
+                        displayTemplateData(levelTemplate);
+                        return;
+                    }
+                }
+            } catch (error) {
+                console.log('Template file not available, extracting from level data');
+            }
+
+            // Extract template data directly from current level
+            displayExtractedTemplateData();
+        }
+
+        function displayTemplateData(template) {
+            // Fight Templates
+            const fightInfo = document.getElementById('fight-template-info');
+            if (template.fight_template) {
+                fightInfo.innerHTML = `
+                    <div style="margin-bottom: 10px;">
+                        <p style="color: #999; font-size: 13px; margin-bottom: 8px;">Template Structure:</p>
+                        <div class="template-slots">
+                            ${Array(template.fight_template.enemy_slots || 3).fill(0).map((_, i) =>
+                                `<div class="slot-badge">Enemy Slot ${i + 1}</div>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    <div style="color: #888; font-size: 12px; margin-top: 10px;">
+                        <div>• Total slots: ${template.fight_template.enemy_slots || 0}</div>
+                        <div>• Placeholder slots: ${template.fight_template.placeholder_slots || 0}</div>
+                        <div>• Purpose: ${template.fight_template.template_purpose || 'Procedural generation'}</div>
+                    </div>
+                `;
+            }
+
+            // Structure Pool
+            const structureInfo = document.getElementById('structure-pool-info');
+            if (template.structure_pool && template.structure_pool.length > 0) {
+                structureInfo.innerHTML = `
+                    <div style="margin-bottom: 10px;">
+                        <p style="color: #999; font-size: 13px; margin-bottom: 8px;">Available Structures (${template.structure_pool.length}):</p>
+                        ${template.structure_pool.map(struct => `
+                            <div class="structure-pool-item">
+                                <div>Structure Type ${template.structure_pool.indexOf(struct) + 1}</div>
+                                <div style="color: #666; font-size: 11px; font-family: monospace;">${struct.guid.substring(0, 8)}...</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } else {
+                structureInfo.innerHTML = '<p style="color: #666; font-size: 13px;">No structures configured</p>';
+            }
+
+            // Economic Template
+            const economicInfo = document.getElementById('economic-template-info');
+            if (template.economic_template) {
+                const eco = template.economic_template;
+                economicInfo.innerHTML = `
+                    <div class="economic-grid">
+                        <div class="economic-item">
+                            <span class="economic-label">Starting Coins:</span>
+                            <span class="economic-value">${eco.starting_coins || 0}</span>
+                        </div>
+                        <div class="economic-item">
+                            <span class="economic-label">Spinners:</span>
+                            <span class="economic-value">${eco.number_of_spinners || 0}</span>
+                        </div>
+                        <div class="economic-item">
+                            <span class="economic-label">Num Levels:</span>
+                            <span class="economic-value">${eco.num_levels_param || 0}</span>
+                        </div>
+                        <div class="economic-item">
+                            <span class="economic-label">Difficulty:</span>
+                            <span class="economic-value" style="font-size: 11px;">${(eco.difficulty_profile_guid || 'default').substring(0, 8)}...</span>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Difficulty Settings
+            const difficultyInfo = document.getElementById('difficulty-template-info');
+            difficultyInfo.innerHTML = `
+                <div style="color: #888; font-size: 13px;">
+                    <div style="margin-bottom: 8px;">• Profile: <span style="color: #ff8c42;">Linear 50% (Standard)</span></div>
+                    <div style="margin-bottom: 8px;">• Spawn Timing: <span style="color: #4CAF50;">Animation Curves</span></div>
+                    <div style="margin-bottom: 8px;">• Enemy Distribution: <span style="color: #4CAF50;">5 Configurations</span></div>
+                    <div>• Scaling: <span style="color: #4CAF50;">Progressive</span></div>
+                </div>
+            `;
+        }
+
+        function displayExtractedTemplateData() {
+            // Extract template data directly from current level
+            const fights = levelData.fights || [];
+            const settings = levelData.levelSettings || {};
+
+            // Fight Templates from current level
+            const fightInfo = document.getElementById('fight-template-info');
+            if (fights.length > 0) {
+                const totalSlots = fights.reduce((sum, f) => sum + (f.enemies?.length || 0), 0);
+                const placeholderCount = fights.reduce((sum, f) =>
+                    sum + (f.enemies?.filter(e => !e.character || e.character === '').length || 0), 0
+                );
+
+                fightInfo.innerHTML = `
+                    <div style="margin-bottom: 10px;">
+                        <p style="color: #999; font-size: 13px; margin-bottom: 8px;">Template Analysis:</p>
+                        <div class="template-slots">
+                            ${Array(Math.min(fights[0]?.enemies?.length || 3, 5)).fill(0).map((_, i) =>
+                                `<div class="slot-badge">Enemy Slot ${i + 1}</div>`
+                            ).join('')}
+                        </div>
+                    </div>
+                    <div style="color: #888; font-size: 12px; margin-top: 10px;">
+                        <div>• Total fights: ${fights.length}</div>
+                        <div>• Total enemy slots: ${totalSlots}</div>
+                        <div>• Placeholder slots: ${placeholderCount}</div>
+                        <div>• Type: ${placeholderCount > 0 ? 'Template-based' : 'Custom configured'}</div>
+                    </div>
+                `;
+            } else {
+                fightInfo.innerHTML = '<p style="color: #666; font-size: 13px;">No fight templates found</p>';
+            }
+
+            // Structure Pool (from allStructures if available)
+            const structureInfo = document.getElementById('structure-pool-info');
+            const structures = levelData.allStructures || [];
+            if (structures.length > 0) {
+                structureInfo.innerHTML = `
+                    <div style="margin-bottom: 10px;">
+                        <p style="color: #999; font-size: 13px; margin-bottom: 8px;">Structure Pool (${structures.length}):</p>
+                        ${structures.slice(0, 3).map((struct, i) => `
+                            <div class="structure-pool-item">
+                                <div>Structure Type ${i + 1}</div>
+                                <div style="color: #666; font-size: 11px;">Pool item</div>
+                            </div>
+                        `).join('')}
+                        ${structures.length > 3 ? `<div style="color: #666; font-size: 12px; margin-top: 8px;">...and ${structures.length - 3} more</div>` : ''}
+                    </div>
+                `;
+            } else {
+                structureInfo.innerHTML = '<p style="color: #666; font-size: 13px;">No structure pool configured</p>';
+            }
+
+            // Economic Parameters
+            const economicInfo = document.getElementById('economic-template-info');
+            economicInfo.innerHTML = `
+                <div class="economic-grid">
+                    <div class="economic-item">
+                        <span class="economic-label">Starting Coins:</span>
+                        <span class="economic-value">${settings.startingCoins || 0}</span>
+                    </div>
+                    <div class="economic-item">
+                        <span class="economic-label">Spinners:</span>
+                        <span class="economic-value">${settings.numberOfSpinners || 0}</span>
+                    </div>
+                    <div class="economic-item">
+                        <span class="economic-label">Level Time:</span>
+                        <span class="economic-value">${settings.levelTime || 0}s</span>
+                    </div>
+                    <div class="economic-item">
+                        <span class="economic-label">Difficulty:</span>
+                        <span class="economic-value">${settings.levelDifficulty || 0}</span>
+                    </div>
+                </div>
+            `;
+
+            // Difficulty Information
+            const difficultyInfo = document.getElementById('difficulty-template-info');
+            const difficultyName = settings.difficultyProfile || 'Default';
+            difficultyInfo.innerHTML = `
+                <div style="color: #888; font-size: 13px;">
+                    <div style="margin-bottom: 8px;">• Profile: <span style="color: #ff8c42;">${difficultyName}</span></div>
+                    <div style="margin-bottom: 8px;">• Custom Fights: <span style="color: ${settings.useCustomFights ? '#4CAF50' : '#ff8c42'};">${settings.useCustomFights ? 'Yes' : 'No (Procedural)'}</span></div>
+                    <div style="margin-bottom: 8px;">• Custom Gears: <span style="color: ${settings.useCustomGears ? '#4CAF50' : '#ff8c42'};">${settings.useCustomGears ? 'Yes' : 'No'}</span></div>
+                    <div>• NIV Level Value: <span style="color: ${settings.nivSettings?.useLevelValue ? '#4CAF50' : '#999'};">${settings.nivSettings?.useLevelValue ? 'Enabled' : 'Disabled'}</span></div>
+                </div>
+            `;
         }
 
         function updateStatsDisplay() {
